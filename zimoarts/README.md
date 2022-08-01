@@ -1,4 +1,4 @@
-# arts-site
+# zimoarts
 
 ## Project setup
 ```
