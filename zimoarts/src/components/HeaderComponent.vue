@@ -1,16 +1,12 @@
 <template>
   <div class="header-container">
     <div class="header-icon-container">
-      <div class="header-icon">GROTONARTS</div>
+      <div class="header-left-top-info">2022.9.15wuiqoqn.zkJklk</div>
     </div>
-    <div class="nav-container">
-      <div class="nav-item-container">item one</div>
-      <div class="nav-item-container">item two</div>
-      <div class="nav-item-container">item tree</div>
-      <div class="nav-item-container">item four</div>
-    </div>
+    <div class="header-middle-placeholder"></div>
     <div class="header-right-container">
-      <div class="header-right-icon">Groton</div>
+      <div class="header-right-icon-placeholder"></div>
+      <img class="header-right-icon" src="@/assets/master-logo-red.png">
     </div>
   </div>
 </template>
@@ -34,13 +30,11 @@ export default {
   display: inline;
 }
 
-.header-icon {
-  width: 100%;
+.header-left-top-info {
+  width: 50%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 23px;
+  margin-top: 10px;
+  font-size: 9px;
 }
 
 .header-right-container {
@@ -49,25 +43,22 @@ export default {
   position: relative;
 }
 
-.header-right-icon {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  font-size: 36px;
-  color: firebrick;
-  font: bolder;
+.header-right-icon-placeholder {
+  height: 50%;
 }
 
-.nav-container {
+.header-right-icon {
+  max-width: 100%;
+  max-height: 50%;
+  display: table-cell;
+  vertical-align: bottom
+}
+
+.header-middle-placeholder {
   width: 65%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.nav-item-container {
-  width: 25%;
-  height: 100%;
-  margin-top: 15px;
-}
 </style>
