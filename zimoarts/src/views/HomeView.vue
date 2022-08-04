@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div>
     <HeaderComponent />
     <div class="home-container">
       <img class="home-school-icon" src="@/assets/black-red-logo.png">
@@ -22,7 +22,33 @@
       </div>
       <div class="home-big-pic-container"></div>
       <div class="video-container"></div>
-      <div class="album-container"></div>
+      <div class="album-container">
+        <div class="top-album-container">
+          <div class="top-album-descrption-container">
+              <div class="top-album-descrption-title">oqhgdb askuc</div>
+              <div class="top-album-descrption-text-container">
+                <div class="right-footer-text" style="margin-top: 10px">JGYTDETRTQWEESDFG</div>
+                <div class="right-footer-text">GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG</div>
+                <div class="right-footer-text">HJHFJH JHCH V FJ VJVCCCC H</div>
+                <div class="right-footer-text">GJHG JKHVJHG VHVHFV</div>
+                <div class="right-footer-text" style="margin-bottom: 10px">CHGFD</div>
+              </div>
+          </div>
+
+          <div class="top-album-items-container">
+            <div class="top-left-album-item-column">
+              <div class="top-left-album-item-back">
+                <div class="top-left-album-item-front"></div>
+              </div>
+              <div class="top-left-album-middler-placeholder"></div>
+              <dir class="top-left-album-item-text-container">
+                <div class="top-left-album-item-text">JGYTDETRTQWEESDFG</div>
+                <div class="top-left-album-item-text">GJHG JKHVJHG VHVHFV</div>
+              </dir>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <FooterComponent />
   </div>
@@ -42,7 +68,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 .home {
   background-color: #FFFFFF;
@@ -54,6 +80,7 @@ export default {
   background-color: #FFFFFF;
 }
 
+/* top dropdown area */
 .home-school-icon {
   width: 180px;
   height: 90px;
@@ -89,6 +116,7 @@ export default {
   text-align: center !important;
 }
 
+/* main image area */
 .home-big-pic-container {
   width: 100%;
   height: 800px;
@@ -104,8 +132,88 @@ export default {
   margin-top: -220px;
 }
 
+/* middle album area */
 .album-container {
   width: 100%;
-  color: aqua;
+}
+
+.top-album-container {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.top-album-descrption-container {
+  float: left;
+  margin-left: 100px;
+}
+
+.top-album-descrption-title {
+  font-size: 58px;
+  font-weight: bolder;
+}
+
+.top-album-descrption-text-container {
+  font-size: 9px;
+  border-left: 1px solid lightslategray;
+  border-top: 1px solid lightslategray;
+}
+
+.right-footer-text {
+  width: 100%;
+  font-size: 8px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.top-album-items-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.top-left-album-item-column {
+  width: 450px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 300px;
+  display: flex;
+  position: relative; 
+}
+
+.top-left-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #AB050F;
+  display: inline;
+}
+
+.top-left-album-middler-placeholder {
+  width: 110px;
+  height: 400px;
+}
+
+.top-left-album-item-front {
+  width: 280px;
+  height: 350px;
+  background-color: #C0C0C0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  z-index: 99;
+  position: absolute;
+}
+
+.top-left-album-item-text-container {
+  width: 150px;
+  position: absolute; 
+  margin-bottom: 40px;
+  bottom: 0;
+  right: 0;
+}
+
+.top-left-album-item-text {
+  font-size: 8px;
+  text-align: right;
 }
 </style>
