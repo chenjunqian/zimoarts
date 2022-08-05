@@ -18,7 +18,9 @@
         />
       </div>
       <div class="right-footer-container">
-        <div class="right-footer-logo">GROTONARTS</div>
+        <div class="right-footer-logo-container">
+          <img class="right-footer-logo" src="@/assets/black-school-name.png">
+        </div>
         <div class="right-footer-text-column">
           <div class="right-footer-text">JGYTDETRTQWEESDFG</div>
           <div class="right-footer-text">GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG</div>
@@ -119,10 +121,17 @@ export default {
   justify-content: center;
 }
 
-.right-footer-logo {
-  max-width: 100%;
+.right-footer-logo-container {
+  width: 100%;
+  height: 25px;
   padding-top: 15px;
-  text-align: right;
+  position: relative;
+}
+
+.right-footer-logo {
+  width: 150px;
+  position: absolute;
+  right: -8px;
 }
 
 .right-footer-text-column {
