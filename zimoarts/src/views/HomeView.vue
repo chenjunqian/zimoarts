@@ -2,21 +2,36 @@
   <div class="home">
     <HeaderComponent />
     <div class="home-container">
-      <img class="home-school-icon" src="@/assets/black-red-logo.png">
+      <img class="home-school-icon" src="@/assets/black-red-logo.png" />
       <div class="home-dropdown-item-container">
-        <div class="home-dropdown-item" style="background-color: #000000;color: #FFFFFF">
+        <div
+          class="home-dropdown-item"
+          style="background-color: #000000; color: #ffffff"
+        >
           <div class="home-dropdown-text">menu one</div>
         </div>
-        <div class="home-dropdown-item" style="background-color: #AB050F;color: #FFFFFF">
+        <div
+          class="home-dropdown-item"
+          style="background-color: #ab050f; color: #ffffff"
+        >
           <div class="home-dropdown-text">menu two</div>
         </div>
-        <div class="home-dropdown-item" style="background-color: #FFCE00;color: #FFFFFF">
+        <div
+          class="home-dropdown-item"
+          style="background-color: #ffce00; color: #ffffff"
+        >
           <div class="home-dropdown-text">menu tree</div>
         </div>
-        <div class="home-dropdown-item" style="background-color: #C0C0C0;color: #FFFFFF">
+        <div
+          class="home-dropdown-item"
+          style="background-color: #c0c0c0; color: #ffffff"
+        >
           <div class="home-dropdown-text">menu four</div>
         </div>
-        <div class="home-dropdown-item" style="background-color: white;color: #000000">
+        <div
+          class="home-dropdown-item"
+          style="background-color: white; color: #000000"
+        >
           <div class="home-dropdown-text">menu five</div>
         </div>
       </div>
@@ -25,14 +40,20 @@
       <div class="album-container">
         <div class="top-album-container">
           <div class="top-album-descrption-container">
-              <div class="top-album-descrption-title">oqhgdb askuc</div>
-              <div class="top-album-descrption-text-container">
-                <div class="right-footer-text" style="margin-top: 10px">JGYTDETRTQWEESDFG</div>
-                <div class="right-footer-text">GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG</div>
-                <div class="right-footer-text">HJHFJH JHCH V FJ VJVCCCC H</div>
-                <div class="right-footer-text">GJHG JKHVJHG VHVHFV</div>
-                <div class="right-footer-text" style="margin-bottom: 10px">CHGFD</div>
+            <div class="top-album-descrption-title">oqhgdb askuc</div>
+            <div class="top-album-descrption-text-container">
+              <div class="right-footer-text" style="margin-top: 10px">
+                JGYTDETRTQWEESDFG
               </div>
+              <div class="right-footer-text">
+                GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+              </div>
+              <div class="right-footer-text">HJHFJH JHCH V FJ VJVCCCC H</div>
+              <div class="right-footer-text">GJHG JKHVJHG VHVHFV</div>
+              <div class="right-footer-text" style="margin-bottom: 10px">
+                CHGFD
+              </div>
+            </div>
           </div>
 
           <div class="top-album-items-container">
@@ -45,6 +66,31 @@
                 <div class="top-left-album-item-text">JGYTDETRTQWEESDFG</div>
                 <div class="top-left-album-item-text">GJHG JKHVJHG VHVHFV</div>
               </dir>
+            </div>
+
+            <div class="top-middle-album-item-column">
+              <dir class="top-middle-album-item-text-container">
+                <div class="top-middle-album-item-text">JGYTDETRTQWEESDFG</div>
+                <div class="top-middle-album-item-text">CHGFD</div>
+              </dir>
+              <div class="top-middle-album-item-back-left-block"></div>
+              <div class="top-middle-album-item-back">
+                <div class="top-middle-album-item-front"></div>
+              </div>
+            </div>
+
+            <div class="top-right-album-item-column">
+              <div class="top-right-album-middler-placeholder">
+                <dir class="top-right-album-item-text-container">
+                  <div class="top-right-album-item-text">JGYTDETRTQWEESDFG</div>
+                  <div class="top-right-album-item-text">
+                    GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+                  </div>
+                </dir>
+              </div>
+              <div class="top-right-album-item-back">
+                <div class="top-right-album-item-front"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -69,18 +115,17 @@ export default {
 </script>
 
 <style scoped>
-
 @media screen and (max-width: 1200px) {
   .home {
-    background-color: #FFFFFF;
-    width: 1200px;
+    background-color: #ffffff;
+    width: 1500px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .home {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -89,7 +134,7 @@ export default {
 .home-container {
   width: 100%;
   padding-top: 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* top dropdown area */
@@ -132,7 +177,7 @@ export default {
 .home-big-pic-container {
   width: 100%;
   height: 800px;
-  background-color:antiquewhite;
+  background-color: antiquewhite;
   margin-top: 180px;
 }
 
@@ -181,22 +226,22 @@ export default {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-
 }
 
+/* left album */
 .top-left-album-item-column {
-  width: 450px;
+  width: 300px;
   height: 400px;
   margin-left: 100px;
   margin-top: 300px;
   display: flex;
-  position: relative; 
+  position: relative;
 }
 
 .top-left-album-item-back {
   width: 150px;
   height: 400px;
-  background-color: #AB050F;
+  background-color: #ab050f;
   display: inline;
 }
 
@@ -206,9 +251,9 @@ export default {
 }
 
 .top-left-album-item-front {
-  width: 280px;
+  width: 250px;
   height: 350px;
-  background-color: #C0C0C0;
+  background-color: #c0c0c0;
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
@@ -218,13 +263,119 @@ export default {
 
 .top-left-album-item-text-container {
   width: 150px;
-  position: absolute; 
+  position: absolute;
   margin-bottom: 40px;
   bottom: 0;
-  right: 0;
+  right: -100px;
 }
 
 .top-left-album-item-text {
+  font-size: 8px;
+  text-align: right;
+}
+
+/* middel album */
+.top-middle-album-item-column {
+  width: 300px;
+  height: 400px;
+  margin-left: 180px;
+  margin-right: -150px;
+  margin-top: -20px;
+  display: flex;
+  position: relative;
+}
+
+.top-middle-album-item-back-left-block {
+  width: 250px;
+  height: 400px;
+  display: inline;
+}
+
+.top-middle-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #000000;
+  display: inline;
+}
+
+.top-middle-album-item-front {
+  width: 250px;
+  height: 350px;
+  background-color: #c0c0c0;
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+.top-middle-album-item-text-container {
+  width: 150px;
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: 25px;
+  left: -140px;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.top-middle-album-item-text {
+  font-size: 8px;
+  text-align: right;
+}
+
+/* right album */
+.top-right-album-item-column {
+  width: 450px;
+  height: 400px;
+  margin-left: 15px;
+  margin-top: 250px;
+  display: flex;
+  z-index: 99;
+}
+
+.top-right-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #ffce00;
+  display: inline;
+}
+
+.top-right-album-middler-placeholder {
+  width: 110px;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.top-right-album-item-front {
+  width: 250px;
+  height: 350px;
+  background-color: #c0c0c0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  z-index: 99;
+  position: absolute;
+}
+
+.top-right-album-item-text-container {
+  width: auto;
+  position: absolute;
+  left: -70px;
+  bottom: 10px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.top-right-album-item-text {
   font-size: 8px;
   text-align: right;
 }
