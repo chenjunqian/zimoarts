@@ -94,9 +94,83 @@
             </div>
           </div>
         </div>
+
+        <div class="bottom-album-items-container">
+          <div class="bottom-album-title">oqhgdb askuc</div>
+          <div class="bottom-album-title-description" style="margin-top: 15px">
+            sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
+          </div>
+          <div class="bottom-album-title-description">
+            ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
+            lacjgluyioqyeowihds kxdaqoc
+          </div>
+          <div class="bottom-album-columns-container">
+            <div class="bottom-album-column">
+              <div class="bottom-album-column-image"></div>
+              <div class="bottom-album-column-circle-image"></div>
+              <div class="bottom-album-column-text-container">
+                <dir class="bottom-album-column-text">JGYTDETRTQWEESDFG</dir>
+                <dir class="bottom-album-column-text">
+                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+                </dir>
+                <dir class="bottom-album-column-text">
+                  HJHFJH JHCH V FJ VJVCCCC H
+                </dir>
+                <dir class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</dir>
+              </div>
+            </div>
+            <div class="bottom-album-column" style="margin-left: 15%">
+              <div class="bottom-album-column-image"></div>
+              <div class="bottom-album-column-circle-image"></div>
+              <div class="bottom-album-column-text-container">
+                <dir class="bottom-album-column-text">JGYTDETRTQWEESDFG</dir>
+                <dir class="bottom-album-column-text">
+                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+                </dir>
+                <dir class="bottom-album-column-text">
+                  HJHFJH JHCH V FJ VJVCCCC H
+                </dir>
+                <dir class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</dir>
+              </div>
+            </div>
+            <div class="bottom-album-column" style="margin-left: 15%">
+              <div class="bottom-album-column-image"></div>
+              <div class="bottom-album-column-circle-image"></div>
+              <div class="bottom-album-column-text-container">
+                <dir class="bottom-album-column-text">JGYTDETRTQWEESDFG</dir>
+                <dir class="bottom-album-column-text">
+                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+                </dir>
+                <dir class="bottom-album-column-text">
+                  HJHFJH JHCH V FJ VJVCCCC H
+                </dir>
+                <dir class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</dir>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-color-block-container">
+          <div
+            class="bottom-color-block"
+            style="background-color: #000000"
+          ></div>
+          <div
+            class="bottom-color-block"
+            style="background-color: #ab050f"
+          ></div>
+          <div
+            class="bottom-color-block"
+            style="background-color: #ffce00"
+          ></div>
+          <div
+            class="bottom-color-block"
+            style="background-color: #c0c0c0"
+          ></div>
+        </div>
       </div>
     </div>
-    <FooterComponent />
+    <FooterComponent style="margin-top: 150px"/>
   </div>
 </template>
 
@@ -378,5 +452,83 @@ export default {
 .top-right-album-item-text {
   font-size: 8px;
   text-align: right;
+}
+
+/* bottom album */
+.bottom-album-items-container {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.bottom-album-title {
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 65px;
+  color: #000000;
+}
+
+.bottom-album-title-description {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  color: #000000;
+}
+
+.bottom-album-columns-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: flex;
+}
+
+.bottom-album-column {
+  width: 25%;
+  display: inline;
+}
+
+.bottom-album-column-image {
+  width: 100%;
+  height: 150px;
+  background-color: #888888;
+}
+
+.bottom-album-column-circle-image {
+  width: 50%;
+  height: 50px;
+  background-color: #888888;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.bottom-album-column-text-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bottom-album-column-text {
+  width: 100%;
+  font-size: 9px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+/* bottom color block */
+.bottom-color-block-container {
+  width: 100%;
+  height: 15px;
+  margin-top: 60px;
+  display: flex;
+}
+
+.bottom-color-block {
+  width: 25%;
+  height: 100%;
 }
 </style>
