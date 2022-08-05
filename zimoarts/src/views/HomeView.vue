@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <HeaderComponent />
     <div class="home-container">
       <img class="home-school-icon" src="@/assets/black-red-logo.png">
@@ -70,8 +70,20 @@ export default {
 
 <style scoped>
 
-.home {
-  background-color: #FFFFFF;
+@media screen and (max-width: 1200px) {
+  .home {
+    background-color: #FFFFFF;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home {
+    background-color: #FFFFFF;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }
 
 .home-container {
