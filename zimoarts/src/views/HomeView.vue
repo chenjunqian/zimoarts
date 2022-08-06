@@ -656,7 +656,7 @@ export default {
   width: 100%;
   padding-top: 50px;
   background-color: #ffffff;
-  box-shadow: 0px 10px 30px -7px #888888;
+  box-shadow: 0 20px 20px -2px #888888;
 }
 
 /* top dropdown area */
@@ -742,7 +742,7 @@ export default {
   background-color: antiquewhite;
   margin-top: 180px;
   position: relative;
-  box-shadow: 0px 0px 50px -7px #888888;
+  box-shadow: 0 20px 20px -2px #888888;
 }
 
 .video-container {
@@ -757,7 +757,7 @@ export default {
 /* middle album area */
 .album-container {
   width: 100%;
-  box-shadow: 0px 30px 10px -7px #888888;
+  box-shadow: 0 20px 20px -2px #888888;
 }
 
 .top-album-container {
