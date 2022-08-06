@@ -18,7 +18,7 @@
           style="background-color: #ab050f; color: #ffffff"
         >
           <div class="home-dropdown-text-container">
-            <div class="home-dropdown-text">THEAFER & </div>
+            <div class="home-dropdown-text">THEAFER &</div>
             <div class="home-dropdown-text">DANCE</div>
           </div>
         </div>
@@ -42,8 +42,15 @@
           class="home-dropdown-item"
           style="background-color: white; color: #000000"
         >
-          <div class="home-dropdown-text-container">
-            <div class="home-dropdown-text">OTHER</div>
+          <div class="home-dropdown-text-container" style="width: 80px">
+            <div class="dropdown">
+              <div class="home-dropdown-text">OTHER</div>
+              <div class="dropdown-content">
+                <router-link to="/about">About</router-link>
+                <a href="https://academy.hubspot.com/">Academy</a>
+                <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -693,6 +700,39 @@ export default {
   text-align: center !important;
   word-break: break-all;
   word-wrap: break-word;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  left: 0;
+  overflow: auto;
+  border: 1px solid #FFFFFF;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #c0c0c0;
 }
 
 /* main image area */
