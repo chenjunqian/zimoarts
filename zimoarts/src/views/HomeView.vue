@@ -269,7 +269,7 @@ export default {
 }
 
 .top-album-container {
-  width: 85%;
+  width: 1275px;
   margin: 0 auto;
 }
 
