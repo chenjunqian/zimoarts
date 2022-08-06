@@ -60,7 +60,6 @@ export default {
 
 .footer-container-center-wrapper {
   width: 90%;
-  border-top: 1px solid #000000;
   display: flex;
   flex-wrap: wrap;
 }

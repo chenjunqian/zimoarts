@@ -35,44 +35,52 @@
           <div class="home-dropdown-text">menu five</div>
         </div>
       </div>
-      <div class="home-big-pic-container"></div>
-      <div class="video-container"></div>
-      <div class="album-container">
-        <div class="top-album-container">
-          <div class="top-album-descrption-container">
-            <div class="top-album-descrption-title">oqhgdb askuc</div>
-            <div class="top-album-descrption-text-container">
-              <div class="right-footer-text" style="margin-top: 10px">
-                JGYTDETRTQWEESDFG
-              </div>
-              <div class="right-footer-text">
-                GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
-              </div>
-              <div class="right-footer-text">HJHFJH JHCH V FJ VJVCCCC H</div>
-              <div class="right-footer-text">GJHG JKHVJHG VHVHFV</div>
-              <div class="right-footer-text" style="margin-bottom: 10px">
-                CHGFD
-              </div>
+      <div class="home-big-pic-container">
+        <div class="video-container"></div>
+      </div>
+
+      <div class="top-album-descrption-container">
+        <div class="top-album-descrption-title-container">
+          <div class="top-album-descrption-title" style="color: #ab050f">
+            Upcoming
+          </div>
+          <div class="top-album-descrption-title">&nbsp;Events&nbsp;</div>
+          <div>
+            <div
+              class="top-album-descrption-title"
+              style="position: relative; font-size: 25px"
+            >
+              to be decided
             </div>
           </div>
-
+        </div>
+        <div class="top-album-descrption-text-container">
+          <div class="top-album-descrption-text" style="margin-top: 10px">
+            JGYTDETRTQWEESDFG Gsakf:hihzbnbooooogkdb qprpouposjalxnkjagdkj
+            Hskahfoiqwhdnsmbxkjaln.aznkjl,a xH Gdskhqiohdbnakcnkja
+            Cleofjlsknlnck
+          </div>
+        </div>
+      </div>
+      <div class="album-container">
+        <div class="top-album-container">
           <div class="top-album-items-container">
             <div class="top-left-album-item-column">
               <div class="top-left-album-item-back">
                 <div class="top-left-album-item-front"></div>
               </div>
               <div class="top-left-album-middler-placeholder"></div>
-              <dir class="top-left-album-item-text-container">
+              <div class="top-left-album-item-text-container">
                 <div class="top-left-album-item-text">JGYTDETRTQWEESDFG</div>
                 <div class="top-left-album-item-text">GJHG JKHVJHG VHVHFV</div>
-              </dir>
+              </div>
             </div>
 
             <div class="top-middle-album-item-column">
-              <dir class="top-middle-album-item-text-container">
+              <div class="top-middle-album-item-text-container">
                 <div class="top-middle-album-item-text">JGYTDETRTQWEESDFG</div>
                 <div class="top-middle-album-item-text">CHGFD</div>
-              </dir>
+              </div>
               <div class="top-middle-album-item-back-left-block"></div>
               <div class="top-middle-album-item-back">
                 <div class="top-middle-album-item-front"></div>
@@ -81,70 +89,31 @@
 
             <div class="top-right-album-item-column">
               <div class="top-right-album-middler-placeholder">
-                <dir class="top-right-album-item-text-container">
+                <div class="top-right-album-item-text-container">
                   <div class="top-right-album-item-text">JGYTDETRTQWEESDFG</div>
                   <div class="top-right-album-item-text">
                     GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
                   </div>
-                </dir>
+                </div>
               </div>
               <div class="top-right-album-item-back">
                 <div class="top-right-album-item-front"></div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="bottom-album-items-container">
-          <div class="bottom-album-title">oqhgdb askuc</div>
-          <div class="bottom-album-title-description" style="margin-top: 15px">
-            sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-          </div>
-          <div class="bottom-album-title-description">
-            ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-            lacjgluyioqyeowihds kxdaqoc
-          </div>
-          <div class="bottom-album-columns-container">
-            <div class="bottom-album-column">
-              <div class="bottom-album-column-image"></div>
-              <div class="bottom-album-column-circle-image"></div>
-              <div class="bottom-album-column-text-container">
-                <dir class="bottom-album-column-text">JGYTDETRTQWEESDFG</dir>
-                <dir class="bottom-album-column-text">
-                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
-                </dir>
-                <dir class="bottom-album-column-text">
-                  HJHFJH JHCH V FJ VJVCCCC H
-                </dir>
-                <dir class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</dir>
-              </div>
-            </div>
-            <div class="bottom-album-column" style="margin-left: 15%">
-              <div class="bottom-album-column-image"></div>
-              <div class="bottom-album-column-circle-image"></div>
-              <div class="bottom-album-column-text-container">
-                <dir class="bottom-album-column-text">JGYTDETRTQWEESDFG</dir>
-                <dir class="bottom-album-column-text">
-                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
-                </dir>
-                <dir class="bottom-album-column-text">
-                  HJHFJH JHCH V FJ VJVCCCC H
-                </dir>
-                <dir class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</dir>
-              </div>
-            </div>
-            <div class="bottom-album-column" style="margin-left: 15%">
-              <div class="bottom-album-column-image"></div>
-              <div class="bottom-album-column-circle-image"></div>
-              <div class="bottom-album-column-text-container">
-                <dir class="bottom-album-column-text">JGYTDETRTQWEESDFG</dir>
-                <dir class="bottom-album-column-text">
-                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
-                </dir>
-                <dir class="bottom-album-column-text">
-                  HJHFJH JHCH V FJ VJVCCCC H
-                </dir>
-                <dir class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</dir>
+            <div
+              style="
+                justify-content: center;
+                width: 100%;
+                margin-top: 200px;
+                color: #ab050f;
+                font-size: 10px;
+              "
+            >
+              <div style="">sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl</div>
+              <div style="">
+                ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
+                lacjgluyioqyeowihds kxdaqoc
               </div>
             </div>
           </div>
@@ -168,9 +137,390 @@
             style="background-color: #c0c0c0"
           ></div>
         </div>
+
+        <div class="bottom-album-items-container">
+          <div class="top-album-descrption-container">
+            <div class="top-album-descrption-title-container">
+              <div class="top-album-descrption-title" style="color: #ab050f">
+                Visual Art&nbsp;
+              </div>
+              <div>
+                <div
+                  class="top-album-descrption-title"
+                  style="position: relative; font-size: 25px"
+                >
+                  of&nbsp;
+                </div>
+              </div>
+              <div class="top-album-descrption-title">the&nbsp;</div>
+              <div class="top-album-descrption-title" style="color: #ffce00">
+                fermm&nbsp;
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-album-columns-container">
+            <div class="bottom-album-column">
+              <img class="bottom-album-column-image" />
+              <div class="bottom-album-column-circle-image"></div>
+              <div class="bottom-album-column-text-container">
+                <div class="bottom-album-column-text">JGYTDETRTQWEESDFG</div>
+                <div class="bottom-album-column-text">
+                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+                </div>
+                <div class="bottom-album-column-text">
+                  HJHFJH JHCH V FJ VJVCCCC H
+                </div>
+                <div class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</div>
+              </div>
+            </div>
+            <div class="bottom-album-column" style="margin-left: 15%">
+              <img class="bottom-album-column-image" />
+              <div class="bottom-album-column-circle-image"></div>
+              <div class="bottom-album-column-text-container">
+                <div class="bottom-album-column-text">JGYTDETRTQWEESDFG</div>
+                <div class="bottom-album-column-text">
+                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+                </div>
+                <div class="bottom-album-column-text">
+                  HJHFJH JHCH V FJ VJVCCCC H
+                </div>
+                <div class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</div>
+              </div>
+            </div>
+            <div class="bottom-album-column" style="margin-left: 15%">
+              <img class="bottom-album-column-image" />
+              <div class="bottom-album-column-circle-image"></div>
+              <div class="bottom-album-column-text-container">
+                <div class="bottom-album-column-text">JGYTDETRTQWEESDFG</div>
+                <div class="bottom-album-column-text">
+                  GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG
+                </div>
+                <div class="bottom-album-column-text">
+                  HJHFJH JHCH V FJ VJVCCCC H
+                </div>
+                <div class="bottom-album-column-text">GJHG JKHVJHG VHVHFV</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 80px;
+          margin-bottom: 200px;
+        "
+      >
+        <div style="width: 30%">
+          <div style="display: inline">
+            <div style="color: #ab050f">anihgskbcjkooye</div>
+            <div
+              style="
+                width: 70%
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 20px;
+                word-break: break-all;
+                word-wrap: break-word;
+              "
+            >
+              alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
+              acjgluyioqyeowihds kxdaqoc
+            </div>
+          </div>
+        </div>
+        <div style="width: 30%">
+          <div style="display: inline">
+            <div style="color: #ffce00">anihgskbcjkooye</div>
+            <div
+              style="
+                width: 70%
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 20px;
+                word-break: break-all;
+                word-wrap: break-word;
+              "
+            >
+              alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
+              acjgluyioqyeowihds kxdaqoc
+            </div>
+          </div>
+        </div>
+        <div style="width: 30%">
+          <div style="display: inline">
+            <div style="color: #c0c0c0">anihgskbcjkooye</div>
+            <div
+              style="
+                width: 70%
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 20px;
+                word-break: break-all;
+                word-wrap: break-word;
+              "
+            >
+              alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
+              acjgluyioqyeowihds kxdaqoc
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- interview block -->
+      <div style="width: 100%; background-color: #c0c0c0">
+        <div
+          style="
+            width: 100%;
+            padding-top: 50px;
+            margin-bottom: 50px;
+            font-size: 58px;
+            font-weight: bolder;
+            border-bottom: 1px solid #000000;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <div>INTERVIEW</div>
+        </div>
+
+        <!-- top colomn -->
+        <div
+          style="
+            width: 100%;
+            border-bottom: 1px solid #000000;
+            padding-top: 50px;
+          "
+        >
+          <div style="margin-left: 5%; margin-right: 5%; display: flex">
+            <div
+              style="width: 25%; height: 160px; border-left: 1px solid #000000"
+            >
+              <img
+                style="
+                  height: 90%;
+                  width: 90%;
+                  padding-top: 5%;
+                  padding-left: 5%;
+                  padding-right: 5%;
+                "
+              />
+            </div>
+            <div
+              style="width: 25%; height: 160px; border-left: 1px solid #000000"
+            >
+              <div style="font-weight: bolder">sadfkjanihgskbcjkooye</div>
+              <div
+                style="
+                  margin: 0 auto;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                "
+              >
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
+                alksf;loskfmguugsdqozmxjhzvbn/
+              </div>
+            </div>
+            <div
+              style="width: 25%; height: 160px; border-left: 1px solid #000000"
+            >
+              <img
+                style="
+                  height: 90%;
+                  width: 90%;
+                  padding-top: 5%;
+                  padding-left: 5%;
+                  padding-right: 5%;
+                "
+              />
+            </div>
+            <div
+              style="
+                width: 25%;
+                height: 160px;
+                border-left: 1px solid #000000;
+                border-right: 1px solid #000000;
+              "
+            >
+              <div style="font-weight: bolder">sadfkjanihgskbcjkooye</div>
+              <div
+                style="
+                  margin: 0 auto;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                "
+              >
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
+                alksf;loskfmguugsdqozmxjhzvbn/
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bottom colomn -->
+        <div style="width: 100%; padding-bottom: 150px">
+          <div style="margin-left: 5%; margin-right: 5%; display: flex">
+            <div
+              style="width: 25%; height: 160px; border-left: 1px solid #000000"
+            >
+              <div style="font-weight: bolder">sadfkjanihgskbcjkooye</div>
+              <div
+                style="
+                  margin: 0 auto;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                "
+              >
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
+                alksf;loskfmguugsdqozmxjhzvbn/
+              </div>
+            </div>
+            <div
+              style="width: 25%; height: 160px; border-left: 1px solid #000000"
+            >
+              <img
+                style="
+                  height: 90%;
+                  width: 90%;
+                  padding-top: 5%;
+                  padding-left: 5%;
+                  padding-right: 5%;
+                "
+              />
+            </div>
+            <div
+              style="
+                width: 25%;
+                height: 160px;
+                border-left: 1px solid #000000;
+                border-right: 1px solid #000000;
+              "
+            >
+              <div style="font-weight: bolder">sadfkjanihgskbcjkooye</div>
+              <div
+                style="
+                  margin: 0 auto;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                "
+              >
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
+                alksf;loskfmguugsdqozmxjhzvbn/
+              </div>
+            </div>
+            <div
+              style="width: 25%; height: 160px; border-right: 1px solid #000000"
+            >
+              <img
+                style="
+                  height: 90%;
+                  width: 90%;
+                  padding-top: 5%;
+                  padding-left: 5%;
+                  padding-right: 5%;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom description block -->
+      <div style="width: 100%">
+        <!-- line one -->
+        <div style="width: 100%; display: flex; justify-content: center; margin-top: 100px">
+          <div style="width: 30%">
+            <div style="width: 80%">
+              <div style="display: flex">
+                <img style="width: 10px; height: 10px" src="" alt="">
+                <div style="text-align: left;color: #ffce00">sadfkjanihgskbcjkooye</div>
+              </div>
+              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+              </div>
+            </div>
+          </div>
+          <div style="width: 30%">
+            <div style="width: 80%">
+              <div style="display: flex">
+                <img style="width: 10px; height: 10px" src="" alt="">
+                <div style="text-align: left;color: #ffce00">sadfkjanihgskbcjkooye</div>
+              </div>
+              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+              </div>
+            </div>
+          </div>
+          <div style="width: 30%">
+            <div style="width: 80%">
+              <div style="display: flex">
+                <img style="width: 10px; height: 10px" src="" alt="">
+                <div style="text-align: left; color: #ffce00">sadfkjanihgskbcjkooye</div>
+              </div>
+              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- line two -->
+        <div style="width: 100%; display: flex; justify-content: center; margin-top: 100px">
+          <div style="width: 30%">
+            <div style="width: 80%">
+              <div style="display: flex">
+                <img style="width: 10px; height: 10px" src="" alt="">
+                <div style="text-align: left ;color: #ffce00">sadfkjanihgskbcjkooye</div>
+              </div>
+              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+              </div>
+            </div>
+          </div>
+          <div style="width: 30%">
+            <div style="width: 80%">
+              <div style="display: flex">
+                <img style="width: 10px; height: 10px" src="" alt="">
+                <div style="text-align: left ;color: #ffce00">sadfkjanihgskbcjkooye</div>
+              </div>
+              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+              </div>
+            </div>
+          </div>
+          <div style="width: 30%">
+            <div style="width: 80%">
+              <div style="display: flex">
+                <img style="width: 10px; height: 10px" src="" alt="">
+                <div style="text-align: left; color: #ffce00">sadfkjanihgskbcjkooye</div>
+              </div>
+              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+                oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
+                dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="width: 100%; display: flex; justify-content: center;margin-top: 150px; padding-bottom: 200px; color: #ffce00">
+          <div style="width: 50%;word-break: break-all; word-wrap: break-word;">
+            sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
+            ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+          </div>
+        </div>
       </div>
     </div>
-    <FooterComponent style="margin-top: 150px" />
+    <FooterComponent style="margin-top: 20px" />
   </div>
 </template>
 
@@ -209,6 +559,7 @@ export default {
   width: 100%;
   padding-top: 50px;
   background-color: #ffffff;
+  box-shadow: 0px 10px 30px -7px #888888;
 }
 
 /* top dropdown area */
@@ -253,6 +604,8 @@ export default {
   height: 800px;
   background-color: antiquewhite;
   margin-top: 180px;
+  position: relative;
+  box-shadow: 0px 0px 50px -7px #888888;
 }
 
 .video-container {
@@ -260,12 +613,14 @@ export default {
   height: 300px;
   background-color: black;
   margin-left: 100px;
-  margin-top: -220px;
+  position: absolute;
+  bottom: 0;
 }
 
 /* middle album area */
 .album-container {
   width: 100%;
+  box-shadow: 0px 30px 10px -7px #888888;
 }
 
 .top-album-container {
@@ -274,26 +629,35 @@ export default {
 }
 
 .top-album-descrption-container {
-  float: left;
-  margin-left: 100px;
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+
+.top-album-descrption-title-container {
+  width: 100%;
+  font-size: 58px;
+  font-weight: bolder;
+  border-bottom: 1px solid lightslategray;
+  display: flex;
+  justify-content: center;
 }
 
 .top-album-descrption-title {
-  font-size: 58px;
-  font-weight: bolder;
+  display: inline;
 }
 
 .top-album-descrption-text-container {
   font-size: 9px;
-  border-left: 1px solid lightslategray;
-  border-top: 1px solid lightslategray;
+  margin-left: 300px;
 }
 
-.right-footer-text {
-  width: 100%;
+.top-album-descrption-text {
+  width: 20%;
   font-size: 8px;
   margin-left: 10px;
   text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .top-album-items-container {
@@ -460,25 +824,18 @@ export default {
   margin-top: 150px;
 }
 
-.bottom-album-title {
+.bottom-album-title-container {
   width: 100%;
   border-bottom: 1px solid black;
-  text-align: center;
-  font-size: 65px;
-  color: #000000;
-}
-
-.bottom-album-title-description {
-  width: 100%;
-  text-align: center;
-  font-size: 10px;
-  color: #000000;
+  display: flex;
+  justify-content: center;
 }
 
 .bottom-album-columns-container {
   width: 70%;
   margin: 0 auto;
   margin-top: 120px;
+  padding-bottom: 120px;
   display: flex;
 }
 
@@ -511,12 +868,6 @@ export default {
   width: 100%;
   font-size: 9px;
   display: block;
-  list-style-type: disc;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
 }
 
 /* bottom color block */
