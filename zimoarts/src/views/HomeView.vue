@@ -8,31 +8,43 @@
           class="home-dropdown-item"
           style="background-color: #000000; color: #ffffff"
         >
-          <div class="home-dropdown-text">menu one</div>
+          <div class="home-dropdown-text-container">
+            <div class="home-dropdown-text">VISUAL</div>
+            <div class="home-dropdown-text">ART</div>
+          </div>
         </div>
         <div
           class="home-dropdown-item"
           style="background-color: #ab050f; color: #ffffff"
         >
-          <div class="home-dropdown-text">menu two</div>
+          <div class="home-dropdown-text-container">
+            <div class="home-dropdown-text">THEAFER & </div>
+            <div class="home-dropdown-text">DANCE</div>
+          </div>
         </div>
         <div
           class="home-dropdown-item"
           style="background-color: #ffce00; color: #ffffff"
         >
-          <div class="home-dropdown-text">menu tree</div>
+          <div class="home-dropdown-text-container">
+            <div class="home-dropdown-text">MUSIC</div>
+          </div>
         </div>
         <div
           class="home-dropdown-item"
           style="background-color: #c0c0c0; color: #ffffff"
         >
-          <div class="home-dropdown-text">menu four</div>
+          <div class="home-dropdown-text-container">
+            <div class="home-dropdown-text">ABOFUS</div>
+          </div>
         </div>
         <div
           class="home-dropdown-item"
           style="background-color: white; color: #000000"
         >
-          <div class="home-dropdown-text">menu five</div>
+          <div class="home-dropdown-text-container">
+            <div class="home-dropdown-text">OTHER</div>
+          </div>
         </div>
       </div>
       <div class="home-big-pic-container">
@@ -434,14 +446,30 @@
       <!-- bottom description block -->
       <div style="width: 100%">
         <!-- line one -->
-        <div style="width: 100%; display: flex; justify-content: center; margin-top: 100px">
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+          "
+        >
           <div style="width: 30%">
             <div style="width: 80%">
               <div style="display: flex">
-                <img style="width: 10px; height: 10px" src="" alt="">
-                <div style="text-align: left;color: #ffce00">sadfkjanihgskbcjkooye</div>
+                <img style="width: 10px; height: 10px" src="" alt="" />
+                <div style="text-align: left; color: #ffce00">
+                  sadfkjanihgskbcjkooye
+                </div>
               </div>
-              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+              <div
+                style="
+                  margin-left: 10px;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                  text-align: left;
+                "
+              >
                 oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
                 dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
               </div>
@@ -450,10 +478,19 @@
           <div style="width: 30%">
             <div style="width: 80%">
               <div style="display: flex">
-                <img style="width: 10px; height: 10px" src="" alt="">
-                <div style="text-align: left;color: #ffce00">sadfkjanihgskbcjkooye</div>
+                <img style="width: 10px; height: 10px" src="" alt="" />
+                <div style="text-align: left; color: #ffce00">
+                  sadfkjanihgskbcjkooye
+                </div>
               </div>
-              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+              <div
+                style="
+                  margin-left: 10px;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                  text-align: left;
+                "
+              >
                 oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
                 dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
               </div>
@@ -462,10 +499,19 @@
           <div style="width: 30%">
             <div style="width: 80%">
               <div style="display: flex">
-                <img style="width: 10px; height: 10px" src="" alt="">
-                <div style="text-align: left; color: #ffce00">sadfkjanihgskbcjkooye</div>
+                <img style="width: 10px; height: 10px" src="" alt="" />
+                <div style="text-align: left; color: #ffce00">
+                  sadfkjanihgskbcjkooye
+                </div>
               </div>
-              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+              <div
+                style="
+                  margin-left: 10px;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                  text-align: left;
+                "
+              >
                 oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
                 dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
               </div>
@@ -473,14 +519,30 @@
           </div>
         </div>
         <!-- line two -->
-        <div style="width: 100%; display: flex; justify-content: center; margin-top: 100px">
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+          "
+        >
           <div style="width: 30%">
             <div style="width: 80%">
               <div style="display: flex">
-                <img style="width: 10px; height: 10px" src="" alt="">
-                <div style="text-align: left ;color: #ffce00">sadfkjanihgskbcjkooye</div>
+                <img style="width: 10px; height: 10px" src="" alt="" />
+                <div style="text-align: left; color: #ffce00">
+                  sadfkjanihgskbcjkooye
+                </div>
               </div>
-              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+              <div
+                style="
+                  margin-left: 10px;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                  text-align: left;
+                "
+              >
                 oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
                 dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
               </div>
@@ -489,10 +551,19 @@
           <div style="width: 30%">
             <div style="width: 80%">
               <div style="display: flex">
-                <img style="width: 10px; height: 10px" src="" alt="">
-                <div style="text-align: left ;color: #ffce00">sadfkjanihgskbcjkooye</div>
+                <img style="width: 10px; height: 10px" src="" alt="" />
+                <div style="text-align: left; color: #ffce00">
+                  sadfkjanihgskbcjkooye
+                </div>
               </div>
-              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+              <div
+                style="
+                  margin-left: 10px;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                  text-align: left;
+                "
+              >
                 oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
                 dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
               </div>
@@ -501,10 +572,19 @@
           <div style="width: 30%">
             <div style="width: 80%">
               <div style="display: flex">
-                <img style="width: 10px; height: 10px" src="" alt="">
-                <div style="text-align: left; color: #ffce00">sadfkjanihgskbcjkooye</div>
+                <img style="width: 10px; height: 10px" src="" alt="" />
+                <div style="text-align: left; color: #ffce00">
+                  sadfkjanihgskbcjkooye
+                </div>
               </div>
-              <div style="margin-left: 10px;word-break: break-all; word-wrap: break-word; text-align: left">
+              <div
+                style="
+                  margin-left: 10px;
+                  word-break: break-all;
+                  word-wrap: break-word;
+                  text-align: left;
+                "
+              >
                 oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
                 dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
               </div>
@@ -512,10 +592,20 @@
           </div>
         </div>
 
-        <div style="width: 100%; display: flex; justify-content: center;margin-top: 150px; padding-bottom: 200px; color: #ffce00">
-          <div style="width: 50%;word-break: break-all; word-wrap: break-word;">
+        <div
+          style="
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            padding-bottom: 200px;
+            color: #ffce00;
+          "
+        >
+          <div style="width: 50%; word-break: break-all; word-wrap: break-word">
             sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-            ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+            ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
+            lacjgluyioqyeowihds kxdaqoc
           </div>
         </div>
       </div>
@@ -592,10 +682,17 @@ export default {
   box-shadow: -25px 0px 25px -7px #888888;
 }
 
-.home-dropdown-text {
+.home-dropdown-text-container {
+  width: 60px;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
+}
+
+.home-dropdown-text {
+  font-size: 13px;
   text-align: center !important;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 /* main image area */
