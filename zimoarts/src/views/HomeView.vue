@@ -712,7 +712,7 @@ export default {
   display: none;
   left: 0;
   overflow: auto;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .dropdown:hover .dropdown-content {
