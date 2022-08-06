@@ -170,7 +170,7 @@
         </div>
       </div>
     </div>
-    <FooterComponent style="margin-top: 150px"/>
+    <FooterComponent style="margin-top: 150px" />
   </div>
 </template>
 
@@ -269,8 +269,8 @@ export default {
 }
 
 .top-album-container {
-  width: 100%;
-  margin-top: 150px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .top-album-descrption-container {
