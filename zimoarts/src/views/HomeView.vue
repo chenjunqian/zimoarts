@@ -9,8 +9,12 @@
           style="background-color: #000000; color: #ffffff"
         >
           <div class="home-dropdown-text-container">
-            <div class="home-dropdown-text">VISUAL</div>
-            <div class="home-dropdown-text">ART</div>
+            <router-link slots="div" class="home-dropdown-text" to="/about">
+              <div class="home-dropdown-text">VISUAL</div>
+            </router-link>
+            <router-link slots="div" class="home-dropdown-text" to="/about">
+              <div class="home-dropdown-text">ART</div>
+            </router-link>
           </div>
         </div>
         <div
@@ -38,13 +42,10 @@
             <div class="home-dropdown-text">ABOFUS</div>
           </div>
         </div>
-        <div
-          class="home-dropdown-item"
-          style="background-color: white; color: #000000"
-        >
+        <div class="home-dropdown-item" style="background-color: white">
           <div class="home-dropdown-text-container" style="width: 80px">
             <div class="dropdown">
-              <div class="home-dropdown-text">OTHER</div>
+              <div class="home-dropdown-text" style="color: #000000">OTHER</div>
               <div class="dropdown-content">
                 <router-link to="/about">About</router-link>
                 <a href="https://academy.hubspot.com/">Academy</a>
@@ -239,7 +240,7 @@
             <div style="color: #ab050f">anihgskbcjkooye</div>
             <div
               style="
-                width: 70%
+                width: 70%;
                 text-align: center;
                 margin: 0 auto;
                 margin-top: 20px;
@@ -257,7 +258,7 @@
             <div style="color: #ffce00">anihgskbcjkooye</div>
             <div
               style="
-                width: 70%
+                width: 70%;
                 text-align: center;
                 margin: 0 auto;
                 margin-top: 20px;
@@ -275,7 +276,7 @@
             <div style="color: #c0c0c0">anihgskbcjkooye</div>
             <div
               style="
-                width: 70%
+                width: 70%;
                 text-align: center;
                 margin: 0 auto;
                 margin-top: 20px;
@@ -700,6 +701,8 @@ export default {
   text-align: center !important;
   word-break: break-all;
   word-wrap: break-word;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .dropdown {
