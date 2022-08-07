@@ -19,8 +19,8 @@
                     <div style="color: #ffffff;font-size: 15px;font-weight: bolder;">HOME</div>
                     <div class="dropdown-content">
                         <router-link to="/" :style="{'color': dropdownTextColor}">Home</router-link>
-                        <a :style="{'color': dropdownTextColor}" href="https://academy.hubspot.com/">Academy</a>
-                        <a :style="{'color': dropdownTextColor}" href="https://www.youtube.com/user/hubspot">YouTube</a>
+                        <router-link to="/draw" :style="{'color': dropdownTextColor}">VISUAL ART</router-link>
+                        <router-link to="/about" :style="{'color': dropdownTextColor}">ABOUTUS</router-link>
                     </div>
                 </div>
             </div>
