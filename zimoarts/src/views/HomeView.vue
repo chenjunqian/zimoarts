@@ -9,10 +9,10 @@
           style="background-color: #000000; color: #ffffff"
         >
           <div class="home-dropdown-text-container">
-            <router-link slots="div" class="home-dropdown-text" to="/about">
+            <router-link slots="div" class="home-dropdown-text" to="/draw">
               <div class="home-dropdown-text">VISUAL</div>
             </router-link>
-            <router-link slots="div" class="home-dropdown-text" to="/about">
+            <router-link slots="div" class="home-dropdown-text" to="/draw">
               <div class="home-dropdown-text">ART</div>
             </router-link>
           </div>
@@ -139,24 +139,7 @@
           </div>
         </div>
 
-        <div class="bottom-color-block-container">
-          <div
-            class="bottom-color-block"
-            style="background-color: #000000"
-          ></div>
-          <div
-            class="bottom-color-block"
-            style="background-color: #ab050f"
-          ></div>
-          <div
-            class="bottom-color-block"
-            style="background-color: #ffce00"
-          ></div>
-          <div
-            class="bottom-color-block"
-            style="background-color: #c0c0c0"
-          ></div>
-        </div>
+        <ColorDivider style="margin-top: 60px;"></ColorDivider>
 
         <div class="bottom-album-items-container">
           <div class="top-album-descrption-container">
@@ -626,13 +609,15 @@
 // @ is an alias to /src
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import FooterComponent from "@/components/FootComponent.vue";
+import ColorDivider from "@/components/ColorDivider.vue";
 
 export default {
   name: "HomeView",
   components: {
     HeaderComponent,
     FooterComponent,
-  },
+    ColorDivider
+},
 };
 </script>
 

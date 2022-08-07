@@ -1,35 +1,7 @@
 <template>
   <div class="about">
     <HeaderComponent />
-    <!-- menu items block -->
-    <div style="width: 100%; display: flex; position: relative; margin-top: 40px">
-      <div style="position: absolute; right: 0; display: flex">
-        <div
-          style="width: 120px; height: 30px; background-color: #000000; line-height: 30px; color: #ffffff; font-size: 15px; font-weight: bolder;">
-          DRAWING
-        </div>
-        <div
-          style="width: 120px;height: 30px;background-color: #ab050f;line-height: 30px;color: #ffffff;font-size: 15px;font-weight: bolder;">
-          SCALPTURE
-        </div>
-        <div
-          style="width: 120px;height: 30px;background-color: #ffce00;line-height: 30px;color: #ffffff;font-size: 15px;font-weight: bolder;">
-          PHOFOGRCPHY
-        </div>
-        <div
-          style="width: 120px;height: 30px;background-color: #c0c0c0;line-height: 30px;">
-        <div class="dropdown">
-          <div style="color: #ffffff;font-size: 15px;font-weight: bolder;">HOME</div>
-          <div class="dropdown-content">
-            <router-link to="/">Home</router-link>
-            <a href="https://academy.hubspot.com/">Academy</a>
-            <a href="https://www.youtube.com/user/hubspot">YouTube</a>
-          </div>
-        </div>
-        </div>
-
-      </div>
-    </div>
+    <MenuItem />
     <!-- school bagde block -->
     <div style="margin-top: 80px">
       <img style="width: 180px; height: 90px; float: left; margin-left: 80px" src="@/assets/black-red-logo.png" />
@@ -97,13 +69,7 @@
           </div>
         </div>
       </div>
-      <!-- color divider -->
-      <div style="width: 100%;height: 15px;margin-top: 160px;display: flex;">
-        <div style="width: 25%;height: 100%;background-color: #000000;"></div>
-        <div style="width: 25%;height: 100%;background-color: #ab050f;"></div>
-        <div style="width: 25%;height: 100%;background-color: #ffce00;"></div>
-        <div style="width: 25%;height: 100%;background-color: #c0c0c0;"></div>
-      </div>
+      <ColorDivider style="margin-top: 160px;"/>
       <!-- our team block -->
       <div style="width: 100%;">
         <!-- our team title -->
@@ -297,13 +263,17 @@
 <script>
   import HeaderComponent from "@/components/HeaderComponent.vue";
   import FooterComponent from "@/components/FootComponent.vue";
+  import MenuItem from "@/components/MenuItem.vue";
+  import ColorDivider from "@/components/ColorDivider.vue";
 
   export default {
     name: "AboutView",
     components: {
-      HeaderComponent,
-      FooterComponent,
-    },
+    HeaderComponent,
+    FooterComponent,
+    MenuItem,
+    ColorDivider
+},
   };
 </script>
 
@@ -322,39 +292,5 @@
       max-width: 1500px;
       margin: 0 auto;
     }
-  }
-
-  .dropdown {
-    position: relative;
-    width: 100%;
-  }
-
-  .dropdown-content {
-    position: absolute;
-    display: none;
-    left: 0;
-    overflow: auto;
-    width: 100%;
-    border: 1px solid #ffffff;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown-content a {
-    display: block;
-    color: #000000;
-    margin-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin-right: 5px;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .dropdown-content a:hover {
-    color: #ffffff;
-    background-color: #c0c0c0;
   }
 </style>
