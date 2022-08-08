@@ -210,26 +210,13 @@
       </div>
 
       <div
-        style="
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin-top: 80px;
-          margin-bottom: 200px;
-        "
+        style="width: 100%;display: flex;justify-content: center;margin-top: 80px;margin-bottom: 200px;"
       >
         <div style="width: 30%">
           <div style="display: inline">
             <div style="color: #ab050f">anihgskbcjkooye</div>
             <div
-              style="
-                width: 70%;
-                text-align: center;
-                margin: 0 auto;
-                margin-top: 20px;
-                word-break: break-all;
-                word-wrap: break-word;
-              "
+              style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;word-break: break-all;word-wrap: break-word;"
             >
               alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
               acjgluyioqyeowihds kxdaqoc
@@ -240,14 +227,7 @@
           <div style="display: inline">
             <div style="color: #ffce00">anihgskbcjkooye</div>
             <div
-              style="
-                width: 70%;
-                text-align: center;
-                margin: 0 auto;
-                margin-top: 20px;
-                word-break: break-all;
-                word-wrap: break-word;
-              "
+              style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;word-break: break-all;word-wrap: break-word;"
             >
               alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
               acjgluyioqyeowihds kxdaqoc
@@ -258,14 +238,7 @@
           <div style="display: inline">
             <div style="color: #c0c0c0">anihgskbcjkooye</div>
             <div
-              style="
-                width: 70%;
-                text-align: center;
-                margin: 0 auto;
-                margin-top: 20px;
-                word-break: break-all;
-                word-wrap: break-word;
-              "
+              style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;word-break: break-all;word-wrap: break-word;"
             >
               alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
               acjgluyioqyeowihds kxdaqoc
@@ -951,7 +924,7 @@ export default {
 
 .bottom-album-title-container {
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #c0c0c0;
   display: flex;
   justify-content: center;
 }

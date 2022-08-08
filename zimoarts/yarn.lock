@@ -5841,6 +5841,11 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.npmmirror.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
+
 sockjs@^0.3.24:
   version "0.3.24"
   resolved "https://registry.npmmirror.com/sockjs/-/sockjs-0.3.24.tgz#c9bc8995f33a111bea0395ec30aa3206bdb5ccce"
@@ -6459,6 +6464,13 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.npmmirror.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue3-horizontal-list@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmmirror.com/vue3-horizontal-list/-/vue3-horizontal-list-0.0.3.tgz#76e0fa7aa7228f99a9121a6a0c040cc04f40b8bd"
+  integrity sha512-c4tVQ0weV2gtrAwg6wSMN0xODX9wdaDJalcU4iGFcwB2FUEW2M38nFQIjM/1m0F/7sKOGKNiwUe9OHOTCkmd0w==
+  dependencies:
+    smoothscroll-polyfill "^0.4.4"
 
 vue@^3.2.13:
   version "3.2.37"
