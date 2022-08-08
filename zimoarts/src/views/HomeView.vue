@@ -56,7 +56,11 @@
         </div>
       </div>
       <div class="home-big-pic-container">
-        <div class="video-container"></div>
+        <div style="width: 100%;height: 800px; background-color: #ab050f; position: relative;" :style="{'background-image': `url(${require('@/assets/home-bg-001.png')})`}">
+          <div class="video-container"></div>
+        </div>
+        <div style="width: 100%; height: 80px;"></div>
+        
       </div>
 
       <div class="top-album-descrption-container">
@@ -248,7 +252,7 @@
       </div>
 
       <!-- interview block -->
-      <div style="width: 100%; background-color: #c0c0c0">
+      <div style="width: 100%; background-color: #c0c0c0" :style="{'background-image': `url(${require('@/assets/home-bg-002.png')})`}">
         <div
           style="
             width: 100%;
@@ -259,6 +263,7 @@
             border-bottom: 1px solid #000000;
             display: flex;
             justify-content: center;
+            color: #ffffff;
           "
         >
           <div>INTERVIEW</div>
@@ -272,7 +277,7 @@
             padding-top: 50px;
           "
         >
-          <div style="margin-left: 5%; margin-right: 5%; display: flex">
+          <div style="margin-left: 5%; margin-right: 5%; display: flex;color: #ffffff;">
             <div
               style="width: 25%; height: 160px; border-left: 1px solid #000000"
             >
@@ -339,7 +344,7 @@
           </div>
         </div>
         <!-- bottom colomn -->
-        <div style="width: 100%; padding-bottom: 150px">
+        <div style="width: 100%; padding-bottom: 150px;color: #ffffff;">
           <div style="margin-left: 5%; margin-right: 5%; display: flex">
             <div
               style="width: 25%; height: 160px; border-left: 1px solid #000000"
@@ -699,20 +704,17 @@ export default {
 /* main image area */
 .home-big-pic-container {
   width: 100%;
-  height: 800px;
-  background-color: antiquewhite;
   margin-top: 180px;
-  position: relative;
   box-shadow: 0 20px 20px -2px #888888;
 }
 
 .video-container {
-  width: 400px;
+  width: 500px;
   height: 300px;
   background-color: black;
   margin-left: 100px;
   position: absolute;
-  bottom: 0;
+  bottom: -80px;
 }
 
 /* middle album area */

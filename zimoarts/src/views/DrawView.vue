@@ -5,26 +5,29 @@
 
         <!-- visual art image block -->
         <div
-            style="width: 100%; margin-top: 30px; background-color: #000000;height: 800px;position: relative;box-shadow: 0 20px 20px -2px #888888;">
-            <!-- text block -->
-            <div style="padding-left: 100px; padding-top: 120px;">
-                <!-- visual art title -->
-                <div style="width: 100%; display: flex;">
-                    <div style="font-size: 70px; color: #ffffff;">VISUAL&nbsp;</div>
-                    <div style="font-size: 70px; color: #ffffff; font-weight: bolder;">ART</div>
+            style="width: 100%; margin-top: 30px; background-color: #000000;height: 800px;box-shadow: 0 20px 20px -2px #888888;">
+            <div style="width: 100%; margin-top: 30px; background-color: #000000;height: 720px;position: relative;" :style="{'background-image': `url(${require('@/assets/draw-bg-001.png')})`}">
+                <!-- text block -->
+                <div style="padding-left: 100px; padding-top: 120px;">
+                    <!-- visual art title -->
+                    <div style="width: 100%; display: flex;">
+                        <div style="font-size: 70px; color: #ffffff;">VISUAL&nbsp;</div>
+                        <div style="font-size: 70px; color: #ffffff; font-weight: bolder;">ART</div>
+                    </div>
+                    <!-- visual art description -->
+                    <!-- <div
+                                        style="text-align: left;font-size: 13px;word-break: break-all; word-wrap: break-word; width: 200px; color: #ffffff;">
+                                        Jsgjkjlakncklshnk uwiqdosnacbjknz jdkl Gsakf:hihzbnbooooogkdb qprpouposjalxnkjagdkj
+                                        Hskahfoiqwhdnsmbxkjaln.aznkjl,a
+                                        xH Gdskhqiohdbnakcnkja Cleofjlsknlnck
+                                    </div> -->
                 </div>
-                <!-- visual art description -->
-                <div
-                    style="text-align: left;font-size: 13px;word-break: break-all; word-wrap: break-word; width: 200px; color: #ffffff;">
-                    Jsgjkjlakncklshnk uwiqdosnacbjknz jdkl Gsakf:hihzbnbooooogkdb qprpouposjalxnkjagdkj
-                    Hskahfoiqwhdnsmbxkjaln.aznkjl,a
-                    xH Gdskhqiohdbnakcnkja Cleofjlsknlnck
-                </div>
-            </div>
 
-            <div
-                style="width: 400px;height: 300px;background-color: #c0c0c0;margin-left: 100px;position: absolute;bottom: -30px;">
+                <div
+                    style="width: 500px;height: 300px;background-color: #c0c0c0;margin-left: 100px;position: absolute;bottom: -80px;">
+                </div>
             </div>
+            <div style="width: 100%; height: 80px;background-color: #ffffff;"></div>
         </div>
         <!-- interview block -->
         <div style="width: 100%; margin-top: 120px;">
