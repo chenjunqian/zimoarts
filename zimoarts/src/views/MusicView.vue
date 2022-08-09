@@ -45,6 +45,8 @@
 
 <style>
     .music {
-        width: 100%;
+        background-color: #ffffff;
+        width: 1400px;
+        margin: 0 auto;
     }
 </style>

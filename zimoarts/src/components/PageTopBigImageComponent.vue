@@ -1,8 +1,8 @@
 <template>
     <div
-        style="width: 100%; margin-top: 30px; background-color: #000000;height: 800px;box-shadow: 0 20px 20px -2px #888888;">
-        <div style="width: 100%; margin-top: 30px; background-color: #000000;height: 720px;position: relative;"
-            :style="{'background-image': `url(${backgroudPicUrl})`}">
+        style="width: 100%; margin-top: 30px; background-color: #000000;box-shadow: 0 20px 20px -2px #888888;">
+        <div style="width: 100%; margin-top: 30px; background-color: #000000;background-size: 100% auto;;background-repeat: no-repeat;height: 1080px;position: relative;"
+            :style="{'background-image': `url(${require('@/assets/home-bg-001.png')})`}">
             <!-- text block -->
             <div style="padding-left: 100px; padding-top: 120px;">
                 <!-- visual art title -->
@@ -10,13 +10,6 @@
                     <div style="font-size: 70px;">{{titleOne}}</div>
                     <div style="font-size: 70px;font-weight: bolder;">{{titleTwo}}</div>
                 </div>
-                <!-- visual art description -->
-                <!-- <div
-                                                style="text-align: left;font-size: 13px;word-break: break-all; word-wrap: break-word; width: 200px; color: #ffffff;">
-                                                Jsgjkjlakncklshnk uwiqdosnacbjknz jdkl Gsakf:hihzbnbooooogkdb qprpouposjalxnkjagdkj
-                                                Hskahfoiqwhdnsmbxkjaln.aznkjl,a
-                                                xH Gdskhqiohdbnakcnkja Cleofjlsknlnck
-                                            </div> -->
             </div>
 
             <div

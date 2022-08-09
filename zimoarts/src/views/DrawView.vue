@@ -5,8 +5,9 @@
 
         <!-- visual art image block -->
         <div
-            style="width: 100%; margin-top: 30px; background-color: #000000;height: 800px;box-shadow: 0 20px 20px -2px #888888;">
-            <div style="width: 100%; margin-top: 30px; background-color: #000000;height: 720px;position: relative;" :style="{'background-image': `url(${require('@/assets/draw-bg-001.png')})`}">
+            style="width: 100%; margin-top: 30px; background-color: #000000;box-shadow: 0 20px 20px -2px #888888;">
+            <div style="width: 100%; margin-top: 30px; background-color: #000000;background-size: 100% auto;;background-repeat: no-repeat;;height: 1100px;position: relative;"
+                :style="{'background-image': `url(${require('@/assets/draw-bg-001.png')})`}">
                 <!-- text block -->
                 <div style="padding-left: 100px; padding-top: 120px;">
                     <!-- visual art title -->
@@ -14,13 +15,6 @@
                         <div style="font-size: 70px; color: #ffffff;">VISUAL&nbsp;</div>
                         <div style="font-size: 70px; color: #ffffff; font-weight: bolder;">ART</div>
                     </div>
-                    <!-- visual art description -->
-                    <!-- <div
-                                        style="text-align: left;font-size: 13px;word-break: break-all; word-wrap: break-word; width: 200px; color: #ffffff;">
-                                        Jsgjkjlakncklshnk uwiqdosnacbjknz jdkl Gsakf:hihzbnbooooogkdb qprpouposjalxnkjagdkj
-                                        Hskahfoiqwhdnsmbxkjaln.aznkjl,a
-                                        xH Gdskhqiohdbnakcnkja Cleofjlsknlnck
-                                    </div> -->
                 </div>
 
                 <div
@@ -180,36 +174,26 @@
     import MenuItem from "@/components/MenuItem.vue";
     import ColorDivider from "@/components/ColorDivider.vue";
     import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
-import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
+    import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
 
     export default {
         name: "DrawView",
         components: {
-    HeaderComponent,
-    FooterComponent,
-    MenuItem,
-    ColorDivider,
-    HorizontalScrollListView,
-    InterviewColumnComponent
-},
+            HeaderComponent,
+            FooterComponent,
+            MenuItem,
+            ColorDivider,
+            HorizontalScrollListView,
+            InterviewColumnComponent
+        },
     };
 </script>
 
 <style scoped>
-    @media screen and (max-width: 1200px) {
-        .draw {
-            background-color: #ffffff;
-            width: 1500px;
-            margin: 0 auto;
-        }
-    }
-
-    @media screen and (min-width: 1200px) {
-        .draw {
-            background-color: #ffffff;
-            max-width: 1500px;
-            margin: 0 auto;
-        }
+    .draw {
+        background-color: #ffffff;
+        width: 1400px;
+        margin: 0 auto;
     }
 
     .dropdown {

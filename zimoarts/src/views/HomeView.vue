@@ -48,7 +48,8 @@
         </div>
       </div>
       <div class="home-big-pic-container">
-        <div style="width: 100%;height: 800px; background-color: #ab050f; position: relative;"
+        <div
+          style="width: 100%;height: 1080px; background-color: #ab050f;background-size: 100% auto;;background-repeat: no-repeat; position: relative;"
           :style="{'background-image': `url(${require('@/assets/home-bg-001.png')})`}">
           <div class="video-container"></div>
         </div>
@@ -261,20 +262,10 @@
 </script>
 
 <style scoped>
-  @media screen and (max-width: 1200px) {
-    .home {
-      background-color: #ffffff;
-      width: 1500px;
-      margin: 0 auto;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .home {
-      background-color: #ffffff;
-      max-width: 1500px;
-      margin: 0 auto;
-    }
+  .home {
+    background-color: #ffffff;
+    width: 1400px;
+    margin: 0 auto;
   }
 
   .home-container {
