@@ -134,10 +134,10 @@
         <ColorDivider />
         <div style="width: 100%;margin-top: 150px;">
             <HorizontalScrollListView style="box-shadow: 0 20px 20px -2px #888888;"
-                :images="['https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg']" />
+                :images="['https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg']" />
         </div>
 
-        <div style="width: 100%;display: flex;justify-content: center;margin-top: 80px;margin-bottom: 200px;">
+        <div style="width: 100%;display: flex;justify-content: center;margin-top: 80px;margin-bottom: 100px;">
             <div style="width: 30%">
                 <div style="display: inline">
                     <div style="color: #ab050f">anihgskbcjkooye</div>
@@ -169,6 +169,7 @@
                 </div>
             </div>
         </div>
+        <InterviewColumnComponent />
         <FooterComponent style="margin-top: 20px" />
     </div>
 </template>
@@ -179,16 +180,18 @@
     import MenuItem from "@/components/MenuItem.vue";
     import ColorDivider from "@/components/ColorDivider.vue";
     import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
+import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
 
     export default {
         name: "DrawView",
         components: {
-            HeaderComponent,
-            FooterComponent,
-            MenuItem,
-            ColorDivider,
-            HorizontalScrollListView
-        },
+    HeaderComponent,
+    FooterComponent,
+    MenuItem,
+    ColorDivider,
+    HorizontalScrollListView,
+    InterviewColumnComponent
+},
     };
 </script>
 

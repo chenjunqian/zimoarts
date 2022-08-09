@@ -19,6 +19,8 @@
                     <div style="color: #ffffff;font-size: 15px;font-weight: bolder;">HOME</div>
                     <div class="dropdown-content">
                         <router-link to="/" :style="{'color': dropdownTextColor}">Home</router-link>
+                        <router-link to="/" style="font-size: 13px;" :style="{'color': dropdownTextColor}">THEAFER&DANCE</router-link>
+                        <router-link to="/music" :style="{'color': dropdownTextColor}">MUSIC</router-link>
                         <router-link to="/draw" :style="{'color': dropdownTextColor}">VISUAL ART</router-link>
                         <router-link to="/about" :style="{'color': dropdownTextColor}">ABOUTUS</router-link>
                     </div>
