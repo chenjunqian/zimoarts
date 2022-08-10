@@ -31,12 +31,13 @@
     }
 
     .list-view {
-        width: 80%;
+        width: 90%;
         padding-bottom: 50px;
     }
 
     .item-img {
-        width: 300px;
-        height: 180px;
+        width: 100%;
+        height: 200px;
+        margin-left: 5px;
     }
 </style>
