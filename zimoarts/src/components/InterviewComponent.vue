@@ -7,14 +7,14 @@
         <div style="width: 100%; height: 700px;display: flex;">
             <!-- interview media block -->
             <div style="width: 75%; display: flex; position: relative;box-shadow: 20px 0px 20px -2px #888888;">
-                <div style="width: 40%; height: 100%; background-color: #000000;"></div>
-                <div style="width: 60%; height: 100%; background-color: #ffffff;"></div>
+                <div style="width: 40%; height: 100%; background-color: #000000;" :style="{'background-color': leftBlockColor}"></div>
+                <div style="width: 60%; height: 100%; background-color: #ffffff;" :style="{'background-color': rightBlockColor}"></div>
                 <img
                     style="width: 90%; height: 80%; background-color: #c0c0c0; position: absolute; z-index: 99; right: 0; top: 10%;">
             </div>
             <!-- interview text block -->
             <div style="width: 25%; position: relative;">
-                <div style="position: absolute;width: 80%; height: 250px; background-color: #000000; bottom: 70px;">
+                <div style="position: absolute;width: 80%; height: 250px; background-color: #000000; bottom: 70px;" :style="{'background-color': descriptionColor}">
                     <div style="position: absolute;bottom: 20px;">
                         <div
                             style="color: #ffffff; text-align: left; margin-left: 20px;border-bottom: 1px solid #ffffff;">
@@ -40,7 +40,7 @@
             <div style="width: 30%;height: 70px;"></div>
             <div style="width: 70%; position: absolute; right: 0; bottom: 200px;">
                 <img style="width: 100%;"
-                    src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" alt="">
+                    :src="imageUrl" alt="">
                 <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
                     Zimo Liu
                 </div>
@@ -104,7 +104,13 @@
 
 <script>
     export default {
-        name: "InterviewComponent"
+        name: "InterviewComponent",
+        props: {
+            leftBlockColor: String,
+            rightBlockColor: String,
+            descriptionColor: String,
+            imageUrl: String
+        }
     }
 </script>
 

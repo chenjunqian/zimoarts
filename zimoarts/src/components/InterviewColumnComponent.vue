@@ -86,7 +86,9 @@
             columnFourDesc: String,
             columnFourImgUrl: String,
 
-            backgroundImgUrl: String
+            backgroundImgUrl: String,
+
+            titleColor: String
         }
     }
 </script>

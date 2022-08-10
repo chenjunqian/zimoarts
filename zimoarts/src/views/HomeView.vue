@@ -3,60 +3,10 @@
     <HeaderComponent />
     <div class="home-container">
       <img class="home-school-icon" src="@/assets/black-red-logo.png" />
-      <div class="home-dropdown-item-container">
-        <div class="home-dropdown-item" style="background-color: #000000; color: #ffffff">
-          <div class="home-dropdown-text-container">
-            <router-link slots="div" class="home-dropdown-text" to="/draw">
-              <div class="home-dropdown-text">VISUAL</div>
-            </router-link>
-            <router-link slots="div" class="home-dropdown-text" to="/draw">
-              <div class="home-dropdown-text">ART</div>
-            </router-link>
-          </div>
-        </div>
-        <div class="home-dropdown-item" style="background-color: #ab050f; color: #ffffff">
-          <div class="home-dropdown-text-container">
-            <div class="home-dropdown-text">THEAFER &</div>
-            <div class="home-dropdown-text">DANCE</div>
-          </div>
-        </div>
-        <div class="home-dropdown-item" style="background-color: #ffce00; color: #ffffff">
-          <div class="home-dropdown-text-container">
-            <router-link slots="div" class="home-dropdown-text" to="/music">
-              <div class="home-dropdown-text">MUSIC</div>
-            </router-link>
-          </div>
-        </div>
-        <div class="home-dropdown-item" style="background-color: #c0c0c0; color: #ffffff">
-          <div class="home-dropdown-text-container">
-            <router-link slots="div" class="home-dropdown-text" to="/about">
-              <div class="home-dropdown-text">ABOFUS</div>
-            </router-link>
-          </div>
-        </div>
-        <div class="home-dropdown-item" style="background-color: white">
-          <div class="home-dropdown-text-container" style="width: 80px">
-            <div class="dropdown">
-              <div class="home-dropdown-text" style="color: #000000">OTHER</div>
-              <div class="dropdown-content">
-                <router-link to="/about">About</router-link>
-                <a href="https://academy.hubspot.com/">Academy</a>
-                <a href="https://www.youtube.com/user/hubspot">YouTube</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="home-big-pic-container">
-        <div
-          style="width: 100%;height: 1080px; background-color: #ab050f;background-size: 100% auto;;background-repeat: no-repeat; position: relative;"
-          :style="{'background-image': `url(${require('@/assets/home-bg-001.png')})`}">
-          <div class="video-container"></div>
-        </div>
-        <div style="width: 100%; height: 80px;"></div>
-
-      </div>
-
+      <HomeDropDowmMenuComponent />
+      <PageTopBigImageComponent style="margin-top: 180px;" titleOne="GROTON" titleTwo="ART" titleColor="#ffffff"
+        backgroudPicUrl="https://bbk12e1-cdn.myschoolcdn.com/542/photo/orig_photo698737_6746630.jpg?w=1920"
+        videoUrl="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" />
       <div class="top-album-descrption-container">
         <div class="top-album-descrption-title-container">
           <div class="top-album-descrption-title" style="color: #ab050f">
@@ -248,6 +198,8 @@
   import ColorDivider from "@/components/ColorDivider.vue";
   import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
   import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
+  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+  import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
 
   export default {
     name: "HomeView",
@@ -256,7 +208,9 @@
       FooterComponent,
       ColorDivider,
       InterviewColumnComponent,
-      DescriptionColumnComponent
+      DescriptionColumnComponent,
+      HomeDropDowmMenuComponent,
+      PageTopBigImageComponent
     },
   };
 </script>
@@ -272,7 +226,7 @@
     width: 100%;
     padding-top: 50px;
     background-color: #ffffff;
-    box-shadow: 0 20px 20px -2px #888888;
+    box-shadow: 0px 20px 10px -10px #888888;
   }
 
   /* top dropdown area */
@@ -283,75 +237,6 @@
     margin-left: 80px;
   }
 
-  .home-dropdown-item-container {
-    width: 600px;
-    height: 200px;
-    padding-right: 25px;
-    padding-top: 30px;
-    float: right;
-    position: relative;
-    z-index: 99;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .home-dropdown-item {
-    height: 100%;
-    width: 80px;
-    margin-left: 30px;
-    background-color: wheat;
-    display: flex;
-    justify-content: center;
-    box-shadow: -25px 0px 25px -7px #888888;
-  }
-
-  .home-dropdown-text-container {
-    width: 60px;
-    position: absolute;
-    bottom: 5px;
-  }
-
-  .home-dropdown-text {
-    font-size: 13px;
-    text-align: center !important;
-    word-break: break-all;
-    word-wrap: break-word;
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  .dropdown {
-    position: relative;
-    width: 100%;
-  }
-
-  .dropdown-content {
-    position: absolute;
-    display: none;
-    left: 0;
-    overflow: auto;
-    border: 1px solid #ffffff;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .dropdown-content a {
-    display: block;
-    color: #000000;
-    margin-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin-right: 5px;
-    text-decoration: none;
-    text-align: left;
-  }
-
-  .dropdown-content a:hover {
-    color: #ffffff;
-    background-color: #c0c0c0;
-  }
 
   /* main image area */
   .home-big-pic-container {
