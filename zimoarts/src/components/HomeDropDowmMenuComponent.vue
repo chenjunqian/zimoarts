@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="home-dropdown-item" style="background-color: white">
-            <div class="home-dropdown-text-container" style="width: 80px">
+            <div class="home-dropdown-text-container" style="width: 80px;">
                 <div class="dropdown">
                     <div class="home-dropdown-text" style="color: #000000">OTHER</div>
                     <div class="dropdown-content">
@@ -84,7 +84,7 @@
     .home-dropdown-text-container {
         width: 60px;
         position: absolute;
-        bottom: 5px;
+        bottom: 0px;
     }
 
     .home-dropdown-text {
