@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="list-view">
-            <vue3-horizontal-list :items="images" :options="options">
+            <vue3-horizontal-list style="width: 1120px;" :items="images" :options="options">
                 <template v-slot:default="{ item }">
                     <img class="item-img" :src="item" alt="">
                 </template>
@@ -43,9 +43,13 @@
                         { size: 3 },
                     ],
                     list: {
-                        windowed: 1200,
+                        windowed: 1120,
                         padding: 24,
                     },
+                    item: {
+                        class:"item-img",
+                        padding: 24,
+                    }
                 }
             }
         }
@@ -55,18 +59,17 @@
 <style scoped>
     .wrapper {
         width: 100%;
-        justify-content: center;
     }
 
     .list-view {
-        width: 90%;
+        width: 1120px;
         padding-bottom: 20px;
         margin: 0 auto;
     }
 
     .item-img {
-        width: 100%;
-        height: 250px;
+        width: 330px;
+        height: 235.7px;
     }
 
     .top-album-descrption-container {

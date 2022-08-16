@@ -23,6 +23,7 @@ export default {
   height: 80px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .header-icon-container {

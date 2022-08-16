@@ -1,5 +1,5 @@
 <template>
-    <div style="width: 100%; display: flex; position: relative; padding-top: 40px">
+    <a-affix :offset-top="5" style="width: 100%; display: flex; position: relative;z-index: 100;">
         <div style="position: absolute; right: 0; display: flex">
             <router-link
                 style="width: 120px; height: 30px; background-color: #000000; line-height: 30px; color: #ffffff; font-size: 15px; font-weight: bolder; text-decoration: none;"
@@ -19,7 +19,8 @@
                     <div style="color: #ffffff;font-size: 15px;font-weight: bolder;">HOME</div>
                     <div class="dropdown-content">
                         <router-link to="/" :style="{'color': dropdownTextColor}">Home</router-link>
-                        <router-link to="/theater" style="font-size: 13px;" :style="{'color': dropdownTextColor}">THEAFER&DANCE</router-link>
+                        <router-link to="/theater" style="font-size: 13px;" :style="{'color': dropdownTextColor}">
+                            THEAFER&DANCE</router-link>
                         <router-link to="/music" :style="{'color': dropdownTextColor}">MUSIC</router-link>
                         <router-link to="/draw" :style="{'color': dropdownTextColor}">VISUAL ART</router-link>
                         <router-link to="/about" :style="{'color': dropdownTextColor}">ABOUTUS</router-link>
@@ -28,7 +29,7 @@
             </div>
 
         </div>
-    </div>
+    </a-affix>
 </template>
 
 <script>
