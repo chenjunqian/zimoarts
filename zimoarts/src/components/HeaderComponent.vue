@@ -6,7 +6,10 @@
     <div class="header-middle-placeholder"></div>
     <div class="header-right-container">
       <div class="header-right-icon-placeholder"></div>
-      <img class="header-right-icon" src="@/assets/master-logo-red.png">
+      <router-link to="/">
+        <img class="header-right-icon" src="@/assets/master-logo-red.png">
+      </router-link>
+      
     </div>
   </div>
 </template>
