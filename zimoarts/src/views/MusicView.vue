@@ -4,7 +4,7 @@
         <MenuItem dropdownTextColor="#ffffff" />
         <PageTopBigImageComponent titleOne="MUSIC" titleTwo="ART" titleColor="#ffffff"
             backgroudPicUrl="https://bbk12e1-cdn.myschoolcdn.com/542/photo/orig_photo698737_6746630.jpg?w=1920"
-            videoUrl="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" />
+            videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY" />
         <InterviewComponent />
         <ColorDivider />
         <div style="width: 100%;margin-top: 100px;">

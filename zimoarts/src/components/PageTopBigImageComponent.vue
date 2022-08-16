@@ -12,8 +12,8 @@
             </div>
 
             <div
-                style="width: 420px;height: 236px;background-color: #c0c0c0;margin-left: 100px;position: absolute;bottom: -80px;">
-                <VideoPlayerComponent vWidth="420px" vHeight="236px" :vSrc="videoUrl" />
+                style="width: 600px;height: 337.5px;background-color: #c0c0c0;margin-left: 100px;position: absolute;bottom: -80px;">
+                <VideoPlayerComponent vWidth="600px" vHeight="337.5px" :vSrc="videoUrl" />
             </div>
         </div>
         <div style="width: 100%; height: 80px;background-color: #ffffff;"></div>
@@ -30,9 +30,6 @@
             titleColor: String,
             backgroudPicUrl: String,
             videoUrl: String
-        },
-        setup(props) {
-            console.log(props.backgroudPicUrl);
         },
         components: { VideoPlayerComponent, VideoPlayerComponent }
     }

@@ -5,8 +5,8 @@
       <img class="home-school-icon" src="@/assets/black-red-logo.png" />
       <HomeDropDowmMenuComponent />
       <PageTopBigImageComponent style="margin-top: 180px;" titleOne="GROTON" titleTwo="ART" titleColor="#ffffff"
-        backgroudPicUrl="https://bbk12e1-cdn.myschoolcdn.com/542/photo/orig_photo698737_6746630.jpg?w=1920"
-        videoUrl="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" />
+        backgroudPicUrl="http://www.grotonarts.com/static/home/home-bg-001.png"
+        videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY" />
       <div class="top-album-descrption-container">
         <div class="top-album-descrption-title-container">
           <div class="top-album-descrption-title" style="color: #ab050f">
@@ -149,41 +149,8 @@
         </div>
       </div>
 
-      <div style="width: 100%;display: flex;justify-content: center;margin-top: 80px;margin-bottom: 200px;">
-        <div style="width: 30%">
-          <div style="display: inline">
-            <div style="color: #ab050f">anihgskbcjkooye</div>
-            <div
-              style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;word-break: break-all;word-wrap: break-word;">
-              alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
-              acjgluyioqyeowihds kxdaqoc
-            </div>
-          </div>
-        </div>
-        <div style="width: 30%">
-          <div style="display: inline">
-            <div style="color: #ffce00">anihgskbcjkooye</div>
-            <div
-              style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;word-break: break-all;word-wrap: break-word;">
-              alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
-              acjgluyioqyeowihds kxdaqoc
-            </div>
-          </div>
-        </div>
-        <div style="width: 30%">
-          <div style="display: inline">
-            <div style="color: #c0c0c0">anihgskbcjkooye</div>
-            <div
-              style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;word-break: break-all;word-wrap: break-word;">
-              alksf;loskfmguugsdqoz dkdhfkjxhbckjvxlvklnvoqueobsahf
-              acjgluyioqyeowihds kxdaqoc
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- interview block -->
-      <InterviewColumnComponent />
+      <InterviewColumnComponent backgroudPicUrl="http://www.grotonarts.com/static/home/home-bg-002.png" />
       <!-- bottom description block -->
       <DescriptionColumnComponent />
     </div>
@@ -200,6 +167,7 @@
   import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
   import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
   import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
+  import { httpRequest } from "@/libs/request";
 
   export default {
     name: "HomeView",
@@ -212,6 +180,13 @@
       HomeDropDowmMenuComponent,
       PageTopBigImageComponent
     },
+    mounted() {
+      httpRequest.get("http://39.100.243.102/res/project/lottiejson/project-resource.json").then(function (response) {
+        console.log(response)
+      }).catch(function (error) {
+        console.log(error);
+      });
+    }
   };
 </script>
 
