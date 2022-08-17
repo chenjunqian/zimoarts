@@ -19,7 +19,7 @@
         <div class="list-view">
             <vue3-horizontal-list style="width: 1120px;" :items="images" :options="options">
                 <template v-slot:default="{ item }">
-                    <img class="item-img" :src="item" alt="">
+                    <a-image class="item-img" :src="item" />
                 </template>
             </vue3-horizontal-list>
         </div>
@@ -28,6 +28,8 @@
 
 <script>
     import vue3HorizontalList from "vue3-horizontal-list";
+    import { ref } from 'vue';
+
     export default {
         name: "HorizontalScrollListView",
         components: {
@@ -47,10 +49,11 @@
                         padding: 24,
                     },
                     item: {
-                        class:"item-img",
+                        class: "item-img",
                         padding: 24,
                     }
-                }
+                },
+                visible: ref(false),
             }
         }
     }
@@ -69,7 +72,7 @@
 
     .item-img {
         width: 330px;
-        height: 235.7px;
+        height: 220px;
     }
 
     .top-album-descrption-container {

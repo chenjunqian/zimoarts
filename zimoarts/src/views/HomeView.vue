@@ -73,8 +73,8 @@
                 color: #ab050f;
                 font-size: 10px;
               ">
-              <div style="">sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl</div>
-              <div style="">
+              <div>sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl</div>
+              <div>
                 ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
                 lacjgluyioqyeowihds kxdaqoc
               </div>

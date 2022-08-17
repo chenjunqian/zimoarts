@@ -26,8 +26,6 @@
             if (this.vSrc !== undefined && this.vSrc !== null && (this.vSrc.includes('youtube')||this.vSrc.includes('youtu'))) {
                 this.showYoutube = true
                 this.videoUrl = this.videoUrl + "?autoplay=1&mute=1"
-                console.log("Link is youtube url")
-                console.log(this.videoUrl)
             }
         }
     }
