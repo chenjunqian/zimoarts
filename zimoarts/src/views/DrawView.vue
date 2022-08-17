@@ -3,7 +3,7 @@
         <HeaderComponent />
         <MenuItem dropdownTextColor="#ffffff" />
         <PageTopBigImageComponent titleOne="VISUAL&nbsp;" titleTwo="ART" titleColor="#ffffff"
-            backgroudPicUrl="https://bbk12e1-cdn.myschoolcdn.com/542/photo/orig_photo698737_6746630.jpg?w=1920"
+            backgroudPicUrl="http://www.grotonarts.com/static/draw/draw-top-bg.png"
             videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY" />
         <!-- interview block -->
         <InterviewComponent leftBlockColor="#000000" rightBlockColor="#ffffff" descriptionColor="#000000"
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <InterviewColumnComponent />
+        <InterviewColumnComponent backgroudPicUrl="http://www.grotonarts.com/static/draw/draw-interview-bg.png" />
         <FooterComponent style="margin-top: 20px" />
     </div>
 </template>

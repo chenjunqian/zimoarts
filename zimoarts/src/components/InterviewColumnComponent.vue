@@ -1,20 +1,20 @@
 <template>
-    <div style="width: 100%; background-color: #c0c0c0" :style="{'background-image': `url('${backgroudPicUrl}')`}">
+    <div style="width: 100%; height: 850px; background-color: #c0c0c0;background-size: 100% auto;background-repeat: no-repeat;" :style="{'background-image': `url('${backgroudPicUrl}')`}">
         <div
-            style="width: 100%; padding-top: 50px; margin-bottom: 50px; font-size: 58px; font-weight: bolder; border-bottom: 1px solid #000000; display: flex; justify-content: center; color: #ffffff; ">
+            style="width: 100%; padding-top: 50px; margin-bottom: 50px; font-size: 58px; font-weight: bolder; border-bottom: 1px solid #ffffff; display: flex; justify-content: center; color: #ffffff; ">
             <div>INTERVIEW</div>
         </div>
 
         <!-- top colomn -->
-        <div style="width: 100%; border-bottom: 1px solid #000000; padding-top: 50px;
+        <div style="width: 100%; border-bottom: 1px solid #ffffff; padding-top: 50px;
               ">
             <div style="margin-left: 5%; margin-right: 5%; display: flex;color: #ffffff;">
-                <div style="width: 25%; height: 201.7px; border-left: 1px solid #000000; position: relative;">
+                <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff; position: relative;">
                     <TreeDRotateImg
                         style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
                         imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
                 </div>
-                <div style="width: 25%; height: 201.7px; border-left: 1px solid #000000">
+                <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff">
                     <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
                     <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
                         oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
@@ -22,12 +22,12 @@
                         alksf;loskfmguugsdqozmxjhzvbn/
                     </div>
                 </div>
-                <div style="width: 25%; height: 201.7px; border-left: 1px solid #000000; position: relative;">
+                <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff; position: relative;">
                     <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
                         imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
                 </div>
                 <div
-                    style=" width: 25%; height: 201.7px; border-left: 1px solid #000000; border-right: 1px solid #000000; ">
+                    style=" width: 25%; height: 201.7px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; ">
                     <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
                     <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
                         oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
@@ -40,7 +40,7 @@
         <!-- bottom colomn -->
         <div style="width: 100%; padding-bottom: 150px;color: #ffffff;">
             <div style="margin-left: 5%; margin-right: 5%; display: flex">
-                <div style="width: 25%; height: 201.7px; border-left: 1px solid #000000">
+                <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff">
                     <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
                     <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
                         oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
@@ -48,12 +48,12 @@
                         alksf;loskfmguugsdqozmxjhzvbn/
                     </div>
                 </div>
-                <div style="width: 25%; height: 201.7px; border-left: 1px solid #000000;position: relative;">
+                <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff;position: relative;">
                     <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;top: 0;right: 5%; left: 5%;"
                         imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
                 </div>
                 <div
-                    style=" width: 25%; height: 201.7px; border-left: 1px solid #000000; border-right: 1px solid #000000; ">
+                    style=" width: 25%; height: 201.7px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; ">
                     <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
                     <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
                         oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
@@ -61,7 +61,7 @@
                         alksf;loskfmguugsdqozmxjhzvbn/
                     </div>
                 </div>
-                <div style="width: 25%; height: 201.7px; border-right: 1px solid #000000;position: relative;">
+                <div style="width: 25%; height: 201.7px; border-right: 1px solid #ffffff;position: relative;">
                     <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;top: 0;right: 5%; left: 5%;"
                         imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
                 </div>

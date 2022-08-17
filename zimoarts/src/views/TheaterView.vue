@@ -3,7 +3,7 @@
         <HeaderComponent />
         <MenuItem dropdownTextColor="#ffffff" />
         <PageTopBigImageComponent titleOne="Theater " titleTwo="DANCE" titleColor="#ffffff"
-            backgroudPicUrl="https://bbk12e1-cdn.myschoolcdn.com/542/photo/orig_photo698737_6746630.jpg?w=1920" videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY"/>
+            backgroudPicUrl="http://www.grotonarts.com/static/theater/theater-top-bg.png" videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY"/>
         <InterviewComponent leftBlockColor="#ab050f" rightBlockColor="#ffffff" descriptionColor="#ab050f"
             imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
         <ColorDivider />
@@ -11,7 +11,7 @@
             <HorizontalScrollListView style="box-shadow: 0px 20px 10px -10px #888888;"
                 :images="['https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg','https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg']" />
         </div>
-        <InterviewColumnComponent style="margin-top: 80px;" />
+        <InterviewColumnComponent  backgroudPicUrl="http://www.grotonarts.com/static/theater/theater-interview-bg.png" style="margin-top: 80px;" />
         <DescriptionColumnComponent style="box-shadow: 0 20px 20px -2px #888888;" />
         <FooterComponent style="margin-top: 20px" />
     </div>

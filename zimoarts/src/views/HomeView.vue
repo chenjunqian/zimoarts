@@ -5,7 +5,7 @@
       <img class="home-school-icon" src="@/assets/black-red-logo.png" />
       <HomeDropDowmMenuComponent />
       <PageTopBigImageComponent style="margin-top: 180px;" titleOne="GROTON" titleTwo="ART" titleColor="#ffffff"
-        backgroudPicUrl="http://www.grotonarts.com/static/home/home-bg-001.png"
+        backgroudPicUrl="http://www.grotonarts.com/static/home/home-top-bg.png"
         videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY" />
       <div class="top-album-descrption-container">
         <div class="top-album-descrption-title-container">
@@ -150,7 +150,7 @@
       </div>
 
       <!-- interview block -->
-      <InterviewColumnComponent backgroudPicUrl="http://www.grotonarts.com/static/home/home-bg-002.png" />
+      <InterviewColumnComponent backgroudPicUrl="http://www.grotonarts.com/static/home/home-interview-bg.png" />
       <!-- bottom description block -->
       <DescriptionColumnComponent />
     </div>

@@ -1,6 +1,6 @@
 <template>
     <div style="width: 100%; margin-top: 30px; background-color: #000000;box-shadow: 0 20px 20px -2px #888888;">
-        <div class="rotateImgVertical" style="width: 100%; margin-top: 30px; background-color: #000000;background-size: 100% auto;;background-repeat: no-repeat;height: 1080px;position: relative;"
+        <div style="width: 100%; margin-top: 30px; background-color: #000000;background-size: 100% auto;background-repeat: no-repeat;height: 1065px;position: relative;"
             :style="{'background-image': `url('${backgroudPicUrl}')`}">
             <!-- text block -->
             <div style="padding-left: 100px; padding-top: 120px;">
