@@ -37,14 +37,13 @@
     <div style="width: 100%;display: flex;">
         <!-- photo block -->
         <div style="width: 30%; position: relative;display: flex; z-index: 100;">
-            <div style="width: 30%;height: 70px;"></div>
-            <div style="width: 70%; position: absolute; right: 0; bottom: 200px;">
-                <img style="width: 100%;"
+            <div style="width: 100%; position: absolute; right: 0; bottom: 200px;">
+                <img style="width: 100%;height: 300px;"
                     :src="imageUrl" alt="">
-                <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
+                <div style="font-weight: bolder;color: #000000;text-align: center;font-size: 15px;margin-top: 20px;">
                     Zimo Liu
                 </div>
-                <div style="color: #000000;text-align: left;font-size: 15px;">
+                <div style="color: #000000;text-align: center;font-size: 15px;">
                     Funder/Chef
                 </div>
             </div>

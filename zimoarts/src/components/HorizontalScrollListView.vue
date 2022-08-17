@@ -51,7 +51,18 @@
                     item: {
                         class: "item-img",
                         padding: 24,
-                    }
+                    },
+                    position: {
+                        start: 1,
+                    },
+                    autoplay: {
+                        // enable/disable playing slideshow
+                        play: true,
+                        // the delay duration between slides in milliseconds
+                        speed: 1800,
+                        // if setup, the slideshow will be in the loop.
+                        repeat: true,
+                    },
                 },
                 visible: ref(false),
             }
