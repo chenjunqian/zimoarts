@@ -22,7 +22,6 @@
             }
         },
         mounted() {
-            console.log(this.vSrc)
             if (this.vSrc !== undefined && this.vSrc !== null && (this.vSrc.includes('youtube')||this.vSrc.includes('youtu'))) {
                 this.showYoutube = true
                 this.videoUrl = this.videoUrl + "?autoplay=1&mute=1"
