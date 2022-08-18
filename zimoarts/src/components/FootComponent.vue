@@ -109,9 +109,8 @@ export default {
 }
 
 .center-footer-logo {
-  width: auto;
-  height: 50px;
-  padding-top: 40px;
+  width: 81.25px;
+  height: 100px;
 }
 
 /* right block */
