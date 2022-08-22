@@ -4,9 +4,7 @@
     <div class="home-container">
       <img class="home-school-icon" src="@/assets/black-red-logo.png" />
       <HomeDropDowmMenuComponent />
-      <PageTopBigImageComponent style="margin-top: 180px;" titleOne="GROTON" titleTwo="ART" titleColor="#ffffff"
-        backgroudPicUrl="http://www.grotonarts.com/static/home/home-top-bg.png"
-        videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY" />
+      <PageTopBigImageComponent ref="topImageComp" style="margin-top: 180px;" />
       <div class="top-album-descrption-container">
         <div class="top-album-descrption-title-container">
           <div class="top-album-descrption-title" style="color: #ab050f">
@@ -150,7 +148,7 @@
       </div>
 
       <!-- interview block -->
-      <InterviewColumnComponent backgroudPicUrl="http://www.grotonarts.com/static/home/home-interview-bg.png" />
+      <InterviewColumnComponent :backgroudPicUrl="interviewImage" />
       <!-- bottom description block -->
       <DescriptionColumnComponent />
     </div>
@@ -159,339 +157,365 @@
 </template>
 
 <script>
-  // @ is an alias to /src
-  import HeaderComponent from "@/components/HeaderComponent.vue";
-  import FooterComponent from "@/components/FootComponent.vue";
-  import ColorDivider from "@/components/ColorDivider.vue";
-  import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
-  import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
-  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
-  import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
-  import { httpRequest } from "@/libs/request";
+import HeaderComponent from "@/components/HeaderComponent.vue";
+import FooterComponent from "@/components/FootComponent.vue";
+import ColorDivider from "@/components/ColorDivider.vue";
+import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
+import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
+import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
+import { httpRequest } from "@/libs/request";
+import { onMounted, ref } from "vue";
 
-  export default {
-    name: "HomeView",
-    components: {
-      HeaderComponent,
-      FooterComponent,
-      ColorDivider,
-      InterviewColumnComponent,
-      DescriptionColumnComponent,
-      HomeDropDowmMenuComponent,
-      PageTopBigImageComponent
-    },
-    mounted() {
-      httpRequest.get("http://39.100.243.102/res/project/lottiejson/project-resource.json").then(function (response) {
-        console.log(response)
+export default {
+  name: "HomeView",
+  components: {
+    HeaderComponent,
+    FooterComponent,
+    ColorDivider,
+    InterviewColumnComponent,
+    DescriptionColumnComponent,
+    HomeDropDowmMenuComponent,
+    PageTopBigImageComponent
+  },
+  setup() {
+
+    let topBigImage = ""
+    let videoUrl = ""
+    let interviewImage = ref("")
+    let topImageComp = ref()
+
+    async function getHomeResource() {
+      let respJson;
+      await httpRequest.get("http://www.grotonarts.com/static/home/home-resource.json").then(function (response) {
+        respJson = response
       }).catch(function (error) {
         console.log(error);
       });
+      return respJson;
     }
-  };
+
+    async function updateData() {
+      let respJson = await getHomeResource()
+      videoUrl = respJson['top-video']
+      topBigImage = respJson['top-big-image']
+      interviewImage.value = respJson['interview-image']
+
+      topImageComp.value.setResourceData("GROTON", "ART", "#ffffff", topBigImage, videoUrl)
+    }
+
+    updateData()
+
+    return {
+      topImageComp,
+      interviewImage
+    }
+  }
+};
 </script>
 
 <style scoped>
-  .home {
-    background-color: #ffffff;
-    width: 1400px;
-    margin: 0 auto;
-  }
+.home {
+  background-color: #ffffff;
+  width: 1400px;
+  margin: 0 auto;
+}
 
-  .home-container {
-    width: 100%;
-    padding-top: 50px;
-    background-color: #ffffff;
-    box-shadow: 0px 20px 10px -10px #888888;
-  }
+.home-container {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 10px -10px #888888;
+}
 
-  /* top dropdown area */
-  .home-school-icon {
-    width: 180px;
-    height: 90px;
-    float: left;
-    margin-left: 80px;
-  }
+/* top dropdown area */
+.home-school-icon {
+  width: 180px;
+  height: 90px;
+  float: left;
+  margin-left: 80px;
+}
 
 
-  /* main image area */
-  .home-big-pic-container {
-    width: 100%;
-    margin-top: 180px;
-    box-shadow: 0 20px 20px -2px #888888;
-  }
+/* main image area */
+.home-big-pic-container {
+  width: 100%;
+  margin-top: 180px;
+  box-shadow: 0 20px 20px -2px #888888;
+}
 
-  .video-container {
-    width: 500px;
-    height: 300px;
-    background-color: black;
-    margin-left: 100px;
-    position: absolute;
-    bottom: -80px;
-  }
+.video-container {
+  width: 500px;
+  height: 300px;
+  background-color: black;
+  margin-left: 100px;
+  position: absolute;
+  bottom: -80px;
+}
 
-  /* middle album area */
-  .album-container {
-    width: 100%;
-    box-shadow: 0 20px 20px -2px #888888;
-  }
+/* middle album area */
+.album-container {
+  width: 100%;
+  box-shadow: 0 20px 20px -2px #888888;
+}
 
-  .top-album-container {
-    width: 1275px;
-    margin: 0 auto;
-  }
+.top-album-container {
+  width: 1275px;
+  margin: 0 auto;
+}
 
-  .top-album-descrption-container {
-    margin-bottom: 150px;
-    margin-top: 150px;
-  }
+.top-album-descrption-container {
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
 
-  .top-album-descrption-title-container {
-    width: 100%;
-    font-size: 58px;
-    font-weight: bolder;
-    border-bottom: 1px solid lightslategray;
-    display: flex;
-    justify-content: center;
-  }
+.top-album-descrption-title-container {
+  width: 100%;
+  font-size: 58px;
+  font-weight: bolder;
+  border-bottom: 1px solid lightslategray;
+  display: flex;
+  justify-content: center;
+}
 
-  .top-album-descrption-title {
-    display: inline;
-  }
+.top-album-descrption-title {
+  display: inline;
+}
 
-  .top-album-descrption-text-container {
-    font-size: 9px;
-    margin-left: 300px;
-  }
+.top-album-descrption-text-container {
+  font-size: 9px;
+  margin-left: 300px;
+}
 
-  .top-album-descrption-text {
-    width: 20%;
-    font-size: 8px;
-    margin-left: 10px;
-    text-align: left;
-    word-break: break-all;
-    word-wrap: break-word;
-  }
+.top-album-descrption-text {
+  width: 20%;
+  font-size: 8px;
+  margin-left: 10px;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+}
 
-  .top-album-items-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
+.top-album-items-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  /* left album */
-  .top-left-album-item-column {
-    width: 300px;
-    height: 400px;
-    margin-left: 100px;
-    margin-top: 300px;
-    display: flex;
-    position: relative;
-  }
+/* left album */
+.top-left-album-item-column {
+  width: 300px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 300px;
+  display: flex;
+  position: relative;
+}
 
-  .top-left-album-item-back {
-    width: 150px;
-    height: 400px;
-    background-color: #ab050f;
-    display: inline;
-  }
+.top-left-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #ab050f;
+  display: inline;
+}
 
-  .top-left-album-middler-placeholder {
-    width: 110px;
-    height: 400px;
-  }
+.top-left-album-middler-placeholder {
+  width: 110px;
+  height: 400px;
+}
 
-  .top-left-album-item-front {
-    width: 250px;
-    height: 350px;
-    background-color: #c0c0c0;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    z-index: 99;
-    position: absolute;
-  }
+.top-left-album-item-front {
+  width: 250px;
+  height: 350px;
+  background-color: #c0c0c0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  z-index: 99;
+  position: absolute;
+}
 
-  .top-left-album-item-text-container {
-    width: 150px;
-    position: absolute;
-    margin-bottom: 40px;
-    bottom: 0;
-    right: -100px;
-  }
+.top-left-album-item-text-container {
+  width: 150px;
+  position: absolute;
+  margin-bottom: 40px;
+  bottom: 0;
+  right: -100px;
+}
 
-  .top-left-album-item-text {
-    font-size: 8px;
-    text-align: right;
-  }
+.top-left-album-item-text {
+  font-size: 8px;
+  text-align: right;
+}
 
-  /* middel album */
-  .top-middle-album-item-column {
-    width: 300px;
-    height: 400px;
-    margin-left: 180px;
-    margin-right: -150px;
-    margin-top: -20px;
-    display: flex;
-    position: relative;
-  }
+/* middel album */
+.top-middle-album-item-column {
+  width: 300px;
+  height: 400px;
+  margin-left: 180px;
+  margin-right: -150px;
+  margin-top: -20px;
+  display: flex;
+  position: relative;
+}
 
-  .top-middle-album-item-back-left-block {
-    width: 250px;
-    height: 400px;
-    display: inline;
-  }
+.top-middle-album-item-back-left-block {
+  width: 250px;
+  height: 400px;
+  display: inline;
+}
 
-  .top-middle-album-item-back {
-    width: 150px;
-    height: 400px;
-    background-color: #000000;
-    display: inline;
-  }
+.top-middle-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #000000;
+  display: inline;
+}
 
-  .top-middle-album-item-front {
-    width: 250px;
-    height: 350px;
-    background-color: #c0c0c0;
-    float: right;
-    margin-top: 25px;
-    margin-right: 25px;
-  }
+.top-middle-album-item-front {
+  width: 250px;
+  height: 350px;
+  background-color: #c0c0c0;
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+}
 
-  .top-middle-album-item-text-container {
-    width: 150px;
-    margin-bottom: 40px;
-    position: absolute;
-    bottom: 25px;
-    left: -140px;
-    list-style-type: disc;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
+.top-middle-album-item-text-container {
+  width: 150px;
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: 25px;
+  left: -140px;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
 
-  .top-middle-album-item-text {
-    font-size: 8px;
-    text-align: right;
-  }
+.top-middle-album-item-text {
+  font-size: 8px;
+  text-align: right;
+}
 
-  /* right album */
-  .top-right-album-item-column {
-    width: 450px;
-    height: 400px;
-    margin-left: 15px;
-    margin-top: 250px;
-    display: flex;
-    z-index: 99;
-  }
+/* right album */
+.top-right-album-item-column {
+  width: 450px;
+  height: 400px;
+  margin-left: 15px;
+  margin-top: 250px;
+  display: flex;
+  z-index: 99;
+}
 
-  .top-right-album-item-back {
-    width: 150px;
-    height: 400px;
-    background-color: #ffce00;
-    display: inline;
-  }
+.top-right-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #ffce00;
+  display: inline;
+}
 
-  .top-right-album-middler-placeholder {
-    width: 110px;
-    height: 100%;
-    display: flex;
-    position: relative;
-  }
+.top-right-album-middler-placeholder {
+  width: 110px;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
 
-  .top-right-album-item-front {
-    width: 250px;
-    height: 350px;
-    background-color: #c0c0c0;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    z-index: 99;
-    position: absolute;
-  }
+.top-right-album-item-front {
+  width: 250px;
+  height: 350px;
+  background-color: #c0c0c0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  z-index: 99;
+  position: absolute;
+}
 
-  .top-right-album-item-text-container {
-    width: auto;
-    position: absolute;
-    left: -70px;
-    bottom: 10px;
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
+.top-right-album-item-text-container {
+  width: auto;
+  position: absolute;
+  left: -70px;
+  bottom: 10px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
 
-  .top-right-album-item-text {
-    font-size: 8px;
-    text-align: right;
-  }
+.top-right-album-item-text {
+  font-size: 8px;
+  text-align: right;
+}
 
-  /* bottom album */
-  .bottom-album-items-container {
-    width: 100%;
-    margin-top: 150px;
-  }
+/* bottom album */
+.bottom-album-items-container {
+  width: 100%;
+  margin-top: 150px;
+}
 
-  .bottom-album-title-container {
-    width: 100%;
-    border-bottom: 1px solid #c0c0c0;
-    display: flex;
-    justify-content: center;
-  }
+.bottom-album-title-container {
+  width: 100%;
+  border-bottom: 1px solid #c0c0c0;
+  display: flex;
+  justify-content: center;
+}
 
-  .bottom-album-columns-container {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding-bottom: 120px;
-    display: flex;
-  }
+.bottom-album-columns-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+}
 
-  .bottom-album-column {
-    width: 25%;
-    display: inline;
-  }
+.bottom-album-column {
+  width: 25%;
+  display: inline;
+}
 
-  .bottom-album-column-image {
-    width: 100%;
-    height: 150px;
-    background-color: #888888;
-  }
+.bottom-album-column-image {
+  width: 100%;
+  height: 150px;
+  background-color: #888888;
+}
 
-  .bottom-album-column-circle-image {
-    width: 50%;
-    height: 50px;
-    background-color: #888888;
-    margin: 0 auto;
-    margin-top: 80px;
-  }
+.bottom-album-column-circle-image {
+  width: 50%;
+  height: 50px;
+  background-color: #888888;
+  margin: 0 auto;
+  margin-top: 80px;
+}
 
-  .bottom-album-column-text-container {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
+.bottom-album-column-text-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .bottom-album-column-text {
-    width: 100%;
-    font-size: 9px;
-    display: block;
-  }
+.bottom-album-column-text {
+  width: 100%;
+  font-size: 9px;
+  display: block;
+}
 
-  /* bottom color block */
-  .bottom-color-block-container {
-    width: 100%;
-    height: 15px;
-    margin-top: 60px;
-    display: flex;
-  }
+/* bottom color block */
+.bottom-color-block-container {
+  width: 100%;
+  height: 15px;
+  margin-top: 60px;
+  display: flex;
+}
 
-  .bottom-color-block {
-    width: 25%;
-    height: 100%;
-  }
+.bottom-color-block {
+  width: 25%;
+  height: 100%;
+}
 </style>
