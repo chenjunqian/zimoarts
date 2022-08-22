@@ -61,15 +61,13 @@
           <div style="width: 70%;text-align: right;color: #000000;font-weight: bolder;margin-top: 50px;">
             Zimo Liu
           </div>
-          <div style="width: 70%;text-align: right;color: #000000;">
-            Founder/Chef
-          </div>
+          <div style="width: 70%;text-align: right;color: #000000;"> Founder/Chef </div>
           <div style="width: 100%;display: flex;margin-top: 40px;">
             <img style="width: 250px;height: 200px;">
           </div>
         </div>
       </div>
-      <ColorDivider style="margin-top: 160px;"/>
+      <ColorDivider style="margin-top: 160px;" />
       <!-- our team block -->
       <div style="width: 100%;">
         <!-- our team title -->
@@ -82,19 +80,36 @@
         </div>
         <div style="width: 100%;display: flex;justify-content: center;margin-top: 120px;">
           <div>
-            <img style="width: 150px; height: 150px;" src="" alt="">
-            <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder;">Beenson Han</div>
-            <div style="width: 100%;color: #000000;font-size: 10px;">Vice Chef</div>
+            <a-image style="width: 250px; height: 250px;" :src="memberOneImage" />
+            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
+              {{ memberOneName }}</div>
           </div>
           <div style="margin-left: 120px;">
-            <img style="width: 150px; height: 150px;" src="" alt="">
-            <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder;">Beenson Han</div>
-            <div style="width: 100%;color: #000000;font-size: 10px;">Art Director</div>
+            <a-image style="width: 250px; height: 250px;" :src="memberTwoImage" />
+            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
+              {{ memberTwoName }}</div>
           </div>
           <div style="margin-left: 120px;">
-            <img style="width: 150px; height: 150px;" src="" alt="">
-            <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder;">Beenson Han</div>
-            <div style="width: 100%;color: #000000;font-size: 10px;">Music Director</div>
+            <a-image style="width: 250px; height: 250px;" :src="memberThreeImage" />
+            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
+              {{ memberThreeName }}</div>
+          </div>
+        </div>
+        <div style="width: 100%;display: flex;justify-content: center;margin-top: 30px;">
+          <div>
+            <a-image style="width: 250px; height: 250px;" :src="memberFourImage" />
+            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
+              {{ memberFourName }}</div>
+          </div>
+          <div style="margin-left: 120px;">
+            <a-image style="width: 250px; height: 250px;" :src="memberFiveImage" />
+            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
+              {{ memberFiveName }}</div>
+          </div>
+          <div style="margin-left: 120px;">
+            <a-image style="width: 250px; height: 250px;" :src="memberSixImage" />
+            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
+              {{ memberSixName }}</div>
           </div>
         </div>
         <!-- team member detail block -->
@@ -261,36 +276,86 @@
 </template>
 
 <script>
-  import HeaderComponent from "@/components/HeaderComponent.vue";
-  import FooterComponent from "@/components/FootComponent.vue";
-  import MenuItem from "@/components/MenuItem.vue";
-  import ColorDivider from "@/components/ColorDivider.vue";
+import HeaderComponent from "@/components/HeaderComponent.vue";
+import FooterComponent from "@/components/FootComponent.vue";
+import MenuItem from "@/components/MenuItem.vue";
+import ColorDivider from "@/components/ColorDivider.vue";
+import { httpRequest } from "@/libs/request";
+import { ref } from "vue";
 
-  export default {
-    name: "AboutView",
-    components: {
+export default {
+  name: "AboutView",
+  components: {
     HeaderComponent,
     FooterComponent,
     MenuItem,
     ColorDivider
-},
-  };
+  },
+  setup() {
+    let memberOneImage = ref("")
+    let memberOneName = ref("")
+    let memberTwoImage = ref("")
+    let memberTwoName = ref("")
+    let memberThreeImage = ref("")
+    let memberThreeName = ref("")
+    let memberFourImage = ref("")
+    let memberFourName = ref("")
+    let memberFiveImage = ref("")
+    let memberFiveName = ref("")
+    let memberSixImage = ref("")
+    let memberSixName = ref("")
+    httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
+      let baseUrl = "http://www.grotonarts.com/static/aboutus/teacher-image-list/"
+      let teacherImageJson = response['teacher-image-list']
+      console.log("teacherImageJson : ", teacherImageJson)
+      memberOneImage.value = baseUrl + teacherImageJson['memberOneImage']
+      memberOneName.value = teacherImageJson['memberOneName']
+      memberTwoImage.value = baseUrl + teacherImageJson['memberTwoImage']
+      memberTwoName.value = teacherImageJson['memberTwoName']
+      memberThreeImage.value = baseUrl + teacherImageJson['memberThreeImage']
+      memberThreeName.value = teacherImageJson['memberThreeName']
+      memberFourImage.value = baseUrl + teacherImageJson['memberFourImage']
+      memberFourName.value = teacherImageJson['memberFourName']
+      memberFiveImage.value = baseUrl + teacherImageJson['memberFiveImage']
+      memberFiveName.value = teacherImageJson['memberFiveName']
+      memberSixImage.value = baseUrl + teacherImageJson['memberSixImage']
+      memberSixName.value = teacherImageJson['memberSixName']
+    }).catch(function (error) {
+      console.log(error);
+    });
+
+    return {
+      memberOneImage,
+      memberOneName,
+      memberTwoImage,
+      memberTwoName,
+      memberThreeName,
+      memberThreeImage,
+      memberFourImage,
+      memberFourName,
+      memberFiveImage,
+      memberFiveName,
+      memberSixImage,
+      memberSixName
+    }
+  }
+};
 </script>
 
 <style scoped>
-  @media screen and (max-width: 1200px) {
-    .about {
-      background-color: #ffffff;
-      width: 1500px;
-      margin: 0 auto;
-    }
+@media screen and (max-width: 1200px) {
+  .about {
+    background-color: #ffffff;
+    width: 1500px;
+    margin: 0 auto;
   }
+}
 
-  @media screen and (min-width: 1200px) {
-    .about {
-      background-color: #ffffff;
-      max-width: 1500px;
-      margin: 0 auto;
-    }
+@media screen and (min-width: 1200px) {
+  .about {
+    background-color: #ffffff;
+    max-width: 1500px;
+    margin: 0 auto;
   }
+}
 </style>
