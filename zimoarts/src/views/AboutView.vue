@@ -2,6 +2,7 @@
   <div class="about">
     <HeaderComponent />
     <MenuItem />
+    <HomeDropDowmMenuComponent />
     <!-- school bagde block -->
     <div style="margin-top: 80px">
       <img style="width: 180px; height: 90px; float: left; margin-left: 80px" src="@/assets/black-red-logo.png" />
@@ -278,18 +279,18 @@
 <script>
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import FooterComponent from "@/components/FootComponent.vue";
-import MenuItem from "@/components/MenuItem.vue";
 import ColorDivider from "@/components/ColorDivider.vue";
 import { httpRequest } from "@/libs/request";
 import { ref } from "vue";
+import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
 
 export default {
   name: "AboutView",
   components: {
     HeaderComponent,
     FooterComponent,
-    MenuItem,
-    ColorDivider
+    ColorDivider,
+    HomeDropDowmMenuComponent
   },
   setup() {
     let memberOneImage = ref("")

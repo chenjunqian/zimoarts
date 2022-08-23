@@ -5,7 +5,8 @@
     <PageTopBigImageComponent ref="topImageRef" backgroudPicUrl="http://www.grotonarts.com/static/draw/draw-top-bg.png"
       videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY" />
     <!-- interview block -->
-    <InterviewComponent leftBlockColor="#000000" rightBlockColor="#ffffff" descriptionColor="#000000"
+    <InterviewComponent ref="interviewCompRef" leftBlockColor="#000000" rightBlockColor="#ffffff"
+      descriptionColor="#000000"
       imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
     <ColorDivider />
     <div style="width: 100%;margin-top: 150px;">
@@ -81,6 +82,7 @@ export default {
     let videoUrl = ""
     let interviewImage = ref()
     let topImageRef = ref()
+    let interviewCompRef = ref()
 
     async function getDrawResource() {
       let respJson;
@@ -98,14 +100,16 @@ export default {
       topBigImage = respJson['top-big-image']
       interviewImage.value = respJson['interview-image']
 
-      topImageRef.value.setResourceData("VISUAL&nbsp;", "ARR", "#ffffff", topBigImage, videoUrl)
+      topImageRef.value.setResourceData("VISUAL", "ART", "#ffffff", topBigImage, videoUrl)
+      interviewCompRef.value.setResourceData("#000000", "#ffffff", "#000000", "")
     }
 
     updateData()
 
     return {
       topImageRef,
-      interviewImage
+      interviewImage,
+      interviewCompRef
     }
   }
 };

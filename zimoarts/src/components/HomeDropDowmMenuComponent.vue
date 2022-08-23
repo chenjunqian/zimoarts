@@ -39,10 +39,10 @@
         <div class="dropdown">
           <div class="home-dropdown-text" style="color: #000000">OTHER</div>
           <div class="dropdown-content">
+            <router-link to="/" style="font-size: 13px;">HOME</router-link>
             <router-link to="/draw" style="font-size: 13px;">VISUAL ART</router-link>
             <router-link to="/theater" style="font-size: 13px;">THEAFER&DANCE</router-link>
             <router-link to="/music">MUSIC</router-link>
-            <router-link to="/draw">VISUAL ART</router-link>
             <router-link to="/about">ABOUTUS</router-link>
           </div>
         </div>
@@ -52,80 +52,79 @@
 </template>
 
 <script>
-  export default {
-    name: "HomeDropDownMenuComponent"
-  }
+export default {
+  name: "HomeDropDownMenuComponent"
+}
 </script>
 
 <style>
-  .home-dropdown-item-container {
-    width: 600px;
-    height: 200px;
-    padding-right: 25px;
-    padding-top: 30px;
-    float: right;
-    position: relative;
-    z-index: 99;
-    display: flex;
-    flex-wrap: wrap;
-  }
+.home-dropdown-item-container {
+  width: 600px;
+  height: 200px;
+  padding-right: 25px;
+  float: right;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .home-dropdown-item {
-    height: 100%;
-    width: 80px;
-    margin-left: 30px;
-    background-color: wheat;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #ffffff;
-    /* box-shadow: -25px 0px 25px -7px #888888; */
-  }
+.home-dropdown-item {
+  height: 100%;
+  width: 80px;
+  margin-left: 30px;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  /* box-shadow: -25px 0px 25px -7px #888888; */
+}
 
-  .home-dropdown-text-container {
-    width: 60px;
-    position: absolute;
-    bottom: 0px;
-  }
+.home-dropdown-text-container {
+  width: 60px;
+  position: absolute;
+  bottom: 0px;
+}
 
-  .home-dropdown-text {
-    font-size: 13px;
-    text-align: center !important;
-    word-break: break-all;
-    word-wrap: break-word;
-    text-decoration: none;
-    color: #ffffff;
-  }
+.home-dropdown-text {
+  font-size: 13px;
+  text-align: center !important;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: #ffffff;
+}
 
-  .dropdown {
-    position: relative;
-    width: 100%;
-  }
+.dropdown {
+  position: relative;
+  width: 100%;
+}
 
-  .dropdown-content {
-    position: absolute;
-    display: none;
-    left: 0;
-    overflow: auto;
-    border: 1px solid #ffffff;
-  }
+.dropdown-content {
+  position: absolute;
+  display: none;
+  left: 0;
+  overflow: auto;
+  border: 1px solid #ffffff;
+}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  .dropdown-content a {
-    display: block;
-    color: #ffffff;
-    margin-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin-right: 5px;
-    text-decoration: none;
-    text-align: left;
-  }
+.dropdown-content a {
+  display: block;
+  color: #ffffff;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  text-align: left;
+}
 
-  .dropdown-content a:hover {
-    color: #ffffff;
-    background-color: #c0c0c0;
-  }
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #c0c0c0;
+}
 </style>
