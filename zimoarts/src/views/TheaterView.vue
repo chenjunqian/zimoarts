@@ -51,6 +51,7 @@ export default {
     let topImageCompRef = ref()
     let interviewImage = ref("")
     let interviewCompRef = ref()
+    let topInterviewImage = ""
 
     httpRequest.get("http://www.grotonarts.com/static/theater/theater-resource.json").then(function (response) {
       let imageSourcePath = "http://www.grotonarts.com/static/theater/image-list/"
@@ -66,8 +67,9 @@ export default {
       topBigImageUrl = response['top-big-image']
       videoUrl = response['top-video']
       interviewImage.value = response['interview-image']
+      topInterviewImage = response['top-interview-image']
       topImageCompRef.value.setResourceData("THEATER", "DANCE", "#ffffff", topBigImageUrl, videoUrl)
-      interviewCompRef.value.setResourceData("#ab050f", "#ffffff", "#ab050f", "")
+      interviewCompRef.value.setResourceData("#ab050f", "#ffffff", "#ab050f", topInterviewImage)
     }).catch(function (error) {
       console.log(error);
     });
