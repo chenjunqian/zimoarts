@@ -8,8 +8,7 @@
     <InterviewComponent ref="interviewCompRef" />
     <ColorDivider />
     <div style="width: 100%;margin-top: 150px;">
-      <HorizontalScrollListView style="box-shadow: 0px 20px 10px -10px #888888;"
-        :images="['https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg', 'https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg', 'https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg', 'https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg', 'https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg', 'https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg', 'https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg']" />
+      <HorizontalScrollListView style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
     </div>
 
     <div style="width: 100%;display: flex;justify-content: center;margin-top: 80px;margin-bottom: 100px;">
@@ -83,11 +82,13 @@ export default {
     let topImageRef = ref()
     let interviewCompRef = ref()
     let topInterviewImage = ref()
+    let imageList = ref([])
 
     async function getDrawResource() {
       let respJson;
       let pageId = route.params.id
-      let url = "http://www.grotonarts.com/static/draw/" + pageId + "-resource.json"
+      let url = "http://www.grotonarts.com/static/art/" + pageId + "/" + pageId + "-resource.json"
+      console.log("the url is ", url)
       await httpRequest.get(url).then(function (response) {
         respJson = response
       }).catch(function (error) {
@@ -98,10 +99,22 @@ export default {
 
     async function updateData() {
       let respJson = await getDrawResource()
+      let pageId = route.params.id
+
       videoUrl = respJson['top-video']
       topBigImage = respJson['top-big-image']
       interviewImage.value = respJson['interview-image']
       topInterviewImage = respJson['top-interview-image']
+
+      let imageSourcePath = "http://www.grotonarts.com/static/art/" + pageId + "/" + "image-list/"
+      let allImageList = respJson["image-list"]
+      for (var key in allImageList) {
+        let itemImageList = allImageList[key]
+        for (var i in itemImageList) {
+          let imageItemPath = imageSourcePath + key + "/" + itemImageList[i]
+          imageList.value.push(imageItemPath)
+        }
+      }
 
       topImageRef.value.setResourceData("VISUAL", "ART", "#ffffff", topBigImage, videoUrl)
       interviewCompRef.value.setResourceData("#000000", "#ffffff", "#000000", topInterviewImage)
@@ -118,7 +131,8 @@ export default {
       topImageRef,
       interviewImage,
       interviewCompRef,
-      topInterviewImage
+      topInterviewImage,
+      imageList
     }
   }
 };
