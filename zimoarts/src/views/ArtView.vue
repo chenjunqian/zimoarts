@@ -58,10 +58,9 @@ import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue"
 import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
 import InterviewComponent from "@/components/InterviewComponent.vue";
 import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
-import { ref } from "vue";
+import { reactive, ref, watch } from "vue";
 import { httpRequest } from "@/libs/request"
-import { useRoute } from "vue-router";
-
+import { useRoute, useRouter } from "vue-router";
 
 export default {
   name: "ArtView",
@@ -83,15 +82,12 @@ export default {
     let interviewImage = ref()
     let topImageRef = ref()
     let interviewCompRef = ref()
-    let topInterviewImage = ""
-
-    let pageId = route.params.id
-
+    let topInterviewImage = ref()
 
     async function getDrawResource() {
       let respJson;
+      let pageId = route.params.id
       let url = "http://www.grotonarts.com/static/draw/" + pageId + "-resource.json"
-      console.log("resource url is ", url)
       await httpRequest.get(url).then(function (response) {
         respJson = response
       }).catch(function (error) {
@@ -108,15 +104,21 @@ export default {
       topInterviewImage = respJson['top-interview-image']
 
       topImageRef.value.setResourceData("VISUAL", "ART", "#ffffff", topBigImage, videoUrl)
-      interviewCompRef.value.setResourceData("#000000", "#ffffff", "#000000", "topInterviewImage")
+      interviewCompRef.value.setResourceData("#000000", "#ffffff", "#000000", topInterviewImage)
     }
+
+    const useRouterCurrent = reactive(useRouter())
+    watch(useRouterCurrent, () => {
+      updateData()
+    })
 
     updateData()
 
     return {
       topImageRef,
       interviewImage,
-      interviewCompRef
+      interviewCompRef,
+      topInterviewImage
     }
   }
 };
