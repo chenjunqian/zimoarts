@@ -60,10 +60,11 @@ import InterviewComponent from "@/components/InterviewComponent.vue";
 import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
 import { ref } from "vue";
 import { httpRequest } from "@/libs/request"
+import { useRoute } from "vue-router";
 
 
 export default {
-  name: "DrawView",
+  name: "ArtView",
   components: {
     HeaderComponent,
     FooterComponent,
@@ -76,6 +77,7 @@ export default {
   },
 
   setup() {
+    const route = useRoute()
     let topBigImage = ""
     let videoUrl = ""
     let interviewImage = ref()
@@ -83,9 +85,14 @@ export default {
     let interviewCompRef = ref()
     let topInterviewImage = ""
 
+    let pageId = route.params.id
+
+
     async function getDrawResource() {
       let respJson;
-      await httpRequest.get("http://www.grotonarts.com/static/draw/draw-resource.json").then(function (response) {
+      let url = "http://www.grotonarts.com/static/draw/" + pageId + "-resource.json"
+      console.log("resource url is ", url)
+      await httpRequest.get(url).then(function (response) {
         respJson = response
       }).catch(function (error) {
         console.log(error);

@@ -2,10 +2,10 @@
   <div class="home-dropdown-item-container">
     <div class="home-dropdown-item" style="background-color: #000000; color: #ffffff">
       <div class="home-dropdown-text-container">
-        <router-link slots="div" class="home-dropdown-text" to="/draw">
+        <router-link slots="div" class="home-dropdown-text" to="/art/draw">
           <div class="home-dropdown-text">VISUAL</div>
         </router-link>
-        <router-link slots="div" class="home-dropdown-text" to="/draw">
+        <router-link slots="div" class="home-dropdown-text" to="/art/draw">
           <div class="home-dropdown-text">ART</div>
         </router-link>
       </div>
