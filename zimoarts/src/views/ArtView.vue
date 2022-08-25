@@ -100,6 +100,7 @@ export default {
     async function updateData() {
       let respJson = await getDrawResource()
       let pageId = route.params.id
+      imageList.value = []
 
       videoUrl = respJson['top-video']
       topBigImage = respJson['top-big-image']
