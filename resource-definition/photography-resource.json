@@ -29,10 +29,10 @@
   },
   "image-list": {
     "default": [
-      "66-year-hustle_50998042895_o.png",
-      "096hour_51067327037_o.png",
-      "Art2.png",
-      "pathway-by-ava-meyer-26_51885590381_o.png"
+      "http://www.grotonarts.com/static/art/photography/image-list/default/66-year-hustle_50998042895_o.png",
+      "http://www.grotonarts.com/static/art/photography/image-list/default/096hour_51067327037_o.png",
+      "http://www.grotonarts.com/static/art/photography/image-list/default/Art2.png",
+      "http://www.grotonarts.com/static/art/photography/image-list/default/pathway-by-ava-meyer-26_51885590381_o.png"
     ]
   }
 }

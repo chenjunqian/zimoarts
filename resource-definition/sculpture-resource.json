@@ -1,0 +1,55 @@
+{
+  "topBigImageComponent": {
+    "videoUrl": "https://www.youtube.com/embed/gp_4mujirEk",
+    "backgroudPicUrl": "http://www.grotonarts.com/static/art/sculpture/sculpture-top-bg.png",
+    "titleOne": "VISUAL",
+    "titleTwo": "ART",
+    "titleColor": "#ffffff"
+  },
+  "interview": {
+    "interviewColumn": {
+      "interview-image-bg": "http://www.grotonarts.com/static/art/sculpture/sculpture-interview-bg.png"
+    },
+    "top-interview": {
+      "letfColor": "",
+      "rightColor": "",
+      "descriptionColor": "",
+      "topImageUrl": "",
+      "topDesc": "",
+      "topAuthor": "",
+      "topAuthorTitle": "",
+      "contentTitle": "",
+      "content": "",
+      "contentAuthor": "",
+      "contentAuthorTitle": "",
+      "contentImageUrl": "",
+      "contentImageDesc": "",
+      "contentImageSubDesc": ""
+    }
+  },
+  "image-list": {
+    "default": [
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/52132695508_a2002d4d74_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/addiction-by-april-li-23_51885668723_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/Art4.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/Art5.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-aileen-k-20_49967547422_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-andrew-m-20_49966767698_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-andrew-m-20_49967547092_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-anna-c-20_49967277186_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-caroline-w-20_49967277261_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-eliza-p-20_49967547262_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-emma-b-20_49967277656_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-emma-b-20_49967547332_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-grace-m-20_49967276731_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-jon-h-20_49967547172_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-lwazi-b-20_49967277456_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-marc-b-20_49966768163_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-max-s-20_49967548837_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-olivia-t-20_49967277051_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-rachel-m-20_49967547017_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-richa-p-20_49966767678_o.png",
+      "http://www.grotonarts.com/static/art/sculpture/image-list/default/by-richa-p-20_49967277501_o.png"
+    ]
+  }
+}
