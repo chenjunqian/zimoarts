@@ -88,7 +88,6 @@ export default {
       let respJson;
       let pageId = route.params.id
       let url = "http://www.grotonarts.com/static/art/" + pageId + "/" + pageId + "-resource.json"
-      console.log("the url is ", url)
       await httpRequest.get(url).then(function (response) {
         respJson = response
       }).catch(function (error) {
