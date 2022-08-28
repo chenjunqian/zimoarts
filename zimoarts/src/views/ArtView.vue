@@ -96,16 +96,13 @@ export default {
 
     async function updateData() {
       let respJson = await getDrawResource()
-      let pageId = route.params.id
       imageList.value = []
 
-      let imageSourcePath = "http://www.grotonarts.com/static/art/" + pageId + "/" + "image-list/"
       let allImageList = respJson["image-list"]
       for (var key in allImageList) {
         let itemImageList = allImageList[key]
         for (var i in itemImageList) {
-          let imageItemPath = imageSourcePath + key + "/" + itemImageList[i]
-          imageList.value.push(imageItemPath)
+          imageList.value.push(itemImageList[i])
         }
       }
 

@@ -8,13 +8,13 @@
       </router-link>
       <router-link
         style="width: 120px;height: 30px;background-color: #ab050f;line-height: 30px;color: #ffffff;font-size: 15px;font-weight: bolder;"
-        to="/art/scalpture">
-        SCALPTURE
+        to="/art/sculpture">
+        SCULPTURE
       </router-link>
       <router-link
         style="width: 120px;height: 30px;background-color: #ffce00;line-height: 30px;color: #ffffff;font-size: 15px;font-weight: bolder;"
         to="/art/photography">
-        PHOFOGRCPHY
+        PHOFOGRAPHY
       </router-link>
       <div style="width: 120px;height: 30px;background-color: #c0c0c0;line-height: 30px;">
         <div class="dropdown">

@@ -3,17 +3,14 @@
     <div class="home-dropdown-item" style="background-color: #000000; color: #ffffff">
       <div class="home-dropdown-text-container">
         <router-link slots="div" class="home-dropdown-text" to="/art/draw">
-          <div class="home-dropdown-text">VISUAL</div>
-        </router-link>
-        <router-link slots="div" class="home-dropdown-text" to="/art/draw">
-          <div class="home-dropdown-text">ART</div>
+          <div class="home-dropdown-text">VISUAL ART</div>
         </router-link>
       </div>
     </div>
     <div class="home-dropdown-item" style="background-color: #ab050f; color: #ffffff">
       <div class="home-dropdown-text-container">
         <router-link slots="div" class="home-dropdown-text" to="/theater">
-          <div class="home-dropdown-text">THEAFER &</div>
+          <div class="home-dropdown-text">THEATER &</div>
         </router-link>
         <router-link slots="div" class="home-dropdown-text" to="/theater">
           <div class="home-dropdown-text">DANCE</div>
@@ -30,18 +27,18 @@
     <div class="home-dropdown-item" style="background-color: #c0c0c0; color: #ffffff">
       <div class="home-dropdown-text-container">
         <router-link slots="div" class="home-dropdown-text" to="/about">
-          <div class="home-dropdown-text">ABOFUS</div>
+          <div class="home-dropdown-text">ABOUT US</div>
         </router-link>
       </div>
     </div>
     <div class="home-dropdown-item" style="background-color: white">
-      <div class="home-dropdown-text-container" style="width: 80px;">
+      <div class="home-dropdown-text-container">
         <div class="dropdown">
           <div class="home-dropdown-text" style="color: #000000">OTHER</div>
           <div class="dropdown-content">
             <router-link to="/" style="font-size: 13px;">HOME</router-link>
             <router-link to="/draw" style="font-size: 13px;">VISUAL ART</router-link>
-            <router-link to="/theater" style="font-size: 13px;">THEAFER&DANCE</router-link>
+            <router-link to="/theater" style="font-size: 12px;">THEATER DANCE</router-link>
             <router-link to="/music">MUSIC</router-link>
             <router-link to="/about">ABOUTUS</router-link>
           </div>
@@ -59,8 +56,8 @@ export default {
 
 <style>
 .home-dropdown-item-container {
-  width: 600px;
-  height: 200px;
+  width: 800px;
+  height: 280px;
   padding-right: 25px;
   float: right;
   position: relative;
@@ -71,17 +68,16 @@ export default {
 
 .home-dropdown-item {
   height: 100%;
-  width: 80px;
+  width: 110px;
   margin-left: 30px;
   background-color: wheat;
   display: flex;
   justify-content: center;
   border: 1px solid #ffffff;
-  /* box-shadow: -25px 0px 25px -7px #888888; */
 }
 
 .home-dropdown-text-container {
-  width: 60px;
+  width: 110px;
   position: absolute;
   bottom: 0px;
 }
@@ -97,10 +93,11 @@ export default {
 
 .dropdown {
   position: relative;
-  width: 100%;
+  width: 110px;
 }
 
 .dropdown-content {
+  width: 110px;
   position: absolute;
   display: none;
   left: 0;
