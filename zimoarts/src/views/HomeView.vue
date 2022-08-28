@@ -148,7 +148,7 @@
       </div>
 
       <!-- interview block -->
-      <InterviewColumnComponent :backgroudPicUrl="interviewImage" />
+      <InterviewColumnComponent ref="interviewColumnRef"/>
       <!-- bottom description block -->
       <DescriptionColumnComponent />
     </div>
@@ -179,11 +179,8 @@ export default {
     PageTopBigImageComponent
   },
   setup() {
-
-    let topBigImage = ""
-    let videoUrl = ""
-    let interviewImage = ref("")
     let topImageComp = ref()
+    let interviewColumnRef = ref()
 
     async function getHomeResource() {
       let respJson;
@@ -197,18 +194,15 @@ export default {
 
     async function updateData() {
       let respJson = await getHomeResource()
-      videoUrl = respJson['top-video']
-      topBigImage = respJson['top-big-image']
-      interviewImage.value = respJson['interview-image']
-
-      topImageComp.value.setResourceData("GROTON", "ART", "#ffffff", topBigImage, videoUrl)
+      topImageComp.value.setResourceData(respJson["topBigImageComponent"])
+      interviewColumnRef.value.setResourceData(respJson["interview"]["interviewColumn"])
     }
 
     updateData()
 
     return {
       topImageComp,
-      interviewImage
+      interviewColumnRef
     }
   }
 };

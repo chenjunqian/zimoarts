@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <InterviewColumnComponent :backgroudPicUrl="interviewImage" />
+    <InterviewColumnComponent ref="interviewColumnRef" />
     <FooterComponent style="margin-top: 20px" />
   </div>
 </template>
@@ -76,11 +76,9 @@ export default {
 
   setup() {
     const route = useRoute()
-    let topBigImage = ""
-    let videoUrl = ""
-    let interviewImage = ref()
     let topImageRef = ref()
     let interviewCompRef = ref()
+    let interviewColumnRef = ref()
     let topInterviewImage = ref()
     let imageList = ref([])
 
@@ -101,11 +99,6 @@ export default {
       let pageId = route.params.id
       imageList.value = []
 
-      videoUrl = respJson['top-video']
-      topBigImage = respJson['top-big-image']
-      interviewImage.value = respJson['interview-image']
-      topInterviewImage = respJson['top-interview-image']
-
       let imageSourcePath = "http://www.grotonarts.com/static/art/" + pageId + "/" + "image-list/"
       let allImageList = respJson["image-list"]
       for (var key in allImageList) {
@@ -116,8 +109,11 @@ export default {
         }
       }
 
-      topImageRef.value.setResourceData("VISUAL", "ART", "#ffffff", topBigImage, videoUrl)
-      interviewCompRef.value.setResourceData("#000000", "#ffffff", "#000000", topInterviewImage)
+      topImageRef.value.setResourceData(respJson["topBigImageComponent"])
+      let interviewData = respJson["interview"]
+      let topInterviewJsonData = interviewData["top-interview"]
+      interviewCompRef.value.setResourceData(topInterviewJsonData)
+      interviewColumnRef.value.setResourceData(interviewData["interviewColumn"])
     }
 
     const useRouterCurrent = reactive(useRouter())
@@ -129,8 +125,8 @@ export default {
 
     return {
       topImageRef,
-      interviewImage,
       interviewCompRef,
+      interviewColumnRef,
       topInterviewImage,
       imageList
     }

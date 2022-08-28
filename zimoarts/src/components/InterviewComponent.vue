@@ -13,7 +13,8 @@
         <div style="width: 60%; height: 100%; background-color: #ffffff;"
           :style="{ 'background-color': rightBlockColor }"></div>
         <img
-          style="width: 90%; height: 80%; background-color: #c0c0c0; position: absolute; z-index: 99; right: 0; top: 10%;">
+          style="width: 90%; height: 80%; background-color: #c0c0c0; position: absolute; z-index: 99; right: 0; top: 10%;"
+          :src="topImageUrl">
       </div>
       <!-- interview text block -->
       <div style="width: 25%; position: relative;">
@@ -21,14 +22,14 @@
           :style="{ 'background-color': descriptionColor }">
           <div style="position: absolute;bottom: 20px;">
             <div style="color: #ffffff; text-align: left; margin-left: 20px;border-bottom: 1px solid #ffffff;">
-              sadfkjanihgskbcjkooyeo
+              {{ topDesc }}
             </div>
             <div
               style="font-weight: bolder;color: #ffffff;text-align: left; margin-left: 20px; margin-top: 5px;font-size: 15px;">
-              Zimo Liu
+              {{ topAuthor }}
             </div>
             <div style="color: #ffffff;text-align: left; margin-left: 20px; margin-top: 5px;font-size: 15px;">
-              Funder/Chef
+              {{ topAuthorTitle }}
             </div>
           </div>
         </div>
@@ -42,10 +43,10 @@
       <div style="width: 100%; position: absolute; right: 0; bottom: 200px;">
         <img style="width: 100%;height: 300px;" :src="imageUrl" alt="">
         <div style="font-weight: bolder;color: #000000;text-align: center;font-size: 15px;margin-top: 20px;">
-          Zimo Liu
+          {{ contentImageDesc }}
         </div>
         <div style="color: #000000;text-align: center;font-size: 15px;">
-          Funder/Chef
+          {{ contentImageSubDesc }}
         </div>
       </div>
     </div>
@@ -54,48 +55,18 @@
       style="width: 70%; margin-top: -70px; z-index: 99;height: 1200px; box-shadow: -20px 0px 20px -2px #888888; background-color: #ffffff; position: relative;">
 
       <div style="margin-left: 30px; text-align: left; font-size: 50px; margin-top: 70px;color: #ab050f;">
-        oskfmguugsdqozm
+        {{ contentTitle }}
       </div>
       <div style="margin-left: 30px; margin-top: 20px;text-align: left;width: 90%;color: #000000;">
-        sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-        ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-        lacjgluyioqyeowihds kxdaqoc uwyihdfkshkulhjuljkznkljfoilkzjkopjhslakhuhgskudbhzishiklfjlakjs;ojo
-        jlkfkjxhhdusyrincjhdkkcciensjfs;mv;lxmc/vx...... kas,l;lkfg;slmjfheiosuoi
-        shklnlskjujmklfnlksulejlityioeiojfhlkksnddv.clj;sjc.mdm,jjvm,.dklfl
-        dkkvmkldjfnblcvmb.,cvkl;lk;f,;lmb .ckfbl/.c
-        sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-        ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-      </div>
-
-      <div style="margin-left: 30px; text-align: left; font-size: 30px; margin-top: 20px;color: #ab050f;">
-        lacjgluyioqyeowihds kxdaqoc
-      </div>
-      <div style="margin-left: 30px; margin-top: 20px;text-align: left;width: 90%; color: #000000;">
-        sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-        ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-        lacjgluyioqyeowihds kxdaqoc uwyihdfkshkulhjuljkznkljfoilkzjkopjhslakhuhgskudbhzishiklfjlakjs;ojo
-        jlkfkjxhhdusyrincjhdkkcciensjfs;mv;lxmc/vx...... kas,l;lkfg;slmjfheiosuoi
-        shklnlskjujmklfnlksulejlityioeiojfhlkksnddv.clj;sjc.mdm,jjvm,.dklfl
-        dkkvmkldjfnblcvmb.,cvkl;lk;f,;lmb .ckfbl/.c
-        sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-        ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-
-        sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-        ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-        lacjgluyioqyeowihds kxdaqoc uwyihdfkshkulhjuljkznkljfoilkzjkopjhslakhuhgskudbhzishiklfjlakjs;ojo
-        jlkfkjxhhdusyrincjhdkkcciensjfs;mv;lxmc/vx...... kas,l;lkfg;slmjfheiosuoi
-        shklnlskjujmklfnlksulejlityioeiojfhlkksnddv.clj;sjc.mdm,jjvm,.dklfl
-        dkkvmkldjfnblcvmb.,cvkl;lk;f,;lmb .ckfbl/.c
-        sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-        ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
+        {{ content }}
       </div>
 
       <div style="position: absolute;bottom: 20px; right: 50px;">
         <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
-          Zimo Liu
+          {{ contentAuthor }}
         </div>
         <div style="color: #000000;text-align: left;font-size: 15px;">
-          Funder/Chef
+          {{ contentAuthorTitle }}
         </div>
       </div>
     </div>
@@ -108,24 +79,54 @@ import { ref } from 'vue';
 export default {
   name: "InterviewComponent",
   setup() {
-    let imageUrl = ref("")
+    let topImageUrl = ref("")
     let leftBlockColor = ref("")
     let rightBlockColor = ref("")
     let descriptionColor = ref("")
+    let topDesc = ref("")
+    let topAuthor = ref("")
+    let topAuthorTitle = ref("")
+    let contentImageUrl = ref("")
+    let contentTitle = ref("")
+    let content = ref("")
+    let contentAuthor = ref("")
+    let contentAuthorTitle = ref("")
+    let contentImageDesc = ref("")
+    let contentImageSubDesc = ref("")
 
-    const setResourceData = (leftColr, rightColor, desColor, imgUrl) => {
-      leftBlockColor.value = leftColr
-      rightBlockColor.value = rightColor
-      descriptionColor.value = desColor
-      imageUrl.value = imgUrl
+    const setResourceData = (jsonData) => {
+      leftBlockColor.value = jsonData["leftColr"]
+      rightBlockColor.value = jsonData["rightColor"]
+      descriptionColor.value = jsonData["desciptionColor"]
+      topImageUrl.value = jsonData["topImageUrl"]
+      topDesc.value = jsonData["topDesc"]
+      topAuthor.value = jsonData["topAuthor"]
+      topAuthorTitle.value = jsonData["topAuthorTitle"]
+      contentImageUrl.value = jsonData["contentImageUrl"]
+      contentTitle.value = jsonData["contentTitle"]
+      content.value = jsonData["content"]
+      contentAuthor.value = jsonData["contentAuthor"]
+      contentAuthorTitle.value = jsonData["contentAuthorTitle"]
+      contentImageDesc.value = jsonData["contentImageDesc"]
+      contentImageSubDesc.value = jsonData["contentImageSubDesc"]
     }
 
     return {
       leftBlockColor,
       rightBlockColor,
       descriptionColor,
-      imageUrl,
-      setResourceData
+      topImageUrl,
+      topDesc,
+      topAuthor,
+      topAuthorTitle,
+      setResourceData,
+      contentImageUrl,
+      contentTitle,
+      content,
+      contentAuthor,
+      contentAuthorTitle,
+      contentImageDesc,
+      contentImageSubDesc
     }
   }
 }

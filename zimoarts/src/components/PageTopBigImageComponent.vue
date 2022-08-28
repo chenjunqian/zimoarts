@@ -36,12 +36,12 @@ export default {
     let videoUrl = ref("")
     let videoPlayerRef = ref()
 
-    const setResourceData = (titleOneData, titleTwoData, titleColorData, backgroudPicUrlData, videoUrlData) => {
-      titleOne.value = titleOneData
-      titleTwo.value = titleTwoData
-      titleColor.value = titleColorData
-      backgroudPicUrl.value = backgroudPicUrlData
-      videoUrl.value = videoUrlData
+    const setResourceData = (jsonData) => {
+      titleOne.value = jsonData["titleOne"]
+      titleTwo.value = jsonData["titleTwo"]
+      titleColor.value = jsonData["titleColor"]
+      backgroudPicUrl.value = jsonData["backgroudPicUrl"]
+      videoUrl.value = jsonData["videoUrl"]
       videoPlayerRef.value.setVideoCompData(videoUrl.value)
     }
 

@@ -8,7 +8,7 @@
     <div style="width: 100%;margin-top: 100px;">
       <HorizontalScrollListView style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
     </div>
-    <InterviewColumnComponent :backgroudPicUrl="interviewImage" style="margin-top: 80px;" />
+    <InterviewColumnComponent ref="interviewColumnRef" style="margin-top: 80px;" />
     <DescriptionColumnComponent style="box-shadow: 0 20px 20px -2px #888888;" />
     <FooterComponent style="margin-top: 20px" />
   </div>
@@ -46,9 +46,8 @@ export default {
     let videoUrl = ""
     let topImageCompRef = ref()
     let interviewImage = ref("")
-    let interviewTopImage = ref("")
+    let interviewColumnRef = ref()
     let interviewCompRef = ref()
-    let topInterviewImage = ""
     httpRequest.get("http://www.grotonarts.com/static/music/music-resource.json").then(function (response) {
       let imageSourcePath = "http://www.grotonarts.com/static/music/image-list/"
       let allImageList = response["image-list"]
@@ -62,10 +61,11 @@ export default {
 
       topBigImageUrl = response['top-big-image']
       videoUrl = response['top-video']
-      interviewImage.value = response['interview-image']
-      topInterviewImage = response['top-interview-image']
+      interviewImage.value = response['interview']['interviewColumn']['interview-image-bg']
       topImageCompRef.value.setResourceData("MUSIC", "ART", "#ffffff", topBigImageUrl, videoUrl)
-      interviewCompRef.value.setResourceData("#ffce00", "#ffffff", "#ffce00", topInterviewImage)
+      let interviewJsonData = respJson["interview"]
+      interviewCompRef.value.setResourceData(interviewJsonData["top-interview"])
+      interviewColumnRef.value.setResourceData(interviewJsonData["interviewColumn"])
     }).catch(function (error) {
       console.log(error);
     });
@@ -74,8 +74,8 @@ export default {
       imageList,
       topImageCompRef,
       interviewImage,
-      interviewTopImage,
-      interviewCompRef
+      interviewCompRef,
+      interviewColumnRef
     }
   }
 }
