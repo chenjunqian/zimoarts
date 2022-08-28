@@ -1,0 +1,14 @@
+{
+  "top-video": "https://www.youtube.com/embed/Uj6phivSsZk",
+  "top-big-image": "http://www.grotonarts.com/static/art/photography/photography-top-bg.png",
+  "top-interview-image": "http://www.grotonarts.com/static/art/photography/photography-top-interview.png",
+  "interview-image": "http://www.grotonarts.com/static/art/photography/photography-interview-bg.png",
+  "image-list": {
+    "default": [
+      "66-year-hustle_50998042895_o.png",
+      "096hour_51067327037_o.png",
+      "Art2.png",
+      "pathway-by-ava-meyer-26_51885590381_o.png"
+    ]
+  }
+}
