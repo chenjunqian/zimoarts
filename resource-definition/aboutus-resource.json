@@ -1,16 +1,77 @@
 {
-  "teacher-image-list": {
-    "memberOneImage": "Mr-Dan-J-Moriarty.png",
-    "memberOneName": "Mr. Dan J. Moriaty",
-    "memberTwoImage": "Mr-Brandt-Belknap.png",
-    "memberTwoName": "Mr. Brandt Belknap",
-    "memberThreeImage": "MS-Ho.png",
-    "memberThreeName": "Ms. Ho",
-    "memberFourImage": "Ms-Mary-Ann-Lanier.png",
-    "memberFourName": "Ms Mary Ann Lanier",
-    "memberFiveImage": "Ms-Monika-Andersson.png",
-    "memberFiveName": "Ms Monika Andersson",
-    "memberSixImage": "Ms-Sales.png",
-    "memberSixName": "Ms Sales"
+  "team": {
+    "teacherBlockTitle": "UWTURIYQOWIROQPOWUPQ",
+    "teacherDataList": [
+      {
+        "name": "Mr. Dan J. Moriaty",
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Mr-Dan-J-Moriarty.png"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Mr-Brandt-Belknap.png",
+        "name": "Mr. Brandt Belknap"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/MS-Ho.png",
+        "name": "Ms. Ho"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Mary-Ann-Lanier.png",
+        "name": "Ms Mary Ann Lanier"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Monika-Andersson.png",
+        "name": "Ms Monika Andersson"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Sales.png",
+        "name": "Ms Sales"
+      }
+    ],
+    "memberData": {
+      "title": "",
+      "chefImageUrl": "",
+      "chefDescTitle": "",
+      "chefDesc": "",
+      "chefDescAuthor": "",
+      "chefDescAuthorTitle": "",
+      "viceChefImageUrl": "",
+      "viceChefName": "",
+      "viceChefTitle": "",
+      "viceChefDescTitle": "",
+      "memberList": [
+        {
+          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "title": "Art Director",
+          "name": "Beenson Han 1"
+        },
+        {
+          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "title": "Art Director",
+          "name": "Beenson Han 2"
+        },
+        {
+          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "title": "Art Director",
+          "name": "Beenson Han 3"
+        },
+        {
+          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "title": "Art Director",
+          "name": "Beenson Han 4"
+        }
+      ]
+    }
+  },
+  "introduction": {
+    "leftImageUrl": "",
+    "title": "",
+    "content": "",
+    "author": ",",
+    "authorTitle": ""
+  },
+  "joinUs": {
+    "title": "",
+    "subTitle": "",
+    "desc": ""
   }
 }

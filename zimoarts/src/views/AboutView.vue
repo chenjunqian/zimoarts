@@ -76,43 +76,23 @@
           <div style="color: #ab050f; font-size: 60px;">Our&nbsp;</div>
           <div style="color: #000000; font-size: 60px;">Team</div>
         </div>
+        <!-- teacher group -->
+        <!-- sub title -->
         <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 100px;">
-          <div style="font-size: 35px;color: #ab050f;">UWTURIYQOWIROQPOWUPQ</div>
+          <div style="font-size: 35px;color: #ab050f;">{{ teacherBlockTitle }}</div>
         </div>
-        <div style="width: 100%;display: flex;justify-content: center;margin-top: 120px;">
-          <div>
-            <a-image style="width: 250px; height: 250px;" :src="memberOneImage" />
-            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
-              {{ memberOneName }}</div>
-          </div>
-          <div style="margin-left: 120px;">
-            <a-image style="width: 250px; height: 250px;" :src="memberTwoImage" />
-            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
-              {{ memberTwoName }}</div>
-          </div>
-          <div style="margin-left: 120px;">
-            <a-image style="width: 250px; height: 250px;" :src="memberThreeImage" />
-            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
-              {{ memberThreeName }}</div>
-          </div>
-        </div>
-        <div style="width: 100%;display: flex;justify-content: center;margin-top: 30px;">
-          <div>
-            <a-image style="width: 250px; height: 250px;" :src="memberFourImage" />
-            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
-              {{ memberFourName }}</div>
-          </div>
-          <div style="margin-left: 120px;">
-            <a-image style="width: 250px; height: 250px;" :src="memberFiveImage" />
-            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
-              {{ memberFiveName }}</div>
-          </div>
-          <div style="margin-left: 120px;">
-            <a-image style="width: 250px; height: 250px;" :src="memberSixImage" />
-            <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
-              {{ memberSixName }}</div>
-          </div>
-        </div>
+        <a-list style="margin-top: 120px;" :grid="{ gutter: 16, column: 3 }" :data-source="teacherDataList">
+          <template #renderItem="{ item }">
+            <a-list-item>
+              <a-card style="border: none;">
+                <img style="width: 250px; height: 250px;" :src="item.imageUrl" />
+                <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
+                  {{ item.name }}
+                </div>
+              </a-card>
+            </a-list-item>
+          </template>
+        </a-list>
         <!-- team member detail block -->
         <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 100px;">
           <div style="font-size: 35px;color: #ab050f;">UWTURIYQOWIROQPOWUPQ</div>
@@ -146,35 +126,18 @@
           </div>
 
           <!-- member block -->
-          <div style="width: 80%; display: flex; margin: 0 auto; margin-top: 80px;">
-            <div style="width: 18%;">
-              <img style="width: 100%; height: auto;"
-                src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" alt="">
-              <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder;">Beenson Han</div>
-              <div style="width: 100%;color: #000000;font-size: 10px;">Art Director</div>
-            </div>
 
-            <div style="width: 18%; margin-left: 9%;">
-              <img style="width: 100%; height: auto;"
-                src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" alt="">
-              <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder;">Beenson Han</div>
-              <div style="width: 100%;color: #000000;font-size: 10px;">Art Director</div>
-            </div>
-
-            <div style="width: 18%;margin-left: 9%;">
-              <img style="width: 100%; height: auto;"
-                src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" alt="">
-              <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder;">Beenson Han</div>
-              <div style="width: 100%;color: #000000;font-size: 10px;">Art Director</div>
-            </div>
-
-            <div style="width: 18%;margin-left: 9%;">
-              <img style="width: 100%; height: auto;"
-                src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" alt="">
-              <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder;">Beenson Han</div>
-              <div style="width: 100%;color: #000000;font-size: 10px;">Art Director</div>
-            </div>
-          </div>
+          <a-list style="width: 83%; display: flex; margin: 0 auto; margin-top: 80px;" :grid="{ gutter: 16, column: 4 }" :data-source="memberDataList">
+            <template #renderItem="{ item }">
+              <a-list-item>
+                <a-card style="border: none;">
+                  <img style="width: 100%; height: auto;" :src="item.imageUrl" />
+                  <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">{{ item.name }}</div>
+                  <div style="width: 100%;color: #000000;font-size: 10pt;">{{ item.title }}</div>
+                </a-card>
+              </a-list-item>
+            </template>
+          </a-list>
 
           <!-- vice chef block  -->
           <div style="width: 80%; display: flex; margin: 0 auto; margin-top: 80px;">
@@ -277,86 +240,59 @@
 </template>
 
 <script>
-import HeaderComponent from "@/components/HeaderComponent.vue";
-import FooterComponent from "@/components/FootComponent.vue";
-import ColorDivider from "@/components/ColorDivider.vue";
-import { httpRequest } from "@/libs/request";
-import { ref } from "vue";
-import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+  import HeaderComponent from "@/components/HeaderComponent.vue";
+  import FooterComponent from "@/components/FootComponent.vue";
+  import ColorDivider from "@/components/ColorDivider.vue";
+  import { httpRequest } from "@/libs/request";
+  import { ref } from "vue";
+  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
 
-export default {
-  name: "AboutView",
-  components: {
-    HeaderComponent,
-    FooterComponent,
-    ColorDivider,
-    HomeDropDowmMenuComponent
-  },
-  setup() {
-    let memberOneImage = ref("")
-    let memberOneName = ref("")
-    let memberTwoImage = ref("")
-    let memberTwoName = ref("")
-    let memberThreeImage = ref("")
-    let memberThreeName = ref("")
-    let memberFourImage = ref("")
-    let memberFourName = ref("")
-    let memberFiveImage = ref("")
-    let memberFiveName = ref("")
-    let memberSixImage = ref("")
-    let memberSixName = ref("")
-    httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
-      let baseUrl = "http://www.grotonarts.com/static/aboutus/teacher-image-list/"
-      let teacherImageJson = response['teacher-image-list']
-      console.log("teacherImageJson : ", teacherImageJson)
-      memberOneImage.value = baseUrl + teacherImageJson['memberOneImage']
-      memberOneName.value = teacherImageJson['memberOneName']
-      memberTwoImage.value = baseUrl + teacherImageJson['memberTwoImage']
-      memberTwoName.value = teacherImageJson['memberTwoName']
-      memberThreeImage.value = baseUrl + teacherImageJson['memberThreeImage']
-      memberThreeName.value = teacherImageJson['memberThreeName']
-      memberFourImage.value = baseUrl + teacherImageJson['memberFourImage']
-      memberFourName.value = teacherImageJson['memberFourName']
-      memberFiveImage.value = baseUrl + teacherImageJson['memberFiveImage']
-      memberFiveName.value = teacherImageJson['memberFiveName']
-      memberSixImage.value = baseUrl + teacherImageJson['memberSixImage']
-      memberSixName.value = teacherImageJson['memberSixName']
-    }).catch(function (error) {
-      console.log(error);
-    });
+  export default {
+    name: "AboutView",
+    components: {
+      HeaderComponent,
+      FooterComponent,
+      ColorDivider,
+      HomeDropDowmMenuComponent
+    },
+    setup() {
+      let teacherDataList = ref()
+      let teacherBlockTitle = ref()
+      let memberDataList = ref()
 
-    return {
-      memberOneImage,
-      memberOneName,
-      memberTwoImage,
-      memberTwoName,
-      memberThreeName,
-      memberThreeImage,
-      memberFourImage,
-      memberFourName,
-      memberFiveImage,
-      memberFiveName,
-      memberSixImage,
-      memberSixName
+      httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
+        console.log("boutus-resource : ", response)
+        teacherDataList.value = response["team"]['teacherDataList']
+        teacherBlockTitle.value = response["team"]['teacherBlockTitle']
+        memberDataList.value = response["team"]["memberData"]["memberList"]
+
+      }).catch(function (error) {
+        console.log(error);
+      });
+
+      return {
+        teacherDataList,
+        teacherBlockTitle,
+        memberDataList
+      }
     }
-  }
-};
+  };
 </script>
 
 <style scoped>
-@media screen and (max-width: 1200px) {
-  .about {
-    background-color: #ffffff;
-    width: 1500px;
-    margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    .about {
+      background-color: #ffffff;
+      width: 1500px;
+      margin: 0 auto;
+    }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .about {
-    background-color: #ffffff;
-    max-width: 1500px;
-    margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    .about {
+      background-color: #ffffff;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
   }
-}
 </style>
