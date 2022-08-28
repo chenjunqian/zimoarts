@@ -1,8 +1,32 @@
 {
-  "top-video": "https://www.youtube.com/embed/Uj6phivSsZk",
-  "top-big-image": "http://www.grotonarts.com/static/art/scalpture/scalpture-top-bg.png",
-  "top-interview-image": "",
-  "interview-image": "http://www.grotonarts.com/static/art/scalpture/scalpture-interview-bg.png",
+  "topBigImageComponent": {
+    "videoUrl": "https://www.youtube.com/embed/gp_4mujirEk",
+    "backgroudPicUrl": "http://www.grotonarts.com/static/art/scalpture/scalpture-top-bg.png",
+    "titleOne": "VISUAL",
+    "titleTwo": "ART",
+    "titleColor": "#ffffff"
+  },
+  "interview": {
+    "interviewColumn": {
+      "interview-image-bg": "http://www.grotonarts.com/static/art/scalpture/scalpture-interview-bg.png"
+    },
+    "top-interview": {
+      "letfColor": "",
+      "rightColor": "",
+      "descriptionColor": "",
+      "topImageUrl": "",
+      "topDesc": "",
+      "topAuthor": "",
+      "topAuthorTitle": "",
+      "contentTitle": "",
+      "content": "",
+      "contentAuthor": "",
+      "contentAuthorTitle": "",
+      "contentImageUrl": "",
+      "contentImageDesc": "",
+      "contentImageSubDesc": ""
+    }
+  },
   "image-list": {
     "default": [
       "52132695508_a2002d4d74_o.png",

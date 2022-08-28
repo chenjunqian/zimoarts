@@ -1,7 +1,32 @@
 {
-  "top-video": "https://www.youtube.com/embed/Uj6phivSsZk",
-  "top-big-image": "http://www.grotonarts.com/static/music/music-top-bg.png",
-  "interview-image": "http://www.grotonarts.com/static/music/music-interview-bg.png",
+  "topBigImageComponent": {
+    "videoUrl": "https://www.youtube.com/embed/Uj6phivSsZk",
+    "backgroudPicUrl": "http://www.grotonarts.com/static/music/music-top-bg.png",
+    "titleOne": "Music",
+    "titleTwo": "",
+    "titleColor": "#ffffff"
+  },
+  "interview": {
+    "interviewColumn": {
+      "interview-image-bg": "http://www.grotonarts.com/static/music/music-interview-bg.png"
+    },
+    "top-interview": {
+      "letfColor": "",
+      "rightColor": "",
+      "descriptionColor": "",
+      "topImageUrl": "",
+      "topDesc": "",
+      "topAuthor": "",
+      "topAuthorTitle": "",
+      "contentTitle": "",
+      "content": "",
+      "contentAuthor": "",
+      "contentAuthorTitle": "",
+      "contentImageUrl": "",
+      "contentImageDesc": "",
+      "contentImageSubDesc": ""
+    }
+  },
   "image-list": {
     "saturday-pw-richins": [
       "groton_saturday_pw_richins_103021_290_7672_51648618114_o.png",
