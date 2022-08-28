@@ -95,7 +95,7 @@
               </div>
               <div class="top-album-descrption-title">the&nbsp;</div>
               <div class="top-album-descrption-title" style="color: #ffce00">
-                fermm&nbsp;
+                Term&nbsp;
               </div>
             </div>
           </div>
