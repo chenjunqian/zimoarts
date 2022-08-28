@@ -106,6 +106,7 @@ export default {
   left: 0;
   overflow: auto;
   border: 1px solid #ffffff;
+  background-color: #c0c0c0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -125,6 +126,6 @@ export default {
 
 .dropdown-content a:hover {
   color: #ffffff;
-  background-color: #c0c0c0;
+  background-color: #000000;
 }
 </style>
