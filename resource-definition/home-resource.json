@@ -6,11 +6,62 @@
         "titleTwo": "ARTS",
         "titleColor": "#ffffff"
     },
+    "upcomingEvent": {
+        "upcomingEventsText": "This section will show all the upcoming exhibitions, future plays and music events.",
+        "middleBlock": {
+            "topText": "Fall Exhibition Poster",
+            "bottomText": "Designer",
+            "imageUrl": ""
+        },
+        "leftBlock": {
+            "topText": "Fall Theater Poster",
+            "bottomText": "Designer",
+            "imageUrl": ""
+        },
+        "rightBlock": {
+            "topText": "Fall Musical Poster",
+            "bottomText": "Designer",
+            "imageUrl": ""
+        },
+        "bottomText": "All the artist, actors and musicians would love to be recognized by the community. Please come and support if you have time. Enjoy!"
+    },
+    "visualArtOfTheTerm": {
+        "leftBlock": {
+            "nameOfArt": "Name of Art:",
+            "author": "Author: ",
+            "theme": "Theme:",
+            "qoute": "Qoute form Artist"
+        },
+        "middleBlock": {
+            "nameOfArt": "Name of Art:",
+            "author": "Author: ",
+            "theme": "Theme:",
+            "qoute": "Qoute form Artist"
+        },
+        "rightBlock": {
+            "nameOfArt": "Name of Art:",
+            "author": "Author: ",
+            "theme": "Theme:",
+            "qoute": "Qoute form Artist"
+        }
+    },
     "interview": {
         "interviewColumn": {
-            "interview-image-bg": "http://www.grotonarts.com/static/home/home-interview-bg.png"
+            "interviewImageBg": "http://www.grotonarts.com/static/home/home-interview-bg.png",
+            "topLeftTextTitle": "Coming Soon !",
+            "topLeftText": "Coming Soon !",
+            "topLeftImageUrl": "",
+            "topRightTextTitle": "Coming Soon !",
+            "topRightText": "Coming Soon !",
+            "topRightImageUrl": "",
+            "bottomLeftTitle": "Coming Soon !",
+            "bottomLeftText": "Coming Soon !",
+            "bottomLeftImageUrl": "",
+            "bottomRightTitle": "Coming Soon !",
+            "bottomRightText": "Coming Soon !",
+            "bottomRightImageUrl": ""
         },
-        "top-interview": {
+        "topInterview": {
             "letfColor": "",
             "rightColor": "",
             "descriptionColor": "",

@@ -16,11 +16,9 @@
             imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
         </div>
         <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff">
-          <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
+          <div style="font-weight: bolder; margin-top: 20px;">{{ topLeftTextTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-            sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
-            alksf;loskfmguugsdqozmxjhzvbn/
+            {{ topLeftText }}
           </div>
         </div>
         <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff; position: relative;">
@@ -28,11 +26,9 @@
             imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
         </div>
         <div style=" width: 25%; height: 201.7px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; ">
-          <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
+          <div style="font-weight: bolder; margin-top: 20px;">{{ topRightTextTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-            sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
-            alksf;loskfmguugsdqozmxjhzvbn/
+            {{ topRightText }}
           </div>
         </div>
       </div>
@@ -41,11 +37,9 @@
     <div style="width: 100%; padding-bottom: 150px;color: #ffffff;">
       <div style="margin-left: 5%; margin-right: 5%; display: flex">
         <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff">
-          <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
+          <div style="font-weight: bolder; margin-top: 20px;">{{ bottomLeftTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-            sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
-            alksf;loskfmguugsdqozmxjhzvbn/
+            {{ bottomLeftText }}
           </div>
         </div>
         <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff;position: relative;">
@@ -53,11 +47,9 @@
             imageUrl="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" />
         </div>
         <div style=" width: 25%; height: 201.7px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; ">
-          <div style="font-weight: bolder; margin-top: 20px;">sadfkjanihgskbcjkooye</div>
+          <div style="font-weight: bolder; margin-top: 20px;">{{ bottomRightTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-            sadfkjanihgskbcjkooye oqnmBslhflafkjsafl
-            alksf;loskfmguugsdqozmxjhzvbn/
+            {{ bottomRightText }}
           </div>
         </div>
         <div style="width: 25%; height: 201.7px; border-right: 1px solid #ffffff;position: relative;">
@@ -74,33 +66,53 @@
   import TreeDRotateImg from './TreeDRotateImg.vue';
   export default {
     name: "InterviewColumnComponent",
-    props: {
-      columnOneTitle: String,
-      columnOneDesc: String,
-      columnOneImgUrl: String,
-      columnTwoTitle: String,
-      columnTwoDesc: String,
-      columnTwoImgUrl: String,
-      columnTreeTitle: String,
-      columnTreeDesc: String,
-      columnTreeImgUrl: String,
-      columnFourTitle: String,
-      columnFourDesc: String,
-      columnFourImgUrl: String,
-      backgroudPicUrl: String,
-      titleColor: String
-    },
     components: { TreeDRotateImg },
     setup() {
 
       let backgroundBigImage = ref("")
+      let topLeftTextTitle = ref("")
+      let topLeftText = ref("")
+      let topLeftImageUrl = ref("")
+      let topRightTextTitle = ref("")
+      let topRightText = ref("")
+      let topRightImageUrl = ref("")
+      let bottomLeftTitle = ref("")
+      let bottomLeftText = ref("")
+      let bottomLeftImageUrl = ref("")
+      let bottomRightTitle = ref("")
+      let bottomRightText = ref("")
+      let bottomRightImageUrl = ref("")
 
       const setResourceData = (jsonData) => {
-        backgroundBigImage.value = jsonData["interview-image-bg"]
+        backgroundBigImage.value = jsonData["interviewImageBg"]
+        topLeftTextTitle.value = jsonData["topLeftTextTitle"]
+        topLeftText.value = jsonData["topLeftText"]
+        topLeftImageUrl.value = jsonData["topLeftImageUrl"]
+        topRightTextTitle.value = jsonData["topRightTextTitle"]
+        topRightText.value = jsonData["topRightText"]
+        topRightImageUrl.value = jsonData["topRightImageUrl"]
+        bottomLeftTitle.value = jsonData["bottomLeftTitle"]
+        bottomLeftText.value = jsonData["bottomLeftText"]
+        bottomLeftImageUrl.value = jsonData["bottomLeftImageUrl"]
+        bottomRightTitle.value = jsonData["bottomRightTitle"]
+        bottomRightText.value = jsonData["bottomRightText"]
+        bottomRightImageUrl.value = jsonData["bottomRightImageUrl"]
       }
 
       return {
         backgroundBigImage,
+        topLeftTextTitle,
+        topLeftText,
+        topLeftImageUrl,
+        topRightTextTitle,
+        topRightText,
+        topRightImageUrl,
+        bottomLeftTitle,
+        bottomLeftText,
+        bottomLeftImageUrl,
+        bottomRightTitle,
+        bottomRightText,
+        bottomRightImageUrl,
         setResourceData
       }
     }
