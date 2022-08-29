@@ -107,7 +107,6 @@ export default {
       }
 
       topImageRef.value.setResourceData(respJson["topBigImageComponent"])
-      console.log("art view respJson ", respJson)
       interviewCompRef.value.setResourceData(respJson["interview"]["topInterview"])
       interviewColumnRef.value.setResourceData(respJson["interview"]["interviewColumn"])
     }
