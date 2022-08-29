@@ -95,7 +95,8 @@ export default {
     let contentImageSubDesc = ref("")
 
     const setResourceData = (jsonData) => {
-      leftBlockColor.value = jsonData["leftColr"]
+      console.log(jsonData)
+      leftBlockColor.value = jsonData["letfColor"]
       rightBlockColor.value = jsonData["rightColor"]
       descriptionColor.value = jsonData["desciptionColor"]
       topImageUrl.value = jsonData["topImageUrl"]

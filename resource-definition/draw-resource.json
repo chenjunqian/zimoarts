@@ -2,15 +2,27 @@
   "topBigImageComponent": {
     "videoUrl": "https://www.youtube.com/embed/gp_4mujirEk",
     "backgroudPicUrl": "http://www.grotonarts.com/static/art/draw/draw-top-bg.png",
-    "titleOne": "VISUAL",
-    "titleTwo": "ART",
+    "titleOne": "",
+    "titleTwo": "DRAW",
     "titleColor": "#ffffff"
   },
   "interview": {
     "interviewColumn": {
-      "interview-image-bg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png"
+      "interviewImageBg": "http://www.grotonarts.com/static/home/home-interview-bg.png",
+      "topLeftTextTitle": "Coming Soon !",
+      "topLeftText": "Coming Soon !",
+      "topLeftImageUrl": "",
+      "topRightTextTitle": "Coming Soon !",
+      "topRightText": "Coming Soon !",
+      "topRightImageUrl": "",
+      "bottomLeftTitle": "Coming Soon !",
+      "bottomLeftText": "Coming Soon !",
+      "bottomLeftImageUrl": "",
+      "bottomRightTitle": "Coming Soon !",
+      "bottomRightText": "Coming Soon !",
+      "bottomRightImageUrl": ""
     },
-    "top-interview": {
+    "topInterview": {
       "letfColor": "",
       "rightColor": "",
       "descriptionColor": "",

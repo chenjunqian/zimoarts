@@ -107,10 +107,9 @@ export default {
       }
 
       topImageRef.value.setResourceData(respJson["topBigImageComponent"])
-      let interviewData = respJson["interview"]
-      let topInterviewJsonData = interviewData["top-interview"]
-      interviewCompRef.value.setResourceData(topInterviewJsonData)
-      interviewColumnRef.value.setResourceData(interviewData["interviewColumn"])
+      console.log("art view respJson ", respJson)
+      interviewCompRef.value.setResourceData(respJson["interview"]["topInterview"])
+      interviewColumnRef.value.setResourceData(respJson["interview"]["interviewColumn"])
     }
 
     const useRouterCurrent = reactive(useRouter())

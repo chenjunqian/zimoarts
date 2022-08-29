@@ -58,10 +58,8 @@
         }
 
         topImageCompRef.value.setResourceData(response["topBigImageComponent"])
-
-        let interviewJsonData = response["interview"]
-        interviewCompRef.value.setResourceData(interviewJsonData["top-interview"])
-        interviewColumnRef.value.setResourceData(interviewJsonData["interviewColumn"])
+        interviewCompRef.value.setResourceData(response["topInterview"])
+        interviewColumnRef.value.setResourceData(response["interview"]["interviewColumn"])
       }).catch(function (error) {
         console.log(error);
       });

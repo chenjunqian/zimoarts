@@ -8,9 +8,21 @@
   },
   "interview": {
     "interviewColumn": {
-      "interview-image-bg": "http://www.grotonarts.com/static/theater/theater-interview-bg.png"
+      "interviewImageBg": "http://www.grotonarts.com/static/home/home-interview-bg.png",
+      "topLeftTextTitle": "Coming Soon !",
+      "topLeftText": "Coming Soon !",
+      "topLeftImageUrl": "",
+      "topRightTextTitle": "Coming Soon !",
+      "topRightText": "Coming Soon !",
+      "topRightImageUrl": "",
+      "bottomLeftTitle": "Coming Soon !",
+      "bottomLeftText": "Coming Soon !",
+      "bottomLeftImageUrl": "",
+      "bottomRightTitle": "Coming Soon !",
+      "bottomRightText": "Coming Soon !",
+      "bottomRightImageUrl": ""
     },
-    "top-interview": {
+    "topInterview": {
       "letfColor": "",
       "rightColor": "",
       "descriptionColor": "",
