@@ -11,34 +11,37 @@
         "middleBlock": {
             "topText": "Fall Exhibition Poster",
             "bottomText": "Designer",
-            "imageUrl": ""
+            "imageUrl": "http://www.grotonarts.com/static/home/upcomingMiddleImage.png"
         },
         "leftBlock": {
             "topText": "Fall Theater Poster",
             "bottomText": "Designer",
-            "imageUrl": ""
+            "imageUrl": "http://www.grotonarts.com/static/home/upcomingLeftImage.png"
         },
         "rightBlock": {
             "topText": "Fall Musical Poster",
             "bottomText": "Designer",
-            "imageUrl": ""
+            "imageUrl": "http://www.grotonarts.com/static/home/upcomingRightImage.png"
         },
         "bottomText": "All the artist, actors and musicians would love to be recognized by the community. Please come and support if you have time. Enjoy!"
     },
     "visualArtOfTheTerm": {
         "leftBlock": {
+            "topImage" : "http://www.grotonarts.com/static/home/termRedQuestionMark.png",
             "nameOfArt": "Name of Art:",
             "author": "Author: ",
             "theme": "Theme:",
             "qoute": "Qoute form Artist"
         },
         "middleBlock": {
+            "topImage" : "http://www.grotonarts.com/static/home/termYellowQuestionMark.png",
             "nameOfArt": "Name of Art:",
             "author": "Author: ",
             "theme": "Theme:",
             "qoute": "Qoute form Artist"
         },
         "rightBlock": {
+            "topImage" : "http://www.grotonarts.com/static/home/termBlackQuestionMark.png",
             "nameOfArt": "Name of Art:",
             "author": "Author: ",
             "theme": "Theme:",

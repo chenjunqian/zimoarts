@@ -28,7 +28,9 @@
           <div class="top-album-items-container">
             <div class="top-left-album-item-column">
               <div class="top-left-album-item-back">
-                <div class="top-left-album-item-front"></div>
+                <div class="top-left-album-item-front">
+                  <img style="width: 100%; height: auto;" src="http://www.grotonarts.com/static/home/upcomingLeftImage.png" />
+                </div>
               </div>
               <div class="top-left-album-middler-placeholder"></div>
               <div class="top-left-album-item-text-container">
@@ -44,7 +46,9 @@
               </div>
               <div class="top-middle-album-item-back-left-block"></div>
               <div class="top-middle-album-item-back">
-                <div class="top-middle-album-item-front"></div>
+                <div class="top-middle-album-item-front">
+                  <img style="width: 100%; height: auto;" src="http://www.grotonarts.com/static/home/upcomingMiddleImage.png" />
+                </div>
               </div>
             </div>
 
@@ -58,7 +62,9 @@
                 </div>
               </div>
               <div class="top-right-album-item-back">
-                <div class="top-right-album-item-front"></div>
+                <div class="top-right-album-item-front">
+                  <img style="width: 100%; height: auto;" src="http://www.grotonarts.com/static/home/upcomingRightImage.png" />
+                </div>
               </div>
             </div>
 
@@ -97,8 +103,10 @@
 
           <div class="bottom-album-columns-container">
             <div class="bottom-album-column">
-              <img class="bottom-album-column-image" />
-              <div class="bottom-album-column-circle-image"></div>
+              <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.leftBlock.topImage" />
+              <div class="bottom-album-column-circle-image">
+                <img style="width: 100%; height: auto;" />
+              </div>
               <div class="bottom-album-column-text-container">
                 <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.leftBlock.nameOfArt }}</div>
                 <div class="bottom-album-column-text">
@@ -111,8 +119,10 @@
               </div>
             </div>
             <div class="bottom-album-column" style="margin-left: 15%">
-              <img class="bottom-album-column-image" />
-              <div class="bottom-album-column-circle-image"></div>
+              <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.middleBlock.topImage" />
+              <div class="bottom-album-column-circle-image">
+                <img style="width: 100%; height: auto;" />
+              </div>
               <div class="bottom-album-column-text-container">
                 <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.middleBlock.nameOfArt }}</div>
                 <div class="bottom-album-column-text">
@@ -125,8 +135,10 @@
               </div>
             </div>
             <div class="bottom-album-column" style="margin-left: 15%">
-              <img class="bottom-album-column-image" />
-              <div class="bottom-album-column-circle-image"></div>
+              <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.rightBlock.topImage" />
+              <div class="bottom-album-column-circle-image">
+                <img style="width: 100%; height: auto;" />
+              </div>
               <div class="bottom-album-column-text-container">
                 <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.rightBlock.nameOfArt }}</div>
                 <div class="bottom-album-column-text">
@@ -270,14 +282,17 @@
           pageData.visualArtOfTheTerm.leftBlock.author = response['visualArtOfTheTerm']['leftBlock']['author']
           pageData.visualArtOfTheTerm.leftBlock.theme = response['visualArtOfTheTerm']['leftBlock']['theme']
           pageData.visualArtOfTheTerm.leftBlock.qoute = response['visualArtOfTheTerm']['leftBlock']['qoute']
+          pageData.visualArtOfTheTerm.leftBlock.topImage = response['visualArtOfTheTerm']['leftBlock']['topImage']
           pageData.visualArtOfTheTerm.middleBlock.nameOfArt = response['visualArtOfTheTerm']['middleBlock']['nameOfArt']
           pageData.visualArtOfTheTerm.middleBlock.author = response['visualArtOfTheTerm']['middleBlock']['author']
           pageData.visualArtOfTheTerm.middleBlock.theme = response['visualArtOfTheTerm']['middleBlock']['theme']
           pageData.visualArtOfTheTerm.middleBlock.qoute = response['visualArtOfTheTerm']['middleBlock']['qoute']
+          pageData.visualArtOfTheTerm.middleBlock.topImage = response['visualArtOfTheTerm']['middleBlock']['topImage']
           pageData.visualArtOfTheTerm.rightBlock.nameOfArt = response['visualArtOfTheTerm']['rightBlock']['nameOfArt']
           pageData.visualArtOfTheTerm.rightBlock.author = response['visualArtOfTheTerm']['rightBlock']['author']
           pageData.visualArtOfTheTerm.rightBlock.theme = response['visualArtOfTheTerm']['rightBlock']['theme']
           pageData.visualArtOfTheTerm.rightBlock.qoute = response['visualArtOfTheTerm']['rightBlock']['qoute']
+          pageData.visualArtOfTheTerm.rightBlock.topImage = response['visualArtOfTheTerm']['rightBlock']['topImage']
 
         }).catch(function (error) {
           console.log(error);
@@ -312,8 +327,8 @@
 
   /* top dropdown area */
   .home-school-icon {
-    width: 180px;
-    height: 90px;
+    width: 240px;
+    height: 120px;
     float: left;
     margin-left: 80px;
   }
@@ -409,7 +424,6 @@
   .top-left-album-item-front {
     width: 250px;
     height: 350px;
-    background-color: #c0c0c0;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 25px;
@@ -457,7 +471,6 @@
   .top-middle-album-item-front {
     width: 250px;
     height: 350px;
-    background-color: #c0c0c0;
     float: right;
     margin-top: 25px;
     margin-right: 25px;
@@ -509,7 +522,6 @@
   .top-right-album-item-front {
     width: 250px;
     height: 350px;
-    background-color: #c0c0c0;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 25px;
@@ -550,27 +562,27 @@
   }
 
   .bottom-album-columns-container {
-    width: 70%;
+    width: 400px;
     margin: 0 auto;
     margin-top: 120px;
     padding-bottom: 120px;
     display: flex;
+    justify-content: center;
   }
 
   .bottom-album-column {
-    width: 25%;
     display: inline;
   }
 
   .bottom-album-column-image {
-    width: 100%;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     background-color: #888888;
   }
 
   .bottom-album-column-circle-image {
-    width: 50%;
-    height: 50px;
+    width: 120px;
+    height: 120px;
     background-color: #888888;
     margin: 0 auto;
     margin-top: 80px;
@@ -584,7 +596,7 @@
 
   .bottom-album-column-text {
     width: 100%;
-    font-size: 9px;
+    font-size: 8pt;
     display: block;
   }
 

@@ -118,7 +118,7 @@ export default {
   padding-left: 5px;
   margin-right: 5px;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
 }
 
 .dropdown-content a:hover {
