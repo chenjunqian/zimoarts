@@ -10,7 +10,7 @@
 
     <div style="width: 100%;">
       <!-- introduction block -->
-      <div style="width: 100%; display: flex; border-bottom: 1px solid #c0c0c0">
+      <div style="width: 100%;padding-top: 50px; display: flex; border-bottom: 1px solid #c0c0c0">
         <div style="width: 50%; height: 20px;"></div>
         <div style="width: 50%;display: flex;">
           <div style="font-size: 60px; color: #ab050f">Introduc&nbsp;</div>
@@ -30,39 +30,16 @@
         <!-- introduction right description block -->
         <div style="width: 50%;">
           <div style="width: 100%;text-align: left;margin-top: 50px;font-size: 30px;color: #000000;">
-            oskfmguugsdqozm
+            {{ introduction.title }}
           </div>
-          <div style="width: 70%; margin-top: 20px;text-align: left;word-break: break-all; word-wrap: break-word">
-            sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-            lacjgluyioqyeowihds kxdaqoc uwyihdfkshkulhjuljkznkljfoilkzjkopjhslakhuhgskudbhzishiklfjlakjs;ojo
-            jlkfkjxhhdusyrincjhdkkcciensjfs;mv;lxmc/vx...... kas,l;lkfg;slmjfheiosuoi
-            shklnlskjujmklfnlksulejlityioeiojfhlkksnddv.clj;sjc.mdm,jjvm,.dklfl dkkvmkldjfnblcvmb.,cvkl;lk;f,;lmb
-            .ckfbl/.c
-            sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-            lacjgluyioqyeowihds kxdaqoc uwyihdfkshkulhjuljkznkljfoilkzjkopjhslakhuhgskudbhzishiklfjlakjs;ojo
-            jlkfkjxhhdusyrincjhdkkcciensjfs;mv;lxmc/vx...... kas,l;lkfg;slmjfheiosuoi
-            shklnlskjujmklfnlksulejlityioeiojfhlkksnddv.clj;sjc.mdm,jjvm,.dklfl dkkvmkldjfnblcvmb.,cvkl;lk;f,;lmb
-            .ckfbl/.c
-          </div>
-          <div style="width: 70%; margin-top: 20px;text-align: left;word-break: break-all; word-wrap: break-word">
-            sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-            lacjgluyioqyeowihds kxdaqoc uwyihdfkshkulhjuljkznkljfoilkzjkopjhslakhuhgskudbhzishiklfjlakjs;ojo
-            jlkfkjxhhdusyrincjhdkkcciensjfs;mv;lxmc/vx...... kas,l;lkfg;slmjfheiosuoi
-            shklnlskjujmklfnlksulejlityioeiojfhlkksnddv.clj;sjc.mdm,jjvm,.dklfl dkkvmkldjfnblcvmb.,cvkl;lk;f,;lmb
-            .ckfbl/.c
-            sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-            lacjgluyioqyeowihds kxdaqoc uwyihdfkshkulhjuljkznkljfoilkzjkopjhslakhuhgskudbhzishiklfjlakjs;ojo
-            jlkfkjxhhdusyrincjhdkkcciensjfs;mv;lxmc/vx...... kas,l;lkfg;slmjfheiosuoi
-            shklnlskjujmklfnlksulejlityioeiojfhlkksnddv.clj;sjc.mdm,jjvm,.dklfl dkkvmkldjfnblcvmb.,cvkl;lk;f,;lmb
-            .ckfbl/.c
-          </div>
-          <div style="width: 70%; margin-top: 20px;text-align: left;word-break: break-all; word-wrap: break-word">
-            alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
+          <div v-for="item in introduction.content" :key="item"
+            style="width: 70%; margin-top: 20px;text-align: left;word-break: break-all; word-wrap: break-word">
+            {{ item }}
           </div>
           <div style="width: 70%;text-align: right;color: #000000;font-weight: bolder;margin-top: 50px;">
-            Zimo Liu
+            {{ introduction.author }}
           </div>
-          <div style="width: 70%;text-align: right;color: #000000;"> Founder/Chef </div>
+          <div style="width: 70%;text-align: right;color: #000000;"> {{ introduction.authorTitle }} </div>
           <div style="width: 100%;display: flex;margin-top: 40px;">
             <img style="width: 250px;height: 200px;">
           </div>
@@ -127,12 +104,14 @@
 
           <!-- member block -->
 
-          <a-list style="width: 83%; display: flex; margin: 0 auto; margin-top: 80px;" :grid="{ gutter: 16, column: 4 }" :data-source="memberDataList">
+          <a-list style="width: 83%; display: flex; margin: 0 auto; margin-top: 80px;" :grid="{ gutter: 16, column: 4 }"
+            :data-source="memberDataList">
             <template #renderItem="{ item }">
               <a-list-item>
                 <a-card style="border: none;">
                   <img style="width: 100%; height: auto;" :src="item.imageUrl" />
-                  <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">{{ item.name }}</div>
+                  <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">{{
+                    item.name }}</div>
                   <div style="width: 100%;color: #000000;font-size: 10pt;">{{ item.title }}</div>
                 </a-card>
               </a-list-item>
@@ -244,7 +223,7 @@
   import FooterComponent from "@/components/FootComponent.vue";
   import ColorDivider from "@/components/ColorDivider.vue";
   import { httpRequest } from "@/libs/request";
-  import { ref } from "vue";
+  import { ref, reactive } from "vue";
   import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
 
   export default {
@@ -259,13 +238,24 @@
       let teacherDataList = ref()
       let teacherBlockTitle = ref()
       let memberDataList = ref()
+      let introduction = reactive({
+        leftImageUrl: "",
+        title: "",
+        content: [],
+        author: "",
+        authorTitle: ""
+      })
 
       httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
         console.log("boutus-resource : ", response)
         teacherDataList.value = response["team"]['teacherDataList']
         teacherBlockTitle.value = response["team"]['teacherBlockTitle']
         memberDataList.value = response["team"]["memberData"]["memberList"]
-
+        introduction.leftImageUrl = response["introduction"]["leftImageUrl"]
+        introduction.title = response["introduction"]["title"]
+        introduction.content = response["introduction"]["content"]
+        introduction.author = response["introduction"]["author"]
+        introduction.authorTitle = response["introduction"]["authorTitle"]
       }).catch(function (error) {
         console.log(error);
       });
@@ -273,7 +263,8 @@
       return {
         teacherDataList,
         teacherBlockTitle,
-        memberDataList
+        memberDataList,
+        introduction
       }
     }
   };

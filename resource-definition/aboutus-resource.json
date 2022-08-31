@@ -30,28 +30,28 @@
     "memberData": {
       "title": "",
       "chefImageUrl": "",
-      "chefDescTitle": "",
+      "chefDescTitle": "Founder/President",
       "chefDesc": "",
       "chefDescAuthor": "",
       "chefDescAuthorTitle": "",
       "viceChefImageUrl": "",
-      "viceChefName": "",
-      "viceChefTitle": "",
+      "viceChefName": "Bensen Han",
+      "viceChefTitle": "Vice President",
       "viceChefDescTitle": "",
       "memberList": [
         {
           "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
-          "title": "Art Director",
+          "title": "Visual Art Director",
           "name": "Beenson Han 1"
         },
         {
           "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
-          "title": "Art Director",
+          "title": "Performance Art Director",
           "name": "Beenson Han 2"
         },
         {
           "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
-          "title": "Art Director",
+          "title": "Music Director",
           "name": "Beenson Han 3"
         },
         {
@@ -64,10 +64,15 @@
   },
   "introduction": {
     "leftImageUrl": "",
-    "title": "",
-    "content": "",
-    "author": ",",
-    "authorTitle": ""
+    "title": "“Art is not what you see, but what you make others see.” -Edgar Degas",
+    "content": [
+      "Art, I believe, can change the world. As Degas says, art helps you and forces you to see the world differently. But here is the problem: what if no one sees your art? What if no one knows about it?  That may seem impossible in today’s technology-driven life, but I think it is actually true.",
+      "We at Groton are incredibly busy. We have academics, sports, friends, passions, jobs. We are doing everything all of the time. But part of our community is also an amazing group of artists expressing themselves in multiple ways through multiple media. My vision was to create a platform to give this community the chance to be seen. So that, with Degas, they can help others see.",
+      "This website is meant to showcase works by Groton artists, musicians and actors. Photos of visual arts and recordings of concerts and plays will be updated every term. So even if you missed an art event, you will be able to see it here.",
+      "This website would not be possible without the help and advice of many people. I would especially like to thank Ms. Sales and Ms.Ho for fully supporting my ideas. I would also like to thank Mr.Temerson for providing me with useful materials and technical support. Lastly, I would like to thank Bensen Han for being the best partner. I sincerely hope that this website helps the art community in Groton to thrive! Thank you so much and enjoy!"
+    ],
+    "author": "Zimo Liu",
+    "authorTitle": "Founder/President"
   },
   "joinUs": {
     "title": "",
