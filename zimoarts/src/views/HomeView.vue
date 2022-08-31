@@ -389,8 +389,6 @@
     font-size: 12px;
     margin-left: 10px;
     text-align: left;
-    word-break: break-all;
-    word-wrap: break-word;
   }
 
   .top-album-items-container {
