@@ -11,58 +11,61 @@
         "middleBlock": {
             "topText": "Fall Exhibition Poster",
             "bottomText": "Designer",
-            "imageUrl": "http://www.grotonarts.com/static/home/upcomingMiddleImage.png"
+            "imageUrl": "http://www.grotonarts.com/static/home/upcoming/upcomingMiddleImage.png"
         },
         "leftBlock": {
             "topText": "Fall Theater Poster",
             "bottomText": "Designer",
-            "imageUrl": "http://www.grotonarts.com/static/home/upcomingLeftImage.png"
+            "imageUrl": "http://www.grotonarts.com/static/home/upcoming/upcomingLeftImage.png"
         },
         "rightBlock": {
             "topText": "Fall Musical Poster",
             "bottomText": "Designer",
-            "imageUrl": "http://www.grotonarts.com/static/home/upcomingRightImage.png"
+            "imageUrl": "http://www.grotonarts.com/static/home/upcoming/upcomingRightImage.png"
         },
         "bottomText": "All the artist, actors and musicians would love to be recognized by the community. Please come and support if you have time. Enjoy!"
     },
     "visualArtOfTheTerm": {
         "leftBlock": {
-            "topImage" : "http://www.grotonarts.com/static/home/termRedQuestionMark.png",
+            "topImage": "http://www.grotonarts.com/static/home/upcoming/termRedQuestionMark.png",
             "nameOfArt": "Name of Art:",
             "author": "Author: ",
             "theme": "Theme:",
-            "qoute": "Qoute form Artist"
+            "qoute": "Qoute form Artist",
+            "bottomImage" :"http://www.grotonarts.com/static/home/upcoming/circle-1.png"
         },
         "middleBlock": {
-            "topImage" : "http://www.grotonarts.com/static/home/termYellowQuestionMark.png",
+            "topImage": "http://www.grotonarts.com/static/home/upcoming/termYellowQuestionMark.png",
             "nameOfArt": "Name of Art:",
             "author": "Author: ",
             "theme": "Theme:",
-            "qoute": "Qoute form Artist"
+            "qoute": "Qoute form Artist",
+            "bottomImage": "http://www.grotonarts.com/static/home/upcoming/circle-2.png"
         },
         "rightBlock": {
-            "topImage" : "http://www.grotonarts.com/static/home/termBlackQuestionMark.png",
+            "topImage": "http://www.grotonarts.com/static/home/upcoming/termBlackQuestionMark.png",
             "nameOfArt": "Name of Art:",
             "author": "Author: ",
             "theme": "Theme:",
-            "qoute": "Qoute form Artist"
+            "qoute": "Qoute form Artist",
+            "bottomImage": "http://www.grotonarts.com/static/home/upcoming/circle-3.png"
         }
     },
     "interview": {
         "interviewColumn": {
-            "interviewImageBg": "http://www.grotonarts.com/static/home/home-interview-bg.png",
+            "interviewImageBg": "http://www.grotonarts.com/static/home/interview/home-interview-bg.png",
             "topLeftTextTitle": "Coming Soon !",
             "topLeftText": "Coming Soon !",
-            "topLeftImageUrl": "",
+            "topLeftImageUrl": "http://www.grotonarts.com/static/home/interview/interview-1.png",
             "topRightTextTitle": "Coming Soon !",
             "topRightText": "Coming Soon !",
-            "topRightImageUrl": "",
+            "topRightImageUrl": "http://www.grotonarts.com/static/home/interview/interview-2.png",
             "bottomLeftTitle": "Coming Soon !",
             "bottomLeftText": "Coming Soon !",
-            "bottomLeftImageUrl": "",
+            "bottomLeftImageUrl": "http://www.grotonarts.com/static/home/interview/interview-3.png",
             "bottomRightTitle": "Coming Soon !",
             "bottomRightText": "Coming Soon !",
-            "bottomRightImageUrl": ""
+            "bottomRightImageUrl": "http://www.grotonarts.com/static/home/interview/interview-4.png"
         },
         "topInterview": {
             "letfColor": "",

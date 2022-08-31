@@ -28,13 +28,20 @@
       }
     ],
     "memberData": {
-      "title": "",
-      "chefImageUrl": "",
-      "chefDescTitle": "Founder/President",
-      "chefDesc": "",
-      "chefDescAuthor": "",
-      "chefDescAuthorTitle": "",
-      "viceChefImageUrl": "",
+      "title": "dashggqugashh",
+      "chefImageUrl": "http://www.grotonarts.com/static/aboutus/member-image/ZimoLiu.png",
+      "chefDescTitle": "dashggqugashh",
+      "chefDesc": [
+        "dashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashh",
+        "dashggqugashhdashggqugashhdashggqugashh"
+      ],
+      "chefSubDesc": [
+        "dashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashh",
+        "dashggqugashhdashggqugashhdashggqugashh"
+      ],
+      "chefDescAuthor": "Zimo Liu",
+      "chefDescAuthorTitle": "Founder/President",
+      "viceChefImageUrl": "http://www.grotonarts.com/static/aboutus/member-image/BensenHan.png",
       "viceChefName": "Bensen Han",
       "viceChefTitle": "Vice President",
       "viceChefDescTitle": "",

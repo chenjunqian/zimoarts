@@ -53,50 +53,33 @@
           <div style="color: #ab050f; font-size: 60px;">Our&nbsp;</div>
           <div style="color: #000000; font-size: 60px;">Team</div>
         </div>
-        <!-- teacher group -->
-        <!-- sub title -->
-        <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 100px;">
-          <div style="font-size: 35px;color: #ab050f;">{{ teacherBlockTitle }}</div>
-        </div>
-        <a-list style="margin-top: 120px;" :grid="{ gutter: 16, column: 3 }" :data-source="teacherDataList">
-          <template #renderItem="{ item }">
-            <a-list-item>
-              <a-card style="border: none;">
-                <img style="width: 250px; height: 250px;" :src="item.imageUrl" />
-                <div style="width: 100%;color: #000000;font-size: 12px; font-weight: bolder; margin-top: 10px;">
-                  {{ item.name }}
-                </div>
-              </a-card>
-            </a-list-item>
-          </template>
-        </a-list>
+
         <!-- team member detail block -->
         <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 100px;">
-          <div style="font-size: 35px;color: #ab050f;">UWTURIYQOWIROQPOWUPQ</div>
+          <div style="font-size: 35px;color: #ab050f;">{{memberData.title}}</div>
         </div>
         <div style="width: 100%;;margin-top: 100px;">
           <!-- founder block -->
           <div style="width: 80%; display: flex; margin: 0 auto;">
-            <img style="width: 18%; height: auto;"
-              src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" alt="">
+            <img style="width: 18%; height: auto;" :src="memberData.chefImageUrl" alt="">
             <div style="width: 72%; border: 1px solid #c0c0c0; margin-left: 9%;">
               <div style="text-align: left; color: #ab050f; margin-top: 5px; margin-left: 15px; font-size: 20px;">
-                dashggqugashh
+                {{memberData.chefDescTitle}}
               </div>
-              <div style="text-align: left;word-break: break-all; word-wrap: break-word; width: 80%;margin-left: 15px;">
-                sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-                lacjgluyioqyeowihds kxdaqoc
+              <div v-for="item in memberData.chefDesc" :key="item"
+                style="text-align: left;word-break: break-all; word-wrap: break-word; width: 80%;margin-left: 15px;">
+                {{ item }}
               </div>
               <div style="display: flex; position: relative;">
-                <div
+                <div v-for="item in memberData.chefSubDesc" :key="item"
                   style="width: 30%;font-size: 8px; color: #000000; margin-top: 5px;  margin-left: 15px; text-align: left;word-break: break-all; word-wrap: break-word;">
-                  JGYTDETRTQWEESDFG GDGHGHGDFGSDTSIUHIOVBBXZMIYTUXDG HJHFJH JHCH V FJ VJVCCCC H
-                  GJHG JKHVJHG VHVHFV
-                  CHGFD
+                  {{ item }}
                 </div>
                 <div style="position: absolute; right: 30px; bottom: 0px;">
-                  <div style="font-size: 12px; color: #000000; font-weight: bold; text-align: left;">Zimo Liu</div>
-                  <div style="font-size: 10px; color: #000000; text-align: left;">Founder/Chef</div>
+                  <div style="font-size: 12px; color: #000000; font-weight: bold; text-align: left;">
+                    {{memberData.chefDescAuthor}}</div>
+                  <div style="font-size: 10px; color: #000000; text-align: left;">{{memberData.chefDescAuthorTitle}}
+                  </div>
                 </div>
               </div>
             </div>
@@ -120,8 +103,7 @@
 
           <!-- vice chef block  -->
           <div style="width: 80%; display: flex; margin: 0 auto; margin-top: 80px;">
-            <img style="width: 18%; height: auto;"
-              src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg" alt="">
+            <img style="width: 18%; height: auto;" :src="memberData.viceChefImageUrl" alt="">
             <div style="width: 72%; border: 1px solid #c0c0c0; margin-left: 9%;">
               <div style="text-align: center; color: #000000; margin-top: 5px; margin-left: 15px; font-size: 30px;">
                 dashggqugashh
@@ -198,7 +180,28 @@
               </div>
             </div>
           </div>
-
+          <!-- teacher group -->
+          <!-- sub title -->
+          <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 100px;">
+            <div style="font-size: 35px;color: #ab050f;">{{ teacherBlockTitle }}</div>
+          </div>
+          <a-list style="margin-top: 120px;" :grid="{ gutter: 16, column: 2 }" :data-source="teacherDataList">
+            <template #renderItem="{ item }">
+              <a-list-item>
+                <a-card style="border: none;">
+                  <div style="display: flex; justify-content: center;">
+                    <img style="width: 250px; height: 250px;" :src="item.imageUrl" />
+                    <div style="width: 30%; height: 250px;position: relative;">
+                      <div
+                        style="width: 100%; position: absolute;color: #000000;font-size: 12pt; font-weight: bolder; bottom: 0;text-align: left; margin-left: 30px;">
+                        {{ item.name }}
+                      </div>
+                    </div>
+                  </div>
+                </a-card>
+              </a-list-item>
+            </template>
+          </a-list>
           <!-- join us block -->
           <div style="width: 100%; background-color: #ab050f; margin-top: 150px;">
             <div style="width :100%; color: #ffffff; font-size: 30px; padding-top: 30px;">UWTURIYQOWIROQPOWUPQ</div>
@@ -245,6 +248,19 @@
         author: "",
         authorTitle: ""
       })
+      let memberData = reactive({
+        title: "",
+        chefImageUrl: "",
+        chefDescTitle: "",
+        chefDesc: [],
+        chefSubDesc: [],
+        chefDescAuthor: "",
+        chefDescAuthorTitle: "",
+        viceChefImageUrl: "",
+        viceChefName: "",
+        viceChefTitle: "",
+        viceChefDescTitle: "",
+      })
 
       httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
         console.log("boutus-resource : ", response)
@@ -256,6 +272,18 @@
         introduction.content = response["introduction"]["content"]
         introduction.author = response["introduction"]["author"]
         introduction.authorTitle = response["introduction"]["authorTitle"]
+
+        memberData.title = response["team"]["memberData"]["title"]
+        memberData.chefImageUrl = response["team"]["memberData"]["chefImageUrl"]
+        memberData.chefDescTitle = response["team"]["memberData"]["chefDescTitle"]
+        memberData.chefDesc = response["team"]["memberData"]["chefDesc"]
+        memberData.chefSubDesc = response["team"]["memberData"]["chefSubDesc"]
+        memberData.chefDescAuthor = response["team"]["memberData"]["chefDescAuthor"]
+        memberData.chefDescAuthorTitle = response["team"]["memberData"]["chefDescAuthorTitle"]
+        memberData.viceChefImageUrl = response["team"]["memberData"]["viceChefImageUrl"]
+        memberData.viceChefName = response["team"]["memberData"]["viceChefName"]
+        memberData.viceChefTitle = response["team"]["memberData"]["viceChefTitle"]
+        memberData.viceChefDescTitle = response["team"]["memberData"]["viceChefDescTitle"]
       }).catch(function (error) {
         console.log(error);
       });
@@ -264,6 +292,7 @@
         teacherDataList,
         teacherBlockTitle,
         memberDataList,
+        memberData,
         introduction
       }
     }

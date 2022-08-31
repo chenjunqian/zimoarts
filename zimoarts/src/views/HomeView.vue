@@ -29,7 +29,8 @@
             <div class="top-left-album-item-column">
               <div class="top-left-album-item-back">
                 <div class="top-left-album-item-front">
-                  <img style="width: 100%; height: auto;" src="http://www.grotonarts.com/static/home/upcomingLeftImage.png" />
+                  <img style="width: 100%; height: auto;"
+                    src="http://www.grotonarts.com/static/home/upcomingLeftImage.png" />
                 </div>
               </div>
               <div class="top-left-album-middler-placeholder"></div>
@@ -47,7 +48,8 @@
               <div class="top-middle-album-item-back-left-block"></div>
               <div class="top-middle-album-item-back">
                 <div class="top-middle-album-item-front">
-                  <img style="width: 100%; height: auto;" src="http://www.grotonarts.com/static/home/upcomingMiddleImage.png" />
+                  <img style="width: 100%; height: auto;"
+                    src="http://www.grotonarts.com/static/home/upcomingMiddleImage.png" />
                 </div>
               </div>
             </div>
@@ -63,7 +65,8 @@
               </div>
               <div class="top-right-album-item-back">
                 <div class="top-right-album-item-front">
-                  <img style="width: 100%; height: auto;" src="http://www.grotonarts.com/static/home/upcomingRightImage.png" />
+                  <img style="width: 100%; height: auto;"
+                    src="http://www.grotonarts.com/static/home/upcomingRightImage.png" />
                 </div>
               </div>
             </div>
@@ -105,7 +108,7 @@
             <div class="bottom-album-column">
               <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.leftBlock.topImage" />
               <div class="bottom-album-column-circle-image">
-                <img style="width: 100%; height: auto;" />
+                <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.leftBlock.bottomImage" />
               </div>
               <div class="bottom-album-column-text-container">
                 <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.leftBlock.nameOfArt }}</div>
@@ -121,7 +124,7 @@
             <div class="bottom-album-column" style="margin-left: 15%">
               <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.middleBlock.topImage" />
               <div class="bottom-album-column-circle-image">
-                <img style="width: 100%; height: auto;" />
+                <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.middleBlock.bottomImage" />
               </div>
               <div class="bottom-album-column-text-container">
                 <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.middleBlock.nameOfArt }}</div>
@@ -137,7 +140,7 @@
             <div class="bottom-album-column" style="margin-left: 15%">
               <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.rightBlock.topImage" />
               <div class="bottom-album-column-circle-image">
-                <img style="width: 100%; height: auto;" />
+                <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.rightBlock.bottomImage" />
               </div>
               <div class="bottom-album-column-text-container">
                 <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.rightBlock.nameOfArt }}</div>
@@ -283,16 +286,21 @@
           pageData.visualArtOfTheTerm.leftBlock.theme = response['visualArtOfTheTerm']['leftBlock']['theme']
           pageData.visualArtOfTheTerm.leftBlock.qoute = response['visualArtOfTheTerm']['leftBlock']['qoute']
           pageData.visualArtOfTheTerm.leftBlock.topImage = response['visualArtOfTheTerm']['leftBlock']['topImage']
+          pageData.visualArtOfTheTerm.leftBlock.bottomImage = response['visualArtOfTheTerm']['leftBlock']['bottomImage']
+
           pageData.visualArtOfTheTerm.middleBlock.nameOfArt = response['visualArtOfTheTerm']['middleBlock']['nameOfArt']
           pageData.visualArtOfTheTerm.middleBlock.author = response['visualArtOfTheTerm']['middleBlock']['author']
           pageData.visualArtOfTheTerm.middleBlock.theme = response['visualArtOfTheTerm']['middleBlock']['theme']
           pageData.visualArtOfTheTerm.middleBlock.qoute = response['visualArtOfTheTerm']['middleBlock']['qoute']
           pageData.visualArtOfTheTerm.middleBlock.topImage = response['visualArtOfTheTerm']['middleBlock']['topImage']
+          pageData.visualArtOfTheTerm.middleBlock.bottomImage = response['visualArtOfTheTerm']['middleBlock']['bottomImage']
+
           pageData.visualArtOfTheTerm.rightBlock.nameOfArt = response['visualArtOfTheTerm']['rightBlock']['nameOfArt']
           pageData.visualArtOfTheTerm.rightBlock.author = response['visualArtOfTheTerm']['rightBlock']['author']
           pageData.visualArtOfTheTerm.rightBlock.theme = response['visualArtOfTheTerm']['rightBlock']['theme']
           pageData.visualArtOfTheTerm.rightBlock.qoute = response['visualArtOfTheTerm']['rightBlock']['qoute']
           pageData.visualArtOfTheTerm.rightBlock.topImage = response['visualArtOfTheTerm']['rightBlock']['topImage']
+          pageData.visualArtOfTheTerm.rightBlock.bottomImage = response['visualArtOfTheTerm']['rightBlock']['bottomImage']
 
         }).catch(function (error) {
           console.log(error);
@@ -581,7 +589,6 @@
   .bottom-album-column-circle-image {
     width: 120px;
     height: 120px;
-    background-color: #888888;
     margin: 0 auto;
     margin-top: 80px;
   }
