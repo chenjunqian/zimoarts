@@ -9,7 +9,7 @@
       <HorizontalScrollListView style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
     </div>
     <InterviewColumnComponent ref="interviewColumnRef" style="margin-top: 80px;" />
-    <DescriptionColumnComponent style="box-shadow: 0 20px 20px -2px #888888;" />
+    <DescriptionColumnComponent ref="descCompRef" style="box-shadow: 0 20px 20px -2px #888888;" />
     <FooterComponent style="margin-top: 20px" />
   </div>
 </template>
@@ -45,6 +45,7 @@
       let topImageCompRef = ref()
       let interviewCompRef = ref()
       let interviewColumnRef = ref()
+      let descCompRef = ref()
 
       httpRequest.get("http://www.grotonarts.com/static/theater/theater-resource.json").then(function (response) {
         let imageSourcePath = "http://www.grotonarts.com/static/theater/image-list/"
@@ -58,8 +59,9 @@
         }
 
         topImageCompRef.value.setResourceData(response["topBigImageComponent"])
-        interviewCompRef.value.setResourceData(response["topInterview"])
+        interviewCompRef.value.setResourceData(response["interview"]["topInterview"])
         interviewColumnRef.value.setResourceData(response["interview"]["interviewColumn"])
+        descCompRef.value.setResourceData(response["videoList"])
       }).catch(function (error) {
         console.log(error);
       });
@@ -68,7 +70,8 @@
         imageList,
         topImageCompRef,
         interviewCompRef,
-        interviewColumnRef
+        interviewColumnRef,
+        descCompRef
       }
     }
   }

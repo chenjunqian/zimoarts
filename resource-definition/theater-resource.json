@@ -23,9 +23,9 @@
       "bottomRightImageUrl": ""
     },
     "topInterview": {
-      "letfColor": "",
-      "rightColor": "",
-      "descriptionColor": "",
+      "letfColor": "#ab050f",
+      "rightColor": "#ffffff",
+      "descriptionColor": "#ab050f",
       "topImageUrl": "",
       "topDesc": "",
       "topAuthor": "",
@@ -39,6 +39,28 @@
       "contentImageSubDesc": ""
     }
   },
+  "videoList": [
+    {
+      "title": "Antigone Clips",
+      "link": "https://www.youtube.com/embed/Vn5G-6EvKdM?autoplay=0&mute=1&loop=1"    
+    },
+    {
+      "title": "Past Theater Rehearsals",
+      "link": "https://www.youtube.com/embed/JbQdNP9ITcE?autoplay=0&mute=1&loop=1"
+    },
+    {
+      "title": "“Climate Change” (speeches)",
+      "link": "https://www.youtube.com/embed/Rq1VCEAHBf0?autoplay=0&mute=1&loop=1"
+    },
+    {
+      "title": "Revue",
+      "link": "https://www.youtube.com/embed/69WX9PhXgXY?autoplay=0&mute=1&loop=1"
+    },
+    {
+      "title": "One Act 2022",
+      "link": "https://www.youtube.com/embed/8GC2H1VcouU?autoplay=0&mute=1&loop=1"
+    }
+  ],
   "image-list": {
     "anon-ymous": [
       "groton_anonymousplay_richins_111021_007_5120_51683016114_o.png",

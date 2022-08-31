@@ -23,9 +23,9 @@
       "bottomRightImageUrl": ""
     },
     "topInterview": {
-      "letfColor": "",
-      "rightColor": "",
-      "descriptionColor": "",
+      "letfColor": "#000000",
+      "rightColor": "#ffffff",
+      "descriptionColor": "#000000",
       "topImageUrl": "",
       "topDesc": "",
       "topAuthor": "",

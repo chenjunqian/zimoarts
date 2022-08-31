@@ -97,7 +97,7 @@ export default {
     const setResourceData = (jsonData) => {
       leftBlockColor.value = jsonData["letfColor"]
       rightBlockColor.value = jsonData["rightColor"]
-      descriptionColor.value = jsonData["desciptionColor"]
+      descriptionColor.value = jsonData["descriptionColor"]
       topImageUrl.value = jsonData["topImageUrl"]
       topDesc.value = jsonData["topDesc"]
       topAuthor.value = jsonData["topAuthor"]

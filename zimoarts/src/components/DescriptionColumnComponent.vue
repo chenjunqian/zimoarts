@@ -1,109 +1,54 @@
 <template>
-    <div style="width: 100%">
-        <!-- line one -->
-        <div style=" width: 100%; display: flex; justify-content: center; margin-top: 100px; ">
-            <div style="width: 30%">
-                <div style="width: 80%">
-                    <div style="display: flex">
-                        <img style="width: 10px; height: 10px" src="" alt="" />
-                        <div style="text-align: left; color: #ffce00">
-                            sadfkjanihgskbcjkooye
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <div style=" width: 90%; display: flex; justify-content: center; margin-top: 100px; margin-bottom: 50px;">
+            <a-list :grid="{ gutter: 16, column: 3 }" :data-source="videoList">
+                <template #renderItem="{ item }">
+                    <a-list-item>
+                        <div style="width: 80%">
+                            <div style="display: flex">
+                                <!-- <img style="width: 10px; height: 10px" src="" alt="" /> -->
+                                <div style="text-align: left; color: #ffce00; font-size: 12pt;">
+                                    {{ item.title }}
+                                </div>
+                            </div>
+                            <div
+                                style="margin-top: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
+                                <iframe class="video" :src="item.link" allowfullscreen>
+                                </iframe>
+                            </div>
                         </div>
-                    </div>
-                    <div style=" margin-left: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
-                        oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-                        dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
-                    </div>
-                </div>
-            </div>
-            <div style="width: 30%">
-                <div style="width: 80%">
-                    <div style="display: flex">
-                        <img style="width: 10px; height: 10px" src="" alt="" />
-                        <div style="text-align: left; color: #ffce00">
-                            sadfkjanihgskbcjkooye
-                        </div>
-                    </div>
-                    <div style=" margin-left: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
-                        oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-                        dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
-                    </div>
-                </div>
-            </div>
-            <div style="width: 30%">
-                <div style="width: 80%">
-                    <div style="display: flex">
-                        <img style="width: 10px; height: 10px" src="" alt="" />
-                        <div style="text-align: left; color: #ffce00">
-                            sadfkjanihgskbcjkooye
-                        </div>
-                    </div>
-                    <div style=" margin-left: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
-                        oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-                        dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- line two -->
-        <div style=" width: 100%; display: flex; justify-content: center; margin-top: 100px; ">
-            <div style="width: 30%">
-                <div style="width: 80%">
-                    <div style="display: flex">
-                        <img style="width: 10px; height: 10px" src="" alt="" />
-                        <div style="text-align: left; color: #ffce00">
-                            sadfkjanihgskbcjkooye
-                        </div>
-                    </div>
-                    <div style=" margin-left: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
-                        oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-                        dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
-                    </div>
-                </div>
-            </div>
-            <div style="width: 30%">
-                <div style="width: 80%">
-                    <div style="display: flex">
-                        <img style="width: 10px; height: 10px" src="" alt="" />
-                        <div style="text-align: left; color: #ffce00">
-                            sadfkjanihgskbcjkooye
-                        </div>
-                    </div>
-                    <div style=" margin-left: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
-                        oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-                        dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
-                    </div>
-                </div>
-            </div>
-            <div style="width: 30%">
-                <div style="width: 80%">
-                    <div style="display: flex">
-                        <img style="width: 10px; height: 10px" src="" alt="" />
-                        <div style="text-align: left; color: #ffce00">
-                            sadfkjanihgskbcjkooye
-                        </div>
-                    </div>
-                    <div style=" margin-left: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
-                        oqnmBslhflafkjsafl alksf;loskfmguugsdqozmxjhzvbn/
-                        dkdhfkjxhbckjvxlvklnvoqueobsahf lacjgluyioqyeowihds kxdaqoc
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div
-            style=" width: 100%; display: flex; justify-content: center; margin-top: 150px; padding-bottom: 200px; color: #ffce00; ">
-            <div style="width: 50%; word-break: break-all; word-wrap: break-word">
-                sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl
-                ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-                lacjgluyioqyeowihds kxdaqoc
-            </div>
+                    </a-list-item>
+                </template>
+            </a-list>
         </div>
     </div>
 </template>
 
 <script>
+    import { ref } from 'vue';
+
     export default {
-        name: "DescriptionColumnComponent"
+        name: "DescriptionColumnComponent",
+        components: {},
+        setup() {
+            let videoList = ref()
+
+            const setResourceData = (jsonData) => {
+                videoList.value = jsonData
+            }
+
+            return {
+                videoList,
+                setResourceData
+            }
+        }
     }
 </script>
+
+<style>
+    .video {
+        width: 300px;
+        height: 168.75px;
+        border: none;
+    }
+</style>

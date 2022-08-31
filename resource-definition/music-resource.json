@@ -10,10 +10,10 @@
     "interviewColumn": {
       "interview-image-bg": "http://www.grotonarts.com/static/music/music-interview-bg.png"
     },
-    "top-interview": {
-      "letfColor": "",
-      "rightColor": "",
-      "descriptionColor": "",
+    "topInterview": {
+      "letfColor": "#ffce00",
+      "rightColor": "#ffffff",
+      "descriptionColor": "#ffce00",
       "topImageUrl": "",
       "topDesc": "",
       "topAuthor": "",
@@ -27,6 +27,28 @@
       "contentImageSubDesc": ""
     }
   },
+  "videoList": [
+    {
+      "title": "Past Music Performance (Piano Solo)",
+      "link": "https://www.youtube.com/embed/cnm1NAe8a2g?autoplay=0&mute=1&loop=1"
+    },
+    {
+      "title": "Choir Concert (May, 29, 2022)",
+      "link": "https://www.youtube.com/embed/NFGTqwjqe7Q?autoplay=0&mute=1&loop=1"
+    },
+    {
+      "title": "Orchestra Concert",
+      "link": "https://www.youtube.com/embed/Rq1VCEAHBf0?autoplay=0&mute=1&loop=1"
+    },
+    {
+      "title": "John Rogers Senior Recital",
+      "link": "https://www.youtube.com/embed/Na7TXT4iE24?autoplay=0&mute=1&loop=1"
+    },
+    {
+      "title": "Student Recital",
+      "link": "https://www.youtube.com/embed/dwY7GhpM2iA?autoplay=0&mute=1&loop=1"
+    }
+  ],
   "image-list": {
     "saturday-pw-richins": [
       "groton_saturday_pw_richins_103021_290_7672_51648618114_o.png",
