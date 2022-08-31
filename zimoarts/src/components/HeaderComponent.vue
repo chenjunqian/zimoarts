@@ -1,7 +1,7 @@
 <template>
   <div class="header-container">
     <div class="header-icon-container">
-      <div class="header-left-top-info">2022.9.15wuiqoqn.zkJklk</div>
+      <div class="header-left-top-info">Publication Date: 2022. Sept.1</div>
     </div>
     <div class="header-middle-placeholder"></div>
     <div class="header-right-container">
