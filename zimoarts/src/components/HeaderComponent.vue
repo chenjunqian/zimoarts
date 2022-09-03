@@ -6,10 +6,6 @@
     <div class="header-middle-placeholder"></div>
     <div class="header-right-container">
       <div class="header-right-icon-placeholder"></div>
-      <router-link to="/">
-        <img class="header-right-icon" src="@/assets/master-logo-red.png">
-      </router-link>
-      
     </div>
   </div>
 </template>
@@ -23,10 +19,10 @@ export default {
 <style>
 .header-container {
   width: 100%;
-  height: 80px;
+  height: 40px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .header-icon-container {

@@ -2,13 +2,16 @@
   "topBigImageComponent": {
     "videoUrl": "https://www.youtube.com/embed/MoHDq7-XkuY",
     "backgroudPicUrl": "http://www.grotonarts.com/static/theater/theater-top-bg.png",
-    "titleOne": "THEATER&",
-    "titleTwo": "DANCE",
+    "titleOne": "",
+    "titleTwo": "THEATER & DANCE",
     "titleColor": "#ffffff"
+  },
+  "albumList": {
+    "title": "Art Gallergy"
   },
   "interview": {
     "interviewColumn": {
-      "interviewImageBg": "http://www.grotonarts.com/static/home/home-interview-bg.png",
+      "interviewImageBg": "http://www.grotonarts.com/static/theater/theater-interview-bg.png",
       "topLeftTextTitle": "Coming Soon !",
       "topLeftText": "Coming Soon !",
       "topLeftImageUrl": "",
@@ -23,6 +26,7 @@
       "bottomRightImageUrl": ""
     },
     "topInterview": {
+      "title": "Story of Actor",
       "letfColor": "#ab050f",
       "rightColor": "#ffffff",
       "descriptionColor": "#ab050f",

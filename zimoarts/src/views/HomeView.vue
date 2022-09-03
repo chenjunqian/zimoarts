@@ -30,7 +30,7 @@
               <div class="top-left-album-item-back">
                 <div class="top-left-album-item-front">
                   <img style="width: 100%; height: auto;"
-                    src="http://www.grotonarts.com/static/home/upcomingLeftImage.png" />
+                    :src="pageData.upcomingEvent.leftBlock.imageUrl" />
                 </div>
               </div>
               <div class="top-left-album-middler-placeholder"></div>
@@ -49,7 +49,7 @@
               <div class="top-middle-album-item-back">
                 <div class="top-middle-album-item-front">
                   <img style="width: 100%; height: auto;"
-                    src="http://www.grotonarts.com/static/home/upcomingMiddleImage.png" />
+                    :src="pageData.upcomingEvent.middleBlock.imageUrl" />
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@
               <div class="top-right-album-item-back">
                 <div class="top-right-album-item-front">
                   <img style="width: 100%; height: auto;"
-                    src="http://www.grotonarts.com/static/home/upcomingRightImage.png" />
+                    :src="pageData.upcomingEvent.rightBlock.imageUrl" />
                 </div>
               </div>
             </div>

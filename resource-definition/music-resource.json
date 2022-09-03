@@ -2,15 +2,31 @@
   "topBigImageComponent": {
     "videoUrl": "https://www.youtube.com/embed/Uj6phivSsZk",
     "backgroudPicUrl": "http://www.grotonarts.com/static/music/music-top-bg.png",
-    "titleOne": "Music",
-    "titleTwo": "",
+    "titleOne": "",
+    "titleTwo": "MUSIC",
     "titleColor": "#ffffff"
+  },
+  "albumList" : {
+      "title" : "Past Concerts"
   },
   "interview": {
     "interviewColumn": {
-      "interview-image-bg": "http://www.grotonarts.com/static/music/music-interview-bg.png"
+      "interviewImageBg": "http://www.grotonarts.com/static/music/music-interview-bg.png",
+      "topLeftTextTitle": "Coming Soon !",
+      "topLeftText": "Coming Soon !",
+      "topLeftImageUrl": "",
+      "topRightTextTitle": "Coming Soon !",
+      "topRightText": "Coming Soon !",
+      "topRightImageUrl": "",
+      "bottomLeftTitle": "Coming Soon !",
+      "bottomLeftText": "Coming Soon !",
+      "bottomLeftImageUrl": "",
+      "bottomRightTitle": "Coming Soon !",
+      "bottomRightText": "Coming Soon !",
+      "bottomRightImageUrl": ""
     },
     "topInterview": {
+      "title": "Story of Musician",
       "letfColor": "#ffce00",
       "rightColor": "#ffffff",
       "descriptionColor": "#ffce00",
@@ -18,7 +34,7 @@
       "topDesc": "",
       "topAuthor": "",
       "topAuthorTitle": "",
-      "contentTitle": "",
+      "contentTitle": "Coming soon !",
       "content": "",
       "contentAuthor": "",
       "contentAuthorTitle": "",

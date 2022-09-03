@@ -31,7 +31,7 @@
         </router-link>
       </div>
     </div>
-    <div class="home-dropdown-item" style="background-color: white">
+    <div class="home-dropdown-item" style="background-color: white; border: 1px solid #000000;">
       <div class="home-dropdown-text-container">
         <div class="dropdown">
           <div class="home-dropdown-text" style="color: #000000">OTHER</div>

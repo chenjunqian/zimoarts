@@ -51,6 +51,9 @@
             "bottomImage": "http://www.grotonarts.com/static/home/upcoming/circle-3.png"
         }
     },
+    "albumList": {
+        "title": "Visual Art"
+    },
     "interview": {
         "interviewColumn": {
             "interviewImageBg": "http://www.grotonarts.com/static/home/interview/home-interview-bg.png",

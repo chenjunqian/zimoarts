@@ -5,7 +5,7 @@
     <HomeDropDowmMenuComponent />
     <!-- school bagde block -->
     <div style="margin-top: 80px">
-      <img style="width: 180px; height: 90px; float: left; margin-left: 80px" src="@/assets/black-red-logo.png" />
+      <img style="width: 240px; height: 120px; float: left; margin-left: 80px" src="@/assets/black-red-logo.png" />
     </div>
 
     <div style="width: 100%;">
@@ -13,8 +13,8 @@
       <div style="width: 100%;padding-top: 50px; display: flex; border-bottom: 1px solid #c0c0c0">
         <div style="width: 50%; height: 20px;"></div>
         <div style="width: 50%;display: flex;">
-          <div style="font-size: 60px; color: #ab050f">Introduc&nbsp;</div>
-          <div style="font-size: 60px; color: #000000">tion</div>
+          <div style="font-size: 48pt; color: #ab050f">Introduc</div>
+          <div style="font-size: 48pt; color: #000000">tion</div>
         </div>
       </div>
       <!-- introduction detail -->
@@ -29,11 +29,14 @@
         </div>
         <!-- introduction right description block -->
         <div style="width: 50%;">
-          <div style="width: 100%;text-align: left;margin-top: 50px;font-size: 30px;color: #000000;">
+          <div style="width: 70%;text-align: left;margin-top: 50px;font-size: 28pt;color: #000000;">
             {{ introduction.title }}
           </div>
+          <div style="width: 70%;text-align: right;font-size: 20pt;color: #000000;">
+            {{ introduction.subTitle }}
+          </div>
           <div v-for="item in introduction.content" :key="item"
-            style="width: 70%; margin-top: 20px;text-align: left;word-break: break-all; word-wrap: break-word">
+            style="width: 70%; margin-top: 20px;text-align: left;font-size: 11pt;">
             {{ item }}
           </div>
           <div style="width: 70%;text-align: right;color: #000000;font-weight: bolder;margin-top: 50px;">
@@ -41,7 +44,7 @@
           </div>
           <div style="width: 70%;text-align: right;color: #000000;"> {{ introduction.authorTitle }} </div>
           <div style="width: 100%;display: flex;margin-top: 40px;">
-            <img style="width: 250px;height: 200px;">
+            <img style="width: 282.59px;height: 191.61px;" :src="introduction.descImage">
           </div>
         </div>
       </div>
@@ -55,7 +58,7 @@
         </div>
 
         <!-- team member detail block -->
-        <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 100px;">
+        <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 10px;">
           <div style="font-size: 35px;color: #ab050f;">{{memberData.title}}</div>
         </div>
         <div style="width: 100%;;margin-top: 100px;">
@@ -63,14 +66,15 @@
           <div style="width: 80%; display: flex; margin: 0 auto;">
             <img style="width: 18%; height: auto;" :src="memberData.chefImageUrl" alt="">
             <div style="width: 72%; border: 1px solid #c0c0c0; margin-left: 9%;">
-              <div style="text-align: left; color: #ab050f; margin-top: 5px; margin-left: 15px; font-size: 20px;">
+              <div
+                style="text-align: left; padding-top: 50px;color: #ab050f; margin-top: 5px; margin-left: 15px; font-size: 20pt;">
                 {{memberData.chefDescTitle}}
               </div>
               <div v-for="item in memberData.chefDesc" :key="item"
-                style="text-align: left;word-break: break-all; word-wrap: break-word; width: 80%;margin-left: 15px;">
+                style="text-align: left; width: 95%;margin-left: 15pt;">
                 {{ item }}
               </div>
-              <div style="display: flex; position: relative;">
+              <div style="display: flex; min-height: 50px; position: relative;">
                 <div v-for="item in memberData.chefSubDesc" :key="item"
                   style="width: 30%;font-size: 8px; color: #000000; margin-top: 5px;  margin-left: 15px; text-align: left;word-break: break-all; word-wrap: break-word;">
                   {{ item }}
@@ -92,9 +96,10 @@
             <template #renderItem="{ item }">
               <a-list-item>
                 <a-card style="border: none;">
-                  <img style="width: 100%; height: auto;" :src="item.imageUrl" />
-                  <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">{{
-                    item.name }}</div>
+                  <img style="width: 238.8px; height: 298.74px; background-color: #c0c0c0;" :src="item.imageUrl" />
+                  <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">
+                    {{item.name }}
+                  </div>
                   <div style="width: 100%;color: #000000;font-size: 10pt;">{{ item.title }}</div>
                 </a-card>
               </a-list-item>
@@ -102,11 +107,10 @@
           </a-list>
 
           <!-- vice chef block  -->
-          <div style="width: 80%; display: flex; margin: 0 auto; margin-top: 80px;">
-            <img style="width: 18%; height: auto;" :src="memberData.viceChefImageUrl" alt="">
-            <div style="width: 72%; border: 1px solid #c0c0c0; margin-left: 9%;">
+          <div style="width: 83%; display: flex; justify-content: center; margin: 0 auto; margin-top: 80px;">
+            <div style="width: 96%; border: 1px solid #c0c0c0;">
               <div style="text-align: center; color: #000000; margin-top: 5px; margin-left: 15px; font-size: 30px;">
-                dashggqugashh
+                Other Members
               </div>
               <div style="width: 100%; margin-top: 20px; display: flex;">
                 <!-- member desciption column -->
@@ -192,9 +196,9 @@
                   <div style="display: flex; justify-content: center;">
                     <img style="width: 250px; height: 250px;" :src="item.imageUrl" />
                     <div style="width: 30%; height: 250px;position: relative;">
-                      <div
-                        style="width: 100%; position: absolute;color: #000000;font-size: 12pt; font-weight: bolder; bottom: 0;text-align: left; margin-left: 30px;">
-                        {{ item.name }}
+                      <div style="width: 100%; position: absolute; bottom: 0;text-align: left; margin-left: 30px;">
+                        <div style="color: grey; font-size: 10pt;">{{ item.title }}</div>
+                        <div style="color: #000000; font-weight: bolder;font-size: 12pt;">{{ item.name }}</div>
                       </div>
                     </div>
                   </div>
@@ -204,12 +208,11 @@
           </a-list>
           <!-- join us block -->
           <div style="width: 100%; background-color: #ab050f; margin-top: 150px;">
-            <div style="width :100%; color: #ffffff; font-size: 30px; padding-top: 30px;">UWTURIYQOWIROQPOWUPQ</div>
-            <div style="width :100%; color: #ffffff; font-size: 30px; padding-top: 10px;">加入我们</div>
+            <div style="width :100%; color: #ffffff; font-size: 30px; padding-top: 30px;">{{ joinUs.title }}</div>
+            <div style="width :100%; color: #ffffff; font-size: 30px; padding-top: 10px;">{{ joinUs.subTitle }}</div>
             <div style="justify-content: center;display: flex; padding-bottom: 30px;">
               <div style="width :50%; color: #ffffff; font-size: 15px; padding-top: 30px; text-align: center;">
-                sadfkjanihgskbcjkooyeoqnmBslhflafkjsafl ;alksf;loskfmguugsdqozmxjhzvbn/dkdhfkjxhbckjvxlvklnvoqueobsahf
-                lacjgluyioqyeowihds kxdaqoc
+                {{ joinUs.desc }}
               </div>
             </div>
           </div>
@@ -261,14 +264,21 @@
         viceChefTitle: "",
         viceChefDescTitle: "",
       })
+      let joinUs = reactive({
+        title: "",
+        subTitle: "",
+        desc: ""
+      })
 
       httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
-        console.log("boutus-resource : ", response)
+        console.log("aboutus-resource : ", response)
         teacherDataList.value = response["team"]['teacherDataList']
         teacherBlockTitle.value = response["team"]['teacherBlockTitle']
         memberDataList.value = response["team"]["memberData"]["memberList"]
         introduction.leftImageUrl = response["introduction"]["leftImageUrl"]
         introduction.title = response["introduction"]["title"]
+        introduction.subTitle = response["introduction"]["subTitle"]
+        introduction.descImage = response["introduction"]["descImage"]
         introduction.content = response["introduction"]["content"]
         introduction.author = response["introduction"]["author"]
         introduction.authorTitle = response["introduction"]["authorTitle"]
@@ -284,6 +294,10 @@
         memberData.viceChefName = response["team"]["memberData"]["viceChefName"]
         memberData.viceChefTitle = response["team"]["memberData"]["viceChefTitle"]
         memberData.viceChefDescTitle = response["team"]["memberData"]["viceChefDescTitle"]
+
+        joinUs.title = response["joinUs"]["title"]
+        joinUs.subTitle = response["joinUs"]["subTitle"]
+        joinUs.desc = response["joinUs"]["desc"]
       }).catch(function (error) {
         console.log(error);
       });
@@ -293,6 +307,7 @@
         teacherBlockTitle,
         memberDataList,
         memberData,
+        joinUs,
         introduction
       }
     }

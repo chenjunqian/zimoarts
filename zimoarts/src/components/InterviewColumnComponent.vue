@@ -4,7 +4,7 @@
     :style="{ 'background-image': `url('${backgroundBigImage}')` }">
     <div
       style="width: 100%; padding-top: 50px; margin-bottom: 50px; font-size: 58px; font-weight: bolder; border-bottom: 1px solid #ffffff; display: flex; justify-content: center; color: #ffffff; ">
-      <div>INTERVIEW</div>
+      <div>Past Stories</div>
     </div>
 
     <!-- top colomn -->

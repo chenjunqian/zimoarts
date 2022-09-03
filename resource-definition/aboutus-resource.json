@@ -1,43 +1,47 @@
 {
   "team": {
-    "teacherBlockTitle": "UWTURIYQOWIROQPOWUPQ",
+    "teacherBlockTitle": "Faculty Members",
     "teacherDataList": [
       {
-        "name": "Mr. Dan J. Moriaty",
-        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Mr-Dan-J-Moriarty.png"
-      },
-      {
-        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Mr-Brandt-Belknap.png",
-        "name": "Mr. Brandt Belknap"
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Monika-Andersson.png",
+        "name": "Ms Monika Andersson",
+        "title": "Art Department"
       },
       {
         "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/MS-Ho.png",
-        "name": "Ms. Ho"
-      },
-      {
-        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Mary-Ann-Lanier.png",
-        "name": "Ms Mary Ann Lanier"
-      },
-      {
-        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Monika-Andersson.png",
-        "name": "Ms Monika Andersson"
+        "name": "Ms. Jennifer Ho",
+        "title": "Art Department"
       },
       {
         "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Sales.png",
-        "name": "Ms Sales"
+        "name": "Ms Laurie C.Sales",
+        "title": "Theater Department"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Mr-Brandt-Belknap.png",
+        "name": "Mr. Brandt Belknap",
+        "title": "Theater Department"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Ms-Mary-Ann-Lanier.png",
+        "name": "Ms Mary Ann Lanier",
+        "title": "Music Department"
+      },
+      {
+        "name": "Mr. Dan J. Moriaty",
+        "imageUrl": "http://www.grotonarts.com/static/aboutus/teacher-image-list/Mr-Dan-J-Moriarty.png",
+        "title": "Music Department"
       }
     ],
     "memberData": {
-      "title": "dashggqugashh",
+      "title": "Student Members of the Committee",
       "chefImageUrl": "http://www.grotonarts.com/static/aboutus/member-image/ZimoLiu.png",
-      "chefDescTitle": "dashggqugashh",
+      "chefDescTitle": "I would love to share one of my favorite quotes",
       "chefDesc": [
-        "dashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashh",
-        "dashggqugashhdashggqugashhdashggqugashh"
+        "“Don’t think about making art, just get it done. Let everyone else decide if it’s good or bad, whether they love it or hate it. While they are deciding, make even more art.” – Andy Warhol "
       ],
       "chefSubDesc": [
-        "dashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashhdashggqugashh",
-        "dashggqugashhdashggqugashhdashggqugashh"
+        ""
       ],
       "chefDescAuthor": "Zimo Liu",
       "chefDescAuthorTitle": "Founder/President",
@@ -47,31 +51,33 @@
       "viceChefDescTitle": "",
       "memberList": [
         {
-          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/BensenHan.png",
           "title": "Visual Art Director",
-          "name": "Beenson Han 1"
+          "name": "Bensen Han"
         },
         {
-          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "imageUrl": "",
           "title": "Performance Art Director",
-          "name": "Beenson Han 2"
+          "name": ""
         },
         {
-          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "imageUrl": "",
           "title": "Music Director",
-          "name": "Beenson Han 3"
+          "name": ""
         },
         {
-          "imageUrl": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/542/link/large_link1625891_91604.jpg",
+          "imageUrl": "",
           "title": "Art Director",
-          "name": "Beenson Han 4"
+          "name": ""
         }
       ]
     }
   },
   "introduction": {
     "leftImageUrl": "",
-    "title": "“Art is not what you see, but what you make others see.” -Edgar Degas",
+    "title": "“Art is not what you see, but what you make others see.”  ",
+    "subTitle": "-- Edgar Degas",
+    "descImage": "http://www.grotonarts.com/static/aboutus/member-image/introduction-desc-image.png",
     "content": [
       "Art, I believe, can change the world. As Degas says, art helps you and forces you to see the world differently. But here is the problem: what if no one sees your art? What if no one knows about it?  That may seem impossible in today’s technology-driven life, but I think it is actually true.",
       "We at Groton are incredibly busy. We have academics, sports, friends, passions, jobs. We are doing everything all of the time. But part of our community is also an amazing group of artists expressing themselves in multiple ways through multiple media. My vision was to create a platform to give this community the chance to be seen. So that, with Degas, they can help others see.",
@@ -82,8 +88,8 @@
     "authorTitle": "Founder/President"
   },
   "joinUs": {
-    "title": "",
-    "subTitle": "",
-    "desc": ""
+    "title": "Groton United Arts Committee",
+    "subTitle": "Join Us",
+    "desc": "Including Visual Arts Community, Performance Arts Community and Music Community"
   }
 }

@@ -8,7 +8,7 @@
   },
   "interview": {
     "interviewColumn": {
-      "interviewImageBg": "http://www.grotonarts.com/static/home/home-interview-bg.png",
+      "interviewImageBg": "http://www.grotonarts.com/static/art/photography/photography-interview-bg.png",
       "topLeftTextTitle": "Coming Soon !",
       "topLeftText": "Coming Soon !",
       "topLeftImageUrl": "",
@@ -23,6 +23,7 @@
       "bottomRightImageUrl": ""
     },
     "topInterview": {
+      "title": "Story of Artist",
       "letfColor": "#000000",
       "rightColor": "#ffffff",
       "descriptionColor": "#000000",
@@ -30,7 +31,7 @@
       "topDesc": "",
       "topAuthor": "",
       "topAuthorTitle": "",
-      "contentTitle": "",
+      "contentTitle": "Coming Soon !",
       "content": "",
       "contentAuthor": "",
       "contentAuthorTitle": "",
