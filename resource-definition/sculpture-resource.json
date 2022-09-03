@@ -9,6 +9,56 @@
   "albumList": {
     "title": "Art Gallergy"
   },
+  "nameList": [
+    {
+      "name": "Wren Fortunoff 22"
+    },
+    {
+      "name": "Zimo Liu 24"
+    },
+    {
+      "name": "Andrew M. 20"
+    },
+    {
+      "name": "Emma B. 20"
+    },
+    {
+      "name": "Marc B. 20"
+    },
+    {
+      "name": "Lwazi B. 20"
+    },
+    {
+      "name": "Anna C 20"
+    },
+    {
+      "name": "John D. 20"
+    },
+    {
+      "name": "Jon H. 20"
+    },
+    {
+      "name": "Annabel K. 20"
+    },
+    {
+      "name": "Grace M. 20"
+    },
+    {
+      "name": "Richa P 20"
+    },
+    {
+      "name": "Eliza P 20"
+    },
+    {
+      "name": "Katie R 20"
+    },
+    {
+      "name": "Max S 20"
+    },
+    {
+      "name": "Caroline W. 20"
+    }
+  ],
   "interview": {
     "interviewColumn": {
       "interviewImageBg": "http://www.grotonarts.com/static/art/sculpture/sculpture-interview-bg.png",

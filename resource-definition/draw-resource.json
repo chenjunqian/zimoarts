@@ -9,6 +9,92 @@
   "albumList": {
     "title": "Art Gallergy"
   },
+  "nameList": [
+    {
+      "name": "Sobenna Egwuekwe 22"
+    },
+    {
+      "name": "Mei Matsui 23"
+    },
+    {
+      "name": "Alice Liu 23"
+    },
+    {
+      "name": "Brianna Zhang 23"
+    },
+    {
+      "name": "Jojo Sulmasy 23"
+    },
+    {
+      "name": "Amy Sharma 23"
+    },
+    {
+      "name": "Amy Ma 23"
+    },
+    {
+      "name": "Colin Kim 23"
+    },
+    {
+      "name": "Chloe Zheng 23"
+    },
+    {
+      "name": "Paopao Zhang 24"
+    },
+    {
+      "name": "April Li 24"
+    },
+    {
+      "name": "Maddie C.20"
+    },
+    {
+      "name": "Rachel M. 20"
+    },
+    {
+      "name": "Mary C. 20"
+    },
+    {
+      "name": "Olivia T. 20"
+    },
+    {
+      "name": "Liam S. 20"
+    },
+    {
+      "name": "Josephine A. 20"
+    },
+    {
+      "name": "Doug A. 20"
+    },
+    {
+      "name": "Gili C. 20"
+    },
+    {
+      "name": "Caleb C. 20"
+    },
+    {
+      "name": "Maddie C 20"
+    },
+    {
+      "name": "John D. 20"
+    },
+    {
+      "name": "Elizabeth G. 20"
+    },
+    {
+      "name": "Aileen K. 20"
+    },
+    {
+      "name": "Annabel K. 20"
+    },
+    {
+      "name": "Rachel M. 20"
+    },
+    {
+      "name": "Kamsi . 20"
+    },
+    {
+      "name": "Tatum P 20"
+    }
+  ],
   "interview": {
     "interviewColumn": {
       "interviewImageBg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png",
