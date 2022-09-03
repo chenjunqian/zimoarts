@@ -41,7 +41,7 @@
     <!-- photo block -->
     <div style="width: 30%; position: relative;display: flex; z-index: 100;">
       <div style="width: 100%; position: absolute; right: 0; bottom: 200px;">
-        <img style="width: 100%;height: 300px;" :src="imageUrl" alt="">
+        <img style="width: 100%;height: 300px;" :src="contentImageUrl" alt="">
         <div style="font-weight: bolder;color: #000000;text-align: center;font-size: 15px;margin-top: 20px;">
           {{ contentImageDesc }}
         </div>
