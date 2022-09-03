@@ -49,13 +49,11 @@
       let descCompRef = ref()
 
       httpRequest.get("http://www.grotonarts.com/static/theater/theater-resource.json").then(function (response) {
-        let imageSourcePath = "http://www.grotonarts.com/static/theater/image-list/"
         let allImageList = response["image-list"]
         for (var key in allImageList) {
           let itemImageList = allImageList[key]
           for (var i in itemImageList) {
-            let imageItemPath = imageSourcePath + key + "/" + itemImageList[i]
-            imageList.value.push(imageItemPath)
+            imageList.value.push(itemImageList[i])
           }
         }
 
