@@ -17,6 +17,14 @@
             </div>
         </div>
         <div class="list-view">
+            <vue3-horizontal-list v-if="showMusic" style="width: 1120px;" :items="musics" :options="options">
+                <template v-slot:default="{ item }">
+                    <img class="item-music-img" :src="item.imageUrl" />
+                    <div class="item-music-text" :style="{ 'color': item.textColor }">{{item.text}}</div>
+                </template>
+            </vue3-horizontal-list>
+        </div>
+        <div class="list-view">
             <vue3-horizontal-list style="width: 1120px;" :items="images" :options="options">
                 <template v-slot:default="{ item }">
                     <a-image class="item-img" :src="item" />
@@ -40,15 +48,27 @@
         },
         setup() {
             let title = ref("")
+            let musics = ref()
+            let showMusic = ref(false)
 
             const setResourceData = (jsonData) => {
                 title.value = jsonData["title"]
+                let musicsJson = jsonData["musics"]
+                if (musicsJson === null || musicsJson === undefined) {
+                    musics.value = []
+                } else {
+                    musics.value = jsonData["musics"]
+                    showMusic.value = true
+                }
+                console.log("musics : ", musics)
             }
-            return{
+            return {
                 title,
-                setResourceData
+                setResourceData,
+                showMusic,
+                musics
             }
-        }, 
+        },
         data() {
             return {
                 options: {
@@ -95,6 +115,16 @@
     .item-img {
         width: 330px;
         height: 220px;
+    }
+
+    .item-music-img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .item-music-text {
+        text-align: center;
+        font-size: 15pt;
     }
 
     .top-album-descrption-container {

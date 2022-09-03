@@ -6,8 +6,25 @@
     "titleTwo": "MUSIC",
     "titleColor": "#ffffff"
   },
-  "albumList" : {
-      "title" : "Past Concerts"
+  "albumList": {
+    "title": "Past Concerts",
+    "musics": [
+      {
+        "imageUrl": "http://www.grotonarts.com/static/music/musics/record-01.png",
+        "text": "modern music",
+        "textColor": "#ffce00"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/music/musics/record-02.png",
+        "text": "classical music",
+        "textColor": "#ab050f"
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/music/musics/record-03.png",
+        "text": "jazz music",
+        "textColor": "#c0c0c0"
+      }
+    ]
   },
   "interview": {
     "interviewColumn": {
