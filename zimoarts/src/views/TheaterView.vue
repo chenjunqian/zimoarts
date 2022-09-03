@@ -6,7 +6,7 @@
     <InterviewComponent ref="interviewCompRef" />
     <ColorDivider />
     <div style="width: 100%;margin-top: 100px;">
-      <HorizontalScrollListView style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
+      <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
     </div>
     <InterviewColumnComponent ref="interviewColumnRef" style="margin-top: 80px;" />
     <DescriptionColumnComponent ref="descCompRef" style="box-shadow: 0 20px 20px -2px #888888;" />
@@ -45,6 +45,7 @@
       let topImageCompRef = ref()
       let interviewCompRef = ref()
       let interviewColumnRef = ref()
+      let hScrollListViewRef = ref()
       let descCompRef = ref()
 
       httpRequest.get("http://www.grotonarts.com/static/theater/theater-resource.json").then(function (response) {
@@ -62,6 +63,7 @@
         interviewCompRef.value.setResourceData(response["interview"]["topInterview"])
         interviewColumnRef.value.setResourceData(response["interview"]["interviewColumn"])
         descCompRef.value.setResourceData(response["videoList"])
+        hScrollListViewRef.value.setResourceData(response["albumList"])
       }).catch(function (error) {
         console.log(error);
       });
@@ -71,6 +73,7 @@
         topImageCompRef,
         interviewCompRef,
         interviewColumnRef,
+        hScrollListViewRef,
         descCompRef
       }
     }

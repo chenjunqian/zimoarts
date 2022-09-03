@@ -3,7 +3,7 @@
         <div class="top-album-descrption-container">
             <div class="top-album-descrption-title-container">
                 <div class="top-album-descrption-title" style="color: #ab050f">
-                    Visual Art&nbsp;
+                    {{ title }}&nbsp;
                 </div>
                 <div>
                     <div class="top-album-descrption-title" style="position: relative; font-size: 25px">
@@ -38,6 +38,17 @@
         props: {
             images: Array
         },
+        setup() {
+            let title = ref("")
+
+            const setResourceData = (jsonData) => {
+                title.value = jsonData["title"]
+            }
+            return{
+                title,
+                setResourceData
+            }
+        }, 
         data() {
             return {
                 options: {

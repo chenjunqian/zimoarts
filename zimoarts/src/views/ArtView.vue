@@ -8,7 +8,7 @@
     <InterviewComponent ref="interviewCompRef" />
     <ColorDivider />
     <div style="width: 100%;margin-top: 150px;">
-      <HorizontalScrollListView style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
+      <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
     </div>
 
     <div style="width: 100%;display: flex;justify-content: center;margin-top: 80px;margin-bottom: 100px;">
@@ -80,12 +80,14 @@ export default {
     let interviewCompRef = ref()
     let interviewColumnRef = ref()
     let topInterviewImage = ref()
+    let hScrollListViewRef = ref()
     let imageList = ref([])
 
     async function getDrawResource() {
       let respJson;
       let pageId = route.params.id
       let url = "http://www.grotonarts.com/static/art/" + pageId + "/" + pageId + "-resource.json"
+      console.log(url)
       await httpRequest.get(url).then(function (response) {
         respJson = response
       }).catch(function (error) {
@@ -109,6 +111,7 @@ export default {
       topImageRef.value.setResourceData(respJson["topBigImageComponent"])
       interviewCompRef.value.setResourceData(respJson["interview"]["topInterview"])
       interviewColumnRef.value.setResourceData(respJson["interview"]["interviewColumn"])
+      hScrollListViewRef.value.setResourceData(respJson["albumList"])
     }
 
     const useRouterCurrent = reactive(useRouter())
@@ -123,6 +126,7 @@ export default {
       interviewCompRef,
       interviewColumnRef,
       topInterviewImage,
+      hScrollListViewRef,
       imageList
     }
   }

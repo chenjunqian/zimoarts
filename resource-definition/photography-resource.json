@@ -6,6 +6,9 @@
     "titleTwo": "PHOTOGRAPHY",
     "titleColor": "#ffffff"
   },
+  "albumList": {
+    "title": "Art Gallergy"
+  },
   "interview": {
     "interviewColumn": {
       "interviewImageBg": "http://www.grotonarts.com/static/art/photography/photography-interview-bg.png",
