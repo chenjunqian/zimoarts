@@ -93,6 +93,12 @@
       "contentImageSubDesc": ""
     }
   },
+  "videoList": [
+    {
+      "title": "Zimo's Installation Project",
+      "link": "https://www.youtube.com/embed/g3t9J2NJ4Bo?autoplay=0&mute=1&loop=1"
+    }
+  ],
   "image-list": {
     "default": [
       "http://www.grotonarts.com/static/art/sculpture/image-list/default/52132695508_a2002d4d74_o.png",

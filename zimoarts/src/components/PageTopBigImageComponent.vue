@@ -7,8 +7,8 @@
       <div style="padding-left: 100px; padding-top: 120px;">
         <!-- visual art title -->
         <div style="width: 100%; display: flex;">
-          <div style="font-size: 70px;" :style="{ 'color': titleColor }">{{ titleOne }}</div>
-          <div style="font-size: 70px;font-weight: bolder;" :style="{ 'color': titleColor }">{{ titleTwo }}</div>
+          <div style="font-size: 60pt;" :style="{ 'color': titleColor }">{{ titleOne }}</div>
+          <div style="font-size: 60pt;font-weight: bolder;" :style="{ 'color': titleColor }">{{ titleTwo }}</div>
         </div>
       </div>
 

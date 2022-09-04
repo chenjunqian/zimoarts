@@ -22,8 +22,8 @@
         <!-- introduction left pic block -->
         <div style="width: 50%;">
           <div style="margin-top: 100px;width: 300px; height: 400px; background-color: #ab050f;">
-            <div
-              style="width: 350px; height: 350px; background-color: #c0c0c0; margin-top: 25px; margin-bottom: 25px; margin-left: 50px;z-index: 99;position: absolute;">
+            <div style="width: 350px; height: 350px;margin-top: 25px; margin-bottom: 25px; margin-left: 50px;z-index: 99;position: absolute;">
+              <img :src="introduction.leftImageUrl" style="width: 100%; height: auto;" alt="">
             </div>
           </div>
         </div>
@@ -276,6 +276,7 @@
         teacherBlockTitle.value = response["team"]['teacherBlockTitle']
         memberDataList.value = response["team"]["memberData"]["memberList"]
         introduction.leftImageUrl = response["introduction"]["leftImageUrl"]
+        console.log("left image url : ", introduction.leftImageUrl)
         introduction.title = response["introduction"]["title"]
         introduction.subTitle = response["introduction"]["subTitle"]
         introduction.descImage = response["introduction"]["descImage"]

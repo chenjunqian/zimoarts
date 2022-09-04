@@ -3,7 +3,7 @@
     <HeaderComponent />
     <div class="home-container">
       <img class="home-school-icon" src="@/assets/black-red-logo.png" />
-      <HomeDropDowmMenuComponent style="margin-top: 30px" />
+      <HomeDropDowmMenuComponent style="bottom: -15px;" />
       <PageTopBigImageComponent ref="topImageComp" style="margin-top: 180px;" />
       <div class="top-album-descrption-container">
         <div class="top-album-descrption-title-container">

@@ -19,7 +19,7 @@
             <div style="display: inline">
               <div style="color: #000000">{{ item.name }}</div>
               <div style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;">
-                
+
               </div>
             </div>
           </a-list-item>
@@ -27,6 +27,7 @@
       </a-list>
     </div>
     <InterviewColumnComponent ref="interviewColumnRef" />
+    <DescriptionColumnComponent ref="descCompRef" style="box-shadow: 0 20px 20px -2px #888888;" />
     <FooterComponent style="margin-top: 20px" />
   </div>
 </template>
@@ -39,6 +40,7 @@
   import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
   import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
   import InterviewComponent from "@/components/InterviewComponent.vue";
+  import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
   import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
   import { reactive, ref, watch } from "vue";
   import { httpRequest } from "@/libs/request"
@@ -54,6 +56,7 @@
       HorizontalScrollListView,
       InterviewColumnComponent,
       InterviewComponent,
+      DescriptionColumnComponent,
       PageTopBigImageComponent
     },
 
@@ -64,6 +67,7 @@
       let interviewColumnRef = ref()
       let topInterviewImage = ref()
       let hScrollListViewRef = ref()
+      let descCompRef = ref()
       let imageList = ref([])
       let nameList = ref()
 
@@ -71,7 +75,6 @@
         let respJson;
         let pageId = route.params.id
         let url = "http://www.grotonarts.com/static/art/" + pageId + "/" + pageId + "-resource.json"
-        console.log(url)
         await httpRequest.get(url).then(function (response) {
           respJson = response
         }).catch(function (error) {
@@ -96,6 +99,8 @@
         interviewCompRef.value.setResourceData(respJson["interview"]["topInterview"])
         interviewColumnRef.value.setResourceData(respJson["interview"]["interviewColumn"])
         hScrollListViewRef.value.setResourceData(respJson["albumList"])
+        descCompRef.value.setResourceData(respJson["videoList"])
+        console.log("video list : ", respJson["videoList"])
         nameList.value = respJson["nameList"]
       }
 
@@ -113,6 +118,7 @@
         topInterviewImage,
         hScrollListViewRef,
         nameList,
+        descCompRef,
         imageList
       }
     }

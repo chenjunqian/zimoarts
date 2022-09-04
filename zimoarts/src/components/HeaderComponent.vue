@@ -19,7 +19,7 @@ export default {
 <style>
 .header-container {
   width: 100%;
-  height: 40px;
+  height: 10px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;

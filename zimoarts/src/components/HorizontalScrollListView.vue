@@ -3,9 +3,9 @@
         <div class="top-album-descrption-container">
             <div class="top-album-descrption-title-container">
                 <div class="top-album-descrption-title" style="color: #ab050f">
-                    {{ title }}&nbsp;
+                    {{ title }}
                 </div>
-                <div>
+                <!-- <div>
                     <div class="top-album-descrption-title" style="position: relative; font-size: 25px">
                         of&nbsp;
                     </div>
@@ -13,14 +13,15 @@
                 <div class="top-album-descrption-title">the&nbsp;</div>
                 <div class="top-album-descrption-title" style="color: #ffce00">
                     Term&nbsp;
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="list-view">
             <vue3-horizontal-list v-if="showMusic" style="width: 1120px;" :items="musics" :options="options">
                 <template v-slot:default="{ item }">
-                    <img class="item-music-img" :src="item.imageUrl" />
-                    <div class="item-music-text" :style="{ 'color': item.textColor }">{{item.text}}</div>
+                    <img class="item-music-img" :src="item.imageUrl" @click="musicRecordOnClick(item.pdfLink)" />
+                    <div class="item-music-text" :style="{ 'color': item.textColor }"
+                        @click="musicRecordOnClick(item.pdfLink)">{{item.pdfFileName}}</div>
                 </template>
             </vue3-horizontal-list>
         </div>
@@ -49,6 +50,7 @@
         setup() {
             let title = ref("")
             let musics = ref()
+            let pdfs = ref()
             let showMusic = ref(false)
 
             const setResourceData = (jsonData) => {
@@ -60,13 +62,19 @@
                     musics.value = jsonData["musics"]
                     showMusic.value = true
                 }
-                console.log("musics : ", musics)
             }
+
+            const musicRecordOnClick = (link) => {
+                window.open(link)
+            }
+
             return {
                 title,
                 setResourceData,
                 showMusic,
-                musics
+                musicRecordOnClick,
+                musics,
+                pdfs
             }
         },
         data() {
@@ -120,11 +128,13 @@
     .item-music-img {
         width: 280px;
         height: 280px;
+        cursor: pointer;
     }
 
     .item-music-text {
         text-align: center;
         font-size: 15pt;
+        cursor: pointer;
     }
 
     .top-album-descrption-container {

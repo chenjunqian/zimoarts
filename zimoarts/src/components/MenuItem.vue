@@ -1,30 +1,30 @@
 <template>
   <a-affix :offset-top="5" style="width: 100%; display: flex; position: relative;z-index: 100;">
-    <div style="position: absolute; right: 0; display: flex">
+    <div style="position: absolute; right: 0; display: flex; ">
       <router-link
-        style="width: 120px; height: 30px; background-color: #000000; line-height: 30px; color: #ffffff; font-size: 15px; font-weight: bolder; text-decoration: none;"
+        style="width: 120px; height: 50px; background-color: #000000; line-height: 50px; color: #ffffff; font-size: 15px; font-weight: bolder; text-decoration: none;"
         to="/art/draw">
         DRAWING
       </router-link>
       <router-link
-        style="width: 120px;height: 30px;background-color: #ab050f;line-height: 30px;color: #ffffff;font-size: 15px;font-weight: bolder;"
+        style="width: 120px;height: 50px;background-color: #ab050f;line-height: 50px;color: #ffffff;font-size: 15px;font-weight: bolder;"
         to="/art/sculpture">
         SCULPTURE
       </router-link>
       <router-link
-        style="width: 120px;height: 30px;background-color: #ffce00;line-height: 30px;color: #ffffff;font-size: 15px;font-weight: bolder;"
+        style="width: 120px;height: 50px;background-color: #ffce00;line-height: 50px;color: #ffffff;font-size: 15px;font-weight: bolder;"
         to="/art/photography">
-        PHOFOGRAPHY
+        PHOTOGRAPHY
       </router-link>
-      <div style="width: 120px;height: 30px;background-color: #c0c0c0;line-height: 30px;">
+      <div style="width: 120px;height: 50px;background-color: #c0c0c0;line-height: 50px;">
         <div class="dropdown">
           <div style="color: #ffffff;font-size: 15px;font-weight: bolder;">HOME</div>
           <div class="dropdown-content">
-            <router-link to="/" :style="{ 'color': dropdownTextColor }">Home</router-link>
-            <router-link to="/theater" style="font-size: 13px;" :style="{ 'color': dropdownTextColor }">
+            <router-link to="/" :style="{ 'color': dropdownTextColor }" style="height: 30px;line-height: 30px">Home</router-link>
+            <router-link to="/theater" style="font-size: 9pt;height: 30px;line-height: 30px" :style="{ 'color': dropdownTextColor }">
               THEAFER&DANCE</router-link>
-            <router-link to="/music" :style="{ 'color': dropdownTextColor }">MUSIC</router-link>
-            <router-link to="/about" :style="{ 'color': dropdownTextColor }">ABOUTUS</router-link>
+            <router-link to="/music" :style="{ 'color': dropdownTextColor }" style="height: 30px;line-height: 30px">MUSIC</router-link>
+            <router-link to="/about" :style="{ 'color': dropdownTextColor }" style="height: 30px;line-height: 30px">ABOUTUS</router-link>
           </div>
         </div>
       </div>
