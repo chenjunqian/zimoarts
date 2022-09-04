@@ -4,190 +4,139 @@
     <MenuItem />
     <HomeDropDowmMenuComponent />
     <!-- school bagde block -->
-    <div style="margin-top: 80px">
-      <img style="width: 240px; height: 120px; float: left; margin-left: 80px" src="@/assets/black-red-logo.png" />
+    <div style="top: 150px; position: absolute;">
+      <img style="width: 300px; height: 150px; float: left; margin-left: 80px" src="@/assets/black-red-logo.png" />
     </div>
 
     <div style="width: 100%;">
       <!-- introduction block -->
-      <div style="width: 100%;padding-top: 50px; display: flex; border-bottom: 1px solid #c0c0c0">
+      <div style="width: 100%;padding-top: 120px; display: flex; border-bottom: 1px solid #c0c0c0">
         <div style="width: 50%; height: 20px;"></div>
         <div style="width: 50%;display: flex;">
-          <div style="font-size: 48pt; color: #ab050f">Introduc</div>
-          <div style="font-size: 48pt; color: #000000">tion</div>
+          <div style="font-size: 48pt; font-weight: bolder; margin-bottom: -20px; color: #ab050f">INTRODUCTION</div>
         </div>
       </div>
       <!-- introduction detail -->
-      <div style="width: 100%;display: flex;">
-        <!-- introduction left pic block -->
-        <div style="width: 50%;">
-          <div style="margin-top: 100px;width: 300px; height: 400px; background-color: #ab050f;">
-            <div style="width: 350px; height: 350px;margin-top: 25px; margin-bottom: 25px; margin-left: 50px;z-index: 99;position: absolute;">
-              <img :src="introduction.leftImageUrl" style="width: 100%; height: auto;" alt="">
+      <div
+        style="background-image: url('http://www.grotonarts.com/static/others/circle-bg.png');background-repeat: no-repeat;background-size: 2500px auto;">
+        <div style="width: 100%;display: flex;">
+          <!-- introduction left pic block -->
+          <div style="width: 50%;">
+            <div style="margin-top: 100px;width: 400px; height: 407.14px; background-color: #ab050f;">
+              <div
+                style="width: 500px; height: 357.14px;margin-top: 25px; margin-bottom: 25px; margin-left: 80px;z-index: 99;position: absolute;">
+                <img :src="introduction.leftImageUrl" style="width: 100%; height: auto;" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- introduction right description block -->
+          <div style="width: 50%;">
+            <div style="width: 70%;text-align: left;margin-top: 50px;font-size: 28pt;color: #000000;">
+              {{ introduction.title }}
+            </div>
+            <div style="width: 70%;text-align: right;font-size: 20pt;color: #000000;margin-bottom: 30px;">
+              {{ introduction.subTitle }}
+            </div>
+            <div v-for="item in introduction.content" :key="item"
+              style="width: 70%; margin-top: 10px;text-align: left;font-size: 13pt;">
+              {{ item }}
+            </div>
+            <div
+              style="width: 70%;text-align: right;color: #000000;font-weight: bolder;margin-top: 50px; font-size: 13pt;">
+              {{ introduction.author }}
+            </div>
+            <div style="width: 70%;text-align: right;color: #000000;font-size: 13pt;"> {{ introduction.authorTitle }}
+            </div>
+            <div style="width: 100%;display: flex;margin-top: 40px;">
+              <img style="width: 320px;height: 228.57px;" :src="introduction.descImage">
             </div>
           </div>
         </div>
-        <!-- introduction right description block -->
-        <div style="width: 50%;">
-          <div style="width: 70%;text-align: left;margin-top: 50px;font-size: 28pt;color: #000000;">
-            {{ introduction.title }}
+        <ColorDivider style="margin-top: 160px;" />
+        <!-- our team block -->
+        <div style="width: 100%;">
+          <!-- our team title -->
+          <div style="width: 100%; justify-content: center;display: flex;margin-top: 150px;">
+            <div style="color: #ab050f; font-size: 60px; font-weight: bolder;">OUR TEAM</div>
           </div>
-          <div style="width: 70%;text-align: right;font-size: 20pt;color: #000000;">
-            {{ introduction.subTitle }}
-          </div>
-          <div v-for="item in introduction.content" :key="item"
-            style="width: 70%; margin-top: 20px;text-align: left;font-size: 11pt;">
-            {{ item }}
-          </div>
-          <div style="width: 70%;text-align: right;color: #000000;font-weight: bolder;margin-top: 50px;">
-            {{ introduction.author }}
-          </div>
-          <div style="width: 70%;text-align: right;color: #000000;"> {{ introduction.authorTitle }} </div>
-          <div style="width: 100%;display: flex;margin-top: 40px;">
-            <img style="width: 282.59px;height: 191.61px;" :src="introduction.descImage">
-          </div>
-        </div>
-      </div>
-      <ColorDivider style="margin-top: 160px;" />
-      <!-- our team block -->
-      <div style="width: 100%;">
-        <!-- our team title -->
-        <div style="width: 100%; justify-content: center;display: flex;margin-top: 150px;">
-          <div style="color: #ab050f; font-size: 60px;">Our&nbsp;</div>
-          <div style="color: #000000; font-size: 60px;">Team</div>
-        </div>
 
-        <!-- team member detail block -->
-        <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 10px;">
-          <div style="font-size: 35px;color: #ab050f;">{{memberData.title}}</div>
-        </div>
-        <div style="width: 100%;;margin-top: 100px;">
-          <!-- founder block -->
-          <div style="width: 80%; display: flex; margin: 0 auto;">
-            <img style="width: 18%; height: auto;" :src="memberData.chefImageUrl" alt="">
-            <div style="width: 72%; border: 1px solid #c0c0c0; margin-left: 9%;">
-              <div
-                style="text-align: left; padding-top: 50px;color: #ab050f; margin-top: 5px; margin-left: 15px; font-size: 20pt;">
-                {{memberData.chefDescTitle}}
-              </div>
-              <div v-for="item in memberData.chefDesc" :key="item"
-                style="text-align: left; width: 95%;margin-left: 15pt;">
-                {{ item }}
-              </div>
-              <div style="display: flex; min-height: 50px; position: relative;">
-                <div v-for="item in memberData.chefSubDesc" :key="item"
-                  style="width: 30%;font-size: 8px; color: #000000; margin-top: 5px;  margin-left: 15px; text-align: left;word-break: break-all; word-wrap: break-word;">
+          <!-- team member detail block -->
+          <div style="width: 100%;border-top: 1px solid #c0c0c0;margin-top: 0px;">
+            <div style="font-size: 35px;color: #000000;">{{memberData.title}}</div>
+          </div>
+          <div style="width: 100%;;margin-top: 100px;">
+            <!-- founder block -->
+            <div style="width: 80%; display: flex; margin: 0 auto;">
+              <img style="width: 238.8px; height: 298.74px;" :src="memberData.chefImageUrl" alt="">
+              <div style="width: 73%; border: 1px solid #c0c0c0; margin-left: 6%;">
+                <div style="text-align: left; padding-top: 30px;color: #ab050f; margin-left: 15px; font-size: 25pt;">
+                  {{memberData.chefDescTitle}}
+                </div>
+                <div v-for="item in memberData.chefDesc" :key="item"
+                  style="text-align: left; width: 95%;margin-left: 15pt; font-size: 15pt;">
                   {{ item }}
                 </div>
-                <div style="position: absolute; right: 30px; bottom: 0px;">
-                  <div style="font-size: 12px; color: #000000; font-weight: bold; text-align: left;">
-                    {{memberData.chefDescAuthor}}</div>
-                  <div style="font-size: 10px; color: #000000; text-align: left;">{{memberData.chefDescAuthorTitle}}
+                <div style="display: flex; min-height: 90px; position: relative;">
+                  <div v-for="item in memberData.chefSubDesc" :key="item"
+                    style="width: 30%;font-size: 8px; color: #000000; margin-top: 5px;  margin-left: 15px; text-align: left;word-break: break-all; word-wrap: break-word;">
+                    {{ item }}
                   </div>
+                  <div style="position: absolute; right: 30px; bottom: 0px;">
+                    <div style="font-size: 12pt; color: #000000; font-weight: bold; text-align: left;">
+                      {{memberData.chefDescAuthor}}</div>
+                    <div style="font-size: 10pt; color: #000000; text-align: left;">{{memberData.chefDescAuthorTitle}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- member block -->
+
+            <a-list style="width: 83%; display: flex; margin: 0 auto; margin-top: 80px;"
+              :grid="{ gutter: 16, column: 4 }" :data-source="memberDataList">
+              <template #renderItem="{ item }">
+                <a-list-item>
+                  <a-card style="border: none; background-color: transparent;">
+                    <img style="width: 238.8px; height: 298.74px; background-color: #c0c0c0;" :src="item.imageUrl" />
+                    <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">
+                      {{item.name }}
+                    </div>
+                    <div style="width: 100%;color: #000000;font-size: 10pt;">{{ item.title }}</div>
+                  </a-card>
+                </a-list-item>
+              </template>
+            </a-list>
+
+            <!-- vice chef block  -->
+            <div style="width: 83%; display: flex; justify-content: center; margin: 0 auto; margin-top: 80px;">
+              <div style="width: 96%;background-color: #edebeb;">
+                <div style="text-align: center; color: #000000; margin-top: 5px; margin-left: 15px; font-size: 30px;">
+                  Other Members
+                </div>
+
+                <div style="width: 100%; margin-top: 20px; display: flex; justify-content: center;">
+                  <a-list :grid="{ gutter: 16, column: 3 }" :data-source="otherMemberList">
+                    <template #renderItem="{ item }">
+                      <a-list-item>
+                        <a-card style="border: none; background-color: transparent;">
+                          <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">
+                            {{item.name }}
+                          </div>
+                          <div style="width: 100%;color: #000000;font-size: 12pt;">{{ item.title }}</div>
+                        </a-card>
+                      </a-list-item>
+                    </template>
+                  </a-list>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- member block -->
-
-          <a-list style="width: 83%; display: flex; margin: 0 auto; margin-top: 80px;" :grid="{ gutter: 16, column: 4 }"
-            :data-source="memberDataList">
-            <template #renderItem="{ item }">
-              <a-list-item>
-                <a-card style="border: none;">
-                  <img style="width: 238.8px; height: 298.74px; background-color: #c0c0c0;" :src="item.imageUrl" />
-                  <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">
-                    {{item.name }}
-                  </div>
-                  <div style="width: 100%;color: #000000;font-size: 10pt;">{{ item.title }}</div>
-                </a-card>
-              </a-list-item>
-            </template>
-          </a-list>
-
-          <!-- vice chef block  -->
-          <div style="width: 83%; display: flex; justify-content: center; margin: 0 auto; margin-top: 80px;">
-            <div style="width: 96%; border: 1px solid #c0c0c0;">
-              <div style="text-align: center; color: #000000; margin-top: 5px; margin-left: 15px; font-size: 30px;">
-                Other Members
-              </div>
-              <div style="width: 100%; margin-top: 20px; display: flex;">
-                <!-- member desciption column -->
-                <div style="width: 25%; border-right: 1px solid #c0c0c0;">
-                  <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px;">
-                    Beenson Han</div>
-                  <div style="display: flex; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-
-                  <div
-                    style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px; margin-top: 20px;">
-                    Beenson Han</div>
-                  <div style="display: flex;width: 100%; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-                </div>
-                <!-- member desciption column -->
-                <div style="width: 25%; border-right: 1px solid #c0c0c0;">
-                  <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px;">
-                    Beenson Han</div>
-                  <div style="display: flex; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-
-                  <div
-                    style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px; margin-top: 20px;">
-                    Beenson Han</div>
-                  <div style="display: flex;width: 100%; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-                </div>
-                <!-- member desciption column -->
-                <div style="width: 25%; border-right: 1px solid #c0c0c0;">
-                  <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px;">
-                    Beenson Han</div>
-                  <div style="display: flex; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-
-                  <div
-                    style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px; margin-top: 20px;">
-                    Beenson Han</div>
-                  <div style="display: flex;width: 100%; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-                </div>
-                <!-- member desciption column -->
-                <div style="width: 25%; border-right: 1px solid #c0c0c0;">
-                  <div style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px;">
-                    Beenson Han</div>
-                  <div style="display: flex; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-
-                  <div
-                    style="width: 100%;color: #000000;font-size: 10px; font-weight: bolder; margin-left: 10px; margin-top: 20px;">
-                    Beenson Han</div>
-                  <div style="display: flex;width: 100%; justify-content: center;">
-                    <img style="width: 10px; height: 10px" src="" alt="" />
-                    <div style="color: #000000;font-size: 10px;">Art Director</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- teacher group -->
           <!-- sub title -->
           <div style="width: 100%;border-bottom: 1px solid #c0c0c0;margin-top: 100px;">
-            <div style="font-size: 35px;color: #ab050f;">{{ teacherBlockTitle }}</div>
+            <div style="font-size: 35px;color: #000000;">{{ teacherBlockTitle }}</div>
           </div>
           <a-list style="margin-top: 120px;" :grid="{ gutter: 16, column: 2 }" :data-source="teacherDataList">
             <template #renderItem="{ item }">
@@ -244,6 +193,7 @@
       let teacherDataList = ref()
       let teacherBlockTitle = ref()
       let memberDataList = ref()
+      let otherMemberList = ref()
       let introduction = reactive({
         leftImageUrl: "",
         title: "",
@@ -275,8 +225,8 @@
         teacherDataList.value = response["team"]['teacherDataList']
         teacherBlockTitle.value = response["team"]['teacherBlockTitle']
         memberDataList.value = response["team"]["memberData"]["memberList"]
+        otherMemberList.value = response["team"]["memberData"]["otherMemberList"]
         introduction.leftImageUrl = response["introduction"]["leftImageUrl"]
-        console.log("left image url : ", introduction.leftImageUrl)
         introduction.title = response["introduction"]["title"]
         introduction.subTitle = response["introduction"]["subTitle"]
         introduction.descImage = response["introduction"]["descImage"]
@@ -307,6 +257,7 @@
         teacherDataList,
         teacherBlockTitle,
         memberDataList,
+        otherMemberList,
         memberData,
         joinUs,
         introduction
@@ -321,6 +272,7 @@
       background-color: #ffffff;
       width: 1500px;
       margin: 0 auto;
+      position: relative;
     }
   }
 
@@ -329,6 +281,7 @@
       background-color: #ffffff;
       max-width: 1500px;
       margin: 0 auto;
+      position: relative;
     }
   }
 </style>

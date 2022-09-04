@@ -70,11 +70,25 @@
           "title": "Art Director",
           "name": ""
         }
+      ],
+      "otherMemberList": [
+        {
+          "name": "to be decided",
+          "title": ""
+        },
+        {
+          "name": "to be decided",
+          "title": ""
+        },
+        {
+          "name": "to be decided",
+          "title": ""
+        }
       ]
     }
   },
   "introduction": {
-    "leftImageUrl": "http://www.grotonarts.com/static/home/upcoming/termYellowQuestionMark.png",
+    "leftImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
     "title": "“Art is not what you see, but what you make others see.”  ",
     "subTitle": "-- Edgar Degas",
     "descImage": "http://www.grotonarts.com/static/aboutus/member-image/introduction-desc-image.png",

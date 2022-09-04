@@ -23,134 +23,134 @@
           </div>
         </div>
       </div>
-      <div class="album-container">
-        <div class="top-album-container">
-          <div class="top-album-items-container">
-            <div class="top-left-album-item-column">
-              <div class="top-left-album-item-back">
-                <div class="top-left-album-item-front">
-                  <img style="width: 100%; height: auto;"
-                    :src="pageData.upcomingEvent.leftBlock.imageUrl" />
+      <div
+        style="background-image: url('http://www.grotonarts.com/static/others/circle-bg.png');background-repeat: no-repeat;background-size: 2200px auto;">
+        <div class="album-container">
+          <div class="top-album-container">
+            <div class="top-album-items-container">
+              <div class="top-left-album-item-column">
+                <div class="top-left-album-item-back">
+                  <div class="top-left-album-item-front">
+                    <img style="width: 100%; height: auto;" :src="pageData.upcomingEvent.leftBlock.imageUrl" />
+                  </div>
+                </div>
+                <div class="top-left-album-middler-placeholder"></div>
+                <div class="top-left-album-item-text-container">
+                  <div class="top-left-album-item-text">{{ pageData.upcomingEvent.leftBlock.topText }}</div>
+                  <div class="top-left-album-item-text">{{ pageData.upcomingEvent.leftBlock.bottomText }}</div>
                 </div>
               </div>
-              <div class="top-left-album-middler-placeholder"></div>
-              <div class="top-left-album-item-text-container">
-                <div class="top-left-album-item-text">{{ pageData.upcomingEvent.leftBlock.topText }}</div>
-                <div class="top-left-album-item-text">{{ pageData.upcomingEvent.leftBlock.bottomText }}</div>
-              </div>
-            </div>
 
-            <div class="top-middle-album-item-column">
-              <div class="top-middle-album-item-text-container">
-                <div class="top-middle-album-item-text">{{ pageData.upcomingEvent.middleBlock.topText }}</div>
-                <div class="top-middle-album-item-text">{{ pageData.upcomingEvent.middleBlock.bottomText }}</div>
-              </div>
-              <div class="top-middle-album-item-back-left-block"></div>
-              <div class="top-middle-album-item-back">
-                <div class="top-middle-album-item-front">
-                  <img style="width: 100%; height: auto;"
-                    :src="pageData.upcomingEvent.middleBlock.imageUrl" />
+              <div class="top-middle-album-item-column">
+                <div class="top-middle-album-item-text-container">
+                  <div class="top-middle-album-item-text">{{ pageData.upcomingEvent.middleBlock.topText }}</div>
+                  <div class="top-middle-album-item-text">{{ pageData.upcomingEvent.middleBlock.bottomText }}</div>
                 </div>
-              </div>
-            </div>
-
-            <div class="top-right-album-item-column">
-              <div class="top-right-album-middler-placeholder">
-                <div class="top-right-album-item-text-container">
-                  <div class="top-right-album-item-text">{{ pageData.upcomingEvent.rightBlock.topText }}</div>
-                  <div class="top-right-album-item-text">
-                    {{ pageData.upcomingEvent.rightBlock.bottomText }}
+                <div class="top-middle-album-item-back-left-block"></div>
+                <div class="top-middle-album-item-back">
+                  <div class="top-middle-album-item-front">
+                    <img style="width: 100%; height: auto;" :src="pageData.upcomingEvent.middleBlock.imageUrl" />
                   </div>
                 </div>
               </div>
-              <div class="top-right-album-item-back">
-                <div class="top-right-album-item-front">
-                  <img style="width: 100%; height: auto;"
-                    :src="pageData.upcomingEvent.rightBlock.imageUrl" />
+
+              <div class="top-right-album-item-column">
+                <div class="top-right-album-middler-placeholder">
+                  <div class="top-right-album-item-text-container">
+                    <div class="top-right-album-item-text">{{ pageData.upcomingEvent.rightBlock.topText }}</div>
+                    <div class="top-right-album-item-text">
+                      {{ pageData.upcomingEvent.rightBlock.bottomText }}
+                    </div>
+                  </div>
+                </div>
+                <div class="top-right-album-item-back">
+                  <div class="top-right-album-item-front">
+                    <img style="width: 100%; height: auto;" :src="pageData.upcomingEvent.rightBlock.imageUrl" />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div style="
-                justify-content: center;
-                display: flex;
-                width: 100%;
-                margin-top: 200px;
-                color: #ab050f;
-                font-size: 10pt;
-              ">
-              <div style="width: 50%;">{{ pageData.bottomText }}</div>
-            </div>
-          </div>
-        </div>
-
-        <ColorDivider style="margin-top: 60px;"></ColorDivider>
-
-        <div class="bottom-album-items-container">
-          <div class="top-album-descrption-container">
-            <div class="top-album-descrption-title-container">
-              <div class="top-album-descrption-title" style="color: #ab050f">
-                Visual Art&nbsp;
-              </div>
-              <div>
-                <div class="top-album-descrption-title" style="position: relative; font-size: 25px">
-                  of&nbsp;
-                </div>
-              </div>
-              <div class="top-album-descrption-title">the&nbsp;</div>
-              <div class="top-album-descrption-title" style="color: #ffce00">
-                Term&nbsp;
+              <div style="
+                      justify-content: center;
+                      display: flex;
+                      width: 100%;
+                      margin-top: 200px;
+                      color: #ab050f;
+                      font-size: 10pt;
+                    ">
+                <div style="width: 50%;">{{ pageData.bottomText }}</div>
               </div>
             </div>
           </div>
 
-          <div class="bottom-album-columns-container">
-            <div class="bottom-album-column">
-              <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.leftBlock.topImage" />
-              <div class="bottom-album-column-circle-image">
-                <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.leftBlock.bottomImage" />
-              </div>
-              <div class="bottom-album-column-text-container">
-                <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.leftBlock.nameOfArt }}</div>
-                <div class="bottom-album-column-text">
-                  {{ pageData.visualArtOfTheTerm.leftBlock.author }}
+          <ColorDivider style="margin-top: 60px;"></ColorDivider>
+
+          <div class="bottom-album-items-container">
+            <div class="top-album-descrption-container">
+              <div class="top-album-descrption-title-container">
+                <div class="top-album-descrption-title" style="color: #ab050f">
+                  Visual Art&nbsp;
                 </div>
-                <div class="bottom-album-column-text">
-                  {{ pageData.visualArtOfTheTerm.leftBlock.theme }}
+                <div>
+                  <div class="top-album-descrption-title" style="position: relative; font-size: 25px">
+                    of&nbsp;
+                  </div>
                 </div>
-                <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.leftBlock.qoute }}</div>
-              </div>
-            </div>
-            <div class="bottom-album-column" style="margin-left: 15%">
-              <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.middleBlock.topImage" />
-              <div class="bottom-album-column-circle-image">
-                <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.middleBlock.bottomImage" />
-              </div>
-              <div class="bottom-album-column-text-container">
-                <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.middleBlock.nameOfArt }}</div>
-                <div class="bottom-album-column-text">
-                  {{ pageData.visualArtOfTheTerm.middleBlock.author }}
+                <div class="top-album-descrption-title">The&nbsp;</div>
+                <div class="top-album-descrption-title" style="color: #ffce00">
+                  Term&nbsp;
                 </div>
-                <div class="bottom-album-column-text">
-                  {{ pageData.visualArtOfTheTerm.middleBlock.theme }}
-                </div>
-                <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.middleBlock.qoute }}</div>
               </div>
             </div>
-            <div class="bottom-album-column" style="margin-left: 15%">
-              <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.rightBlock.topImage" />
-              <div class="bottom-album-column-circle-image">
-                <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.rightBlock.bottomImage" />
+
+            <div class="bottom-album-columns-container">
+              <div class="bottom-album-column">
+                <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.leftBlock.topImage" />
+                <div class="bottom-album-column-circle-image">
+                  <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.leftBlock.bottomImage" />
+                </div>
+                <div class="bottom-album-column-text-container">
+                  <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.leftBlock.nameOfArt }}</div>
+                  <div class="bottom-album-column-text">
+                    {{ pageData.visualArtOfTheTerm.leftBlock.author }}
+                  </div>
+                  <div class="bottom-album-column-text">
+                    {{ pageData.visualArtOfTheTerm.leftBlock.theme }}
+                  </div>
+                  <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.leftBlock.qoute }}</div>
+                </div>
               </div>
-              <div class="bottom-album-column-text-container">
-                <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.rightBlock.nameOfArt }}</div>
-                <div class="bottom-album-column-text">
-                  {{ pageData.visualArtOfTheTerm.rightBlock.author }}
+              <div class="bottom-album-column" style="margin-left: 15%">
+                <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.middleBlock.topImage" />
+                <div class="bottom-album-column-circle-image">
+                  <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.middleBlock.bottomImage" />
                 </div>
-                <div class="bottom-album-column-text">
-                  {{ pageData.visualArtOfTheTerm.rightBlock.theme }}
+                <div class="bottom-album-column-text-container">
+                  <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.middleBlock.nameOfArt }}</div>
+                  <div class="bottom-album-column-text">
+                    {{ pageData.visualArtOfTheTerm.middleBlock.author }}
+                  </div>
+                  <div class="bottom-album-column-text">
+                    {{ pageData.visualArtOfTheTerm.middleBlock.theme }}
+                  </div>
+                  <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.middleBlock.qoute }}</div>
                 </div>
-                <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.rightBlock.qoute }}</div>
+              </div>
+              <div class="bottom-album-column" style="margin-left: 15%">
+                <img class="bottom-album-column-image" :src="pageData.visualArtOfTheTerm.rightBlock.topImage" />
+                <div class="bottom-album-column-circle-image">
+                  <img style="width: 100%; height: auto;" :src="pageData.visualArtOfTheTerm.rightBlock.bottomImage" />
+                </div>
+                <div class="bottom-album-column-text-container">
+                  <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.rightBlock.nameOfArt }}</div>
+                  <div class="bottom-album-column-text">
+                    {{ pageData.visualArtOfTheTerm.rightBlock.author }}
+                  </div>
+                  <div class="bottom-album-column-text">
+                    {{ pageData.visualArtOfTheTerm.rightBlock.theme }}
+                  </div>
+                  <div class="bottom-album-column-text">{{ pageData.visualArtOfTheTerm.rightBlock.qoute }}</div>
+                </div>
               </div>
             </div>
           </div>
@@ -335,8 +335,8 @@
 
   /* top dropdown area */
   .home-school-icon {
-    width: 240px;
-    height: 120px;
+    width: 300px;
+    height: 150px;
     float: left;
     margin-left: 80px;
   }
