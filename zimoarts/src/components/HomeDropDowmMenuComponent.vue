@@ -24,17 +24,17 @@
         </router-link>
       </div>
     </div>
-    <div class="home-dropdown-item" style="background-color: #c0c0c0; color: #ffffff">
+    <div class="home-dropdown-item" style="background-color: #c0c0c0; color: #ffffff; "> 
       <div class="home-dropdown-text-container">
         <router-link slots="div" class="home-dropdown-text" to="/about">
           <div class="home-dropdown-text">ABOUT US</div>
         </router-link>
       </div>
     </div>
-    <div class="home-dropdown-item" style="background-color: white;">
+    <div class="home-dropdown-item" style="background-color: white; border: 1px solid #c0c0c0;">
       <div class="home-dropdown-text-container">
         <div class="dropdown">
-          <div class="home-dropdown-text" style="color: #000000">OTHER</div>
+          <div class="home-dropdown-text" style="color: #000000;">OTHER</div>
           <div class="dropdown-content">
             <router-link to="/" style="font-size: 13px;">HOME</router-link>
             <router-link to="/draw" style="font-size: 13px;">VISUAL ART</router-link>
