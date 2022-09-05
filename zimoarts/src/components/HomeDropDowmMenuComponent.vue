@@ -37,7 +37,6 @@
           <div class="home-dropdown-text" style="color: #000000;">OTHER</div>
           <div class="dropdown-content">
             <router-link to="/" style="font-size: 13px;">HOME</router-link>
-            <router-link to="/draw" style="font-size: 13px;">VISUAL ART</router-link>
             <router-link to="/theater" style="font-size: 12px;">THEATER DANCE</router-link>
             <router-link to="/music">MUSIC</router-link>
             <router-link to="/about">ABOUTUS</router-link>

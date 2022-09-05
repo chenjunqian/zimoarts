@@ -1,12 +1,14 @@
 <template>
   <div class="music">
-    <HeaderComponent />
+    <HomeHeaderComponent />
     <HomeDropDowmMenuComponent />
-    <PageTopBigImageComponent ref="topImageCompRef" />
+    <img class="top-school-icon" src="@/assets/black-red-logo.png" />
+    <PageTopBigImageComponent ref="topImageCompRef" style="margin-top: 180px;" />
     <InterviewComponent ref="interviewCompRef" />
     <ColorDivider />
     <div style="width: 100%;margin-top: 100px;">
-      <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0px 20px 10px -10px #888888;" :images="imageList" />
+      <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0px 20px 10px -10px #888888;"
+        :images="imageList" />
     </div>
     <InterviewColumnComponent ref="interviewColumnRef" style="margin-top: 80px;" />
     <DescriptionColumnComponent ref="descCompRef" style="box-shadow: 0 20px 20px -2px #888888;" />
@@ -15,7 +17,6 @@
 </template>
 
 <script>
-  import HeaderComponent from "@/components/HeaderComponent.vue";
   import FooterComponent from "@/components/FootComponent.vue";
   import InterviewComponent from "@/components/InterviewComponent.vue";
   import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
@@ -26,11 +27,11 @@
   import { httpRequest } from "@/libs/request";
   import { ref } from "vue";
   import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
   export default {
     name: "MusicView",
     components: {
-      HeaderComponent,
       FooterComponent,
       InterviewComponent,
       PageTopBigImageComponent,
@@ -38,7 +39,8 @@
       HorizontalScrollListView,
       InterviewColumnComponent,
       DescriptionColumnComponent,
-      HomeDropDowmMenuComponent
+      HomeDropDowmMenuComponent,
+      HomeHeaderComponent
     },
     setup() {
       let imageList = ref([])
@@ -83,5 +85,12 @@
     background-color: #ffffff;
     width: 1400px;
     margin: 0 auto;
+  }
+
+  .top-school-icon {
+    width: 300px;
+    height: 150px;
+    float: left;
+    margin-left: 80px;
   }
 </style>

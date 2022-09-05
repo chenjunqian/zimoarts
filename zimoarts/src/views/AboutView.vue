@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <HeaderComponent />
+    <HomeHeaderComponent />
     <MenuItem />
     <HomeDropDowmMenuComponent />
     <!-- school bagde block -->
@@ -120,7 +120,8 @@
                     <template #renderItem="{ item }">
                       <a-list-item>
                         <a-card style="border: none; background-color: transparent;">
-                          <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">
+                          <div
+                            style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">
                             {{item.name }}
                           </div>
                           <div style="width: 100%;color: #000000;font-size: 12pt;">{{ item.title }}</div>
@@ -174,20 +175,20 @@
 </template>
 
 <script>
-  import HeaderComponent from "@/components/HeaderComponent.vue";
   import FooterComponent from "@/components/FootComponent.vue";
   import ColorDivider from "@/components/ColorDivider.vue";
   import { httpRequest } from "@/libs/request";
   import { ref, reactive } from "vue";
   import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
   export default {
     name: "AboutView",
     components: {
-      HeaderComponent,
       FooterComponent,
       ColorDivider,
-      HomeDropDowmMenuComponent
+      HomeDropDowmMenuComponent,
+      HomeHeaderComponent
     },
     setup() {
       let teacherDataList = ref()

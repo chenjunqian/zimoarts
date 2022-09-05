@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <HeaderComponent />
+    <HomeHeaderComponent />
+    <img class="home-school-icon" src="@/assets/black-red-logo.png" />
+    <HomeDropDowmMenuComponent />
     <div class="home-container">
-      <img class="home-school-icon" src="@/assets/black-red-logo.png" />
-      <HomeDropDowmMenuComponent style="bottom: -15px;" />
       <PageTopBigImageComponent ref="topImageComp" style="margin-top: 180px;" />
       <div class="top-album-descrption-container">
         <div class="top-album-descrption-title-container">
@@ -167,7 +167,6 @@
 </template>
 
 <script>
-  import HeaderComponent from "@/components/HeaderComponent.vue";
   import FooterComponent from "@/components/FootComponent.vue";
   import ColorDivider from "@/components/ColorDivider.vue";
   import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
@@ -176,18 +175,19 @@
   import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
   import { httpRequest } from "@/libs/request";
   import { ref, reactive } from "vue";
+import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
   export default {
     name: "HomeView",
     components: {
-      HeaderComponent,
-      FooterComponent,
-      ColorDivider,
-      InterviewColumnComponent,
-      DescriptionColumnComponent,
-      HomeDropDowmMenuComponent,
-      PageTopBigImageComponent
-    },
+    FooterComponent,
+    ColorDivider,
+    InterviewColumnComponent,
+    DescriptionColumnComponent,
+    HomeDropDowmMenuComponent,
+    PageTopBigImageComponent,
+    HomeHeaderComponent
+},
     setup() {
       let topImageComp = ref()
       let interviewColumnRef = ref()
@@ -328,7 +328,6 @@
 
   .home-container {
     width: 100%;
-    padding-top: 50px;
     background-color: #ffffff;
     box-shadow: 0px 20px 10px -10px #888888;
   }
