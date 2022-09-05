@@ -15,7 +15,7 @@
       </div>
       <div class="right-footer-container">
         <div class="right-footer-logo-container">
-          <img class="right-footer-logo" src="@/assets/black-school-name.png">
+          <img class="right-footer-logo" src="http://www.grotonarts.com/static/others/red-black-school-name.png">
         </div>
         <div class="right-footer-text-column">
           <div class="right-footer-text">Communication:</div>
@@ -60,7 +60,7 @@
 <style scoped>
   .footer-container {
     width: 100%;
-    height: 120px;
+    height: 180px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -104,14 +104,14 @@
   .left-footer-text-bottom-container {
     width: 100%;
     display: flex;
-    height: 50%;
+    height: 30%;
     position: relative;
   }
 
   .left-footer-bottom-text {
     width: 100%;
     display: flex;
-    font-size: 8pt;
+    font-size: 10pt;
     position: absolute;
     bottom: 0;
   }
@@ -128,6 +128,7 @@
   .center-footer-logo {
     width: 81.25px;
     height: 100px;
+    margin-top: 20px;
   }
 
   /* right block */
@@ -155,7 +156,7 @@
 
   .right-footer-text {
     width: 100%;
-    font-size: 8pt;
+    font-size: 10pt;
     text-align: right;
   }
 </style>
