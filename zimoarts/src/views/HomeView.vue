@@ -329,7 +329,7 @@ import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
   .home-container {
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0px 20px 10px -10px #888888;
+    box-shadow: 0px 20px 20px -10px #f5f5f5;
   }
 
   /* top dropdown area */
