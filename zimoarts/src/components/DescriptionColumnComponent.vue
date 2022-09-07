@@ -4,16 +4,15 @@
             <a-list :grid="{ gutter: 16, column: 3 }" :data-source="videoList">
                 <template #renderItem="{ item }">
                     <a-list-item>
-                        <div style="display: flex; min-width: 300px;">
-                            <!-- <img style="width: 10px; height: 10px" src="" alt="" /> -->
-                            <div style="text-align: left; color: #ffce00; font-size: 12pt;">
+                        <a-card style="border: none;">
+                            <div style="width: 100%;text-align: center; color: #ffce00; font-size: 12pt;">
                                 {{ item.title }}
                             </div>
-                        </div>
-                        <div style="margin-top: 10px; word-break: break-all; word-wrap: break-word; text-align: left; ">
-                            <iframe class="video" :src="item.link" allowfullscreen>
-                            </iframe>
-                        </div>
+                            <div style="margin-top: 10px;">
+                                <iframe class="video" :src="item.link" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </a-card>
                     </a-list-item>
                 </template>
             </a-list>
