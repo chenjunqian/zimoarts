@@ -7,7 +7,7 @@
     "titleColor": "#ffffff"
   },
   "albumList": {
-    "title": "Past Concerts",
+    "title": "PAST CONCERTS",
     "musics": [
       {
         "imageUrl": "http://www.grotonarts.com/static/music/musics/record-01.png",
@@ -41,6 +41,7 @@
   },
   "interview": {
     "interviewColumn": {
+      "themeColor": "#000000",
       "interviewImageBg": "http://www.grotonarts.com/static/music/music-interview-bg.png",
       "topLeftTextTitle": "Coming Soon !",
       "topLeftText": "Coming Soon !",
@@ -56,7 +57,7 @@
       "bottomRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png"
     },
     "topInterview": {
-      "title": "Story of Musician",
+      "title": "STORY OF MUSICIAN",
       "letfColor": "#ffce00",
       "rightColor": "#ffffff",
       "descriptionColor": "#ffce00",

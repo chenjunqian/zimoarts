@@ -52,10 +52,11 @@
         }
     },
     "albumList": {
-        "title": "Visual Art"
+        "title": "VISUAL ART"
     },
     "interview": {
         "interviewColumn": {
+            "themeColor": "#ffffff",
             "interviewImageBg": "http://www.grotonarts.com/static/home/interview/home-interview-bg.png",
             "topLeftTextTitle": "Coming Soon !",
             "topLeftText": "Coming Soon !",

@@ -1,7 +1,7 @@
 <template>
   <div style="width: 100%; margin-top: 120px;">
     <div
-      style="width: 100%;padding-top: 50px;font-size: 58px;border-bottom: 1px solid #000000;display: flex;justify-content: center; color: #ab050f;">
+      style="width: 100%;padding-top: 50px;font-size: 58px; font-weight: bolder;border-bottom: 1px solid #000000;display: flex;justify-content: center; color: #ab050f;">
       <div>{{ title }}</div>
     </div>
     <div style="width: 100%; height: 700px;display: flex;">
@@ -54,7 +54,7 @@
     <div
       style="width: 70%; margin-top: -70px; z-index: 99;height: 1200px; box-shadow: -20px 0px 20px -2px #888888; background-color: #ffffff; position: relative;">
 
-      <div style="margin-left: 30px; text-align: center; font-size: 50px; margin-top: 70px;color: #ab050f;">
+      <div style="margin-left: 30px; text-align: center; font-size: 50px; font-weight: bolder; margin-top: 70px;color: #000000;">
         {{ contentTitle }}
       </div>
       <div style="margin-left: 30px; margin-top: 20px;text-align: left;width: 90%;color: #000000;">

@@ -7,7 +7,7 @@
     "titleColor": "#ffffff"
   },
   "albumList": {
-    "title": "Past Performances"
+    "title": "PAST PERFORMANCES"
   },
   "interview": {
     "interviewColumn": {
@@ -26,7 +26,7 @@
       "bottomRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png"
     },
     "topInterview": {
-      "title": "Story of Actor",
+      "title": "STORY OF ACTOR",
       "letfColor": "#ab050f",
       "rightColor": "#ffffff",
       "descriptionColor": "#ab050f",

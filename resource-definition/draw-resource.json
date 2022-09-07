@@ -7,7 +7,7 @@
     "titleColor": "#ffffff"
   },
   "albumList": {
-    "title": "Art Gallergy"
+    "title": "ART GALLERGY"
   },
   "nameList": [
     {
@@ -97,6 +97,7 @@
   ],
   "interview": {
     "interviewColumn": {
+      "themeColor": "#ab050f",
       "interviewImageBg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png",
       "topLeftTextTitle": "Coming Soon !",
       "topLeftText": "Coming Soon !",
@@ -112,7 +113,7 @@
       "bottomRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png"
     },
     "topInterview": {
-      "title": "Story of Artist",
+      "title": "STORY OF ARTIST",
       "letfColor": "#000000",
       "rightColor": "#ffffff",
       "descriptionColor": "#000000",

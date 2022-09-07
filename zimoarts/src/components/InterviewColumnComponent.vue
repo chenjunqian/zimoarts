@@ -3,29 +3,32 @@
     style="width: 100%; height: 850px; background-color: #c0c0c0;background-size: 100% auto;background-repeat: no-repeat;"
     :style="{ 'background-image': `url('${backgroundBigImage}')` }">
     <div
-      style="width: 100%; padding-top: 50px; margin-bottom: 50px; font-size: 58px; font-weight: bolder; border-bottom: 1px solid #ffffff; display: flex; justify-content: center; color: #ffffff; ">
-      <div>Past Stories</div>
+      style="width: 100%; padding-top: 50px; margin-bottom: 50px; font-size: 58px; font-weight: bolder; display: flex; justify-content: center; "
+      :style="{ 'color': themeColor , 'border-bottom': '1px solid '+ themeColor}">
+      <div>PAST STORIES</div>
     </div>
 
     <!-- top colomn -->
-    <div style="width: 100%; border-bottom: 1px solid #ffffff; padding-top: 50px;
-              ">
-      <div style="margin-left: 5%; margin-right: 5%; display: flex;color: #ffffff;">
-        <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff; position: relative;">
+    <div style="width: 100%; padding-top: 50px;" :style="{ 'border-bottom': '1px solid '+ themeColor }">
+      <div style="margin-left: 5%; margin-right: 5%; display: flex;" :style="{'color': themeColor}">
+        <div style="width: 25%; height: 201.7px;position: relative;"
+          :style="{ 'border-left': '1px solid '+ themeColor }">
           <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
             :imageUrl="topLeftImageUrl" />
         </div>
-        <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff">
+        <div style="width: 25%; height: 201.7px;" :style="{ 'border-left': '1px solid '+ themeColor }">
           <div style="font-weight: bolder; margin-top: 20px;">{{ topLeftTextTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
             {{ topLeftText }}
           </div>
         </div>
-        <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff; position: relative;">
+        <div style="width: 25%; height: 201.7px; position: relative;"
+          :style="{ 'border-left': '1px solid '+ themeColor }">
           <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
             :imageUrl="topRightImageUrl" />
         </div>
-        <div style=" width: 25%; height: 201.7px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; ">
+        <div style=" width: 25%; height: 201.7px; "
+          :style="{ 'border-right': '1px solid '+ themeColor,  'border-left': '1px solid '+ themeColor }">
           <div style="font-weight: bolder; margin-top: 20px;">{{ topRightTextTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
             {{ topRightText }}
@@ -34,25 +37,27 @@
       </div>
     </div>
     <!-- bottom colomn -->
-    <div style="width: 100%; padding-bottom: 150px;color: #ffffff;">
+    <div style="width: 100%; padding-bottom: 150px;" :style="{'color': themeColor}">
       <div style="margin-left: 5%; margin-right: 5%; display: flex">
-        <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff">
+        <div style="width: 25%; height: 201.7px;" :style="{ 'border-left': '1px solid '+ themeColor }">
           <div style="font-weight: bolder; margin-top: 20px;">{{ bottomLeftTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
             {{ bottomLeftText }}
           </div>
         </div>
-        <div style="width: 25%; height: 201.7px; border-left: 1px solid #ffffff;position: relative;">
+        <div style="width: 25%; height: 201.7px;position: relative;"
+          :style="{ 'border-left': '1px solid '+ themeColor }">
           <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;top: 0;right: 5%; left: 5%;"
             :imageUrl="bottomLeftImageUrl" />
         </div>
-        <div style=" width: 25%; height: 201.7px; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; ">
+        <div style=" width: 25%; height: 201.7px;" :style="{ 'border-left': '1px solid '+ themeColor }">
           <div style="font-weight: bolder; margin-top: 20px;">{{ bottomRightTitle }}</div>
           <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
             {{ bottomRightText }}
           </div>
         </div>
-        <div style="width: 25%; height: 201.7px; border-right: 1px solid #ffffff;position: relative;">
+        <div style="width: 25%; height: 201.7px;position: relative;"
+          :style="{ 'border-right': '1px solid '+ themeColor,  'border-left': '1px solid '+ themeColor }">
           <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;top: 0;right: 5%; left: 5%;"
             :imageUrl="bottomRightImageUrl" />
         </div>
@@ -82,6 +87,7 @@
       let bottomRightTitle = ref("")
       let bottomRightText = ref("")
       let bottomRightImageUrl = ref("")
+      let themeColor = ref("")
 
       const setResourceData = (jsonData) => {
         backgroundBigImage.value = jsonData["interviewImageBg"]
@@ -97,6 +103,7 @@
         bottomRightTitle.value = jsonData["bottomRightTitle"]
         bottomRightText.value = jsonData["bottomRightText"]
         bottomRightImageUrl.value = jsonData["bottomRightImageUrl"]
+        themeColor.value = jsonData["themeColor"]
       }
 
       return {
@@ -113,6 +120,7 @@
         bottomRightTitle,
         bottomRightText,
         bottomRightImageUrl,
+        themeColor,
         setResourceData
       }
     }
