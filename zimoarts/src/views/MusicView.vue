@@ -7,7 +7,7 @@
     <InterviewComponent ref="interviewCompRef" />
     <ColorDivider />
     <div style="width: 100%;margin-top: 100px;">
-      <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0px 20px 10px -10px #888888;"
+      <HorizontalScrollListView ref="hScrollListViewRef" :itemSize="4" style="box-shadow: 0px 30px 30px -10px #888888;"
         :images="imageList" />
     </div>
     <InterviewColumnComponent ref="interviewColumnRef" style="margin-top: 80px;" />

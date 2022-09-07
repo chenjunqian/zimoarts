@@ -1,23 +1,14 @@
 <template>
-    <div class="wrapper">
+    <div style="width: 100%;">
         <div class="top-album-descrption-container">
             <div class="top-album-descrption-title-container">
                 <div class="top-album-descrption-title" style="color: #ab050f">
                     {{ title }}
                 </div>
-                <!-- <div>
-                    <div class="top-album-descrption-title" style="position: relative; font-size: 25px">
-                        of&nbsp;
-                    </div>
-                </div>
-                <div class="top-album-descrption-title">the&nbsp;</div>
-                <div class="top-album-descrption-title" style="color: #ffce00">
-                    Term&nbsp;
-                </div> -->
             </div>
         </div>
         <div class="list-view">
-            <vue3-horizontal-list v-if="showMusic" style="width: 1120px;" :items="musics" :options="options">
+            <vue3-horizontal-list v-if="showMusic" style="width: 100%;" :items="musics" :options="musicOptions">
                 <template v-slot:default="{ item }">
                     <img class="item-music-img" :src="item.imageUrl" @click="musicRecordOnClick(item.pdfLink)" />
                     <div class="item-music-text" :style="{ 'color': item.textColor }"
@@ -25,8 +16,8 @@
                 </template>
             </vue3-horizontal-list>
         </div>
-        <div class="list-view">
-            <vue3-horizontal-list style="width: 1120px;" :items="images" :options="options">
+        <div class="list-view" style="padding-bottom: 80px;"> 
+            <vue3-horizontal-list style="width: 100%;" :items="images" :options="options">
                 <template v-slot:default="{ item }">
                     <a-image class="item-img" :src="item" />
                 </template>
@@ -37,7 +28,7 @@
 
 <script>
     import vue3HorizontalList from "vue3-horizontal-list";
-    import { ref } from 'vue';
+    import { ref, reactive } from 'vue';
 
     export default {
         name: "HorizontalScrollListView",
@@ -52,6 +43,50 @@
             let musics = ref()
             let pdfs = ref()
             let showMusic = ref(false)
+            let options = reactive({
+                responsive: [
+                    { size: 3 },
+                ],
+                list: {
+                    windowed: 1120,
+                    padding: 24,
+                },
+                item: {
+                    class: "item-img",
+                    padding: 24,
+                },
+                position: {
+                    start: 1,
+                },
+                autoplay: {
+                    play: true,
+                    speed: 1800,
+                    repeat: true,
+                },
+
+            })
+            let musicOptions = reactive({
+                responsive: [
+                    { size: 4 },
+                ],
+                list: {
+                    windowed: 1120,
+                    padding: 24,
+                },
+                item: {
+                    class: "item-img",
+                    padding: 24,
+                },
+                position: {
+                    start: 1,
+                },
+                autoplay: {
+                    play: true,
+                    speed: 1800,
+                    repeat: true,
+                },
+
+            })
 
             const setResourceData = (jsonData) => {
                 title.value = jsonData["title"]
@@ -70,52 +105,21 @@
 
             return {
                 title,
-                setResourceData,
-                showMusic,
-                musicRecordOnClick,
                 musics,
-                pdfs
+                showMusic,
+                pdfs,
+                options,
+                musicOptions,
+                musicRecordOnClick,
+                setResourceData
             }
         },
-        data() {
-            return {
-                options: {
-                    responsive: [
-                        { size: 3 },
-                    ],
-                    list: {
-                        windowed: 1120,
-                        padding: 24,
-                    },
-                    item: {
-                        class: "item-img",
-                        padding: 24,
-                    },
-                    position: {
-                        start: 1,
-                    },
-                    autoplay: {
-                        // enable/disable playing slideshow
-                        play: true,
-                        // the delay duration between slides in milliseconds
-                        speed: 1800,
-                        // if setup, the slideshow will be in the loop.
-                        repeat: true,
-                    },
-                },
-                visible: ref(false),
-            }
-        }
     }
 </script>
 
 <style scoped>
-    .wrapper {
-        width: 100%;
-    }
-
     .list-view {
-        width: 1120px;
+        width: 1320px;
         padding-bottom: 20px;
         margin: 0 auto;
     }
@@ -126,8 +130,8 @@
     }
 
     .item-music-img {
-        width: 280px;
-        height: 280px;
+        width: 240px;
+        height: 240px;
         cursor: pointer;
     }
 
