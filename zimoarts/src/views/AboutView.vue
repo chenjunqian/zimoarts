@@ -158,10 +158,10 @@
           </a-list>
           <!-- join us block -->
           <div style="width: 100%; background-color: #ab050f; margin-top: 150px;">
-            <div style="width :100%; color: #ffffff; font-size: 30px; padding-top: 30px;">{{ joinUs.title }}</div>
-            <div style="width :100%; color: #ffffff; font-size: 30px; padding-top: 10px;">{{ joinUs.subTitle }}</div>
+            <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 30px;">{{ joinUs.title }}</div>
+            <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 10px;">{{ joinUs.subTitle }}</div>
             <div style="justify-content: center;display: flex; padding-bottom: 30px;">
-              <div style="width :50%; color: #ffffff; font-size: 15px; padding-top: 30px; text-align: center;">
+              <div style="width :50%; color: #ffffff; font-size: 13pt; padding-top: 30px; text-align: center;">
                 {{ joinUs.desc }}
               </div>
             </div>
