@@ -96,7 +96,11 @@
                     of&nbsp;
                   </div>
                 </div>
-                <div class="top-album-descrption-title">The&nbsp;</div>
+                <div>
+                  <div class="top-album-descrption-title" style="position: relative; font-size: 25px">
+                    the&nbsp;
+                  </div>
+                </div>
                 <div class="top-album-descrption-title" style="color: #ffce00">
                   Term&nbsp;
                 </div>
@@ -159,8 +163,6 @@
 
       <!-- interview block -->
       <InterviewColumnComponent ref="interviewColumnRef" />
-      <!-- bottom description block -->
-      <DescriptionColumnComponent />
     </div>
     <FooterComponent style="margin-top: 20px" />
   </div>
@@ -175,19 +177,19 @@
   import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
   import { httpRequest } from "@/libs/request";
   import { ref, reactive } from "vue";
-import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
+  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
   export default {
     name: "HomeView",
     components: {
-    FooterComponent,
-    ColorDivider,
-    InterviewColumnComponent,
-    DescriptionColumnComponent,
-    HomeDropDowmMenuComponent,
-    PageTopBigImageComponent,
-    HomeHeaderComponent
-},
+      FooterComponent,
+      ColorDivider,
+      InterviewColumnComponent,
+      DescriptionColumnComponent,
+      HomeDropDowmMenuComponent,
+      PageTopBigImageComponent,
+      HomeHeaderComponent
+    },
     setup() {
       let topImageComp = ref()
       let interviewColumnRef = ref()
@@ -329,7 +331,7 @@ import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
   .home-container {
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0px 20px 20px -10px #f5f5f5;
+    box-shadow: 0 20px 20px -2px #888888;
   }
 
   /* top dropdown area */
@@ -337,6 +339,7 @@ import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
     width: 300px;
     height: 150px;
     float: left;
+    margin-top: -20px;
     margin-left: 80px;
   }
 

@@ -1,14 +1,15 @@
 <template>
   <div class="draw">
-    <HeaderComponent />
-    <MenuItem dropdownTextColor="#ffffff" />
-    <PageTopBigImageComponent ref="topImageRef" backgroudPicUrl="http://www.grotonarts.com/static/draw/draw-top-bg.png"
+    <HomeHeaderComponent />
+    <HomeDropDowmMenuComponent />
+    <img class="top-school-icon" src="@/assets/black-red-logo.png" />
+    <PageTopBigImageComponent ref="topImageRef" style="margin-top: 180px;"  backgroudPicUrl="http://www.grotonarts.com/static/draw/draw-top-bg.png"
       videoUrl="https://www.youtube.com/embed/tgbNymZ7vqY" />
     <!-- interview block -->
     <InterviewComponent ref="interviewCompRef" />
     <ColorDivider />
     <div style="width: 100%;margin-top: 150px;">
-      <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0px 20px 10px -10px #888888;"
+      <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0 20px 20px -2px #888888;"
         :images="imageList" />
     </div>
 
@@ -16,11 +17,10 @@
       <a-list :grid="{ gutter: 16, column: 3 }" :data-source="nameList">
         <template #renderItem="{ item }">
           <a-list-item>
-            <div style="display: inline">
-              <div style="color: #000000">{{ item.name }}</div>
-              <div style="width: 70%;text-align: center;margin: 0 auto;margin-top: 20px;">
-
-              </div>
+            <div style="display: inline; display: flex;">
+              <div style="width: 30%;height: 10px;"></div>
+              <div style="width: 40%;color: #000000; font-size: 12pt; text-align: left;">{{ item.name }}</div>
+              <div style="width: 30%;height: 10px;"></div>
             </div>
           </a-list-item>
         </template>
@@ -33,9 +33,7 @@
 </template>
 
 <script>
-  import HeaderComponent from "@/components/HeaderComponent.vue";
   import FooterComponent from "@/components/FootComponent.vue";
-  import MenuItem from "@/components/MenuItem.vue";
   import ColorDivider from "@/components/ColorDivider.vue";
   import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
   import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
@@ -45,19 +43,21 @@
   import { reactive, ref, watch } from "vue";
   import { httpRequest } from "@/libs/request"
   import { useRoute, useRouter } from "vue-router";
+  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
   export default {
     name: "ArtView",
     components: {
-      HeaderComponent,
       FooterComponent,
-      MenuItem,
       ColorDivider,
       HorizontalScrollListView,
       InterviewColumnComponent,
       InterviewComponent,
       DescriptionColumnComponent,
-      PageTopBigImageComponent
+      PageTopBigImageComponent,
+      HomeDropDowmMenuComponent,
+      HomeHeaderComponent
     },
 
     setup() {
@@ -164,5 +164,13 @@
   .dropdown-content a:hover {
     color: #ffffff;
     background-color: #c0c0c0;
+  }
+
+  .top-school-icon {
+    width: 300px;
+    height: 150px;
+    float: left;
+    margin-top: -20px;
+    margin-left: 80px;
   }
 </style>

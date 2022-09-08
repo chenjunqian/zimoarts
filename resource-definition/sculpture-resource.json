@@ -7,7 +7,7 @@
     "titleColor": "#ffffff"
   },
   "albumList": {
-    "title": "ART GALLERGY"
+    "title": "ART GALLERY"
   },
   "nameList": [
     {
@@ -61,7 +61,7 @@
   ],
   "interview": {
     "interviewColumn": {
-      "themeColor": "#ab050f",
+      "themeColor": "#ffffff",
       "interviewImageBg": "http://www.grotonarts.com/static/art/sculpture/sculpture-interview-bg.png",
       "topLeftTextTitle": "Coming Soon !",
       "topLeftText": "Coming Soon !",

@@ -2,9 +2,14 @@
   <div class="home-dropdown-item-container">
     <div class="home-dropdown-item" style="background-color: #000000; color: #ffffff">
       <div class="home-dropdown-text-container">
-        <router-link slots="div" class="home-dropdown-text" to="/art/draw">
-          <div class="home-dropdown-text">VISUAL ART</div>
-        </router-link>
+        <div class="dropdown" style="width: 100%;">
+          <div class="home-dropdown-text" style="color: #ffffff; width: 100%;">VISUAL ART</div>
+          <div class="dropdown-content">
+            <router-link to="/art/draw" style="font-size: 11pt;  font-weight: bolder;height: 50px; line-height: 50px;">DRAWING</router-link>
+            <router-link to="/art/sculpture" style="font-size: 11pt; font-weight: bolder; height: 50px; line-height: 50px;">SCULPTURE</router-link>
+            <router-link to="/art/photography" style="font-size: 11pt; font-weight: bolder; height: 50px; line-height: 50px;">PHOTOGRAPHY</router-link>
+          </div>
+        </div>
       </div>
     </div>
     <div class="home-dropdown-item" style="background-color: #ab050f; color: #ffffff">
@@ -24,24 +29,18 @@
         </router-link>
       </div>
     </div>
-    <div class="home-dropdown-item" style="background-color: #c0c0c0; color: #ffffff; "> 
+    <div class="home-dropdown-item" style="background-color: #c0c0c0; color: #ffffff; ">
       <div class="home-dropdown-text-container">
         <router-link slots="div" class="home-dropdown-text" to="/about">
           <div class="home-dropdown-text">ABOUT US</div>
         </router-link>
       </div>
     </div>
-    <div class="home-dropdown-item" style="background-color: white; border: 1px solid #c0c0c0;">
+    <div class="home-dropdown-item" style="background-color: #ffffff; border: 1px solid #c0c0c0;">
       <div class="home-dropdown-text-container">
-        <div class="dropdown">
-          <div class="home-dropdown-text" style="color: #000000;">OTHER</div>
-          <div class="dropdown-content">
-            <router-link to="/" style="font-size: 13px;">HOME</router-link>
-            <router-link to="/theater" style="font-size: 12px;">THEATER DANCE</router-link>
-            <router-link to="/music">MUSIC</router-link>
-            <router-link to="/about">ABOUTUS</router-link>
-          </div>
-        </div>
+        <router-link slots="div" class="home-dropdown-text" to="/">
+          <div class="home-dropdown-text" style="color: #000000">HOME</div>
+        </router-link>
       </div>
     </div>
   </div>

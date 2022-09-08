@@ -7,7 +7,7 @@
                 </div>
             </div>
         </div>
-        <div class="list-view">
+        <div class="list-view" style="margin-bottom: 80px;">
             <vue3-horizontal-list v-if="showMusic" style="width: 100%;" :items="musics" :options="musicOptions">
                 <template v-slot:default="{ item }">
                     <img class="item-music-img" :src="item.imageUrl" @click="musicRecordOnClick(item.pdfLink)" />
@@ -130,8 +130,8 @@
     }
 
     .item-music-img {
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
         cursor: pointer;
     }
 

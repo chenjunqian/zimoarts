@@ -35,8 +35,9 @@ export default {
 .home-header-left-top-info {
   width: 50%;
   height: 100%;
-  margin-top: 10px;
+  margin-top: 10%;
   font-size: 9px;
+  text-align: left;
 }
 
 .home-header-right-container {
@@ -53,8 +54,10 @@ export default {
 }
 
 .home-header-right-icon {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 85%;
+  max-height: 85%;
+  margin-left: 15%;
+  margin-top: 10%;
   display: table-cell;
   vertical-align: bottom
 }

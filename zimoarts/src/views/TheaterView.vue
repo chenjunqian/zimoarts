@@ -6,7 +6,7 @@
     <PageTopBigImageComponent ref="topImageCompRef" style="margin-top: 180px;" />
     <InterviewComponent ref="interviewCompRef" />
     <ColorDivider />
-    <div style="width: 100%;margin-top: 100px;">
+    <div style="width: 100%;margin-top: 100px; margin-bottom: 100px;box-shadow: 0 20px 20px -2px #888888;">
       <HorizontalScrollListView ref="hScrollListViewRef" style="box-shadow: 0px 20px 10px -10px #888888;"
         :images="imageList" />
     </div>

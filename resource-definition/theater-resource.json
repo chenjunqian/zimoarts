@@ -11,6 +11,7 @@
   },
   "interview": {
     "interviewColumn": {
+      "themeColor": "#ffffff",
       "interviewImageBg": "http://www.grotonarts.com/static/theater/theater-interview-bg.png",
       "topLeftTextTitle": "Coming Soon !",
       "topLeftText": "Coming Soon !",
