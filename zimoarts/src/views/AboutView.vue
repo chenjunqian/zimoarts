@@ -67,8 +67,17 @@
           <div style="width: 100%;;margin-top: 100px;">
             <!-- founder block -->
             <div style="width: 80%; display: flex; margin: 0 auto;">
-              <img style="width: 238.8px; height: 298.74px;" :src="memberData.chefImageUrl" alt="">
-              <div style="width: 73%; border: 1px solid #c0c0c0; margin-left: 6%;">
+              <div style="display: flex; position: relative;">
+                <img style="width: 220px; height: 275px; background-color: #c0c0c0;" :src="memberData.chefImageUrl" />
+                <div style="width: 200px ;position: absolute; bottom: 0px; left: 230px;">
+                  <div
+                    style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder; text-align: left;margin-top: 10px;">
+                    {{ memberData.chefDescAuthor }}
+                  </div>
+                  <div style="width: 100%;color: #000000;font-size: 10pt; text-align: left;">{{ memberData.chefDescAuthorTitle }}</div>
+                </div>
+              </div>
+              <div style="width: 80%; border: 1px solid #c0c0c0; margin-left: 17%;">
                 <div style="text-align: left; padding-top: 30px;color: #ab050f; margin-left: 15px; font-size: 25pt;">
                   {{memberData.chefDescTitle}}
                 </div>
@@ -94,15 +103,21 @@
             <!-- member block -->
 
             <a-list style="width: 83%; display: flex; margin: 0 auto; margin-top: 80px;"
-              :grid="{ gutter: 16, column: 4 }" :data-source="memberDataList">
+              :grid="{ gutter: 60, column: 3 }" :data-source="memberDataList">
               <template #renderItem="{ item }">
                 <a-list-item>
                   <a-card style="border: none; background-color: transparent;">
-                    <img style="width: 238.8px; height: 298.74px; background-color: #c0c0c0;" :src="item.imageUrl" />
-                    <div style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder;margin-top: 10px;">
-                      {{item.name }}
+                    <div style="display: flex; position: relative;">
+                      <img style="width: 220px; height: 275px; background-color: #c0c0c0;" :src="item.imageUrl" />
+                      <div style="width: 200px ;position: absolute; bottom: 0px; left: 230px;">
+                        <div
+                          style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder; text-align: left;margin-top: 10px;">
+                          {{item.name }}
+                        </div>
+                        <div style="width: 100%;color: #000000;font-size: 10pt; text-align: left;">{{ item.title }}
+                        </div>
+                      </div>
                     </div>
-                    <div style="width: 100%;color: #000000;font-size: 10pt;">{{ item.title }}</div>
                   </a-card>
                 </a-list-item>
               </template>
@@ -116,7 +131,7 @@
                 </div>
 
                 <div style="width: 100%; margin-top: 20px; display: flex; justify-content: center;">
-                  <a-list :grid="{ gutter: 16, column: 3 }" :data-source="otherMemberList">
+                  <a-list style="width: 100%;" :grid="{ gutter: 16, column: 3 }" :data-source="otherMemberList">
                     <template #renderItem="{ item }">
                       <a-list-item>
                         <a-card style="border: none; background-color: transparent;">
@@ -158,8 +173,10 @@
           </a-list>
           <!-- join us block -->
           <div style="width: 100%; background-color: #ab050f; margin-top: 150px;">
-            <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 30px;">{{ joinUs.title }}</div>
-            <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 10px;">{{ joinUs.subTitle }}</div>
+            <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 30px;">{{
+              joinUs.title }}</div>
+            <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 10px;">{{
+              joinUs.subTitle }}</div>
             <div style="justify-content: center;display: flex; padding-bottom: 30px;">
               <div style="width :50%; color: #ffffff; font-size: 13pt; padding-top: 30px; text-align: center;">
                 {{ joinUs.desc }}
