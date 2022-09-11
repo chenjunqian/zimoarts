@@ -52,23 +52,33 @@
       "memberList": [
         {
           "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/BensenHan.png",
-          "title": "Visual Art Director",
+          "title": "Vice Chef",
           "name": "Bensen Han"
         },
         {
-          "imageUrl": "",
-          "title": "Performance Art Director",
-          "name": ""
-        },
-        {
-          "imageUrl": "",
+          "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/BenjaminReyes.png",
           "title": "Music Director",
-          "name": ""
+          "name": "Benjamin Reyes"
         },
         {
-          "imageUrl": "",
+          "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/MayaLuthi.png",
+          "title": "Theater Director",
+          "name": "Maya Luthi"
+        },
+        {
+          "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/MeiMatsui.png",
           "title": "Art Director",
-          "name": ""
+          "name": "Mei Matsui"
+        },
+        {
+          "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/AMYMA.png",
+          "title": "Art Director",
+          "name": "Amy MA"
+        },
+        {
+          "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/TommyZhang.png",
+          "title": "technology Support",
+          "name": "Tommy Zhang"
         }
       ],
       "otherMemberList": [
