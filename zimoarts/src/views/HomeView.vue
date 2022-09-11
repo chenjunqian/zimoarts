@@ -172,7 +172,6 @@
   import FooterComponent from "@/components/FootComponent.vue";
   import ColorDivider from "@/components/ColorDivider.vue";
   import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
-  import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
   import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
   import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
   import { httpRequest } from "@/libs/request";
@@ -185,7 +184,6 @@
       FooterComponent,
       ColorDivider,
       InterviewColumnComponent,
-      DescriptionColumnComponent,
       HomeDropDowmMenuComponent,
       PageTopBigImageComponent,
       HomeHeaderComponent
