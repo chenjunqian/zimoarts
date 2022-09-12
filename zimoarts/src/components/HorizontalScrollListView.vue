@@ -7,8 +7,8 @@
                 </div>
             </div>
         </div>
-        <div class="list-view" style="margin-bottom: 80px;">
-            <vue3-horizontal-list v-if="showMusic" style="width: 100%;" :items="musics" :options="musicOptions">
+        <div class="list-view" v-if="showMusic" style="margin-bottom: 80px;">
+            <vue3-horizontal-list  style="width: 100%;" :items="musics" :options="musicOptions">
                 <template v-slot:default="{ item }">
                     <img class="item-music-img" :src="item.imageUrl" @click="musicRecordOnClick(item.pdfLink)" />
                     <div class="item-music-text" :style="{ 'color': item.textColor }"
@@ -95,7 +95,7 @@
                     musics.value = []
                 } else {
                     musics.value = jsonData["musics"]
-                    showMusic.value = true
+                    // showMusic.value = true
                 }
             }
 
