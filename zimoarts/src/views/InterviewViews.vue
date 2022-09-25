@@ -18,7 +18,6 @@
 <script>
     import { useRoute } from 'vue-router'
     import HomeHeaderComponent from '@/components/HomeHeaderComponent.vue'
-    import MenuItem from '@/components/MenuItem.vue'
     import HomeDropDowmMenuComponent from '@/components/HomeDropDowmMenuComponent.vue'
     import InterviewComponent from '@/components/InterviewComponent.vue'
     import ColorDivider from '@/components/ColorDivider.vue'
@@ -28,7 +27,6 @@
         name: "InterviewViews",
         components: {
             HomeHeaderComponent,
-            MenuItem,
             HomeDropDowmMenuComponent,
             InterviewComponent,
             ColorDivider,
