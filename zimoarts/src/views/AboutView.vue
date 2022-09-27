@@ -74,7 +74,8 @@
                     style="width: 100%;color: #000000;font-size: 12pt; font-weight: bolder; text-align: left;margin-top: 10px;">
                     {{ memberData.chefDescAuthor }}
                   </div>
-                  <div style="width: 100%;color: #000000;font-size: 10pt; text-align: left;">{{ memberData.chefDescAuthorTitle }}</div>
+                  <div style="width: 100%;color: #000000;font-size: 10pt; text-align: left;">{{
+                  memberData.chefDescAuthorTitle }}</div>
                 </div>
               </div>
               <div style="width: 80%; border: 1px solid #c0c0c0; margin-left: 17%;">
@@ -174,9 +175,9 @@
           <!-- join us block -->
           <div style="width: 100%; background-color: #ab050f; margin-top: 150px;">
             <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 30px;">{{
-              joinUs.title }}</div>
+            joinUs.title }}</div>
             <div style="width :100%; color: #ffffff; font-size: 30pt; font-weight: bolder; padding-top: 10px;">{{
-              joinUs.subTitle }}</div>
+            joinUs.subTitle }}</div>
             <div style="justify-content: center;display: flex; padding-bottom: 30px;">
               <div style="width :50%; color: #ffffff; font-size: 13pt; padding-top: 30px; text-align: center;">
                 {{ joinUs.desc }}
@@ -192,114 +193,113 @@
 </template>
 
 <script>
-  import FooterComponent from "@/components/FootComponent.vue";
-  import ColorDivider from "@/components/ColorDivider.vue";
-  import { httpRequest } from "@/libs/request";
-  import { ref, reactive } from "vue";
-  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
-  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
+import FooterComponent from "@/components/FootComponent.vue";
+import ColorDivider from "@/components/ColorDivider.vue";
+import { httpRequest } from "@/libs/request";
+import { ref, reactive } from "vue";
+import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
-  export default {
-    name: "AboutView",
-    components: {
-      FooterComponent,
-      ColorDivider,
-      HomeDropDowmMenuComponent,
-      HomeHeaderComponent
-    },
-    setup() {
-      let teacherDataList = ref()
-      let teacherBlockTitle = ref()
-      let memberDataList = ref()
-      let otherMemberList = ref()
-      let introduction = reactive({
-        leftImageUrl: "",
-        title: "",
-        content: [],
-        author: "",
-        authorTitle: ""
-      })
-      let memberData = reactive({
-        title: "",
-        chefImageUrl: "",
-        chefDescTitle: "",
-        chefDesc: [],
-        chefSubDesc: [],
-        chefDescAuthor: "",
-        chefDescAuthorTitle: "",
-        viceChefImageUrl: "",
-        viceChefName: "",
-        viceChefTitle: "",
-        viceChefDescTitle: "",
-      })
-      let joinUs = reactive({
-        title: "",
-        subTitle: "",
-        desc: ""
-      })
+export default {
+  name: "AboutView",
+  components: {
+    FooterComponent,
+    ColorDivider,
+    HomeDropDowmMenuComponent,
+    HomeHeaderComponent
+  },
+  setup() {
+    let teacherDataList = ref()
+    let teacherBlockTitle = ref()
+    let memberDataList = ref()
+    let otherMemberList = ref()
+    let introduction = reactive({
+      leftImageUrl: "",
+      title: "",
+      content: [],
+      author: "",
+      authorTitle: ""
+    })
+    let memberData = reactive({
+      title: "",
+      chefImageUrl: "",
+      chefDescTitle: "",
+      chefDesc: [],
+      chefSubDesc: [],
+      chefDescAuthor: "",
+      chefDescAuthorTitle: "",
+      viceChefImageUrl: "",
+      viceChefName: "",
+      viceChefTitle: "",
+      viceChefDescTitle: "",
+    })
+    let joinUs = reactive({
+      title: "",
+      subTitle: "",
+      desc: ""
+    })
 
-      httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
-        console.log("aboutus-resource : ", response)
-        teacherDataList.value = response["team"]['teacherDataList']
-        teacherBlockTitle.value = response["team"]['teacherBlockTitle']
-        memberDataList.value = response["team"]["memberData"]["memberList"]
-        otherMemberList.value = response["team"]["memberData"]["otherMemberList"]
-        introduction.leftImageUrl = response["introduction"]["leftImageUrl"]
-        introduction.title = response["introduction"]["title"]
-        introduction.subTitle = response["introduction"]["subTitle"]
-        introduction.descImage = response["introduction"]["descImage"]
-        introduction.content = response["introduction"]["content"]
-        introduction.author = response["introduction"]["author"]
-        introduction.authorTitle = response["introduction"]["authorTitle"]
+    httpRequest.get("http://www.grotonarts.com/static/aboutus/aboutus-resource.json").then(function (response) {
+      teacherDataList.value = response["team"]['teacherDataList']
+      teacherBlockTitle.value = response["team"]['teacherBlockTitle']
+      memberDataList.value = response["team"]["memberData"]["memberList"]
+      otherMemberList.value = response["team"]["memberData"]["otherMemberList"]
+      introduction.leftImageUrl = response["introduction"]["leftImageUrl"]
+      introduction.title = response["introduction"]["title"]
+      introduction.subTitle = response["introduction"]["subTitle"]
+      introduction.descImage = response["introduction"]["descImage"]
+      introduction.content = response["introduction"]["content"]
+      introduction.author = response["introduction"]["author"]
+      introduction.authorTitle = response["introduction"]["authorTitle"]
 
-        memberData.title = response["team"]["memberData"]["title"]
-        memberData.chefImageUrl = response["team"]["memberData"]["chefImageUrl"]
-        memberData.chefDescTitle = response["team"]["memberData"]["chefDescTitle"]
-        memberData.chefDesc = response["team"]["memberData"]["chefDesc"]
-        memberData.chefSubDesc = response["team"]["memberData"]["chefSubDesc"]
-        memberData.chefDescAuthor = response["team"]["memberData"]["chefDescAuthor"]
-        memberData.chefDescAuthorTitle = response["team"]["memberData"]["chefDescAuthorTitle"]
-        memberData.viceChefImageUrl = response["team"]["memberData"]["viceChefImageUrl"]
-        memberData.viceChefName = response["team"]["memberData"]["viceChefName"]
-        memberData.viceChefTitle = response["team"]["memberData"]["viceChefTitle"]
-        memberData.viceChefDescTitle = response["team"]["memberData"]["viceChefDescTitle"]
+      memberData.title = response["team"]["memberData"]["title"]
+      memberData.chefImageUrl = response["team"]["memberData"]["chefImageUrl"]
+      memberData.chefDescTitle = response["team"]["memberData"]["chefDescTitle"]
+      memberData.chefDesc = response["team"]["memberData"]["chefDesc"]
+      memberData.chefSubDesc = response["team"]["memberData"]["chefSubDesc"]
+      memberData.chefDescAuthor = response["team"]["memberData"]["chefDescAuthor"]
+      memberData.chefDescAuthorTitle = response["team"]["memberData"]["chefDescAuthorTitle"]
+      memberData.viceChefImageUrl = response["team"]["memberData"]["viceChefImageUrl"]
+      memberData.viceChefName = response["team"]["memberData"]["viceChefName"]
+      memberData.viceChefTitle = response["team"]["memberData"]["viceChefTitle"]
+      memberData.viceChefDescTitle = response["team"]["memberData"]["viceChefDescTitle"]
 
-        joinUs.title = response["joinUs"]["title"]
-        joinUs.subTitle = response["joinUs"]["subTitle"]
-        joinUs.desc = response["joinUs"]["desc"]
-      }).catch(function (error) {
-        console.log(error);
-      });
+      joinUs.title = response["joinUs"]["title"]
+      joinUs.subTitle = response["joinUs"]["subTitle"]
+      joinUs.desc = response["joinUs"]["desc"]
+    }).catch(function (error) {
+      console.log(error);
+    });
 
-      return {
-        teacherDataList,
-        teacherBlockTitle,
-        memberDataList,
-        otherMemberList,
-        memberData,
-        joinUs,
-        introduction
-      }
+    return {
+      teacherDataList,
+      teacherBlockTitle,
+      memberDataList,
+      otherMemberList,
+      memberData,
+      joinUs,
+      introduction
     }
-  };
+  }
+};
 </script>
 
 <style scoped>
-  @media screen and (max-width: 1200px) {
-    .about {
-      background-color: #ffffff;
-      width: 1500px;
-      margin: 0 auto;
-      position: relative;
-    }
+@media screen and (max-width: 1200px) {
+  .about {
+    background-color: #ffffff;
+    width: 1500px;
+    margin: 0 auto;
+    position: relative;
   }
+}
 
-  @media screen and (min-width: 1200px) {
-    .about {
-      background-color: #ffffff;
-      max-width: 1500px;
-      margin: 0 auto;
-      position: relative;
-    }
+@media screen and (min-width: 1200px) {
+  .about {
+    background-color: #ffffff;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
   }
+}
 </style>
