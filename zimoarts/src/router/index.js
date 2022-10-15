@@ -28,10 +28,10 @@ const routes = [
   {
     path: '/theater',
     name: 'theater',
-    component: () => import( '../views/TheaterView.vue')
+    component: () => import('../views/TheaterView.vue')
   },
   {
-    path: '/interview/:id',
+    path: '/interview/:type/:id',
     name: 'interview',
     component: () => import('../views/InterviewViews.vue')
   }

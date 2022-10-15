@@ -17,81 +17,105 @@
 </template>
 
 <script>
-  import FooterComponent from "@/components/FootComponent.vue";
-  import InterviewComponent from "@/components/InterviewComponent.vue";
-  import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
-  import ColorDivider from "@/components/ColorDivider.vue";
-  import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
-  import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
-  import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
-  import { httpRequest } from "@/libs/request";
-  import { ref } from "vue";
-  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
-  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
+import FooterComponent from "@/components/FootComponent.vue";
+import InterviewComponent from "@/components/InterviewComponent.vue";
+import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
+import ColorDivider from "@/components/ColorDivider.vue";
+import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
+import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
+import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
+import { httpRequest } from "@/libs/request";
+import { ref } from "vue";
+import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
-  export default {
-    name: "MusicView",
-    components: {
-      FooterComponent,
-      InterviewComponent,
-      PageTopBigImageComponent,
-      ColorDivider,
-      HorizontalScrollListView,
-      InterviewColumnComponent,
-      DescriptionColumnComponent,
-      HomeDropDowmMenuComponent,
-      HomeHeaderComponent
-    },
-    setup() {
-      let imageList = ref([])
-      let topImageCompRef = ref()
-      let interviewColumnRef = ref()
-      let interviewCompRef = ref()
-      let hScrollListViewRef = ref()
-      let descCompRef = ref()
-      httpRequest.get("http://www.grotonarts.com/static/music/music-resource.json").then(function (response) {
-        let allImageList = response["image-list"]
-        for (var key in allImageList) {
-          let itemImageList = allImageList[key]
-          for (var i in itemImageList) {
-            imageList.value.push(itemImageList[i])
-          }
-        }
+export default {
+  name: "MusicView",
+  components: {
+    FooterComponent,
+    InterviewComponent,
+    PageTopBigImageComponent,
+    ColorDivider,
+    HorizontalScrollListView,
+    InterviewColumnComponent,
+    DescriptionColumnComponent,
+    HomeDropDowmMenuComponent,
+    HomeHeaderComponent
+  },
+  setup() {
+    let imageList = ref([])
+    let topImageCompRef = ref()
+    let interviewColumnRef = ref()
+    let interviewCompRef = ref()
+    let hScrollListViewRef = ref()
+    let descCompRef = ref()
 
-        topImageCompRef.value.setResourceData(response["topBigImageComponent"])
-        let interviewJsonData = response["interview"]
-        interviewCompRef.value.setResourceData(interviewJsonData["topInterview"])
-        interviewColumnRef.value.setResourceData(interviewJsonData["interviewColumn"])
-        descCompRef.value.setResourceData(response["videoList"])
-        hScrollListViewRef.value.setResourceData(response["albumList"])
+    async function getMusicData() {
+      let respJson
+      await httpRequest.get("http://www.grotonarts.com/static/music/music-resource.json").then(function (response) {
+        respJson = response
       }).catch(function (error) {
         console.log(error);
       });
 
-      return {
-        imageList,
-        topImageCompRef,
-        interviewCompRef,
-        interviewColumnRef,
-        hScrollListViewRef,
-        descCompRef
+      return respJson
+    }
+
+    async function getInterviewData(url) {
+      let respJson;
+      await httpRequest.get(url).then(function (response) {
+        respJson = response
+      }).catch(function (error) {
+        console.log(error);
+      });
+      return respJson;
+    }
+
+    async function updateData() {
+      let response = await getMusicData()
+      let allImageList = response["image-list"]
+      for (var key in allImageList) {
+        let itemImageList = allImageList[key]
+        for (var i in itemImageList) {
+          imageList.value.push(itemImageList[i])
+        }
       }
+
+      let interviewJson = await getInterviewData(response["interview"])
+
+      topImageCompRef.value.setResourceData(response["topBigImageComponent"])
+      interviewCompRef.value.setResourceData(interviewJson["topInterview"])
+      interviewColumnRef.value.setResourceData(interviewJson["interviewColumn"])
+      descCompRef.value.setResourceData(response["videoList"])
+      hScrollListViewRef.value.setResourceData(response["albumList"])
+    }
+
+    updateData()
+
+    return {
+      imageList,
+      topImageCompRef,
+      interviewCompRef,
+      interviewColumnRef,
+      hScrollListViewRef,
+      descCompRef
     }
   }
+}
 </script>
 
 <style>
-  .music {
-    background-color: #ffffff;
-    width: 1400px;
-    margin: 0 auto;
-  }
+.music {
+  background-color: #ffffff;
+  width: 1400px;
+  margin: 0 auto;
+}
 
-  .top-school-icon {
-    width: 300px;
-    height: 150px;
-    float: left;
-    margin-top: -20px;
-    margin-left: 80px;
-  }
+.top-school-icon {
+  width: 300px;
+  height: 150px;
+  float: left;
+  margin-top: -20px;
+  margin-left: 80px;
+}
 </style>

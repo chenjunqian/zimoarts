@@ -40,35 +40,50 @@
   <div style="width: 100%;display: flex;">
     <!-- photo block -->
     <div style="width: 30%; position: relative;display: flex; z-index: 100;">
-      <div style="width: 100%; position: absolute; right: 0; bottom: 200px;">
-        <img style="width: 100%;height: 300px;" :src="contentImageUrl" alt="">
-        <div style="font-weight: bolder;color: #000000;text-align: center;font-size: 15px;margin-top: 20px;">
-          {{ contentImageDesc }}
+      <div style="width: 100%; position: absolute; right: 0; top: 200px;">
+        <div style="width: 100%; display: flex; justify-content: center;">
+          <div style="width: 30%;height: 50px;"></div>
+          <img style="width: 70%; margin-right: 0;" :src="contentImageUrl" alt="">
         </div>
-        <div style="color: #000000;text-align: center;font-size: 15px;">
-          {{ contentImageSubDesc }}
+        <div style="width: 100%; display: flex; justify-content: center;">
+          <div style="width: 30%;height: 50px;">
+          </div>
+          <div style="width: 70%; margin-right: 0;">
+            <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;margin-top: 20px;">
+              {{ contentImageDesc }}
+            </div>
+            <div style="color: #000000;text-align: left;font-size: 15px;">
+              {{ contentImageSubDesc }}
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
     <!-- article block -->
     <div
-      style="width: 70%; margin-top: -70px; z-index: 99;height: 1200px; box-shadow: -20px 0px 20px -2px #888888; background-color: #ffffff; position: relative;">
-
-      <div style="margin-left: 30px; text-align: center; font-size: 50px; font-weight: bolder; margin-top: 70px;color: #000000;">
+      style="width: 70%; margin-top: -70px; z-index: 99;  box-shadow: -20px 0px 20px -2px #888888; background-color: #ffffff; position: relative;">
+      <div
+        style="margin-left: 30px; text-align: center;font-size: 50px; font-weight: bolder; margin-top: 70px;color: #000000;">
         {{ contentTitle }}
       </div>
-      <div style="margin-left: 30px; margin-top: 20px;text-align: left;width: 90%;color: #000000;">
-        {{ content }}
+      <div
+        style="margin-left: 30px; min-height: 700px;margin-top: 20px;text-align: left;width: 90%;color: #000000; font-size: 15pt;"
+        v-html="content">
       </div>
 
-      <div style="position: absolute;bottom: 20px; right: 50px;">
-        <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
-          {{ contentAuthor }}
-        </div>
-        <div style="color: #000000;text-align: left;font-size: 15px;">
-          {{ contentAuthorTitle }}
+      <div style="display: flex; justify-content: left;">
+        <div style="width: 900px; height: 30px;"></div>
+        <div style="width: 150px;">
+          <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
+            {{ contentAuthor }}
+          </div>
+          <div style="color: #000000;text-align: left;font-size: 15px;">
+            {{ contentAuthorTitle }}
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -136,4 +151,5 @@ export default {
 </script>
 
 <style>
+
 </style>

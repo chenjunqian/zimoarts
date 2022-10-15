@@ -84,6 +84,16 @@ export default {
       return respJson;
     }
 
+    async function getInterviewData(url) {
+      let respJson;
+      await httpRequest.get(url).then(function (response) {
+        respJson = response
+      }).catch(function (error) {
+        console.log(error);
+      });
+      return respJson;
+    }
+
     async function updateData() {
       let respJson = await getDrawResource()
       imageList.value = []
@@ -96,9 +106,10 @@ export default {
         }
       }
 
+      let interviewRespJson = await getInterviewData(respJson["interview"])
       topImageRef.value.setResourceData(respJson["topBigImageComponent"])
-      interviewCompRef.value.setResourceData(respJson["interview"]["topInterview"])
-      interviewColumnRef.value.setResourceData(respJson["interview"]["interviewColumn"])
+      interviewCompRef.value.setResourceData(interviewRespJson["topInterview"])
+      interviewColumnRef.value.setResourceData(interviewRespJson["interviewColumn"])
       hScrollListViewRef.value.setResourceData(respJson["albumList"])
       descCompRef.value.setResourceData(respJson["videoList"])
       nameList.value = respJson["nameList"]

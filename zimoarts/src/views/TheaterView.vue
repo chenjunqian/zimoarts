@@ -17,80 +17,105 @@
 </template>
 
 <script>
-  import FooterComponent from "@/components/FootComponent.vue";
-  import InterviewComponent from "@/components/InterviewComponent.vue";
-  import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
-  import ColorDivider from "@/components/ColorDivider.vue";
-  import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
-  import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
-  import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
-  import { httpRequest } from "@/libs/request";
-  import { ref } from "vue";
-  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
-  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
+import FooterComponent from "@/components/FootComponent.vue";
+import InterviewComponent from "@/components/InterviewComponent.vue";
+import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
+import ColorDivider from "@/components/ColorDivider.vue";
+import HorizontalScrollListView from "@/components/HorizontalScrollListView.vue";
+import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
+import DescriptionColumnComponent from "@/components/DescriptionColumnComponent.vue";
+import { httpRequest } from "@/libs/request";
+import { ref } from "vue";
+import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
-  export default {
-    name: "TheaterView",
-    components: {
-      FooterComponent,
-      InterviewComponent,
-      PageTopBigImageComponent,
-      ColorDivider,
-      HorizontalScrollListView,
-      InterviewColumnComponent,
-      DescriptionColumnComponent,
-      HomeDropDowmMenuComponent,
-      HomeHeaderComponent
-    },
-    setup() {
-      let imageList = ref([])
-      let topImageCompRef = ref()
-      let interviewCompRef = ref()
-      let interviewColumnRef = ref()
-      let hScrollListViewRef = ref()
-      let descCompRef = ref()
+export default {
+  name: "TheaterView",
+  components: {
+    FooterComponent,
+    InterviewComponent,
+    PageTopBigImageComponent,
+    ColorDivider,
+    HorizontalScrollListView,
+    InterviewColumnComponent,
+    DescriptionColumnComponent,
+    HomeDropDowmMenuComponent,
+    HomeHeaderComponent
+  },
+  setup() {
+    let imageList = ref([])
+    let topImageCompRef = ref()
+    let interviewCompRef = ref()
+    let interviewColumnRef = ref()
+    let hScrollListViewRef = ref()
+    let descCompRef = ref()
 
-      httpRequest.get("http://www.grotonarts.com/static/theater/theater-resource.json").then(function (response) {
-        let allImageList = response["image-list"]
-        for (var key in allImageList) {
-          let itemImageList = allImageList[key]
-          for (var i in itemImageList) {
-            imageList.value.push(itemImageList[i])
-          }
-        }
-
-        topImageCompRef.value.setResourceData(response["topBigImageComponent"])
-        interviewCompRef.value.setResourceData(response["interview"]["topInterview"])
-        interviewColumnRef.value.setResourceData(response["interview"]["interviewColumn"])
-        descCompRef.value.setResourceData(response["videoList"])
-        hScrollListViewRef.value.setResourceData(response["albumList"])
+    async function getInterviewData(url) {
+      let respJson;
+      await httpRequest.get(url).then(function (response) {
+        respJson = response
       }).catch(function (error) {
         console.log(error);
       });
+      return respJson;
+    }
 
-      return {
-        imageList,
-        topImageCompRef,
-        interviewCompRef,
-        interviewColumnRef,
-        hScrollListViewRef,
-        descCompRef
+    async function getTheaterData() {
+      let respJson;
+      await httpRequest.get("http://www.grotonarts.com/static/theater/theater-resource.json").then(function (response) {
+        respJson = response
+      }).catch(function (error) {
+        console.log(error);
+      });
+      return respJson
+    }
+
+    async function updateData() {
+      let response = await getTheaterData()
+      let allImageList = response["image-list"]
+      for (var key in allImageList) {
+        let itemImageList = allImageList[key]
+        for (var i in itemImageList) {
+          imageList.value.push(itemImageList[i])
+        }
       }
+
+      let interviewJsonData = await getInterviewData(response["interview"])
+      console.log("interviewJsonData : ", interviewJsonData)
+
+      topImageCompRef.value.setResourceData(response["topBigImageComponent"])
+      interviewCompRef.value.setResourceData(interviewJsonData["topInterview"])
+      interviewColumnRef.value.setResourceData(interviewJsonData["interviewColumn"])
+      descCompRef.value.setResourceData(response["videoList"])
+      hScrollListViewRef.value.setResourceData(response["albumList"])
+
+    }
+
+    updateData()
+
+    return {
+      imageList,
+      topImageCompRef,
+      interviewCompRef,
+      interviewColumnRef,
+      hScrollListViewRef,
+      descCompRef
     }
   }
+}
 </script>
 
 <style>
-  .theater {
-    background-color: #ffffff;
-    width: 1400px;
-    margin: 0 auto;
-  }
+.theater {
+  background-color: #ffffff;
+  width: 1400px;
+  margin: 0 auto;
+}
 
-  .top-school-icon {
-    width: 300px;
-    height: 150px;
-    float: left;
-    margin-left: 80px;
-  }
+.top-school-icon {
+  width: 300px;
+  height: 150px;
+  float: left;
+  margin-left: 80px;
+}
 </style>
