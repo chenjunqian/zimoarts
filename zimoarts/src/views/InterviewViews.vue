@@ -44,8 +44,6 @@ export default {
     let url = "http://www.grotonarts.com/static/interviews/" + interviewType + "/" + interviewId + ".json"
 
     httpRequest.get(url).then(function (response) {
-      let topInterviewData = response["topInterview"]
-      let interviewColumnData = response["interviewColumn"]
       topInterviewRef.value.setResourceData(response["topInterview"])
       interviewColomnRef.value.setResourceData(response["interviewColumn"])
     }).catch(function (error) {
