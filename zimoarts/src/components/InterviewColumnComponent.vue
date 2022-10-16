@@ -8,125 +8,102 @@
       <div>PAST STORIES</div>
     </div>
 
-    <!-- top colomn -->
-    <div style="width: 100%; padding-top: 50px;" :style="{ 'border-bottom': '1px solid '+ themeColor }">
-      <div style="margin-left: 5%; margin-right: 5%; display: flex;" :style="{'color': themeColor}">
-        <div style="width: 25%; height: 201.7px;position: relative;"
-          :style="{ 'border-left': '1px solid '+ themeColor }">
-          <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
-            :imageUrl="topLeftImageUrl" />
-        </div>
-        <div style="width: 25%; height: 201.7px;" :style="{ 'border-left': '1px solid '+ themeColor }">
-          <div style="font-weight: bolder; margin-top: 20px;">{{ topLeftTextTitle }}</div>
-          <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            {{ topLeftText }}
-          </div>
-        </div>
-        <div style="width: 25%; height: 201.7px; position: relative;"
-          :style="{ 'border-left': '1px solid '+ themeColor }">
-          <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
-            :imageUrl="topRightImageUrl" />
-        </div>
-        <div style=" width: 25%; height: 201.7px; "
-          :style="{ 'border-right': '1px solid '+ themeColor,  'border-left': '1px solid '+ themeColor }">
-          <div style="font-weight: bolder; margin-top: 20px;">{{ topRightTextTitle }}</div>
-          <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            {{ topRightText }}
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- bottom colomn -->
-    <div style="width: 100%; padding-bottom: 150px;" :style="{'color': themeColor}">
-      <div style="margin-left: 5%; margin-right: 5%; display: flex">
-        <div style="width: 25%; height: 201.7px;" :style="{ 'border-left': '1px solid '+ themeColor }">
-          <div style="font-weight: bolder; margin-top: 20px;">{{ bottomLeftTitle }}</div>
-          <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            {{ bottomLeftText }}
-          </div>
-        </div>
-        <div style="width: 25%; height: 201.7px;position: relative;"
-          :style="{ 'border-left': '1px solid '+ themeColor }">
-          <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;top: 0;right: 5%; left: 5%;"
-            :imageUrl="bottomLeftImageUrl" />
-        </div>
-        <div style=" width: 25%; height: 201.7px;" :style="{ 'border-left': '1px solid '+ themeColor }">
-          <div style="font-weight: bolder; margin-top: 20px;">{{ bottomRightTitle }}</div>
-          <div style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
-            {{ bottomRightText }}
-          </div>
-        </div>
-        <div style="width: 25%; height: 201.7px;position: relative;"
-          :style="{ 'border-right': '1px solid '+ themeColor,  'border-left': '1px solid '+ themeColor }">
-          <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;top: 0;right: 5%; left: 5%;"
-            :imageUrl="bottomRightImageUrl" />
-        </div>
-      </div>
+    <div style="display: flex; justify-content: center;">
+      <div style="width: 100px; height: 201.7px; margin-top: 81px;"
+        :style="{ 'border-bottom': '1px solid '+ themeColor }"></div>
+      <a-list :grid="{ gutter: 0, column: 4 }" :data-source="items" style="width: 1200px; margin-top: 80px;">
+        <template #renderItem="{ item }">
+          <a-list-item v-if="item.index%2==0" style="width: 300px;">
+            <div>
+              <div style="width: 100%; height: 201.7px;"
+                :style="{ 'border-left': '1px solid '+ themeColor,'border-right': '1px solid '+ themeColor , 'color': ''+themeColor}">
+                <div class="columnItem" @click="columnItemOnClick(item.pageId)"
+                  style="font-weight: bolder; padding-top: 20px;">{{ item.title }}</div>
+                <div class="columnItem" @click="columnItemOnClick(item.pageId)"
+                  style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
+                  {{ item.description }}
+                </div>
+              </div>
+              <div class="columnItem" @click="columnItemOnClick(item.pageId)" style="width: 100%;"
+                :style="{ 'border-top': '1px solid '+ themeColor }">
+                <div style="width: 100%; height: 201.7px;position: relative;"
+                  :style="{ 'border-left': '1px solid '+ themeColor, 'border-right': '1px solid '+ themeColor  }">
+                  <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
+                    :imageUrl="item.imageUrl" />
+                </div>
+              </div>
+            </div>
+          </a-list-item>
+          <a-list-item v-else style="width: 300px;">
+            <div @click="columnItemOnClick(item.pageId)" class="columnItem" style="width: 100%;"
+              :style="{ 'border-bottom': '1px solid '+ themeColor }">
+              <div style="width: 100%; height: 201.7px;position: relative;"
+                :style="{ 'border-right': '1px solid '+ themeColor, 'border-left': '1px solid '+ themeColor  }">
+                <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
+                  :imageUrl="item.imageUrl" />
+              </div>
+            </div>
+            <div style="width: 100%; height: 201.7px;"
+              :style="{ 'border-right': '1px solid '+ themeColor,'border-left': '1px solid '+ themeColor, 'color': ''+themeColor}">
+              <div class="columnItem" @click="columnItemOnClick(item.pageId)"
+                style="font-weight: bolder; padding-top: 20px;">{{ item.title }}</div>
+              <div class="columnItem" @click="columnItemOnClick(item.pageId)"
+                style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
+                {{ item.description }}
+              </div>
+            </div>
+          </a-list-item>
+        </template>
+      </a-list>
+      <div style="width: 100px; height: 201.7px; margin-top: 81px;"
+        :style="{ 'border-bottom': '1px solid '+ themeColor }"></div>
     </div>
   </div>
   <div style="width: 100%; height: 80px;"></div>
 </template>
 
 <script>
-  import { ref } from 'vue';
-  import TreeDRotateImg from './TreeDRotateImg.vue';
-  export default {
-    name: "InterviewColumnComponent",
-    components: { TreeDRotateImg },
-    setup() {
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import TreeDRotateImg from './TreeDRotateImg.vue';
+export default {
+  name: "InterviewColumnComponent",
+  components: { TreeDRotateImg },
+  setup() {
 
-      let backgroundBigImage = ref("")
-      let topLeftTextTitle = ref("")
-      let topLeftText = ref("")
-      let topLeftImageUrl = ref("")
-      let topRightTextTitle = ref("")
-      let topRightText = ref("")
-      let topRightImageUrl = ref("")
-      let bottomLeftTitle = ref("")
-      let bottomLeftText = ref("")
-      let bottomLeftImageUrl = ref("")
-      let bottomRightTitle = ref("")
-      let bottomRightText = ref("")
-      let bottomRightImageUrl = ref("")
-      let themeColor = ref("")
+    let backgroundBigImage = ref("")
+    let themeColor = ref("")
+    let items = ref([])
+    const router = useRouter()
 
-      const setResourceData = (jsonData) => {
-        backgroundBigImage.value = jsonData["interviewImageBg"]
-        topLeftTextTitle.value = jsonData["topLeftTextTitle"]
-        topLeftText.value = jsonData["topLeftText"]
-        topLeftImageUrl.value = jsonData["topLeftImageUrl"]
-        topRightTextTitle.value = jsonData["topRightTextTitle"]
-        topRightText.value = jsonData["topRightText"]
-        topRightImageUrl.value = jsonData["topRightImageUrl"]
-        bottomLeftTitle.value = jsonData["bottomLeftTitle"]
-        bottomLeftText.value = jsonData["bottomLeftText"]
-        bottomLeftImageUrl.value = jsonData["bottomLeftImageUrl"]
-        bottomRightTitle.value = jsonData["bottomRightTitle"]
-        bottomRightText.value = jsonData["bottomRightText"]
-        bottomRightImageUrl.value = jsonData["bottomRightImageUrl"]
-        themeColor.value = jsonData["themeColor"]
+    const setResourceData = (jsonData) => {
+      themeColor.value = jsonData["themeColor"]
+      backgroundBigImage.value = jsonData["interviewImageBg"]
+      items.value = jsonData["items"]
+      console.log(items.value)
+    }
+
+
+    const columnItemOnClick = (linkParam) => {
+      if (linkParam === undefined || linkParam === null || linkParam === "") {
+        return
       }
+      router.push({ path: '/interview/' + linkParam })
+    }
 
-      return {
-        backgroundBigImage,
-        topLeftTextTitle,
-        topLeftText,
-        topLeftImageUrl,
-        topRightTextTitle,
-        topRightText,
-        topRightImageUrl,
-        bottomLeftTitle,
-        bottomLeftText,
-        bottomLeftImageUrl,
-        bottomRightTitle,
-        bottomRightText,
-        bottomRightImageUrl,
-        themeColor,
-        setResourceData
-      }
+    return {
+      backgroundBigImage,
+      themeColor,
+      items,
+      setResourceData,
+      columnItemOnClick
     }
   }
+}
 </script>
 
 <style>
+.columnItem:hover {
+  cursor: pointer;
+}
 </style>
