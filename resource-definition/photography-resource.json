@@ -11,41 +11,7 @@
   "albumList": {
     "title": "ART GALLERGY"
   },
-  "interview": {
-    "interviewColumn": {
-      "themeColor": "#ffffff",
-      "interviewImageBg": "http://www.grotonarts.com/static/art/photography/photography-interview-bg.png",
-      "topLeftTextTitle": "Coming Soon !",
-      "topLeftText": "Coming Soon !",
-      "topLeftImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
-      "topRightTextTitle": "Coming Soon !",
-      "topRightText": "Coming Soon !",
-      "topRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-2.png",
-      "bottomLeftTitle": "Coming Soon !",
-      "bottomLeftText": "Coming Soon !",
-      "bottomLeftImageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
-      "bottomRightTitle": "Coming Soon !",
-      "bottomRightText": "Coming Soon !",
-      "bottomRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png"
-    },
-    "topInterview": {
-      "title": "STORY OF ARTIST",
-      "letfColor": "#000000",
-      "rightColor": "#ffffff",
-      "descriptionColor": "#000000",
-      "topImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
-      "topDesc": "",
-      "topAuthor": "",
-      "topAuthorTitle": "",
-      "contentTitle": "Coming Soon !",
-      "content": "",
-      "contentAuthor": "",
-      "contentAuthorTitle": "",
-      "contentImageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
-      "contentImageDesc": "",
-      "contentImageSubDesc": ""
-    }
-  },
+  "interview": "http://www.grotonarts.com/static/interviews/photography/photography.json",
   "image-list": {
     "default": [
       "http://www.grotonarts.com/static/art/photography/image-list/default/66-year-hustle_50998042895_o.png",

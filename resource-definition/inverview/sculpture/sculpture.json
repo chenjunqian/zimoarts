@@ -1,0 +1,35 @@
+{
+    "topInterview": {
+        "title": "STORY OF ARTIST",
+        "letfColor": "#000000",
+        "rightColor": "#ffffff",
+        "descriptionColor": "#000000",
+        "topImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
+        "topDesc": "",
+        "topAuthor": "",
+        "topAuthorTitle": "",
+        "contentTitle": "Coming Soon !",
+        "content": "",
+        "contentAuthor": "",
+        "contentAuthorTitle": "",
+        "contentImageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
+        "contentImageDesc": "",
+        "contentImageSubDesc": ""
+    },
+    "interviewColumn": {
+        "themeColor": "#ffffff",
+        "interviewImageBg": "http://www.grotonarts.com/static/art/sculpture/sculpture-interview-bg.png",
+        "topLeftTextTitle": "Coming Soon !",
+        "topLeftText": "Coming Soon !",
+        "topLeftImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
+        "topRightTextTitle": "Coming Soon !",
+        "topRightText": "Coming Soon !",
+        "topRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-2.png",
+        "bottomLeftTitle": "Coming Soon !",
+        "bottomLeftText": "Coming Soon !",
+        "bottomLeftImageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
+        "bottomRightTitle": "Coming Soon !",
+        "bottomRightText": "Coming Soon !",
+        "bottomRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png"
+    }
+}
