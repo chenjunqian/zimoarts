@@ -28,7 +28,7 @@
                 :style="{ 'border-top': '1px solid '+ themeColor }">
                 <div style="width: 100%; height: 201.7px;position: relative;"
                   :style="{ 'border-left': '1px solid '+ themeColor, 'border-right': '1px solid '+ themeColor  }">
-                  <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
+                  <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;top: 0;right: 5%; left: 5%;"
                     :imageUrl="item.imageUrl" />
                 </div>
               </div>
