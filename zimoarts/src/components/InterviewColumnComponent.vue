@@ -20,7 +20,7 @@
                 <div class="columnItem" @click="columnItemOnClick(item.pageId)"
                   style="font-weight: bolder; padding-top: 20px;">{{ item.title }}</div>
                 <div class="columnItem" @click="columnItemOnClick(item.pageId)"
-                  style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
+                  style="margin-left: 5%; margin-right: 5%; word-break: break-all; word-wrap: break-word; ">
                   {{ item.description }}
                 </div>
               </div>
@@ -48,7 +48,7 @@
               <div class="columnItem" @click="columnItemOnClick(item.pageId)"
                 style="font-weight: bolder; padding-top: 20px;">{{ item.title }}</div>
               <div class="columnItem" @click="columnItemOnClick(item.pageId)"
-                style=" margin: 0 auto; word-break: break-all; word-wrap: break-word; ">
+                style="margin-left: 5%; margin-right: 5%; word-break: break-all; word-wrap: break-word; ">
                 {{ item.description }}
               </div>
             </div>

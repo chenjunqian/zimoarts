@@ -81,7 +81,6 @@ export default {
       }
 
       let interviewJsonData = await getInterviewData(response["interview"])
-      console.log("interviewJsonData : ", interviewJsonData)
 
       topImageCompRef.value.setResourceData(response["topBigImageComponent"])
       interviewCompRef.value.setResourceData(interviewJsonData["topInterview"])

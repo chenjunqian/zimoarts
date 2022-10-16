@@ -169,452 +169,452 @@
 </template>
 
 <script>
-  import FooterComponent from "@/components/FootComponent.vue";
-  import ColorDivider from "@/components/ColorDivider.vue";
-  import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
-  import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
-  import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
-  import { httpRequest } from "@/libs/request";
-  import { ref, reactive } from "vue";
-  import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
+import FooterComponent from "@/components/FootComponent.vue";
+import ColorDivider from "@/components/ColorDivider.vue";
+import InterviewColumnComponent from "@/components/InterviewColumnComponent.vue";
+import HomeDropDowmMenuComponent from "@/components/HomeDropDowmMenuComponent.vue";
+import PageTopBigImageComponent from "@/components/PageTopBigImageComponent.vue";
+import { httpRequest } from "@/libs/request";
+import { ref, reactive } from "vue";
+import HomeHeaderComponent from "@/components/HomeHeaderComponent.vue";
 
-  export default {
-    name: "HomeView",
-    components: {
-      FooterComponent,
-      ColorDivider,
-      InterviewColumnComponent,
-      HomeDropDowmMenuComponent,
-      PageTopBigImageComponent,
-      HomeHeaderComponent
-    },
-    setup() {
-      let topImageComp = ref()
-      let interviewColumnRef = ref()
-      let pageData = reactive({
-        upcomingEvent: {
-          upcomingEventsText: "",
-          middleBlock: {
-            topText: "",
-            bottomText: "",
-            imageUrl: ""
-          },
-          leftBlock: {
-            topText: "",
-            bottomText: "",
-            imageUrl: ""
-          },
-          rightBlock: {
-            topText: "",
-            bottomText: "",
-            imageUrl: ""
-          },
-          bottomText: ""
+export default {
+  name: "HomeView",
+  components: {
+    FooterComponent,
+    ColorDivider,
+    InterviewColumnComponent,
+    HomeDropDowmMenuComponent,
+    PageTopBigImageComponent,
+    HomeHeaderComponent
+  },
+  setup() {
+    let topImageComp = ref()
+    let interviewColumnRef = ref()
+    let pageData = reactive({
+      upcomingEvent: {
+        upcomingEventsText: "",
+        middleBlock: {
+          topText: "",
+          bottomText: "",
+          imageUrl: ""
         },
-        visualArtOfTheTerm: {
-          leftBlock: {
-            nameOfArt: "",
-            author: "",
-            theme: "",
-            qoute: ""
-          },
-          middleBlock: {
-            nameOfArt: "",
-            author: "",
-            theme: "",
-            qoute: ""
-          },
-          rightBlock: {
-            nameOfArt: "",
-            author: "",
-            theme: "",
-            qoute: ""
-          }
+        leftBlock: {
+          topText: "",
+          bottomText: "",
+          imageUrl: ""
         },
-        interview: {
-          interviewColumn: {
-            interviewImageBg: "",
-            topLeftTextTitle: "",
-            topLeftText: "",
-            topLeftImageUrl: "",
-            topRightTextTitle: "",
-            topRightText: "",
-            topRightImageUrl: "",
-            bottomLeftTitle: "",
-            bottomLeftText: "",
-            bottomLeftImageUrl: "",
-            bottomRightTitle: "",
-            bottomRightText: "",
-            bottomRightImageUrl: ""
-          },
-          topInterview: {
-            letfColor: "",
-            rightColor: "",
-            descriptionColor: "",
-            topImageUrl: "",
-            topDesc: "",
-            topAuthor: "",
-            topAuthorTitle: "",
-            contentTitle: "",
-            content: "",
-            contentAuthor: "",
-            contentAuthorTitle: "",
-            contentImageUrl: "",
-            contentImageDesc: "",
-            contentImageSubDesc: ""
-          }
+        rightBlock: {
+          topText: "",
+          bottomText: "",
+          imageUrl: ""
+        },
+        bottomText: ""
+      },
+      visualArtOfTheTerm: {
+        leftBlock: {
+          nameOfArt: "",
+          author: "",
+          theme: "",
+          qoute: ""
+        },
+        middleBlock: {
+          nameOfArt: "",
+          author: "",
+          theme: "",
+          qoute: ""
+        },
+        rightBlock: {
+          nameOfArt: "",
+          author: "",
+          theme: "",
+          qoute: ""
         }
-      })
-
-      function getHomeResource() {
-        httpRequest.get("http://www.grotonarts.com/static/home/home-resource.json").then(function (response) {
-          topImageComp.value.setResourceData(response["topBigImageComponent"])
-          interviewColumnRef.value.setResourceData(response["interview"]["interviewColumn"])
-          pageData.upcomingEvent.upcomingEventsText = response['upcomingEvent']['upcomingEventsText']
-          pageData.upcomingEvent.middleBlock.topText = response['upcomingEvent']['middleBlock']['topText']
-          pageData.upcomingEvent.middleBlock.bottomText = response['upcomingEvent']['middleBlock']['bottomText']
-          pageData.upcomingEvent.middleBlock.imageUrl = response['upcomingEvent']['middleBlock']['imageUrl']
-          pageData.upcomingEvent.leftBlock.topText = response['upcomingEvent']['leftBlock']['topText']
-          pageData.upcomingEvent.leftBlock.bottomText = response['upcomingEvent']['leftBlock']['bottomText']
-          pageData.upcomingEvent.leftBlock.imageUrl = response['upcomingEvent']['leftBlock']['imageUrl']
-          pageData.upcomingEvent.rightBlock.topText = response['upcomingEvent']['rightBlock']['topText']
-          pageData.upcomingEvent.rightBlock.bottomText = response['upcomingEvent']['rightBlock']['bottomText']
-          pageData.upcomingEvent.rightBlock.imageUrl = response['upcomingEvent']['rightBlock']['imageUrl']
-          pageData.bottomText = response['upcomingEvent']['bottomText']
-          pageData.visualArtOfTheTerm.leftBlock.nameOfArt = response['visualArtOfTheTerm']['leftBlock']['nameOfArt']
-          pageData.visualArtOfTheTerm.leftBlock.author = response['visualArtOfTheTerm']['leftBlock']['author']
-          pageData.visualArtOfTheTerm.leftBlock.theme = response['visualArtOfTheTerm']['leftBlock']['theme']
-          pageData.visualArtOfTheTerm.leftBlock.qoute = response['visualArtOfTheTerm']['leftBlock']['qoute']
-          pageData.visualArtOfTheTerm.leftBlock.topImage = response['visualArtOfTheTerm']['leftBlock']['topImage']
-          pageData.visualArtOfTheTerm.leftBlock.bottomImage = response['visualArtOfTheTerm']['leftBlock']['bottomImage']
-
-          pageData.visualArtOfTheTerm.middleBlock.nameOfArt = response['visualArtOfTheTerm']['middleBlock']['nameOfArt']
-          pageData.visualArtOfTheTerm.middleBlock.author = response['visualArtOfTheTerm']['middleBlock']['author']
-          pageData.visualArtOfTheTerm.middleBlock.theme = response['visualArtOfTheTerm']['middleBlock']['theme']
-          pageData.visualArtOfTheTerm.middleBlock.qoute = response['visualArtOfTheTerm']['middleBlock']['qoute']
-          pageData.visualArtOfTheTerm.middleBlock.topImage = response['visualArtOfTheTerm']['middleBlock']['topImage']
-          pageData.visualArtOfTheTerm.middleBlock.bottomImage = response['visualArtOfTheTerm']['middleBlock']['bottomImage']
-
-          pageData.visualArtOfTheTerm.rightBlock.nameOfArt = response['visualArtOfTheTerm']['rightBlock']['nameOfArt']
-          pageData.visualArtOfTheTerm.rightBlock.author = response['visualArtOfTheTerm']['rightBlock']['author']
-          pageData.visualArtOfTheTerm.rightBlock.theme = response['visualArtOfTheTerm']['rightBlock']['theme']
-          pageData.visualArtOfTheTerm.rightBlock.qoute = response['visualArtOfTheTerm']['rightBlock']['qoute']
-          pageData.visualArtOfTheTerm.rightBlock.topImage = response['visualArtOfTheTerm']['rightBlock']['topImage']
-          pageData.visualArtOfTheTerm.rightBlock.bottomImage = response['visualArtOfTheTerm']['rightBlock']['bottomImage']
-
-        }).catch(function (error) {
-          console.log(error);
-        });
-
+      },
+      interview: {
+        interviewColumn: {
+          interviewImageBg: "",
+          topLeftTextTitle: "",
+          topLeftText: "",
+          topLeftImageUrl: "",
+          topRightTextTitle: "",
+          topRightText: "",
+          topRightImageUrl: "",
+          bottomLeftTitle: "",
+          bottomLeftText: "",
+          bottomLeftImageUrl: "",
+          bottomRightTitle: "",
+          bottomRightText: "",
+          bottomRightImageUrl: ""
+        },
+        topInterview: {
+          letfColor: "",
+          rightColor: "",
+          descriptionColor: "",
+          topImageUrl: "",
+          topDesc: "",
+          topAuthor: "",
+          topAuthorTitle: "",
+          contentTitle: "",
+          content: "",
+          contentAuthor: "",
+          contentAuthorTitle: "",
+          contentImageUrl: "",
+          contentImageDesc: "",
+          contentImageSubDesc: ""
+        }
       }
+    })
 
-      getHomeResource()
+    function getHomeResource() {
+      httpRequest.get("http://www.grotonarts.com/static/home/home-resource.json").then(function (response) {
+        topImageComp.value.setResourceData(response["topBigImageComponent"])
+        interviewColumnRef.value.setResourceData(response["interview"]["interviewColumn"])
+        pageData.upcomingEvent.upcomingEventsText = response['upcomingEvent']['upcomingEventsText']
+        pageData.upcomingEvent.middleBlock.topText = response['upcomingEvent']['middleBlock']['topText']
+        pageData.upcomingEvent.middleBlock.bottomText = response['upcomingEvent']['middleBlock']['bottomText']
+        pageData.upcomingEvent.middleBlock.imageUrl = response['upcomingEvent']['middleBlock']['imageUrl']
+        pageData.upcomingEvent.leftBlock.topText = response['upcomingEvent']['leftBlock']['topText']
+        pageData.upcomingEvent.leftBlock.bottomText = response['upcomingEvent']['leftBlock']['bottomText']
+        pageData.upcomingEvent.leftBlock.imageUrl = response['upcomingEvent']['leftBlock']['imageUrl']
+        pageData.upcomingEvent.rightBlock.topText = response['upcomingEvent']['rightBlock']['topText']
+        pageData.upcomingEvent.rightBlock.bottomText = response['upcomingEvent']['rightBlock']['bottomText']
+        pageData.upcomingEvent.rightBlock.imageUrl = response['upcomingEvent']['rightBlock']['imageUrl']
+        pageData.bottomText = response['upcomingEvent']['bottomText']
+        pageData.visualArtOfTheTerm.leftBlock.nameOfArt = response['visualArtOfTheTerm']['leftBlock']['nameOfArt']
+        pageData.visualArtOfTheTerm.leftBlock.author = response['visualArtOfTheTerm']['leftBlock']['author']
+        pageData.visualArtOfTheTerm.leftBlock.theme = response['visualArtOfTheTerm']['leftBlock']['theme']
+        pageData.visualArtOfTheTerm.leftBlock.qoute = response['visualArtOfTheTerm']['leftBlock']['qoute']
+        pageData.visualArtOfTheTerm.leftBlock.topImage = response['visualArtOfTheTerm']['leftBlock']['topImage']
+        pageData.visualArtOfTheTerm.leftBlock.bottomImage = response['visualArtOfTheTerm']['leftBlock']['bottomImage']
 
-      return {
-        topImageComp,
-        interviewColumnRef,
-        pageData
-      }
+        pageData.visualArtOfTheTerm.middleBlock.nameOfArt = response['visualArtOfTheTerm']['middleBlock']['nameOfArt']
+        pageData.visualArtOfTheTerm.middleBlock.author = response['visualArtOfTheTerm']['middleBlock']['author']
+        pageData.visualArtOfTheTerm.middleBlock.theme = response['visualArtOfTheTerm']['middleBlock']['theme']
+        pageData.visualArtOfTheTerm.middleBlock.qoute = response['visualArtOfTheTerm']['middleBlock']['qoute']
+        pageData.visualArtOfTheTerm.middleBlock.topImage = response['visualArtOfTheTerm']['middleBlock']['topImage']
+        pageData.visualArtOfTheTerm.middleBlock.bottomImage = response['visualArtOfTheTerm']['middleBlock']['bottomImage']
+
+        pageData.visualArtOfTheTerm.rightBlock.nameOfArt = response['visualArtOfTheTerm']['rightBlock']['nameOfArt']
+        pageData.visualArtOfTheTerm.rightBlock.author = response['visualArtOfTheTerm']['rightBlock']['author']
+        pageData.visualArtOfTheTerm.rightBlock.theme = response['visualArtOfTheTerm']['rightBlock']['theme']
+        pageData.visualArtOfTheTerm.rightBlock.qoute = response['visualArtOfTheTerm']['rightBlock']['qoute']
+        pageData.visualArtOfTheTerm.rightBlock.topImage = response['visualArtOfTheTerm']['rightBlock']['topImage']
+        pageData.visualArtOfTheTerm.rightBlock.bottomImage = response['visualArtOfTheTerm']['rightBlock']['bottomImage']
+
+      }).catch(function (error) {
+        console.log(error);
+      });
+
     }
-  };
+
+    getHomeResource()
+
+    return {
+      topImageComp,
+      interviewColumnRef,
+      pageData
+    }
+  }
+};
 </script>
 
 <style scoped>
-  .home {
-    background-color: #ffffff;
-    width: 1400px;
-    margin: 0 auto;
-  }
+.home {
+  background-color: #ffffff;
+  width: 1400px;
+  margin: 0 auto;
+}
 
-  .home-container {
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 20px 20px -2px #888888;
-  }
+.home-container {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 20px 20px -2px #888888;
+}
 
-  /* top dropdown area */
-  .home-school-icon {
-    width: 300px;
-    height: 150px;
-    float: left;
-    margin-top: -20px;
-    margin-left: 80px;
-  }
+/* top dropdown area */
+.home-school-icon {
+  width: 300px;
+  height: 150px;
+  float: left;
+  margin-top: -20px;
+  margin-left: 80px;
+}
 
 
-  /* main image area */
-  .home-big-pic-container {
-    width: 100%;
-    margin-top: 180px;
-    box-shadow: 0 20px 20px -2px #888888;
-  }
+/* main image area */
+.home-big-pic-container {
+  width: 100%;
+  margin-top: 180px;
+  box-shadow: 0 20px 20px -2px #888888;
+}
 
-  .video-container {
-    width: 500px;
-    height: 300px;
-    background-color: black;
-    margin-left: 100px;
-    position: absolute;
-    bottom: -80px;
-  }
+.video-container {
+  width: 500px;
+  height: 300px;
+  background-color: black;
+  margin-left: 100px;
+  position: absolute;
+  bottom: -80px;
+}
 
-  /* middle album area */
-  .album-container {
-    width: 100%;
-    box-shadow: 0 20px 20px -2px #888888;
-  }
+/* middle album area */
+.album-container {
+  width: 100%;
+  box-shadow: 0 20px 20px -2px #888888;
+}
 
-  .top-album-container {
-    width: 1275px;
-    margin: 0 auto;
-  }
+.top-album-container {
+  width: 1275px;
+  margin: 0 auto;
+}
 
-  .top-album-descrption-container {
-    margin-bottom: 150px;
-    margin-top: 150px;
-  }
+.top-album-descrption-container {
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
 
-  .top-album-descrption-title-container {
-    width: 100%;
-    font-size: 58px;
-    font-weight: bolder;
-    border-bottom: 1px solid lightslategray;
-    display: flex;
-    justify-content: center;
-  }
+.top-album-descrption-title-container {
+  width: 100%;
+  font-size: 58px;
+  font-weight: bolder;
+  border-bottom: 1px solid lightslategray;
+  display: flex;
+  justify-content: center;
+}
 
-  .top-album-descrption-title {
-    display: inline;
-  }
+.top-album-descrption-title {
+  display: inline;
+}
 
-  .top-album-descrption-text-container {
-    font-size: 9px;
-    margin-left: 300px;
-  }
+.top-album-descrption-text-container {
+  font-size: 9px;
+  margin-left: 300px;
+}
 
-  .top-album-descrption-text {
-    width: 30%;
-    font-size: 12px;
-    margin-left: 10px;
-    text-align: left;
-  }
+.top-album-descrption-text {
+  width: 30%;
+  font-size: 12px;
+  margin-left: 10px;
+  text-align: left;
+}
 
-  .top-album-items-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
+.top-album-items-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  /* left album */
-  .top-left-album-item-column {
-    width: 300px;
-    height: 400px;
-    margin-left: 100px;
-    margin-top: 300px;
-    display: flex;
-    position: relative;
-  }
+/* left album */
+.top-left-album-item-column {
+  width: 300px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 300px;
+  display: flex;
+  position: relative;
+}
 
-  .top-left-album-item-back {
-    width: 150px;
-    height: 400px;
-    background-color: #ab050f;
-    display: inline;
-  }
+.top-left-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #ab050f;
+  display: inline;
+}
 
-  .top-left-album-middler-placeholder {
-    width: 110px;
-    height: 400px;
-  }
+.top-left-album-middler-placeholder {
+  width: 110px;
+  height: 400px;
+}
 
-  .top-left-album-item-front {
-    width: 250px;
-    height: 350px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    z-index: 99;
-    position: absolute;
-  }
+.top-left-album-item-front {
+  width: 250px;
+  height: 350px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  z-index: 99;
+  position: absolute;
+}
 
-  .top-left-album-item-text-container {
-    width: 150px;
-    position: absolute;
-    margin-bottom: 40px;
-    bottom: 0;
-    right: -100px;
-  }
+.top-left-album-item-text-container {
+  width: 150px;
+  position: absolute;
+  margin-bottom: 40px;
+  bottom: 0;
+  right: -100px;
+}
 
-  .top-left-album-item-text {
-    font-size: 8pt;
-    text-align: right;
-  }
+.top-left-album-item-text {
+  font-size: 8pt;
+  text-align: right;
+}
 
-  /* middel album */
-  .top-middle-album-item-column {
-    width: 300px;
-    height: 400px;
-    margin-left: 180px;
-    margin-right: -150px;
-    margin-top: -20px;
-    display: flex;
-    position: relative;
-  }
+/* middel album */
+.top-middle-album-item-column {
+  width: 300px;
+  height: 400px;
+  margin-left: 180px;
+  margin-right: -150px;
+  margin-top: -20px;
+  display: flex;
+  position: relative;
+}
 
-  .top-middle-album-item-back-left-block {
-    width: 250px;
-    height: 400px;
-    display: inline;
-  }
+.top-middle-album-item-back-left-block {
+  width: 250px;
+  height: 400px;
+  display: inline;
+}
 
-  .top-middle-album-item-back {
-    width: 150px;
-    height: 400px;
-    background-color: #000000;
-    display: inline;
-  }
+.top-middle-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #000000;
+  display: inline;
+}
 
-  .top-middle-album-item-front {
-    width: 250px;
-    height: 350px;
-    float: right;
-    margin-top: 25px;
-    margin-right: 25px;
-  }
+.top-middle-album-item-front {
+  width: 250px;
+  height: 350px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+}
 
-  .top-middle-album-item-text-container {
-    width: 150px;
-    margin-bottom: 40px;
-    position: absolute;
-    bottom: 25px;
-    left: -140px;
-    list-style-type: disc;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
+.top-middle-album-item-text-container {
+  width: 150px;
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: 25px;
+  left: -140px;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
 
-  .top-middle-album-item-text {
-    font-size: 8pt;
-    text-align: right;
-  }
+.top-middle-album-item-text {
+  font-size: 8pt;
+  text-align: right;
+}
 
-  /* right album */
-  .top-right-album-item-column {
-    width: 450px;
-    height: 400px;
-    margin-left: 15px;
-    margin-top: 250px;
-    display: flex;
-    z-index: 99;
-  }
+/* right album */
+.top-right-album-item-column {
+  width: 450px;
+  height: 400px;
+  margin-left: 15px;
+  margin-top: 250px;
+  display: flex;
+  z-index: 99;
+}
 
-  .top-right-album-item-back {
-    width: 150px;
-    height: 400px;
-    background-color: #ffce00;
-    display: inline;
-  }
+.top-right-album-item-back {
+  width: 150px;
+  height: 400px;
+  background-color: #ffce00;
+  display: inline;
+}
 
-  .top-right-album-middler-placeholder {
-    width: 110px;
-    height: 100%;
-    display: flex;
-    position: relative;
-  }
+.top-right-album-middler-placeholder {
+  width: 110px;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
 
-  .top-right-album-item-front {
-    width: 250px;
-    height: 350px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    z-index: 99;
-    position: absolute;
-  }
+.top-right-album-item-front {
+  width: 250px;
+  height: 350px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  z-index: 99;
+  position: absolute;
+}
 
-  .top-right-album-item-text-container {
-    width: 100%;
-    position: absolute;
-    left: -20px;
-    bottom: 10px;
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
+.top-right-album-item-text-container {
+  width: 100%;
+  position: absolute;
+  left: -20px;
+  bottom: 10px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
 
-  .top-right-album-item-text {
-    font-size: 8pt;
-    text-align: right;
-  }
+.top-right-album-item-text {
+  font-size: 8pt;
+  text-align: right;
+}
 
-  /* bottom album */
-  .bottom-album-items-container {
-    width: 100%;
-    margin-top: 150px;
-  }
+/* bottom album */
+.bottom-album-items-container {
+  width: 100%;
+  margin-top: 150px;
+}
 
-  .bottom-album-title-container {
-    width: 100%;
-    border-bottom: 1px solid #c0c0c0;
-    display: flex;
-    justify-content: center;
-  }
+.bottom-album-title-container {
+  width: 100%;
+  border-bottom: 1px solid #c0c0c0;
+  display: flex;
+  justify-content: center;
+}
 
-  .bottom-album-columns-container {
-    width: 400px;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding-bottom: 120px;
-    display: flex;
-    justify-content: center;
-  }
+.bottom-album-columns-container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+}
 
-  .bottom-album-column {
-    display: inline;
-  }
+.bottom-album-column {
+  display: inline;
+}
 
-  .bottom-album-column-image {
-    width: 350px;
-    height: 350px;
-    background-color: #888888;
-  }
+.bottom-album-column-image {
+  width: 350px;
+  height: 350px;
+  background-color: #888888;
+}
 
-  .bottom-album-column-circle-image {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-    margin-top: 80px;
-  }
+.bottom-album-column-circle-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
 
-  .bottom-album-column-text-container {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
+.bottom-album-column-text-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .bottom-album-column-text {
-    width: 100%;
-    font-size: 8pt;
-    display: block;
-  }
+.bottom-album-column-text {
+  width: 100%;
+  font-size: 8pt;
+  display: block;
+}
 
-  /* bottom color block */
-  .bottom-color-block-container {
-    width: 100%;
-    height: 15px;
-    margin-top: 60px;
-    display: flex;
-  }
+/* bottom color block */
+.bottom-color-block-container {
+  width: 100%;
+  height: 15px;
+  margin-top: 60px;
+  display: flex;
+}
 
-  .bottom-color-block {
-    width: 25%;
-    height: 100%;
-  }
+.bottom-color-block {
+  width: 25%;
+  height: 100%;
+}
 </style>
