@@ -1,35 +1,50 @@
 {
-    "topInterview": {
-        "title": "INTERVIEW",
-        "topImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
-        "topDesc": "",
-        "topAuthor": "Zimo Liu",
-        "contentTitle": "Guacamole",
-        "content": "<p>The plopping of crushed berries stained purple the canvas white cups for which they entered. The crimson-red leaves litter one of Mrs. Donovan’s graffitied tables, along with autumn-themed string. Snickerdoodle cookies and apple cider warmed in a crock pot. GUAC is back, baby! GUAC used to stand for the Groton Underground Arts Collective, but past a pandemic and under new management, the old acronym now represents a new name: the Groton Unified Arts Club. GUAC hopes to get the creative juices of student who might be inexperienced with art in a safe and warm environment. Just this Saturday, GUAC held its first meeting of this year. This fall-themed craft event hosted a wide variety of artistic fun, some of which being crushed berry painting as well as harvest leaf garlands. Following up on this first club meeting, GUAC has many ideas ready to go, including sowing, pumpkin carving, shrinky dinks, rock painting, and fairy houses, to name a few. The Groton Unified Arts Club hopes to welcome a wide variety of new faces and people, and explore new mediums and new friendships next meeting.</p>",
-        "contentImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-002.png",
-        "contentAuthor": "Zimo Liu",
-        "contentAuthorTitle": "Funder/Chef",
-        "contentImageDesc": "Zimo Liu",
-        "contentImageSubDesc": "Funder/Chef",
-        "letfColor": "#000000",
-        "rightColor": "#ffffff",
-        "descriptionColor": "#000000",
-        "topAuthorTitle": "Zimo Liu"
-    },
-    "interviewColumn": {
-        "themeColor": "#ffffff",
-        "interviewImageBg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png",
-        "topLeftTextTitle": "Coming Soon !",
-        "topLeftText": "Coming Soon !",
-        "topLeftImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
-        "topRightTextTitle": "Coming Soon !",
-        "topRightText": "Coming Soon !",
-        "topRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-2.png",
-        "bottomLeftTitle": "Coming Soon !",
-        "bottomLeftText": "Coming Soon !",
-        "bottomLeftImageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
-        "bottomRightTitle": "Coming Soon !",
-        "bottomRightText": "Coming Soon !",
-        "bottomRightImageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png"
-    }
+  "topInterview": {
+    "title": "INTERVIEW",
+    "topImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
+    "topDesc": "",
+    "topAuthor": "Zimo Liu",
+    "contentTitle": "Guacamole",
+    "content": "<p>The plopping of crushed berries stained purple the canvas white cups for which they entered. The crimson-red leaves litter one of Mrs. Donovan’s graffitied tables, along with autumn-themed string. Snickerdoodle cookies and apple cider warmed in a crock pot. GUAC is back, baby! GUAC used to stand for the Groton Underground Arts Collective, but past a pandemic and under new management, the old acronym now represents a new name: the Groton Unified Arts Club. GUAC hopes to get the creative juices of student who might be inexperienced with art in a safe and warm environment. Just this Saturday, GUAC held its first meeting of this year. This fall-themed craft event hosted a wide variety of artistic fun, some of which being crushed berry painting as well as harvest leaf garlands. Following up on this first club meeting, GUAC has many ideas ready to go, including sowing, pumpkin carving, shrinky dinks, rock painting, and fairy houses, to name a few. The Groton Unified Arts Club hopes to welcome a wide variety of new faces and people, and explore new mediums and new friendships next meeting.</p>",
+    "contentImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-002.png",
+    "contentAuthor": "Zimo Liu",
+    "contentAuthorTitle": "Funder/Chef",
+    "contentImageDesc": "Zimo Liu",
+    "contentImageSubDesc": "Funder/Chef",
+    "letfColor": "#000000",
+    "rightColor": "#ffffff",
+    "descriptionColor": "#000000",
+    "topAuthorTitle": "Zimo Liu"
+  },
+  "interviewColumn": {
+    "themeColor": "#ffffff",
+    "interviewImageBg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png",
+    "items": [
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
+        "pageId": "draw/guacamole",
+        "title": "Guacamole",
+        "description": "",
+        "index": 1
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-2.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "description": "",
+        "index": 2
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
+        "title": "Coming Soon !",
+        "description": "Coming Soon !",
+        "index": 3
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
+        "title": "Coming Soon !",
+        "description": "Coming Soon !",
+        "index": 4
+      }
+    ]
+  }
 }
