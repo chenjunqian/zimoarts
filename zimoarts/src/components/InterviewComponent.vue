@@ -68,18 +68,24 @@
         {{ contentTitle }}
       </div>
       <div
-        style="margin-left: 30px; min-height: 700px;margin-top: 20px;text-align: left;width: 90%;color: #000000; font-size: 15pt;"
+        style="margin-left: 30px; min-height: 500px;margin-top: 20px;text-align: left;width: 90%;color: #000000; font-size: 15pt;"
         v-html="content">
       </div>
 
       <div style="display: flex; justify-content: left;">
-        <div style="width: 900px; height: 30px;"></div>
-        <div style="width: 150px;">
-          <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
-            {{ contentAuthor }}
+        <div style="width: 900px; min-height: 30px;">
+          <div v-show="isShowVideo" style="width: 600px;height: 337.5px;background-color: #c0c0c0;margin-left: 20px;">
+            <VideoPlayerComponent ref="videoPlayerRef" vWidth="600px" vHeight="337.5px" :vSrc="videoUrl" />
           </div>
-          <div style="color: #000000;text-align: left;font-size: 15px;">
-            {{ contentAuthorTitle }}
+        </div>
+        <div style="width: 150px; position: relative; margin-right: 60px;">
+          <div style="width: 100%; min-height: 30px; position: absolute; bottom: 5px;">
+            <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
+              {{ contentAuthor }}
+            </div>
+            <div style="color: #000000;text-align: left;font-size: 15px;">
+              {{ contentAuthorTitle }}
+            </div>
           </div>
         </div>
       </div>
@@ -90,6 +96,7 @@
 
 <script>
 import { ref } from 'vue';
+import VideoPlayerComponent from './VideoPlayerComponent.vue'
 
 export default {
   name: "InterviewComponent",
@@ -109,6 +116,9 @@ export default {
     let contentAuthorTitle = ref("")
     let contentImageDesc = ref("")
     let contentImageSubDesc = ref("")
+    let videoUrl = ref("")
+    let isShowVideo = ref(true)
+    let videoPlayerRef = ref()
 
     const setResourceData = (jsonData) => {
       title.value = jsonData["title"]
@@ -126,6 +136,13 @@ export default {
       contentAuthorTitle.value = jsonData["contentAuthorTitle"]
       contentImageDesc.value = jsonData["contentImageDesc"]
       contentImageSubDesc.value = jsonData["contentImageSubDesc"]
+      videoUrl.value = jsonData["videoUrl"]
+      if (videoUrl.value === undefined || videoUrl.value === null || videoUrl.value === "") {
+        isShowVideo.value = false
+      } else {
+        isShowVideo.value = true
+        videoPlayerRef.value.setVideoCompData(videoUrl.value)
+      }
     }
 
     return {
@@ -144,9 +161,13 @@ export default {
       contentAuthor,
       contentAuthorTitle,
       contentImageDesc,
+      videoUrl,
+      videoPlayerRef,
+      isShowVideo,
       contentImageSubDesc
     }
-  }
+  },
+  components: { VideoPlayerComponent, VideoPlayerComponent }
 }
 </script>
 
