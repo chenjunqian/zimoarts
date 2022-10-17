@@ -1,0 +1,53 @@
+{
+  "topInterview": {
+    "title": "INTERVIEW",
+    "topImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-D.png",
+    "topDesc": "Audrey Zhang ‘25 (Age 10)",
+    "topAuthor": "Audrey Zhang",
+    "contentTitle": "Marlene Ma & Paopao Zhang",
+    "content": "<p>Audrey ‘25 became a young artist at four and has loved visual arts ever since. Not limited by a single media, she enjoyed painting, drawing, craft making, and even animating. Since Audrey did not own a phone when she was young, she would sketch in her sketchbook whenever she wanted to capture a scene. She enjoyed the power to create something of her own and hold on to it forever.<br/><br/>Audrey’s favorite piece of art from her past self is an animation she created at the age of 10. It featured a frame-by-frame stop motion of a man turning into a bird, inspired by Wallace Stevens’s poetry “Thirteen Ways of Looking at a Blackbird.” This work embodied both her love of visual art and her appreciation of literature.<br/><br/>When asked about how she viewed her past artworks, Audrey responded, “I really enjoy looking back at them, because they remind me of my younger self. I’ve always thought of art to express emotions, and emotions are temporary, but art makes them permanent.” Being able to transform moments into memories was her favorite aspect of creating art when she was young.</p>",
+    "contentImageUrl": "",
+    "contentAuthor": "Paopao Zhang ‘24",
+    "contentAuthorTitle": "",
+    "contentImageDesc": "",
+    "contentImageSubDesc": "",
+    "letfColor": "#000000",
+    "rightColor": "#ffffff",
+    "descriptionColor": "#000000",
+    "topAuthorTitle": ""
+  },
+  "interviewColumn": {
+    "themeColor": "#ffffff",
+    "interviewImageBg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png",
+    "items": [
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang",
+        "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers",
+        "index": 1
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-A.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-1",
+        "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers",
+        "index": 2
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-C.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-3",
+        "description": "Sagata ’25 has been creating art for as long as she can remember: “I feel like as soon as I could hold a pencil, I created art– whether it was for a school project or a doodle on my homework.”",
+        "index": 3
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-B.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-4",
+        "description": "Tim ’24 has always liked to draw, as he started his artistic endeavors with coloring books. Soon enough, coloring books became doodles and doodles developed into drawings.",
+        "index": 4
+      }
+    ]
+  }
+}

@@ -21,28 +21,31 @@
     "interviewImageBg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png",
     "items": [
       {
-        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
-        "pageId": "draw/guacamole",
-        "title": "Guacamole",
-        "description": "",
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-A.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-1",
+        "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers",
         "index": 1
       },
       {
-        "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-2.png",
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-D.png",
         "title": "Marlene Ma & Paopao Zhang",
-        "description": "",
+        "pageId": "draw/marlene-ma-paopao-zhang-2",
+        "description": "Audrey ‘25 became a young artist at four and has loved visual arts ever since. Not limited by a single media, she enjoyed painting, drawing, craft making, and even animating.",
         "index": 2
       },
       {
-        "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
-        "title": "Coming Soon !",
-        "description": "Coming Soon !",
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-C.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-3",
+        "description": "Sagata ’25 has been creating art for as long as she can remember: “I feel like as soon as I could hold a pencil, I created art– whether it was for a school project or a doodle on my homework.”",
         "index": 3
       },
       {
-        "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
-        "title": "Coming Soon !",
-        "description": "Coming Soon !",
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-B.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-4",
+        "description": "Tim ’24 has always liked to draw, as he started his artistic endeavors with coloring books. Soon enough, coloring books became doodles and doodles developed into drawings.",
         "index": 4
       }
     ]

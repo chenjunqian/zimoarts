@@ -1,0 +1,53 @@
+{
+  "topInterview": {
+    "title": "INTERVIEW",
+    "topImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-C.png",
+    "topDesc": "Audrey Zhang ‘25 (Age 10)",
+    "topAuthor": "Audrey Zhang",
+    "contentTitle": "Marlene Ma & Paopao Zhang",
+    "content": "<p>Sagata ’25 has been creating art for as long as she can remember: “I feel like as soon as I could hold a pencil, I created art– whether it was for a school project or a doodle on my homework.” She focused on traditional art until she was introduced to the world of digital art and started drawing using the trackpad on her laptop on Microsoft Paint. With the book series Warrior Cats being her most significant influence, cats became her main subject of interest.<br/><br/>Sagata used to feel embarrassed when looking back at the art created by her younger self, especially the pieces she used to brag about. Now, she simply laughs it off and focuses more on her improvements. One of her favorite pieces of digital art she created was a drawing of a dragon, as it demonstrated her courage to go out of her comfort zone by creating something more complex than her typical choice of subjects, with the addition of a complete background.<br/><br/>Sagata loved creating art because it introduced her to a new way to express creativity. Although she used to feel pressured by “child prodigies” who created picture-perfect drawings resembling photography, it never let her passion for art die off. She claims that “even if I’m not the best artist, what matters the most is that I enjoy it.”</p>",
+    "contentImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-F.png",
+    "contentAuthor": "Paopao Zhang ‘24",
+    "contentAuthorTitle": "",
+    "contentImageDesc": "",
+    "contentImageSubDesc": "",
+    "letfColor": "#000000",
+    "rightColor": "#ffffff",
+    "descriptionColor": "#000000",
+    "topAuthorTitle": ""
+  },
+  "interviewColumn": {
+    "themeColor": "#ffffff",
+    "interviewImageBg": "http://www.grotonarts.com/static/art/draw/draw-interview-bg.png",
+    "items": [
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang",
+        "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers",
+        "index": 1
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-A.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-1",
+        "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers",
+        "index": 2
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-D.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-2",
+        "description": "Audrey ‘25 became a young artist at four and has loved visual arts ever since. Not limited by a single media, she enjoyed painting, drawing, craft making, and even animating.",
+        "index": 3
+      },
+      {
+        "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-B.png",
+        "title": "Marlene Ma & Paopao Zhang",
+        "pageId": "draw/marlene-ma-paopao-zhang-4",
+        "description": "Tim ’24 has always liked to draw, as he started his artistic endeavors with coloring books. Soon enough, coloring books became doodles and doodles developed into drawings.",
+        "index": 4
+      }
+    ]
+  }
+}
