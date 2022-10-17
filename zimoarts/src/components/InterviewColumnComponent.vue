@@ -9,12 +9,11 @@
     </div>
 
     <div style="display: flex; justify-content: center;">
-      <div style="width: 100px; height: 201.7px; margin-top: 81px;"
-        :style="{ 'border-bottom': '1px solid '+ themeColor }"></div>
-      <a-list :grid="{ gutter: 0, column: 4 }" :data-source="items" style="width: 1200px; margin-top: 80px;">
-        <template #renderItem="{ item }">
-          <a-list-item v-if="item.index%2==0" style="width: 300px;">
-            <div>
+      <div style="width: 100px; height: 201.7px; margin-top: 81px;"></div>
+      <div style="width: 1200px; margin-top: 80px;">
+        <vue3-horizontal-list style="width: 100%;" :items="items" :options="listOptions">
+          <template v-slot:default="{item}">
+            <div v-if="item.index%2==0" style="width: 300px;">
               <div style="width: 100%; height: 201.7px;"
                 :style="{ 'border-left': '1px solid '+ themeColor,'border-right': '1px solid '+ themeColor , 'color': ''+themeColor}">
                 <div class="columnItem" @click="columnItemOnClick(item.pageId)"
@@ -33,42 +32,43 @@
                 </div>
               </div>
             </div>
-          </a-list-item>
-          <a-list-item v-else style="width: 300px;">
-            <div @click="columnItemOnClick(item.pageId)" class="columnItem" style="width: 100%;"
-              :style="{ 'border-bottom': '1px solid '+ themeColor }">
-              <div style="width: 100%; height: 201.7px;position: relative;"
-                :style="{ 'border-right': '1px solid '+ themeColor, 'border-left': '1px solid '+ themeColor  }">
-                <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
-                  :imageUrl="item.imageUrl" />
+            <div v-else style="width: 300px;">
+              <div @click="columnItemOnClick(item.pageId)" class="columnItem" style="width: 100%;"
+                :style="{ 'border-bottom': '1px solid '+ themeColor }">
+                <div style="width: 100%; height: 201.7px;position: relative;"
+                  :style="{ 'border-right': '1px solid '+ themeColor, 'border-left': '1px solid '+ themeColor  }">
+                  <TreeDRotateImg style=" height: 95%; width: 90%; position: absolute;bottom: 0;right: 5%; left: 5%;"
+                    :imageUrl="item.imageUrl" />
+                </div>
               </div>
-            </div>
-            <div style="width: 100%; height: 201.7px;"
-              :style="{ 'border-right': '1px solid '+ themeColor,'border-left': '1px solid '+ themeColor, 'color': ''+themeColor}">
-              <div class="columnItem" @click="columnItemOnClick(item.pageId)"
-                style="font-weight: bolder; padding-top: 20px;">{{ item.title }}</div>
-              <div class="columnItem" @click="columnItemOnClick(item.pageId)"
-                style="margin-left: 5%; margin-right: 5%; word-break: break-all; word-wrap: break-word; ">
-                {{ item.description }}
+              <div style="width: 100%; height: 201.7px;"
+                :style="{ 'border-right': '1px solid '+ themeColor,'border-left': '1px solid '+ themeColor, 'color': ''+themeColor}">
+                <div class="columnItem" @click="columnItemOnClick(item.pageId)"
+                  style="font-weight: bolder; padding-top: 20px;">{{ item.title }}</div>
+                <div class="columnItem" @click="columnItemOnClick(item.pageId)"
+                  style="margin-left: 5%; margin-right: 5%; word-break: break-all; word-wrap: break-word; ">
+                  {{ item.description }}
+                </div>
               </div>
+
             </div>
-          </a-list-item>
-        </template>
-      </a-list>
-      <div style="width: 100px; height: 201.7px; margin-top: 81px;"
-        :style="{ 'border-bottom': '1px solid '+ themeColor }"></div>
+          </template>
+        </vue3-horizontal-list>
+      </div>
+      <div style="width: 100px; height: 201.7px; margin-top: 81px;"></div>
     </div>
   </div>
   <div style="width: 100%; height: 80px;"></div>
 </template>
 
 <script>
-import { ref } from 'vue';
+import { reactive, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import TreeDRotateImg from './TreeDRotateImg.vue';
+import vue3HorizontalList from "vue3-horizontal-list";
 export default {
   name: "InterviewColumnComponent",
-  components: { TreeDRotateImg },
+  components: { TreeDRotateImg, vue3HorizontalList },
   setup() {
 
     let backgroundBigImage = ref("")
@@ -82,6 +82,28 @@ export default {
       items.value = jsonData["items"]
     }
 
+    let listOptions = reactive({
+      responsive: [
+        { size: 4 },
+      ],
+      list: {
+        windowed: 1200,
+        padding: 0,
+      },
+      item: {
+        class: "item-img",
+        padding: 0,
+      },
+      position: {
+        start: 1,
+      },
+      autoplay: {
+        play: true,
+        speed: 1800,
+        repeat: true,
+      },
+
+    })
 
     const columnItemOnClick = (linkParam) => {
       if (linkParam === undefined || linkParam === null || linkParam === "") {
@@ -92,6 +114,7 @@ export default {
 
     return {
       backgroundBigImage,
+      listOptions,
       themeColor,
       items,
       setResourceData,

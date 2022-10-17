@@ -64,11 +64,11 @@
     <div
       style="width: 70%; margin-top: -70px; z-index: 99;  box-shadow: -20px 0px 20px -2px #888888; background-color: #ffffff; position: relative;">
       <div
-        style="margin-left: 30px; text-align: center;font-size: 50px; font-weight: bolder; margin-top: 70px;color: #000000;">
+        style="margin-left: 30px; text-align: center;font-size: 30pt; font-weight: bolder; margin-top: 70px;color: #000000;">
         {{ contentTitle }}
       </div>
       <div
-        style="margin-left: 30px; min-height: 500px;margin-top: 20px;text-align: left;width: 90%;color: #000000; font-size: 15pt;"
+        style="margin-left: 30px; min-height: 600px;margin-top: 20px;text-align: left;width: 90%;color: #000000; font-size: 15pt;"
         v-html="content">
       </div>
 
@@ -78,12 +78,12 @@
             <VideoPlayerComponent ref="videoPlayerRef" vWidth="600px" vHeight="337.5px" :vSrc="videoUrl" />
           </div>
         </div>
-        <div style="width: 150px; position: relative; margin-right: 60px;">
+        <div style="min-width: 200px; position: relative; margin-right: 60px;">
           <div style="width: 100%; min-height: 30px; position: absolute; bottom: 5px;">
-            <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15px;">
+            <div style="font-weight: bolder;color: #000000;text-align: left;font-size: 15pt;">
               {{ contentAuthor }}
             </div>
-            <div style="color: #000000;text-align: left;font-size: 15px;">
+            <div style="color: #000000;text-align: left;font-size: 15pt;">
               {{ contentAuthorTitle }}
             </div>
           </div>
