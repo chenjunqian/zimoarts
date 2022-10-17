@@ -3,18 +3,18 @@
     "title": "INTERVIEW",
     "topImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
     "topDesc": "",
-    "topAuthor": "Zimo Liu",
+    "topAuthor": "",
+    "topAuthorTitle": "GUAC Club",
     "contentTitle": "Guacamole",
     "content": "<p>The plopping of crushed berries stained purple the canvas white cups for which they entered. The crimson-red leaves litter one of Mrs. Donovan’s graffitied tables, along with autumn-themed string. Snickerdoodle cookies and apple cider warmed in a crock pot. GUAC is back, baby! GUAC used to stand for the Groton Underground Arts Collective, but past a pandemic and under new management, the old acronym now represents a new name: the Groton Unified Arts Club. GUAC hopes to get the creative juices of student who might be inexperienced with art in a safe and warm environment. Just this Saturday, GUAC held its first meeting of this year. This fall-themed craft event hosted a wide variety of artistic fun, some of which being crushed berry painting as well as harvest leaf garlands. Following up on this first club meeting, GUAC has many ideas ready to go, including sowing, pumpkin carving, shrinky dinks, rock painting, and fairy houses, to name a few. The Groton Unified Arts Club hopes to welcome a wide variety of new faces and people, and explore new mediums and new friendships next meeting.</p>",
     "contentImageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-002.png",
-    "contentAuthor": "Zimo Liu",
-    "contentAuthorTitle": "Funder/Chef",
-    "contentImageDesc": "Zimo Liu",
-    "contentImageSubDesc": "Funder/Chef",
+    "contentAuthor": "Bensen Han",
+    "contentAuthorTitle": "",
+    "contentImageDesc": "GUAC Club",
+    "contentImageSubDesc": "",
     "letfColor": "#000000",
     "rightColor": "#ffffff",
-    "descriptionColor": "#000000",
-    "topAuthorTitle": "Zimo Liu"
+    "descriptionColor": "#000000"
   },
   "interviewColumn": {
     "themeColor": "#ffffff",
@@ -22,28 +22,28 @@
     "items": [
       {
         "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-A.png",
-        "title": "Marlene Ma & Paopao Zhang",
+        "title": "Artists When They were Kids",
         "pageId": "draw/marlene-ma-paopao-zhang-1",
         "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers",
         "index": 1
       },
       {
         "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-D.png",
-        "title": "Marlene Ma & Paopao Zhang",
+        "title": "Artists When They were Kids",
         "pageId": "draw/marlene-ma-paopao-zhang-2",
         "description": "Audrey ‘25 became a young artist at four and has loved visual arts ever since. Not limited by a single media, she enjoyed painting, drawing, craft making, and even animating.",
         "index": 2
       },
       {
         "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-C.png",
-        "title": "Marlene Ma & Paopao Zhang",
+        "title": "Artists When They were Kids",
         "pageId": "draw/marlene-ma-paopao-zhang-3",
         "description": "Sagata ’25 has been creating art for as long as she can remember: “I feel like as soon as I could hold a pencil, I created art– whether it was for a school project or a doodle on my homework.”",
         "index": 3
       },
       {
         "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-B.png",
-        "title": "Marlene Ma & Paopao Zhang",
+        "title": "Artists When They were Kids",
         "pageId": "draw/marlene-ma-paopao-zhang-4",
         "description": "Tim ’24 has always liked to draw, as he started his artistic endeavors with coloring books. Soon enough, coloring books became doodles and doodles developed into drawings.",
         "index": 4

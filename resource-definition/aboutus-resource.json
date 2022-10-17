@@ -52,7 +52,7 @@
       "memberList": [
         {
           "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/BensenHan.png",
-          "title": "Vice Chef",
+          "title": "Vice President",
           "name": "Bensen Han"
         },
         {
@@ -77,22 +77,22 @@
         },
         {
           "imageUrl": "http://www.grotonarts.com/static/aboutus/member-image/TommyZhang.png",
-          "title": "technology Support",
+          "title": "Technology Support",
           "name": "Tommy Zhang"
         }
       ],
       "otherMemberList": [
         {
-          "name": "to be decided",
-          "title": ""
+          "title": "Paopao zhang, Marlene Ma, Jiwoo Han, William Chen, Hannah Gally",
+          "name": "Visual Art"
         },
         {
-          "name": "to be decided",
-          "title": ""
+          "title": "Sam Winkler, William Laws",
+          "name": "Music"
         },
         {
-          "name": "to be decided",
-          "title": ""
+          "title": "Timothy Hebard, Lauren Clark",
+          "name": "Theater"
         }
       ]
     }
