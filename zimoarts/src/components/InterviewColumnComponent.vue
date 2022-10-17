@@ -80,7 +80,6 @@ export default {
       themeColor.value = jsonData["themeColor"]
       backgroundBigImage.value = jsonData["interviewImageBg"]
       items.value = jsonData["items"]
-      console.log(items.value)
     }
 
 
