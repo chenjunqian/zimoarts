@@ -9,19 +9,19 @@
     "upcomingEvent": {
         "upcomingEventsText": "This section will show all the upcoming exhibitions, future plays and music events.",
         "middleBlock": {
-            "topText": "Fall Exhibition Poster",
-            "bottomText": "Designer",
-            "imageUrl": "http://www.grotonarts.com/static/home/upcoming/upcomingMiddleImage.png"
+            "topText": "",
+            "bottomText": "",
+            "imageUrl": "http://www.grotonarts.com/static/home/upcoming/around-the-circle.png"
         },
         "leftBlock": {
-            "topText": "Fall Theater Poster",
-            "bottomText": "Designer",
+            "topText": "",
+            "bottomText": "",
             "imageUrl": "http://www.grotonarts.com/static/home/upcoming/upcomingLeftImage.png"
         },
         "rightBlock": {
-            "topText": "Fall Musical Poster",
-            "bottomText": "Designer",
-            "imageUrl": "http://www.grotonarts.com/static/home/upcoming/upcomingRightImage.png"
+            "topText": "",
+            "bottomText": "",
+            "imageUrl": "http://www.grotonarts.com/static/home/upcoming/ParentsWeekendConcertProgram.png"
         },
         "bottomText": "All the artist, actors and musicians would love to be recognized by the community. Please come and support if you have time. Enjoy!"
     },
@@ -60,29 +60,40 @@
             "interviewImageBg": "http://www.grotonarts.com/static/home/interview/home-interview-bg.png",
             "items": [
                 {
-                    "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
-                    "pageId": "",
-                    "title": "Coming Soon !",
-                    "description": "",
-                    "index": 1
+                    "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-A.png",
+                    "title": "Artists When They were Kids",
+                    "pageId": "draw/marlene-ma-paopao-zhang-1",
+                    "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers"
                 },
                 {
-                    "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-2.png",
-                    "title": "Coming Soon !",
-                    "description": "",
-                    "index": 2
+                    "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-D.png",
+                    "title": "Artists When They were Kids",
+                    "pageId": "draw/marlene-ma-paopao-zhang-2",
+                    "description": "Audrey ‘25 became a young artist at four and has loved visual arts ever since. Not limited by a single media, she enjoyed painting, drawing, craft making, and even animating."
                 },
                 {
-                    "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-3.png",
-                    "title": "Coming Soon !",
-                    "description": "Coming Soon !",
-                    "index": 3
+                    "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-C.png",
+                    "title": "Artists When They were Kids",
+                    "pageId": "draw/marlene-ma-paopao-zhang-3",
+                    "description": "Sagata ’25 has been creating art for as long as she can remember: “I feel like as soon as I could hold a pencil, I created art– whether it was for a school project or a doodle on my homework.”"
                 },
                 {
-                    "imageUrl": "http://www.grotonarts.com/static/others/coming-soon-1.png",
-                    "title": "Coming Soon !",
-                    "description": "Coming Soon !",
-                    "index": 4
+                    "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/Marlene-Ma-Paopao-Zhang-001-B.png",
+                    "title": "Artists When They were Kids",
+                    "pageId": "draw/marlene-ma-paopao-zhang-4",
+                    "description": "Tim ’24 has always liked to draw, as he started his artistic endeavors with coloring books. Soon enough, coloring books became doodles and doodles developed into drawings."
+                },
+                {
+                    "imageUrl": "http://www.grotonarts.com/static/interviews/draw/image/draw-interview-001-1.png",
+                    "title": "Artists When They were Kids",
+                    "pageId": "draw/marlene-ma-paopao-zhang",
+                    "description": "This work was done by Brittany Deng ‘24 when she was nine years old. She chose to paint a lotus flower because she loved flowers"
+                },
+                {
+                    "imageUrl": "http://www.grotonarts.com/static/interviews/theater/image/theater-interview-001.png",
+                    "pageId": "theater/politics-in-dramatic-literature",
+                    "title": "Joon Whang",
+                    "description": "his fall, Joon Whang is doing a tutorial with the theater department called “Politics in Dramatic Literature”"
                 }
             ]
         },

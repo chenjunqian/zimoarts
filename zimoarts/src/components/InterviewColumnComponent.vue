@@ -80,6 +80,10 @@ export default {
       themeColor.value = jsonData["themeColor"]
       backgroundBigImage.value = jsonData["interviewImageBg"]
       items.value = jsonData["items"]
+      for (let index = 0; index < items.value.length; index++) {
+        const element = items.value[index];
+        element["index"] = index
+      }
     }
 
     let listOptions = reactive({
