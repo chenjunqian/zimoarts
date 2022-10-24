@@ -433,7 +433,7 @@ export default {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
-  z-index: 99;
+  z-index: 9;
   position: absolute;
 }
 
@@ -508,7 +508,7 @@ export default {
   margin-left: 15px;
   margin-top: 250px;
   display: flex;
-  z-index: 99;
+  z-index: 9;
 }
 
 .top-right-album-item-back {
@@ -531,7 +531,7 @@ export default {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 25px;
-  z-index: 99;
+  z-index: 9;
   position: absolute;
 }
 

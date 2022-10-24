@@ -13,7 +13,7 @@
         <div style="width: 60%; height: 100%; background-color: #ffffff;"
           :style="{ 'background-color': rightBlockColor }"></div>
         <img
-          style="width: 90%; height: 80%; background-color: #c0c0c0; position: absolute; z-index: 99; right: 0; top: 10%;"
+          style="width: 90%; height: 80%; background-color: #c0c0c0; position: absolute; z-index: 9; right: 0; top: 10%;"
           :src="topImageUrl">
       </div>
       <!-- interview text block -->
@@ -39,7 +39,7 @@
   <!-- person article block -->
   <div style="width: 100%;display: flex;">
     <!-- photo block -->
-    <div style="width: 30%; position: relative;display: flex; z-index: 100;">
+    <div style="width: 30%; position: relative;display: flex; z-index: 9;">
       <div style="width: 100%; position: absolute; right: 0; top: 200px;">
         <div style="width: 100%; display: flex; justify-content: center;">
           <div style="width: 30%;height: 50px;"></div>
@@ -62,7 +62,7 @@
     </div>
     <!-- article block -->
     <div
-      style="width: 70%; margin-top: -70px; z-index: 99;  box-shadow: -20px 0px 20px -2px #888888; background-color: #ffffff; position: relative;">
+      style="width: 70%; margin-top: -70px; z-index: 9;  box-shadow: -20px 0px 20px -2px #888888; background-color: #ffffff; position: relative;">
       <div
         style="margin-left: 30px; text-align: center;font-size: 30pt; font-weight: bolder; margin-top: 70px;color: #000000;">
         {{ contentTitle }}

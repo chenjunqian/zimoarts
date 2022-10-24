@@ -5,9 +5,12 @@
         <div class="dropdown" style="width: 100%;">
           <div class="home-dropdown-text" style="color: #ffffff; width: 100%;">VISUAL ART</div>
           <div class="dropdown-content">
-            <router-link to="/art/draw" style="font-size: 11pt;  font-weight: bolder;height: 50px; line-height: 50px;">DRAWING</router-link>
-            <router-link to="/art/sculpture" style="font-size: 11pt; font-weight: bolder; height: 50px; line-height: 50px;">SCULPTURE</router-link>
-            <router-link to="/art/photography" style="font-size: 11pt; font-weight: bolder; height: 50px; line-height: 50px;">PHOTOGRAPHY</router-link>
+            <router-link to="/art/draw" style="font-size: 11pt;  font-weight: bolder;height: 50px; line-height: 50px;">
+              DRAWING</router-link>
+            <router-link to="/art/sculpture"
+              style="font-size: 11pt; font-weight: bolder; height: 50px; line-height: 50px;">SCULPTURE</router-link>
+            <router-link to="/art/photography"
+              style="font-size: 11pt; font-weight: bolder; height: 50px; line-height: 50px;">PHOTOGRAPHY</router-link>
           </div>
         </div>
       </div>
@@ -44,85 +47,108 @@
       </div>
     </div>
   </div>
+  <a-affix :offset-top="10">
+    <FixDropDowmMenuComponent v-show="showBottomMenu" />
+  </a-affix>
 </template>
 
 <script>
-  export default {
-    name: "HomeDropDownMenuComponent"
+import { ref } from 'vue';
+import FixDropDowmMenuComponent from './FixDropDowmMenuComponent.vue';
+export default {
+  name: "HomeDropDownMenuComponent",
+  components: { FixDropDowmMenuComponent },
+  setup() {
+    let showBottomMenu = ref(false)
+    const handlerScroll = (_event) => {
+      const offSetY = window.pageYOffset
+      if (offSetY >= 288) {
+        showBottomMenu.value = true
+      } else {
+        showBottomMenu.value = false
+      }
+    }
+
+    window.addEventListener("scroll", handlerScroll, true)
+
+    return {
+      showBottomMenu
+    }
   }
+}
 </script>
 
 <style>
-  .home-dropdown-item-container {
-    width: 750px;
-    height: 200px;
-    padding-right: 15px;
-    float: right;
-    position: relative;
-    z-index: 99;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.home-dropdown-item-container {
+  width: 750px;
+  height: 200px;
+  padding-right: 15px;
+  float: right;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .home-dropdown-item {
-    height: 100%;
-    width: 120px;
-    margin-left: 15px;
-    background-color: wheat;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #ffffff;
-  }
+.home-dropdown-item {
+  height: 100%;
+  width: 120px;
+  margin-left: 15px;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ffffff;
+}
 
-  .home-dropdown-text-container {
-    width: 120px;
-    position: absolute;
-    bottom: 0px;
-  }
+.home-dropdown-text-container {
+  width: 120px;
+  position: absolute;
+  bottom: 0px;
+}
 
-  .home-dropdown-text {
-    font-size: 13pt;
-    text-align: center !important;
-    word-break: break-all;
-    word-wrap: break-word;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bolder;
-    padding-bottom: 15px;
-  }
+.home-dropdown-text {
+  font-size: 13pt;
+  text-align: center !important;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
 
-  .dropdown {
-    position: relative;
-    width: 110px;
-  }
+.dropdown {
+  position: relative;
+  width: 110px;
+}
 
-  .dropdown-content {
-    width: 120px;
-    position: absolute;
-    display: none;
-    left: 0;
-    overflow: auto;
-    border: 1px solid #ffffff;
-    background-color: #c0c0c0;
-  }
+.dropdown-content {
+  width: 120px;
+  position: absolute;
+  display: none;
+  left: 0;
+  overflow: auto;
+  border: 1px solid #ffffff;
+  background-color: #c0c0c0;
+}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  .dropdown-content a {
-    display: block;
-    color: #ffffff;
-    margin-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bolder;
-  }
+.dropdown-content a {
+  display: block;
+  color: #ffffff;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+}
 
-  .dropdown-content a:hover {
-    color: #ffffff;
-    background-color: #000000;
-  }
+.dropdown-content a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
 </style>

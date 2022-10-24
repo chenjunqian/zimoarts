@@ -1,6 +1,6 @@
 <template>
-  <iframe v-if="showYoutube" refs="youtubeVideoPlayer" style="border: none;"
-    :style="{ 'width': vWidth, 'height': vHeight }" :src="videoUrl" allowfullscreen>
+  <iframe v-if="showYoutube" style="border: none;" :style="{ 'width': vWidth, 'height': vHeight }" :src="videoUrl"
+    allowfullscreen>
   </iframe>
   <video v-else muted="muted" :style="{ 'width': vWidth, 'height': vHeight }" :src="videoUrl" type="video/mp4"
     autoplay="autoplay" controls="controls">
