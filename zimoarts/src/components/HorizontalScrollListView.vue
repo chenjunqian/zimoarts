@@ -29,7 +29,8 @@
         <div style="display: flex; justify-content: left; background-color: black; width: 100%;">
             <img style="max-width: 70%;" :src="currentModalImageUrl" />
             <div style="display: flex; justify-content: center; color: #ffffff; margin-left: 10%; font-size: 18pt;">
-                <div>This is Author Name .........................</div>
+                <div>{{currentModalImageTitle}}</div>
+                <div>{{currentModalImageAuthor}}</div>
             </div>
         </div>
     </a-modal>
@@ -53,6 +54,8 @@
             let pdfs = ref()
             let showMusic = ref(false)
             const currentModalImageUrl = ref("")
+            const currentModalImageTitle = ref("")
+            const currentModalImageAuthor = ref("")
             const isShowModal = ref(false)
             let options = reactive({
                 responsive: [
@@ -114,10 +117,11 @@
                 window.open(link)
             }
 
-            const onImageClick = (imageUrl) => {
-                currentModalImageUrl.value = imageUrl
+            const onImageClick = (imageItem) => {
+                currentModalImageUrl.value = imageItem.url
+                currentModalImageTitle.value = imageItem.title
+                currentModalImageAuthor.value = imageItem.author
                 isShowModal.value = true
-                console.log("imageUrl is ", imageUrl)
             }
 
             const closeModal = () => {
@@ -136,7 +140,9 @@
                 onImageClick,
                 closeModal,
                 isShowModal,
-                currentModalImageUrl
+                currentModalImageUrl,
+                currentModalImageTitle,
+                currentModalImageAuthor
             }
         },
     }
