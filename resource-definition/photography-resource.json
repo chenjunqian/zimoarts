@@ -14,17 +14,53 @@
   "interview": "http://www.grotonarts.com/static/interviews/photography/photography.json",
   "image-list": {
     "default": [
-      "http://www.grotonarts.com/static/art/photography/image-list/default/66-year-hustle_50998042895_o.png",
-      "http://www.grotonarts.com/static/art/photography/image-list/default/096hour_51067327037_o.png",
-      "http://www.grotonarts.com/static/art/photography/image-list/default/Art2.png",
-      "http://www.grotonarts.com/static/art/photography/image-list/default/pathway-by-ava-meyer-26_51885590381_o.png"
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/default/66-year-hustle_50998042895_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/default/096hour_51067327037_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/default/Art2.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/default/pathway-by-ava-meyer-26_51885590381_o.png",
+        "author": "",
+        "title": ""
+      }
     ],
     "20221018":[
-      "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-1.png",
-      "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-2.png",
-      "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-3.png",
-      "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-4.png",
-      "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-5.png"
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-1.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-2.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-3.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-4.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/photography/image-list/20221018/photography20221018-5.png",
+        "author": "",
+        "title": ""
+      }
     ]
   }
 }

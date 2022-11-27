@@ -1,5 +1,5 @@
 <template>
-    <div style="width: 100%;">
+    <div style="width: 100%;" ref="imageModalRef">
         <div class="top-album-descrption-container">
             <div class="top-album-descrption-title-container">
                 <div class="top-album-descrption-title" style="color: #ab050f">
@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="list-view" v-if="showMusic" style="margin-bottom: 80px;">
-            <vue3-horizontal-list  style="width: 100%;" :items="musics" :options="musicOptions">
+            <vue3-horizontal-list style="width: 100%;" :items="musics" :options="musicOptions">
                 <template v-slot:default="{ item }">
                     <img class="item-music-img" :src="item.imageUrl" @click="musicRecordOnClick(item.pdfLink)" />
                     <div class="item-music-text" :style="{ 'color': item.textColor }"
@@ -16,14 +16,23 @@
                 </template>
             </vue3-horizontal-list>
         </div>
-        <div class="list-view" style="padding-bottom: 80px;"> 
+        <div class="list-view" style="padding-bottom: 80px;">
             <vue3-horizontal-list style="width: 100%;" :items="images" :options="options">
                 <template v-slot:default="{ item }">
-                    <a-image class="item-img" :src="item" />
+                    <!-- <a-image class="item-img" :src="item" @click="onImageClick"/> -->
+                    <img class="item-img" :src="item.url" @click="onImageClick(item)" />
                 </template>
             </vue3-horizontal-list>
         </div>
     </div>
+    <a-modal style="width: 80%;" v-model:visible="isShowModal" :footer="null" :closable="false" @ok="closeModal" :getContainer = "()=>$refs.imageModalRef">
+        <div style="display: flex; justify-content: left; background-color: black; width: 100%;">
+            <img style="max-width: 70%;" :src="currentModalImageUrl" />
+            <div style="display: flex; justify-content: center; color: #ffffff; margin-left: 10%; font-size: 18pt;">
+                <div>This is Author Name .........................</div>
+            </div>
+        </div>
+    </a-modal>
 </template>
 
 <script>
@@ -43,6 +52,8 @@
             let musics = ref()
             let pdfs = ref()
             let showMusic = ref(false)
+            const currentModalImageUrl = ref("")
+            const isShowModal = ref(false)
             let options = reactive({
                 responsive: [
                     { size: 3 },
@@ -103,6 +114,16 @@
                 window.open(link)
             }
 
+            const onImageClick = (imageUrl) => {
+                currentModalImageUrl.value = imageUrl
+                isShowModal.value = true
+                console.log("imageUrl is ", imageUrl)
+            }
+
+            const closeModal = () => {
+                isShowModal.value = false
+            }
+
             return {
                 title,
                 musics,
@@ -111,7 +132,11 @@
                 options,
                 musicOptions,
                 musicRecordOnClick,
-                setResourceData
+                setResourceData,
+                onImageClick,
+                closeModal,
+                isShowModal,
+                currentModalImageUrl
             }
         },
     }
@@ -127,6 +152,10 @@
     .item-img {
         width: 330px;
         height: 220px;
+    }
+
+    .item-img:hover {
+        cursor: pointer;
     }
 
     .item-music-img {
@@ -160,5 +189,15 @@
 
     .top-album-descrption-title {
         display: inline;
+    }
+
+    :deep(.ant-modal-content) {
+      position: relative;
+      background-color: #000000;
+      background-clip: padding-box;
+      border: 0;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+      pointer-events: auto;
     }
 </style>

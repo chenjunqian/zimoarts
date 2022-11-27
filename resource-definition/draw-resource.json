@@ -97,60 +97,276 @@
   ],
   "interview": "http://www.grotonarts.com/static/interviews/draw/guacamole.json",
   "image-list": {
+    "20221127" :[
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221127/",
+        "author": "",
+        "title": ""
+      }
+    ],
     "default": [
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52131653932_bb0041a946_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52132913799_bb47c40881_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52132913974_1035be5641_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52132914104_1c7d081c11_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52133169500_d9d772bcb9_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52133169705_eb1a3f6c4c_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52133169750_8cdfbe6ecc_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/52133169860_667dfdcef8_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/Art1.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/Art3.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-anna-c-20_49967276786_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-annie-f-20_49967278916_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-brooks-a-20_49967278906_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-doug-a-20_49967548597_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-doug-a-20_49967548662_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-eleanor-d-20_49967278676_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-elizabeth-g-20_49966769258_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-gili-c-20_49966767893_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-john-d-20_49966769223_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-josephine-a-20_49967548122_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-katherine-j-20_49966768323_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-katherine-j-20_49967277171_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-liam-s-20_49966768963_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-liam-s-20_49967278096_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-maddie-c-20_49967277986_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-maddie-c-20_49967278051_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-maddie-c-20_49967547802_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-mary-c-20_49967277831_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-rachel-m-20_49967276526_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-richa-p-20_49967546137_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-richa-p-20_49967547502_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/by-tatum-p-20_49967277596_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/diotimas_51066525203_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/fall-upon-thorns-by-mei-matsui-23_51884621662_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/i-miss-you-by-paopao-zhang-24_51886240240_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/its-empty-by-paopao-zhang-24_51887290796_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/my-hands-make-no-amendments_51000038405_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/patrick-by-paopao-zhang-24_51887947200_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/shattered-trust-by-paopao-zhang-24_51886327642_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/tupandactylus-imperator-in-the-underworld_51067232496_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/yearn-by-paopao-zhang-24_51885668773_o.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/default/yes-me-by-paopao-zhang-24_51885601061_o.png"
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52131653932_bb0041a946_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52132913799_bb47c40881_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52132913974_1035be5641_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52132914104_1c7d081c11_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52133169500_d9d772bcb9_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52133169705_eb1a3f6c4c_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52133169750_8cdfbe6ecc_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/52133169860_667dfdcef8_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/Art1.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/Art3.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-anna-c-20_49967276786_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-annie-f-20_49967278916_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-brooks-a-20_49967278906_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-doug-a-20_49967548597_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-doug-a-20_49967548662_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-eleanor-d-20_49967278676_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-elizabeth-g-20_49966769258_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-gili-c-20_49966767893_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-john-d-20_49966769223_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-josephine-a-20_49967548122_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-katherine-j-20_49966768323_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-katherine-j-20_49967277171_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-liam-s-20_49966768963_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-liam-s-20_49967278096_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-maddie-c-20_49967277986_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-maddie-c-20_49967278051_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-maddie-c-20_49967547802_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-mary-c-20_49967277831_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-rachel-m-20_49967276526_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-richa-p-20_49967546137_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-richa-p-20_49967547502_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-tatum-p-20_49967277596_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/by-tatum-p-20_49967277596_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/diotimas_51066525203_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/fall-upon-thorns-by-mei-matsui-23_51884621662_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/i-miss-you-by-paopao-zhang-24_51886240240_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/its-empty-by-paopao-zhang-24_51887290796_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/my-hands-make-no-amendments_51000038405_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/patrick-by-paopao-zhang-24_51887947200_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/shattered-trust-by-paopao-zhang-24_51886327642_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/tupandactylus-imperator-in-the-underworld_51067232496_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/yearn-by-paopao-zhang-24_51885668773_o.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/default/yes-me-by-paopao-zhang-24_51885601061_o.png",
+        "author": "",
+        "title": ""
+      }
     ],
     "20221018": [
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-1.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-2.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-3.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-4.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-5.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-6.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-7.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-8.png",
-      "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-9.png"
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-1.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-2.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-3.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-4.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-5.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-6.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-7.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-8.png",
+        "author": "",
+        "title": ""
+      },
+      {
+        "url": "http://www.grotonarts.com/static/art/draw/image-list/20221018/draw20221018-9.png",
+        "author": "",
+        "title": ""
+      }
     ]
   }
 }
