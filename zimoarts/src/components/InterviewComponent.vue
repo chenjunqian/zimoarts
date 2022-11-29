@@ -13,7 +13,7 @@
         <div style="width: 60%; height: 100%; background-color: #ffffff;"
           :style="{ 'background-color': rightBlockColor }"></div>
         <img
-          style="width: 90%; height: 80%; background-color: #c0c0c0; position: absolute; z-index: 9; right: 0; top: 10%;"
+          style="max-width: 90%; max-height: 80%; background-color: #c0c0c0; position: absolute; z-index: 9; right: 0; top: 10%;"
           :src="topImageUrl">
       </div>
       <!-- interview text block -->
