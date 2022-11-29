@@ -29,8 +29,10 @@
         <div style="display: flex; justify-content: left; background-color: black; width: 100%;">
             <img style="max-width: 70%;" :src="currentModalImageUrl" />
             <div style="display: flex; justify-content: center; color: #ffffff; margin-left: 10%; font-size: 18pt;">
-                <div>{{currentModalImageTitle}}</div>
-                <div>{{currentModalImageAuthor}}</div>
+                <div>
+                    <div style="font-weight: bolder; font-size: 18pt; text-align: left;">{{currentModalImageTitle}}</div>
+                    <div style=" font-size: 15pt; text-align: left;">{{currentModalImageAuthor}}</div>
+                </div>
             </div>
         </div>
     </a-modal>
